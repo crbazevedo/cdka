@@ -169,6 +169,31 @@ Every pair of contexts has a common safe action. But \(A_0\cap A_1\cap A_2=\varn
 
 The independent exact oracle \`higher_order_compatibility_obstruction()\` verifies this construction. This is not a novel complex-theoretic result; it demonstrates why **higher-order intersections** must be considered when an organizational transition collapses multiple contexts into one observable class.
 
+## 6C. When every fixed repair erases memory but the closed-loop repair carries a bit
+
+A stronger adversarial case reveals why it is invalid to upper-bound all adaptive controllers by looking only at **each fixed repair mode separately**.
+
+Take two physical repair modes a∈{0,1} and a binary register m. For each *fixed* a, define a complete resetting operation:
+\[
+K^a(m'|m)=\mathbf1\{m'=a\}.
+\]
+Each channel K^a is independent of m, so its total-variation/Dobrushin contraction coefficient is **zero**. It destroys information in m *when the repair mode is held fixed*.
+
+However, a controller that has previously sensed W can select the repair mode a=m. The effective closed-loop transition becomes
+\[
+K^\pi(m'|m)=\sum_a\pi(a|m)K^a(m'|m)=\mathbf1\{m'=m\},
+\]
+which has contraction coefficient **one**. The controller has used a physically consequential **action choice as an information channel**, writing the bit into the repaired register.
+
+The exact four-policy enumeration gives:
+- constant repair choices (0,0), (1,1): final TV=0;
+- identity (0,1), negation (1,0): final TV=1.
+
+This is a classical controlled-signaling mechanism, not a novel CDKA theorem. It falsifies the naive inequality
+\(\delta(K^\pi)\le\sup_a \delta(K^a)\) **when the action is selected based on the input**, and it demands policy-aware analysis of physically accessible organizational states.
+
+The hard-reset no-go remains valid only when **the repair output is independent of both the prior memory and every admissible action that could encode it**, or when the full physical cut is otherwise shown to destroy all task-relevant distinctions.
+
 ## 7. What this does NOT prove
 
 - No original mathematical theorem: Bayes binary testing, contraction, finite-state controllers and viability are established fields.

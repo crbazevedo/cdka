@@ -35,6 +35,13 @@ For three worlds with safe-action sets {a,b}, {b,c}, {a,c}, every pair is compat
 This construction is a distinct **higher-order hypergraph incompatibility** mechanism, not simply the binary all-or-nothing memory case. It motivates testing full intersections rather than pairwise overlaps. The exact oracle is `higher_order_compatibility_obstruction()` in `cdka/causal_cut.py`.
 
 
+## Controlled resets can be channels — a policy-dependent-cut adversary
+
+Even if every individual repair mode `K^a(m'|m)` has TV contraction coefficient zero (always resets the register to `m'=a`), an adaptive controller that selects `a=m` produces a closed-loop identity kernel with coefficient one. Thus independently analyzing fixed repair modes yields a false upper bound on memory preservation. Enumerating all four binary repair-mode policies confirms two constant maps with TV=0 and two invertible maps with TV=1.
+
+This strengthens our methodological rule: **an information cut must quantify over the physically allowable action-selection policy and include every observable consequence of the chosen actions**. The modes themselves can serve as an endogenous memory substrate. See `action_conditioned_reset_signaling()`.
+
+
 ## Separate analysis instruments (do not conflate them)
 
 **Logical / algebraic**

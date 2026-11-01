@@ -17,6 +17,8 @@
 | T3.C / T4.B | Exact finite counterexample, known toolkit | Perfect early information + available repaired actuation + repair budget can fail as a **joint physical policy** due to a compulsory information cut; exact TV/repair-horizon formula and a configuration-state bypass | Move from precommitted repairs to endogenous self-maintenance and physically created information channels; audit finite-state POMDP literature |
 | T3.C.H | Exact finite higher-order illustration | Three worlds all pairwise action-compatible can be jointly incompatible after physical memory collapse; optimum 2/3 for a uniform prior | Extend support hypergraph synthesis with dynamically evolving observation classes |
 
+| T3.C.S | Proved finite controlled-signaling counterexample; known mechanism | Every fixed repair channel can erase the register (TV contraction 0) while the input-contingent physical repair choice transmits one bit (closed-loop contraction 1) | Require policy-dependent full-cut analysis; avoid comparing only fixed-mode kernels |
+
 | T3 | Open central | Joint information, intervention and maintenance feasibility is nonseparable in a physically grounded class | Prove a bound exceeding marginal controls |
 | T4.A | Known, proved | Controlled lumpability implies exact finite-horizon viability quotient | Find minimal weaker task-relative condition |
 | T4 | Open central | Endogenous sensor/actuator damage and repair change recursive sufficient information | Finite controlled-process theorem/counterexample |

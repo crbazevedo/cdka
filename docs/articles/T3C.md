@@ -60,6 +60,11 @@ Com ρ=1/2, η=ν=0, n=3 e B=3, a probabilidade é 56,25%. Com B=4 sobe para 62,
 Considere três contextos com ações seguras {a,b}, {b,c} e {a,c}. Todos os pares compartilham uma ação. Mesmo assim, nenhuma intervenção serve para os três contextos simultaneamente. Se um reparo os torna indistinguíveis, o melhor sucesso sob distribuição uniforme é 2/3, e o controle com garantia absoluta é impossível. Essa é uma estrutura de compatibilidade de ordem superior, relacionada a complexos de Dowker.
 
 
+### As ações podem reconstituir um bit
+
+Suponha dois modos de reparo. Cada modo isolado apaga a memória e coloca o registrador em um estado constante, 0 ou 1. Mas, se a organização escolhe o modo com base na leitura antiga, o resultado físico do reparo pode guardar exatamente o bit que parecia perdido. O problema deixa de ser somente **quanto a memória conserva**, e passa a ser **quais estados físicos a própria intervenção consegue criar e preservar**. É um caso clássico de comunicação implícita através de ações.
+
+
 ## O que o simulador revela
 
 - Mapa de regimes de viabilidade versus número de reparos e orçamento.

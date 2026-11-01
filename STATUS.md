@@ -34,6 +34,8 @@ Physical organization and available interventions → realizable trajectory laws
   
 - **Corte de ordem superior:** três contextos com conjuntos de ações {a,b}, {b,c}, {a,c} passam em todos os testes de compatibilidade aos pares, mas não admitem nenhuma ação universal após a memória ser colapsada. Sucesso ótimo para prior uniforme = 2/3. Verificado por `higher_order_compatibility_obstruction()`; antecedente combinatório conhecido.
 
+- **Contraexemplo adversarial de sinalização por reparo:** cada canal de reparo com modo fixo possui coeficiente de contração TV=0, mas selecionar adaptativamente o modo `a=m` cria um canal fechado de coeficiente 1. Enumeradas as quatro políticas binárias; resultado conhecido da informação transmitida por ações, relevante para uma futura formulação dinâmica do corte causal.
+
 ## Knowledge Atlas
 
 - Seven canonical miniarticles B1 and T1–T6, plus the standalone T3.C causal-cut miniarticle and interactive experiment, at https://crbazevedo.github.io/cdka/.
