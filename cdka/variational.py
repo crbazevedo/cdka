@@ -144,3 +144,24 @@ def restricted_authority_gap(beta:float):
     actual=bernoulli_kl(2*beta,0.5)
     lower=bernoulli_kl(beta,0.25)
     return actual,lower,actual-lower
+
+
+def saddle_normal_form_action(tau: float, n: int=2048) -> float:
+    """Universal fixed-time action for gradient 1-z^2 on [-1,1].
+
+    F(tau) = (1/4) inf integral_0^tau (z' + 1-z^2)^2 ds.
+    Quasipotential F(infinity)=4/3; short-time leading F(tau)~1/tau.
+    """
+    if not isfinite(tau) or tau<=0:raise ValueError("positive finite tau required")
+    if n<2 or n%2:raise ValueError("positive even subdivisions required")
+    def g(z):return 1-z*z
+    def duration(E):return simpson(lambda z:1/sqrt(g(z)**2+4*E),-1,1,n)
+    lo=1e-13;hi=1.0
+    while duration(hi)>tau:hi*=4
+    if duration(lo)<tau:raise ValueError("tau exceeds fixed-resolution stability")
+    for _ in range(53):
+        md=(lo+hi)/2
+        if duration(md)>tau:lo=md
+        else:hi=md
+    E=(lo+hi)/2
+    return .5*simpson(lambda z:sqrt(g(z)**2+4*E),-1,1,n)+2/3-E*tau

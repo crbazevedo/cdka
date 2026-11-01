@@ -72,4 +72,26 @@ class FiniteTimeTests(unittest.TestCase):
         with self.assertRaises(ValueError): restricted_authority_gap(.7)
 
 
+
+
+class CriticalScalingTests(unittest.TestCase):
+    def test_scaling_normal_form_collapse(self):
+        from cdka.variational import critical_tilt, quartic_left_action, saddle_normal_form_action
+        tau=0.4
+        reference=saddle_normal_form_action(tau)
+        errors=[]
+        for delta in (.03,.01,.002):
+            T=tau/(3**.25*math.sqrt(delta))
+            action=quartic_left_action(T,critical_tilt()-delta).action
+            norm=action*3**.25/delta**1.5
+            errors.append(abs(norm-reference))
+        self.assertTrue(errors[0]>errors[1]>errors[2])
+        self.assertLess(errors[-1],.05)
+
+    def test_small_tau_normal_form_limit(self):
+        from cdka.variational import saddle_normal_form_action
+        for tau in (.03,.05,.1):
+            self.assertLess(abs(saddle_normal_form_action(tau)*tau-1),.09)
+
+
 if __name__=='__main__':unittest.main()
