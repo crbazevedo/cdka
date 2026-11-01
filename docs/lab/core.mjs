@@ -165,16 +165,22 @@ export function replicatorDerivative(p,x,{beta=2,eta=0.8,rho=1}={}) {
 }
 export function replicator({p0=0.35,x0=0.2,beta=2,eta=0.8,rho=1,T=18,dt=0.035}={}) {
   if(!(p0>0&&p0<1&&T>0&&dt>0&&beta>0&&eta>0&&rho>0))throw Error('Invalid replicator');
-  let p=p0,x=x0;const n=Math.ceil(T/dt); const h=T/n;
-  const points=[[0,p,x,Math.log(p/(1-p))]];
-  const f=(a,b)=>replicatorDerivative(a,b,{beta,eta,rho});
+  // Evolve log odds z=log(p/(1-p)), NOT p directly. In p-coordinates
+  // round-off near 0 or 1 destroys the identity dz/dt = beta*x.
+  const sigmoid=z=>z>=0?1/(1+Math.exp(-z)):Math.exp(z)/(1+Math.exp(z));
+  let z=Math.log(p0/(1-p0)),x=x0;
+  const n=Math.ceil(T/dt),h=T/n;
+  const points=[[0,p0,x,z]];
+  const deriv=(a,b)=>[beta*b,-rho*b+eta*(2*sigmoid(a)-1)];
   for(let k=1;k<=n;k++){
-    const [a,b]=f(p,x),[c,d]=f(p+a*h/2,x+b*h/2),
-          [e,f2]=f(p+c*h/2,x+d*h/2),[g,j]=f(p+e*h,x+f2*h);
-    p=clamp(p+h*(a+2*c+2*e+g)/6,1e-10,1-1e-10);
-    x+=h*(b+2*d+2*f2+j)/6;
-    points.push([k*h,p,x,Math.log(p/(1-p))]);
+    const [a,b]=deriv(z,x),
+          [c,d]=deriv(z+a*h/2,x+b*h/2),
+          [e,f]=deriv(z+c*h/2,x+d*h/2),
+          [g,j]=deriv(z+e*h,x+f*h);
+    z+=h*(a+2*c+2*e+g)/6;
+    x+=h*(b+2*d+2*f+j)/6;
+    points.push([k*h,sigmoid(z),x,z]);
   }
   return {points,stableA:[0,-eta/rho],stableB:[1,eta/rho],saddle:[.5,0],
-          finalP:p,finalX:x};
+          finalP:sigmoid(z),finalX:x};
 }
