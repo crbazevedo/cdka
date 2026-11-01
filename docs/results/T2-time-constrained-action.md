@@ -85,13 +85,15 @@ R_{T,c}(w,a)=\mathbf1\{J_T(w,a)>c\}
 \]
 away from equality. Apply the finite-state minimum cover to \(R_{T,c}\). A quasipotential-only replacement can misclassify actions when \(T\) is short.
 
-For the symmetric double well at \(T=3\), sample rates for a left-to-saddle escape:
-\[
-J_3(u=-0.2)\approx0.493093,\quad
-J_3(u=0)\approx0.260916,\quad
-J_3(u=+0.2)\approx0.091170.
-\]
-If available static control tilts are \(\{-0.2,0,+0.2\}\), symmetry yields an illustrative *asymptotic* decision phase diagram for staying in the original well: below \(c=0.260916\), neutral control works in both contexts (0 fixed bits); between 0.260916 and 0.493093, the controller must distinguish wells (1 fixed bit); above 0.493093 neither well can be protected at the stipulated asymptotic risk. At equality, prefactors matter; do not use the strict-exponent formula.
+### Important causal consistency check: parameter scans are not policy contrasts
+
+For \(T=3\), the values \(J_3(u=-0.2)\approx0.493093\), \(J_3(u=0)\approx0.260916\), and \(J_3(u=+0.2)\approx0.091170\) describe **three distinct pre-equilibrated systems**, each starting at *its own action-dependent left minimum* \(a(u)\). They are valid parameter scans of the rate functional but **not** a controlled counterfactual comparison from a common initial physical state.
+
+Consequently, one must **not** infer a legitimate 0-bit/1-bit action-compatibility phase diagram by treating these numbers as competing actions on the same starting condition. Doing so would inadvertently reset the initial state when changing the intervention, violating the causal experiment.
+
+For a valid CDKA control calculation, **hold fixed across candidate actions**: the initial physical state or initial distribution, the failure/viability event, the horizon and the declared observational resources. Only the action-generated dynamics may change. One candidate model has \(X_0=-1\) or \(+1\), failure at the fixed separatrix \(x=0\), and a constant or feedback tilt \(u\) applied at \(t=0\). Its rates require a generalized finite-endpoint action solver; the equilibrium-root quadrature in this note is insufficient without adaptation.
+
+This correction is methodological, not cosmetic: **counterfactual knowledge is relative to a controlled experiment with a common reference world**. In particular, policy-dependent redefinition of the failure event can create artificial "knowledge thresholds." The next T2 experiment must implement the common-state/common-event protocol before drawing information phase boundaries.
 
 ## Reproducibility
 
