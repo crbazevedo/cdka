@@ -7,7 +7,8 @@ from cdka.causal_cut import (
     CausalCutSystem, ERASED, MEMORY, bayes_best,
     total_variation_binary, zero_error_support_obstructions,
     deterministic_minimal_obstructions, physical_configuration_bypass,
-    enumerate_repair_schedules,
+    enumerate_repair_schedules, higher_order_compatibility_obstruction,
+    general_safe_decision_value,
 )
 
 
@@ -93,6 +94,19 @@ class MinimalCausalCutTests(unittest.TestCase):
         self.assertGreaterEqual(s.terminal_information_bits(),0)
         self.assertLessEqual(s.terminal_information_bits(),1)
         self.assertEqual(s.memory_tv(),F(3,5)*F(4,5)**3*F(3,4)**3)
+
+    def test_three_world_higher_order_cut(self):
+        value,pairwise,failures=higher_order_compatibility_obstruction()
+        self.assertTrue(pairwise)
+        self.assertEqual(value,F(2,3))
+        self.assertEqual(failures,{ERASED:frozenset((0,1,2))})
+
+    def test_generic_viability_with_overlapping_actions(self):
+        A={0:frozenset((0,2)),1:frozenset((1,2))}
+        joint={(0,ERASED):F(1,2),(1,ERASED):F(1,2)}
+        value,decoder=general_safe_decision_value(joint,A,(ERASED,))
+        self.assertEqual(value,1)
+        self.assertEqual(decoder[ERASED],2)
 
     def test_invalid_parameters(self):
         for kw in ({'eta':F(2,3)},{'rho':F(-1,2)},{'nu':F(3,4)},
