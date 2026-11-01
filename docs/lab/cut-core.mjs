@@ -21,7 +21,7 @@ export function cutModel({
   const correlation=(1-2*eta)*(1-2*nu)**cycles;
   const keep=sideChannel?1:(1-rho)**unprotected;
   const tv=ready?keep*correlation:0;
-  const success=ready?.5*(1+tv):0;
+  const success=ready ? 0.5*(1+tv) : 0;
   const initialInfo=1-h2(eta);
   const futureError=(1-correlation)/2;
   const finalInfo=ready?keep*(1-h2(futureError)):0;
