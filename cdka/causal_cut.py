@@ -313,3 +313,28 @@ def higher_order_compatibility_obstruction() -> tuple[F, bool, dict]:
     failures=zero_error_support_obstructions(joint,safe,(ERASED,))
     best,_=general_safe_decision_value(joint,safe,(ERASED,))
     return best,pairwise,failures
+
+
+def action_conditioned_reset_signaling() -> dict[tuple[int,int], F]:
+    """Per-action reset erases memory, but adaptive reset choice transmits it.
+
+    For each fixed repair mode a∈{0,1}:
+       K^a(m'|m)=1{m'=a}, independent of m,
+    so the channel has Dobrushin/TV coefficient 0.
+
+    If repair policy selects a=pi(m), the closed-loop kernel is instead
+       K_pi(m'|m)=1{m'=pi(m)}.
+    Identity or negation policies carry one bit through the reset,
+    whereas constant policies carry none. This is a known example of
+    information/signaling through physical actions, NOT a new theorem.
+    """
+    values={}
+    for policy in product(WORLDS, repeat=2):
+        joint={}
+        for w in WORLDS:
+            sensed=w  # initial sensor perfect
+            repair_mode=policy[sensed]
+            # Each fixed-mode repair destroys m but writes its chosen mode.
+            _accumulate(joint,(w,repair_mode),F(1,2))
+        values[policy]=total_variation_binary(joint,symbols=WORLDS)
+    return values
