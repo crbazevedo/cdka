@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fbf6ee">
+<meta name="description" content="CDKA T3.C: um laboratório de cortes causais, memória física, reparo e limites de viabilidade">
+<title>CDKA · Um corte causal no conhecimento</title>
+<link rel="stylesheet" href="./styles.css">
+<link rel="stylesheet" href="./cut.css">
+</head>
+<body>
+<header class="masthead">
+  <a class="wordmark" href="../index.html"><span class="wordmark-icon">C<span>·</span></span><span>CDKA <small>RESEARCH ATLAS</small></span></a>
+  <div class="masthead-right">T3.C / T4.B <a class="github" href="https://github.com/crbazevedo/cdka/blob/main/docs/results/T3C-temporal-causal-cut.md">Prova e hipóteses ↗</a></div>
+</header>
+<main class="single-wrap">
+  <div class="topline"><span class="series">RESEARCH NOTE / T3.C</span><span class="result-tag">CONTRAEXEMPLO EXATO · INSTRUMENTOS CONHECIDOS</span></div>
+  <h1 class="h-title">Quando o reparo apaga o conhecimento</h1>
+  <p class="lead">Uma organização pode perceber perfeitamente o mundo, reparar seu atuador e ainda assim não conseguir escolher a ação correta. A obstrução está no fluxo causal da informação entre os dois momentos.</p>
+  <p class="question">A informação estava presente — mas sobreviveu até o instante em que se tornou necessária?</p>
+  <div class="lab-top"><h2 class="section-title">Laboratório de viabilidade</h2><span class="section-meta">EXATO · FINITO · REPRODUZÍVEL</span></div>
+  <p class="lab-desc">Modifique o número de reparos, o orçamento de proteção, os erros do sensor e as mudanças ambientais. Compare o dispositivo original com uma organização capaz de armazenar informação em um canal físico alternativo.</p>
+  <div class="lab-grid">
+    <section class="viz-shell"><div id="cut-viz" aria-live="polite"></div></section>
+    <aside class="controls" id="cut-controls">
+      <h3>Organização e recursos</h3>
+      <div class="control"><label for="cycles">Reparos obrigatórios <output id="o-cycles">2</output></label><input type="range" id="cycles" min="1" max="8" step="1" value="2"></div>
+      <div class="control"><label for="budget">Orçamento B <output id="o-budget">2</output></label><input type="range" id="budget" min="0" max="16" step="1" value="2"></div>
+      <div class="control"><label for="eta">Erro inicial η <output id="o-eta">0%</output></label><input type="range" id="eta" min="0" max=".5" step=".01" value="0"></div>
+      <div class="control"><label for="rho">Apagamento por reparo ρ <output id="o-rho">100%</output></label><input type="range" id="rho" min="0" max="1" step=".01" value="1"></div>
+      <div class="control"><label for="nu">Mudança do ambiente ν <output id="o-nu">0%</output></label><input type="range" id="nu" min="0" max=".5" step=".01" value="0"></div>
+      <div class="control"><label for="target">Meta de sobrevivência <output id="o-target">90%</output></label><input type="range" id="target" min=".5" max="1" step=".01" value=".9"></div>
+      <label class="toggle"><input type="checkbox" id="sideChannel"> Configuração física Z guarda a leitura inicial</label>
+      <div class="preset-row">
+        <button class="pill" data-preset="hard">Apagamento completo</button>
+        <button class="pill" data-preset="soft">Memória degradável</button>
+        <button class="pill" data-preset="drift">Mundo variável</button>
+        <button class="pill" data-preset="bypass">Memória na organização</button>
+      </div>
+      <p class="control-help">A proteção dos reparos é previamente programada e não transmite W por ações ou relógios. O canal Z opcional introduz deliberadamente um novo substrato de memória.</p>
+    </aside>
+  </div>
+  <div class="reading-grid">
+    <section class="article-section"><h3>O bloqueio físico</h3><p>O sensor funciona antes do reparo; o atuador só funciona depois. Cada reparo não protegido pode apagar a informação armazenada. O controlador final não dispõe de um registro ilimitado das observações passadas.</p></section>
+    <section class="article-section"><h3>O resultado matemático</h3><pre class="math-paper">P* = 0, se B &lt; n
+P* = ½[1+(1−2η)(1−2ν)ⁿ(1−ρ)⁽ⁿ⁻ᵏ⁾], se B≥n
+k = min(n, B−n)</pre></section>
+    <section class="article-section"><h3>Insight ontológico</h3><p>Informação operacional não está necessariamente em um registrador M. Uma configuração observável do atuador Z pode desempenhar o papel de memória. O teorema deve considerar todo estado físico acessível à política — o corte causal completo.</p></section>
+    <section class="article-section"><h3>O próximo problema</h3><p>Permitir que o próprio controlador decida quais estruturas proteger, consertar ou usar como memória, sob recursos limitados. O processo de construir e manter o canal de conhecimento passaria a ser parte da dinâmica regulada.</p></section>
+  </div>
+  <div class="article-bottom"><span class="citation-warning">Modelo de memória finita. A visualização não demonstra um princípio universal da agência.</span><a class="nav-next" href="../index.html">Voltar ao atlas ↗</a></div>
+</main>
+<footer class="footer"><div>CDKA <span>Counterfactual Dynamics of Knowledge and Agency</span></div><div>Conhecimento · controle · organização</div></footer>
+<script type="module" src="./cut-app.mjs"></script>
+</body></html>
