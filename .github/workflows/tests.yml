@@ -13,6 +13,27 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Check browser module syntax
+        run: |
+          node --check docs/lab/core.mjs
+          node --check docs/lab/articles.mjs
+          node --check docs/lab/app.mjs
+      - name: Verify all simulator kernels
+        run: node --test tests/visual-lab.test.mjs
+      - name: Check atlas completeness
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          expected = ["B1","T1","T2","T3","T4","T5","T6"]
+          for item in expected:
+              path=Path("docs/articles") / f"{item}.md"
+              assert path.exists(), path
+              contents=path.read_text()
+              for heading in ("Motivação","Definições mínimas","Formulação","Exemplo","O que habilita","Simulador"):
+                  assert heading in contents,(item,heading)
+          assert (Path("docs")/"index.html").exists()
+          print("7 knowledge articles and atlas entry point verified.")
+          PY
       - name: Run independent exhaustive checks
         run: python -m unittest discover -s tests -v
       - name: Reproduce deterministic threshold table
