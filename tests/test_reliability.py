@@ -14,12 +14,17 @@ class ExponentTests(unittest.TestCase):
     def test_min_plus_error_exponent(self):
         good, bad, kappa = .42, .12, .2
         self.assertAlmostEqual(effective_failure_exponent(good,bad,kappa),.32)
-        previous = -float('inf')
-        for eps in (.2,.1,.05,.025,.0125):
-            empirical = finite_noise_failure_rate(eps,good,bad,kappa)
-            self.assertGreater(empirical, previous)
-            previous = empirical
-        self.assertAlmostEqual(previous,.32,delta=.014)
+        # Finite-epsilon rates are not globally monotone: logarithmic
+        # mixture prefactors can produce an interior maximum. Only the
+        # small-noise limit is prescribed by the min-plus exponent.
+        epsilons = (.2,.1,.05,.025,.0125,.00625,.003125)
+        rates = [finite_noise_failure_rate(eps,good,bad,kappa)
+                 for eps in epsilons]
+        self.assertTrue(all(math.isfinite(rate) for rate in rates))
+        self.assertGreater(rates[2], rates[3])  # explicit non-monotonicity
+        tail_errors = [abs(rate-.32) for rate in rates[2:]]
+        self.assertTrue(all(a>b for a,b in zip(tail_errors,tail_errors[1:])))
+        self.assertAlmostEqual(rates[-1],.32,delta=.005)
 
     def test_mi_saturates_different_reliability_rates(self):
         # The sensor error exponent cannot be recovered from limiting 1 bit.
