@@ -8,7 +8,7 @@ from cdka.causal_cut import (
     total_variation_binary, zero_error_support_obstructions,
     deterministic_minimal_obstructions, physical_configuration_bypass,
     enumerate_repair_schedules, higher_order_compatibility_obstruction,
-    general_safe_decision_value,
+    general_safe_decision_value, action_conditioned_reset_signaling,
 )
 
 
@@ -107,6 +107,15 @@ class MinimalCausalCutTests(unittest.TestCase):
         value,decoder=general_safe_decision_value(joint,A,(ERASED,))
         self.assertEqual(value,1)
         self.assertEqual(decoder[ERASED],2)
+
+    def test_action_choice_is_a_physical_information_channel(self):
+        values=action_conditioned_reset_signaling()
+        self.assertEqual(values[(0,0)],0)
+        self.assertEqual(values[(1,1)],0)
+        self.assertEqual(values[(0,1)],1)
+        self.assertEqual(values[(1,0)],1)
+        # Per fixed action, the repair output is constant, but an
+        # input-contingent physical repair choice creates a 1-bit channel.
 
     def test_invalid_parameters(self):
         for kw in ({'eta':F(2,3)},{'rho':F(-1,2)},{'nu':F(3,4)},
