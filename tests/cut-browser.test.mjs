@@ -24,16 +24,11 @@ test('the standalone causal-cut lab binds every control and renders accessible S
       return presets;
     }
   };
-  try{
-    const html=readFileSync('docs/lab/causal_cut.html','utf8');
-    assert.ok(html.includes('cut-app.mjs'));
-    assert.ok(html.includes('cut.css'));
-    assert.ok(html.includes('cut-core'));
-  }catch(error){
-    // cut-core is imported by the module, not required as a literal
-    // <script> tag in the HTML.
-    if(!String(error.message).includes('cut-core'))throw error;
-  }
+  const html=readFileSync('docs/lab/causal_cut.html','utf8');
+  const app=readFileSync('docs/lab/cut-app.mjs','utf8');
+  assert.ok(html.includes('cut-app.mjs'));
+  assert.ok(html.includes('cut.css'));
+  assert.ok(app.includes("'./cut-core.mjs'"));
   try{
     await import('../docs/lab/cut-app.mjs');
     const chart=node('cut-viz');
