@@ -18,7 +18,7 @@ This file is the operational source of truth. Historical notes are preserved ver
 - Seven standalone knowledge articles: B1, T1–T6 (`docs/articles/`). Each documents definitions, motivation, examples, role in CDKA, candidate implications, limits, and simulator interpretation.
 - Seven client-side interactive experiments (`docs/index.html`, `docs/lab/`), with SVG data visualizations focused on optimization geometry, phase transitions, asymptotic rates, dynamic programming, causal perturbations and replicator attractors.
 - Separate mathematical kernels in `docs/lab/core.mjs`, independent JavaScript unit tests and article/rendering smoke tests in GitHub Actions.
-- Publication workflow included. GitHub Pages activation and confirmed public deployment are tracked separately; do not assume the expected URL is live.
+- Publication workflow executed successfully on 2026-11-01, [run 41349166262](https://github.com/crbazevedo/cdka/actions/runs/41349166262); GitHub reported successful publication at https://crbazevedo.github.io/cdka/. Independent browser-based smoke verification remains pending.
 
 ## In preparation, not established
 

@@ -30,9 +30,9 @@ A local HTTP server is needed for ES module imports; opening `docs/index.html` d
 
 ## GitHub Pages deployment
 
-A Pages workflow is configured in `.github/workflows/pages.yml` to upload the `docs/` directory. **The repository owner must enable GitHub Pages once**, if not already enabled: **Settings → Pages → Build and deployment → Source: GitHub Actions**. This action is not automatically authorized by writing a workflow.
+A Pages workflow is configured in `.github/workflows/pages.yml` to upload the `docs/` directory. GitHub Pages has been enabled with **Source: GitHub Actions**. The [initial Pages deployment](https://github.com/crbazevedo/cdka/actions/runs/41349166262) succeeded on 2026-11-01. Deployments now run automatically when `docs/**` changes on `main`.
 
-Expected Pages URL **only after deployment succeeds**: https://crbazevedo.github.io/cdka/
+Pages URL reported by GitHub after successful deployment: https://crbazevedo.github.io/cdka/
 
 ## Review
 

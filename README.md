@@ -12,7 +12,7 @@ CDKA investigates the coevolution of physical trajectory distributions, actionab
 
 [Open the atlas source](docs/index.html) · [Read seven mini knowledge articles](docs/articles) · [Simulator methodology](docs/lab/README.md)
 
-To run the interactive site locally: `python3 -m http.server 8000 --directory docs` and open `http://localhost:8000/`. The Pages workflow is committed, but the live site URL must be confirmed after GitHub Pages is enabled and deployment succeeds.
+To run the interactive site locally: `python3 -m http.server 8000 --directory docs` and open `http://localhost:8000/`. The CDKA atlas was successfully deployed to **[GitHub Pages](https://crbazevedo.github.io/cdka/)** on 2026-11-01. The [Pages workflow run](https://github.com/crbazevedo/cdka/actions/runs/41349166262) confirms deployment; browser-based external smoke checks remain a separate QA step.
 
 ## Navigate
 
