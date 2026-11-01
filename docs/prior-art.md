@@ -4,7 +4,7 @@
 
 | Prior work | Relevant prior result | CDKA novelty constraint |
 |---|---|---|
-| Fox & Tishby (2016), [Minimum-Information LQG I](https://arxiv.org/abs/1606.01946), [II](https://arxiv.org/abs/1606.01947) | Sequential rate-distortion under control performance constraints; with/without memory | \`min I(H;M) subject to decision performance\` is not independently novel |
+| Fox & Tishby (2016), [Minimum-Information LQG I](https://arxiv.org/abs/1606.01946), [II](https://arxiv.org/abs/1606.01947) | Sequential rate-distortion under control performance constraints; with/without memory | `min I(H;M) subject to decision performance` is not independently novel |
 | Kolchinsky & Wolpert (2018), [Semantic information, autonomous agency and non-equilibrium statistical physics](https://doi.org/10.1098/rsfs.2018.0041) | Causal necessity of correlations for maintaining viability | Do not claim first causal/viability-based semantics |
 | Murray (written 2026-09-07, posted 2026-09-14), [From Predictive State to Viable Action](https://ssrn.com/abstract=7427100) | Exact action-sufficiency via common safe actions, set cover and hypergraph coloring; pairwise conflicts insufficient | Our static B1 and higher-order compatibility are directly anticipated |
 | Doyen & De Lara (2010), [Stochastic viability and dynamic programming](https://doi.org/10.1016/j.sysconle.2010.07.008) | Chance-constrained viable feedback using dynamic programming | Recursive viability with exogenous capacities is not novel |

@@ -13,7 +13,7 @@
 
 - Every 3×3 relation agrees between independent algorithms, including infeasible cases.
 - T1 exact threshold equalities are correct, and equilibrium stability is analytically justified (Jacobian -1).
-- Reproducibility uses only Python standard library and succeeds via \`python -m unittest discover -s tests -v\`.
+- Reproducibility uses only Python standard library and succeeds via `python -m unittest discover -s tests -v`.
 
 ## Exclusions
 
@@ -21,7 +21,7 @@ No stochastic LDP, autonomy experiment, information-metric novelty, or model of 
 
 ## E0.1 — Completed additional checks
 
-- Finite-horizon threshold shift at \`T=ln2\`: 2 and 4.
-- Adding \`u=0\` reduces worst-case memory at \`λ=1\` from one bit to zero.
+- Finite-horizon threshold shift at `T=ln2`: 2 and 4.
+- Adding `u=0` reduces worst-case memory at `λ=1` from one bit to zero.
 - Invalid horizon and action parameters rejected.
 - Total local baseline unit tests: **11 passing**.

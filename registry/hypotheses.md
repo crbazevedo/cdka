@@ -1,6 +1,6 @@
 # CDKA hypothesis and proof-obligation register
 
-**Conventions:** \`baseline\` = known mathematical fact; \`illustration\` = constructed example, no novelty; \`candidate\` = open proof obligation; \`falsified\` = counterexample; \`original-verified\` requires proof + independent prior-art audit.
+**Conventions:** `baseline` = known mathematical fact; `illustration` = constructed example, no novelty; `candidate` = open proof obligation; `falsified` = counterexample; `original-verified` requires proof + independent prior-art audit.
 
 | ID | Status | Hypothesis / question | Decisive next test |
 |---|---|---|---|
