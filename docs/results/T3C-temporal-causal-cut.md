@@ -157,6 +157,18 @@ python -m experiments.causal_cut_sweep
 
 Source: \`cdka/causal_cut.py\`, \`tests/test_causal_cut.py\`.
 
+## 6B. A higher-order obstruction invisible to pairwise checks
+
+There is a separate and equally minimal **three-context** obstruction connecting B1's Dowker geometry to the actual physical information channel. Let
+
+\[
+A_0=\{a,b\},\quad A_1=\{b,c\},\quad A_2=\{a,c\}.
+\]
+
+Every pair of contexts has a common safe action. But \(A_0\cap A_1\cap A_2=\varnothing\). If repair collapses all three contexts to a single terminal symbol \(C=\bot\), the terminal decoder cannot guarantee safety; under a uniform prior its best success probability is \(2/3\). The full support criterion rejects it, whereas every pairwise compatibility check passes.
+
+The independent exact oracle \`higher_order_compatibility_obstruction()\` verifies this construction. This is not a novel complex-theoretic result; it demonstrates why **higher-order intersections** must be considered when an organizational transition collapses multiple contexts into one observable class.
+
 ## 7. What this does NOT prove
 
 - No original mathematical theorem: Bayes binary testing, contraction, finite-state controllers and viability are established fields.

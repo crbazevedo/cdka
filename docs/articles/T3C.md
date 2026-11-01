@@ -55,6 +55,11 @@ Com η=ν=0 e ρ=1, qualquer reparo sem proteção destrói o bit. Há um limiar
 
 Com ρ=1/2, η=ν=0, n=3 e B=3, a probabilidade é 56,25%. Com B=4 sobe para 62,5%; B=5, 75%; B=6, 100%.
 
+### Um segundo contraexemplo: compatibilidade em pares não basta
+
+Considere três contextos com ações seguras {a,b}, {b,c} e {a,c}. Todos os pares compartilham uma ação. Mesmo assim, nenhuma intervenção serve para os três contextos simultaneamente. Se um reparo os torna indistinguíveis, o melhor sucesso sob distribuição uniforme é 2/3, e o controle com garantia absoluta é impossível. Essa é uma estrutura de compatibilidade de ordem superior, relacionada a complexos de Dowker.
+
+
 ## O que o simulador revela
 
 - Mapa de regimes de viabilidade versus número de reparos e orçamento.

@@ -32,6 +32,8 @@ Physical organization and available interventions → realizable trajectory laws
 - Exact Fraction arithmetic, independent terminal decoder enumeration, all two-bit deterministic sensor/reset map enumeration, 378 parameter cases, and resource schedule enumeration in `cdka/causal_cut.py`, `tests/test_causal_cut.py`.
 - [Complete proof and limitations](docs/results/T3C-temporal-causal-cut.md) · [synthesis strategy](docs/strategy/finite-counterexample-synthesis-v1.md) · [miniarticle](docs/articles/T3C.md) · [interactive experiment](docs/lab/causal_cut.html). **Not original**: binary Bayes testing, Dobrushin contraction, Blackwell, finite-state POMDPs.
   
+- **Corte de ordem superior:** três contextos com conjuntos de ações {a,b}, {b,c}, {a,c} passam em todos os testes de compatibilidade aos pares, mas não admitem nenhuma ação universal após a memória ser colapsada. Sucesso ótimo para prior uniforme = 2/3. Verificado por `higher_order_compatibility_obstruction()`; antecedente combinatório conhecido.
+
 ## Knowledge Atlas
 
 - Seven canonical miniarticles B1 and T1–T6, plus the standalone T3.C causal-cut miniarticle and interactive experiment, at https://crbazevedo.github.io/cdka/.

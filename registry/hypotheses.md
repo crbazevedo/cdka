@@ -15,6 +15,8 @@
 | T3.B | Derived surrogate with fixed physical frame | Effective failure exponent min{Jgood,Jbad+κ}; optimum sensor/action resource balance equalizes competing exponents | Couple sensing/actuation to autonomous maintenance; audit reliability-function antecedents |
 | T3.A | Proved counterexample, known type | Restricted causal authority yields strictly positive KL cost gap | Couple authority with information/repair budgets nontrivially |
 | T3.C / T4.B | Exact finite counterexample, known toolkit | Perfect early information + available repaired actuation + repair budget can fail as a **joint physical policy** due to a compulsory information cut; exact TV/repair-horizon formula and a configuration-state bypass | Move from precommitted repairs to endogenous self-maintenance and physically created information channels; audit finite-state POMDP literature |
+| T3.C.H | Exact finite higher-order illustration | Three worlds all pairwise action-compatible can be jointly incompatible after physical memory collapse; optimum 2/3 for a uniform prior | Extend support hypergraph synthesis with dynamically evolving observation classes |
+
 | T3 | Open central | Joint information, intervention and maintenance feasibility is nonseparable in a physically grounded class | Prove a bound exceeding marginal controls |
 | T4.A | Known, proved | Controlled lumpability implies exact finite-horizon viability quotient | Find minimal weaker task-relative condition |
 | T4 | Open central | Endogenous sensor/actuator damage and repair change recursive sufficient information | Finite controlled-process theorem/counterexample |

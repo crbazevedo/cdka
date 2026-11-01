@@ -28,6 +28,13 @@
 
 A1 is the first *positive* counterexample because it is exact, independently enumerable, physically interpretable and refutable. C2 is its mandatory adversarial test: it exposes whether our state representation is complete.
 
+## Higher-order compatibility class — a second verified witness
+
+For three worlds with safe-action sets {a,b}, {b,c}, {a,c}, every pair is compatible, while no action is valid for the triple. A compulsory repair maps the entire three-world support to one final memory symbol. Pairwise tests all pass, but no zero-error controller exists; with equal prior the maximal success probability is 2/3.
+
+This construction is a distinct **higher-order hypergraph incompatibility** mechanism, not simply the binary all-or-nothing memory case. It motivates testing full intersections rather than pairwise overlaps. The exact oracle is `higher_order_compatibility_obstruction()` in `cdka/causal_cut.py`.
+
+
 ## Separate analysis instruments (do not conflate them)
 
 **Logical / algebraic**
