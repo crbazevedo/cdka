@@ -21,10 +21,11 @@ jobs:
           node --check docs/lab/cut-core.mjs
           node --check docs/lab/cut-app.mjs
           node --check tests/cut-visual.test.mjs
+          node --check tests/cut-browser.test.mjs
           node --check tests/visual-lab.test.mjs
           node --check tests/atlas-render.test.mjs
       - name: Verify all simulator kernels
-        run: node --test tests/visual-lab.test.mjs tests/atlas-render.test.mjs tests/cut-visual.test.mjs
+        run: node --test tests/visual-lab.test.mjs tests/atlas-render.test.mjs tests/cut-visual.test.mjs tests/cut-browser.test.mjs
       - name: Verify canonical article synchronization
         run: node scripts/sync-articles.mjs --check
       - name: Check atlas completeness
