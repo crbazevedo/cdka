@@ -11,6 +11,8 @@
 | T2.A | Known machinery, independently derived | \(J_T>\Delta U\) at finite deadline, scalar quadrature, OU benchmark | Test fixed-time escape and numerical edge cases |
 | T2.B | Derived saddle-node asymptotics | \(\Delta U\sim C\delta^{3/2}\), fixed-T \(J_T\sim\delta/(\sqrt3T)\) | Validate parameter and noise crossover limits |
 | T2.C | Derived scalar scaling limit, not original | \(J_T \sim \delta^{3/2}3^{-1/4}\mathcal F(3^{1/4}T\sqrt\delta)\) at fixed positive scaled time | Extend to action-compatible knowledge under resource constraints |
+| T2.D | Proved modeled counterfactual, known toolkit | Common initial state/failure/horizon yields 0/1/infeasible low-noise safe-action code regimes | Add endogenous actuator availability and non-asymptotic risk |
+| T3.B | Derived surrogate with fixed physical frame | Effective failure exponent min{Jgood,Jbad+κ}; optimum sensor/action resource balance equalizes competing exponents | Couple sensing/actuation to autonomous maintenance; audit reliability-function antecedents |
 | T3.A | Proved counterexample, known type | Restricted causal authority yields strictly positive KL cost gap | Couple authority with information/repair budgets nontrivially |
 | T3 | Open central | Joint information, intervention and maintenance feasibility is nonseparable in a physically grounded class | Prove a bound exceeding marginal controls |
 | T4.A | Known, proved | Controlled lumpability implies exact finite-horizon viability quotient | Find minimal weaker task-relative condition |

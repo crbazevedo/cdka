@@ -54,3 +54,13 @@
 - [T1.B — rate–distortion](../results/T1-soft-information.md)
 
 **Methodological rule:** separate *known instrument*, *newly established example*, *conjectured extension*, and *proven original theorem*. Numerical convergence supports a conjecture, not a proof.
+
+
+## Newly integrated mathematical bridges
+
+- [T2.D — common-state causal 0/1/infeasible information phases](../results/T2-causal-information-phases.md)
+- [T3.B — reliability exponents and shared sensing/actuation allocation](../results/T3-fixed-frame-reliability-allocation.md)
+
+**Causal invariant:** hold initial state, failure event, horizon and policy authority fixed across competing actions. Changing the initial equilibrium with the control is a parameter scan, not a controlled counterfactual.
+
+**Rare-event reliability:** the limiting mutual information of a near-perfect sensor can be identical (one bit) for many different error exponents. The relevant algebra is min-plus log-sum-exp, not Shannon information alone.
