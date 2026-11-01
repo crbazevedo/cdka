@@ -12,7 +12,7 @@ test('B1: all 512 3x3 relations agree with independent partition encoder',()=>{
       for(let assignments=0;assignments<codes**3;assignments++){
         const a=Array.from({length:3},(_,i)=>Math.floor(assignments/codes**i)%codes);
         if(Array.from(new Set(a)).every(c=>rows[0].some((_,j)=>
-          a.every((which,i)=>which!==c||rows[i][j])))return new Set(a).size;
+          a.every((which,i)=>which!==c||rows[i][j]))))return new Set(a).size;
       }
     }
     return null;

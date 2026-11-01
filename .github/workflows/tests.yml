@@ -18,6 +18,7 @@ jobs:
           node --check docs/lab/core.mjs
           node --check docs/lab/articles.mjs
           node --check docs/lab/app.mjs
+          node --check tests/visual-lab.test.mjs
       - name: Verify all simulator kernels
         run: node --test tests/visual-lab.test.mjs
       - name: Check atlas completeness
