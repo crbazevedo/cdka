@@ -38,6 +38,10 @@ python -m experiments.threshold_sweep
 
 The initial result is a **teaching/verification lemma**, not a claim of originality: a smoothly parameterized, globally stable system can exhibit discontinuous changes in the minimum information required for robust action selection.
 
+## Knowledge article workflow
+
+The canonical content is maintained in `docs/lab/articles.mjs` and generates the seven Markdown miniarticles. Use `npm run articles:write` after edits; `npm test` checks that all articles, mathematical kernels and SVG renders remain synchronized and reproducible. New research results should follow [the article/visualization contract](docs/lab/ARTICLE_STANDARD.md).
+
 ## Research principles
 
 1. Separate possibility, predictability, influence, action sufficiency, counterfactual knowledge, control, viability, and autonomy.

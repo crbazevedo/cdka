@@ -22,6 +22,8 @@ jobs:
           node --check tests/atlas-render.test.mjs
       - name: Verify all simulator kernels
         run: node --test tests/visual-lab.test.mjs tests/atlas-render.test.mjs
+      - name: Verify canonical article synchronization
+        run: node scripts/sync-articles.mjs --check
       - name: Check atlas completeness
         run: |
           python - <<'PY'

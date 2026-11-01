@@ -1,0 +1,13 @@
+{
+  "name": "cdka-research-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Scientific articles and interactive visualizations for CDKA",
+  "scripts": {
+    "articles:write": "node scripts/sync-articles.mjs",
+    "articles:check": "node scripts/sync-articles.mjs --check",
+    "test:lab": "node --test tests/visual-lab.test.mjs tests/atlas-render.test.mjs",
+    "test": "npm run articles:check && npm run test:lab"
+  }
+}
