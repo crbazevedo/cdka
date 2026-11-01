@@ -8,6 +8,12 @@ CDKA investigates the coevolution of physical trajectory distributions, actionab
 
 **Scientific discipline:** Known results and rediscoveries must be explicitly distinguished from new proven theorems. No novelty or general account of agency has yet been established.
 
+## Interactive research atlas
+
+[Open the atlas source](docs/index.html) · [Read seven mini knowledge articles](docs/articles) · [Simulator methodology](docs/lab/README.md)
+
+To run the interactive site locally: `python3 -m http.server 8000 --directory docs` and open `http://localhost:8000/`. The Pages workflow is committed, but the live site URL must be confirmed after GitHub Pages is enabled and deployment succeeds.
+
 ## Navigate
 
 - [Current research state](STATUS.md)

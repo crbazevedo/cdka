@@ -13,6 +13,13 @@ This file is the operational source of truth. Historical notes are preserved ver
 - - **E0.1:** finite decision horizon shifts T1 thresholds by `B_T=(3/2)/(1-exp(-T))`; adding a neutral action can lower required memory. Verified by three new tests.\n- Independent finite checks compare set-cover enumeration with partition enumeration over **all 512 binary 3-world × 3-action relations**.
 - B1/T1 are not claimed as original scientific contributions.
 
+## Knowledge atlas
+
+- Seven standalone knowledge articles: B1, T1–T6 (`docs/articles/`). Each documents definitions, motivation, examples, role in CDKA, candidate implications, limits, and simulator interpretation.
+- Seven client-side interactive experiments (`docs/index.html`, `docs/lab/`), with SVG data visualizations focused on optimization geometry, phase transitions, asymptotic rates, dynamic programming, causal perturbations and replicator attractors.
+- Separate mathematical kernels in `docs/lab/core.mjs`, independent JavaScript unit tests and article/rendering smoke tests in GitHub Actions.
+- Publication workflow included. GitHub Pages activation and confirmed public deployment are tracked separately; do not assume the expected URL is live.
+
 ## In preparation, not established
 
 - **T2:** relation between large-deviation failure barriers and the action-compatibility cover; basic finite corollary drafted, novelty requires dynamic extensions.
