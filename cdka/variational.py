@@ -165,3 +165,36 @@ def saddle_normal_form_action(tau: float, n: int=2048) -> float:
         else:hi=md
     E=(lo+hi)/2
     return .5*simpson(lambda z:sqrt(g(z)**2+4*E),-1,1,n)+2/3-E*tau
+
+
+def fixed_frame_action(T: float, u: float, initial: float=-1.1,
+                       target: float=0.0, n: int=2048) -> float:
+    """Endpoint action with the SAME physical initial and target across tilts.
+
+    Restricts to intervals crossing at least one stationary point; then the
+    classical monotone finite-time minimizer has positive conserved energy.
+    Useful for a valid controlled counterfactual comparison, unlike
+    action-dependent equilibrated initial conditions.
+
+    This implementation covers initial=-1.1,target=0,u in [-.2,.2],
+    and the right-side reflected case initial=+1.1,target=0.
+    """
+    if T<=0 or initial==target or not all(map(isfinite,(T,u,initial,target))):
+        raise ValueError("Finite positive T and distinct finite endpoints required")
+    lo,hi=sorted((initial,target))
+    eqs=quartic_equilibria(u)
+    if not any(lo<e<hi for e in eqs):
+        raise ValueError("Range must cross equilibrium for positive-energy quadrature")
+    def timer(E):
+        return simpson(lambda x:1/sqrt(quartic_gradient(x,u)**2+4*E),lo,hi,n)
+    low=1e-14;high=1
+    while timer(high)>T:high*=4
+    if timer(low)<T:raise ValueError("Horizon too large for fixed resolution")
+    for _ in range(52):
+        mid=(low+high)/2
+        if timer(mid)>T:low=mid
+        else:high=mid
+    E=(low+high)/2
+    du=quartic_potential(target,u)-quartic_potential(initial,u)
+    q=simpson(lambda x:sqrt(quartic_gradient(x,u)**2+4*E),lo,hi,n)
+    return q/2+du/2-E*T

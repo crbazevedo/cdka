@@ -94,4 +94,29 @@ class CriticalScalingTests(unittest.TestCase):
             self.assertLess(abs(saddle_normal_form_action(tau)*tau-1),.09)
 
 
+class CausalFrameTests(unittest.TestCase):
+    def test_fixed_initial_symmetric_counterfactual(self):
+        from cdka.variational import fixed_frame_action
+        for u in (-.2,0,.2):
+            jl=fixed_frame_action(3,u,initial=-1.1,target=0)
+            jr=fixed_frame_action(3,-u,initial=1.1,target=0)
+            self.assertAlmostEqual(jl,jr,places=9)
+
+    def test_fixed_causal_frame_information_phases(self):
+        from cdka.variational import fixed_frame_action
+        from cdka.finite import minimum_action_cover
+        controls=(-.2,0,.2)
+        jl=[fixed_frame_action(3,u,initial=-1.1,target=0) for u in controls]
+        jr=[fixed_frame_action(3,u,initial=1.1,target=0) for u in controls]
+        self.assertTrue(jl[0]>jl[1]>jl[2])
+        self.assertTrue(jr[0]<jr[1]<jr[2])
+        for c,k in ((.2,1),(.3,2),(.5,None)):
+            safe={"L":{u for u,rate in zip(controls,jl) if rate>c},
+                  "R":{u for u,rate in zip(controls,jr) if rate>c}}
+            cover=minimum_action_cover(safe)
+            self.assertEqual(None if cover is None else len(cover),k)
+        self.assertAlmostEqual(jl[1],.269641458,delta=.002)
+        self.assertAlmostEqual(jl[0],.460201393,delta=.002)
+
+
 if __name__=='__main__':unittest.main()
