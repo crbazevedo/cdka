@@ -119,4 +119,34 @@ class CausalFrameTests(unittest.TestCase):
         self.assertAlmostEqual(jl[0],.460201393,delta=.002)
 
 
+class SharedBudgetTests(unittest.TestCase):
+    def test_optimum_equalizes_competing_error_exponents(self):
+        from cdka.causal_tradeoff import optimize_fixed_frame_budget
+        for budget in (.025,.1,.2):
+            v=optimize_fixed_frame_budget(budget,T=3)
+            self.assertGreater(v.actuation,0)
+            self.assertLess(v.actuation,budget)
+            self.assertAlmostEqual(v.good_action_rate,
+                                   v.wrong_action_rate+v.sensing_error_rate,places=6)
+
+    def test_optimum_vs_independent_grid(self):
+        from cdka.causal_tradeoff import optimize_fixed_frame_budget
+        from cdka.variational import fixed_frame_action
+        budget=.12;v=optimize_fixed_frame_budget(budget,T=3)
+        for i in range(61):
+            a=budget*i/60
+            g=fixed_frame_action(3,-a,n=512)
+            b=fixed_frame_action(3,+a,n=512)
+            objective=min(g,b+2*(budget-a))
+            self.assertGreaterEqual(v.effective_failure_rate+1e-9,objective)
+
+    def test_small_budget_share_depends_on_deadline_sensitivity(self):
+        from cdka.causal_tradeoff import optimize_fixed_frame_budget,local_reliability_sensitivity
+        for T in (1,3,5):
+            q=local_reliability_sensitivity(T)
+            result=optimize_fixed_frame_budget(.005,T=T)
+            predicted=2/(2+2*q)
+            self.assertAlmostEqual(result.actuation/result.budget,predicted,delta=.01)
+
+
 if __name__=='__main__':unittest.main()
