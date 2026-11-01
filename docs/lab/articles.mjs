@@ -282,8 +282,8 @@ export const ARTICLES = [
     "simulator": "Mude estado inicial e acoplamentos; acompanhe o campo de direções, a separatriz aproximada, a convergência aos atratores e o acúmulo das razões de frequência.",
     "sources": [
       [
-        "Dinâmica replicadora e feedback ecoevolutivo",
-        "https://doi.org/10.1016/j.jtbi.2020.110382"
+        "Weitz et al. (2016), replicador com feedback ambiental",
+        "https://doi.org/10.1073/pnas.1604096113"
       ]
     ]
   }

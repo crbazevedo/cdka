@@ -192,11 +192,12 @@ for(let y=0;y<ny;y++)for(let x=0;x<nx;x++){
  const fill=k===null?'#edd3c9':k===1?'#dceadb':'#eadbbd';
  cells+='<rect x="'+(L+x*pw/nx)+'" y="'+(Top+(ny-y-1)*ph/ny)+'" width="'+(pw/nx+0.1)+'" height="'+(ph/ny+0.1)+'" fill="'+fill+'"/>';
 }
-const curX=L+pw*s.lambda/4.5,curY=Top+ph*(1-(s.infinite?6:.2+clamp(s.horizon-.2,0,5.8))/6);
+const curX=L+pw*s.lambda/4.5;
 cells+='<line x1="'+L+'" y1="'+(Top+ph)+'" x2="'+(W-R)+'" y2="'+(Top+ph)+'" stroke="#9aaa9e"/>';
 for(let i=0;i<=4;i++){const px=L+pw*i/4;cells+='<text class="axis-text" x="'+px+'" y="'+(H-11)+'" text-anchor="middle">'+fmt(4.5*i/4,1)+'</text>';}
 for(let i=0;i<=4;i++){const py=Top+ph*i/4;cells+='<text class="axis-text" x="'+(L-8)+'" y="'+(py+4)+'" text-anchor="end">'+fmt(6-5.8*i/4,1)+'</text>';}
-cells+='<circle cx="'+curX+'" cy="'+(s.infinite?Top:Top+ph*(6-s.horizon)/5.8)+'" r="6" fill="'+COLOR.dark+'" stroke="white" stroke-width="2"/>';
+if(s.infinite)cells+='<text x="'+(W-R-8)+'" y="15" text-anchor="end" font-size="10" fill="'+COLOR.moss+'">T=∞: fora da escala exibida</text>';
+else cells+='<circle cx="'+curX+'" cy="'+(Top+ph*(6-s.horizon)/5.8)+'" r="6" fill="'+COLOR.dark+'" stroke="white" stroke-width="2"/>';
 cells+='<text class="axis-text" x="'+(L+pw/2)+'" y="'+(H-1)+'" text-anchor="middle">Acoplamento λ</text>';
 const traj=[];
 for(const w of [-1,1]) {
