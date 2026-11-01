@@ -14,6 +14,12 @@ CDKA investigates the coevolution of physical trajectory distributions, actionab
 
 To run the interactive site locally: `python3 -m http.server 8000 --directory docs` and open `http://localhost:8000/`. The CDKA atlas was successfully deployed to **[GitHub Pages](https://crbazevedo.github.io/cdka/)** on 2026-11-01. The [Pages workflow run](https://github.com/crbazevedo/cdka/actions/runs/41349166262) confirms deployment; browser-based external smoke checks remain a separate QA step.
 
+## Mathematical proof program
+
+[Proof Engine — strategy and proof gates](docs/strategy/proof-engine-v1.md) · [Minimal mathematical instrument index](docs/strategy/instrument-index.md) · [Finite-time action derivation](docs/results/T2-time-constrained-action.md) · [Critical scaling proof](docs/results/T2-critical-collapse-proof.md) · [Restricted causal authority](docs/results/T3-causal-authority-gap.md) · [Recursive viability quotient](docs/results/T4-controlled-lumpability.md)
+
+The new classical variational and information instruments have independent standard-library Python checks in `cdka/variational.py` and `tests/test_variational.py`. They are not claims of original CDKA theorems.
+
 ## Navigate
 
 - [Current research state](STATUS.md)

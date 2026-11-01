@@ -1,45 +1,43 @@
 # CDKA — Research State
 
-**Snapshot:** 2026-11-01 · **Stage:** M0/M1 bootstrap · **Scientific status:** exploratory, no original theorem established.
+**Snapshot:** 2026-11-01 · **Active gate:** G1 analytic foundations → G2 endogenous capability constraints. **Original theorem claims:** none verified.
 
-This file is the operational source of truth. Historical notes are preserved verbatim under `docs/corpus/`; claims in those notes may not yet have undergone a complete prior-art audit.
+This is the operational source of truth. Historical notebooks under [docs/corpus](docs/corpus) remain preserved separately. Re-deriving a classical theorem in CDKA's language is not, by itself, an original contribution.
 
-## Completed and reproducible
+## Working scientific chain
 
-- Repository created and the pre-existing v0.1/v0.2 notebooks and v1.0 program archived.
-- Ontology distinguishes possibility, prediction, influence, informed control, action sufficiency, counterfactual knowledge, viability, and operational autonomy.
-- **B1 (known baseline):** exact finite-state action-code cardinality is minimum set cover; worst-case fixed-width bits = ceil(log2 k). Not Shannon mutual information.
-- **T1 (elementary example):** for the globally stable ODE `dx/dt=-x+lambda*w+u`, `w,u∈{-1,+1}`, `x(0)=0`, safety `|x(t)|≤1.5` for all t≥0, minimum decision-code cardinality is 1 (λ≤0.5), 2 (0.5<λ≤2.5), or infeasible (λ>2.5). Thus decision-memory thresholds need not coincide with attractor bifurcations.
-- - **E0.1:** finite decision horizon shifts T1 thresholds by `B_T=(3/2)/(1-exp(-T))`; adding a neutral action can lower required memory. Verified by three new tests.\n- Independent finite checks compare set-cover enumeration with partition enumeration over **all 512 binary 3-world × 3-action relations**.
-- B1/T1 are not claimed as original scientific contributions.
+Physical organization and available interventions → realizable trajectory laws → finite-time failure action → safe-action compatibility → information needed for choices → future organization/repair. See [Proof Engine v1.0](docs/strategy/proof-engine-v1.md) and [minimum instrument index](docs/strategy/instrument-index.md).
 
-## Knowledge atlas
+## Demonstrated and checked — known theoretical instruments
 
-- Seven standalone knowledge articles: B1, T1–T6 (`docs/articles/`). Each documents definitions, motivation, examples, role in CDKA, candidate implications, limits, and simulator interpretation.
-- Seven client-side interactive experiments (`docs/index.html`, `docs/lab/`), with SVG data visualizations focused on optimization geometry, phase transitions, asymptotic rates, dynamic programming, causal perturbations and replicator attractors.
-- Separate mathematical kernels in `docs/lab/core.mjs`, independent JavaScript unit tests and article/rendering smoke tests in GitHub Actions.
-- Publication workflow executed successfully on 2026-11-01, [run 41349166262](https://github.com/crbazevedo/cdka/actions/runs/41349166262); GitHub reported successful publication at https://crbazevedo.github.io/cdka/. Independent browser-based smoke verification remains pending.
+- **B1:** fixed-size zero-error decision code equals minimum safe-action set cover; exhaustive 512 binary 3×3 relations checked against independent partition enumeration.
+- **T1:** information threshold without a physical attractor bifurcation; time-horizon and actuator-repertoire variants. [Proof](docs/results/T1-threshold.md).
+- **T1.B:** under average binary Hamming risk δ, Shannon mutual information required is \(1-h_2(\delta)\) rather than a universal hard 1-bit requirement. [Explanation](docs/results/T1-soft-information.md).
+- **T2.A:** exact *finite-time* Freidlin–Wentzell action for a quartic gradient by Euler–Lagrange first integral and scalar quadrature. \(\Delta U=0.25\) at u=0, \(J_1\approx0.393877\). An OU reachability Gramian provides an independent exact benchmark. [Derivation](docs/results/T2-time-constrained-action.md).
+- **T2.B:** saddle-node barrier \(\Delta U\sim[4/(3\,3^{1/4})]\delta^{3/2}\), while fixed-deadline action \(J_T\sim\delta/(\sqrt3 T)\); critical nonuniformity cautions against blind Eyring–Kramers extrapolation. [Proof](docs/results/T2-saddle-node-scaling.md).
+- **T2.C:** normalized action-collapse for fixed positive scaled time \(\tau=3^{1/4}T\sqrt\delta\), via 1D implicit-quadrature continuity; numerical convergence verified. [Proof](docs/results/T2-critical-collapse-proof.md). This is a classical-model result; prior-art novelty not established.
+- **T3.A:** exact restricted-actuator KL gap: physically realizable intervention cost can strictly exceed the universal binary-event data-processing bound. [Proof](docs/results/T3-causal-authority-gap.md). This is a known informational phenomenon.
+- **T4.A:** controlled lumpability supplies a sufficient condition for a compressed representation to preserve recursive viability DP. One-step action sufficiency does not guarantee horizon sufficiency. [Proof](docs/results/T4-controlled-lumpability.md). Known principle.
+- **Reproducibility:** \`cdka/finite.py\`, \`cdka/variational.py\`, \`tests/test_finite.py\`, \`tests/test_variational.py\`, GitHub Actions.
 
-## In preparation, not established
+## Knowledge Atlas
 
-- **T2:** relation between large-deviation failure barriers and the action-compatibility cover; basic finite corollary drafted, novelty requires dynamic extensions.
-- **T3:** joint feasibility frontier for information, trajectory intervention, and organization-maintenance budgets.
-- **T4:** recursively sufficient information when sensing, action authority, resources and repair evolve.
-- **T5:** causal criteria to distinguish internal autonomy from external replay.
-- **T6:** replicator dynamics as functional distributed memory, conditional on earlier gates.
+- Seven miniarticles B1 and T1–T6 with seven interactive mathematical visualizations at https://crbazevedo.github.io/cdka/.
+- The atlas explains research status, physical limits, numerical assumptions, and next questions. [Article and visual contract](docs/lab/ARTICLE_STANDARD.md).
+- Public deployment and CI have succeeded; external browser/mobile QA is tracked by [issue #8](https://github.com/crbazevedo/cdka/issues/8).
 
-## Blocking questions
+## Unresolved / potentially original
 
-1. Can any extension of T1/T2 escape straightforward composition of known viability, rate-distortion and large-deviation results?
-2. Which structural constraints make the information/control/repair feasibility region nonseparable?
-3. Can organizational boundaries and maintenance criteria be operationally specified without presupposing an externally assigned purpose?
-4. Which causal interventions identify self-maintenance beyond observationally matched external replay?
+1. **T2→information:** build the *time-constrained physical* compatibility relation \(R_{T,c}(w,a)\) from bistable rates, including observation and action constraints. Show code threshold surfaces and exact boundary behavior; a plain FW+set-cover composition is NOT novelty.
+2. **T3 joint authority and resources:** prove or refute a **nonseparable** feasibility bound for sensing, acting, and sustaining the mechanisms that supply those capacities. Compare to constrained KL control and dual control.
+3. **T4 recursive knowledge:** incorporate endogenous deterioration/recovery of sensors, memory and actuators; contrast minimal one-shot code with implementable recursive information states and existing POMDP/viability theorems.
+4. **T5 causal autonomy:** specify identifiable mechanism interventions and constitutive viability criteria robust to external replay and boundary choice.
+5. **T6 evolutionary extension:** replicator-mediated memory of selected mechanisms remains deferred pending a demonstrated causal regulatory role.
 
-## Next research gate — M0/M1
+## Immediate tactical gate
 
-- Audit prior art and maintain exact claim-to-source mapping.
-- Formalize observation-limited and horizon-dependent action sufficiency.
-- Identify a small model with shared sensing/actuation/repair resources for T3 and search for a nontrivial lower bound.
-- Ensure the deterministic examples and negative controls remain reproducible.
+**G1.1:** use analytic \(J_T(w,a)\) to construct explicit safe-action matrices for the left and right metastable wells; determine time/risk code thresholds, including \(J_T=c\) ambiguity and small-noise conditions. Produce a proof, counterexamples, and a diagram.
 
-**Evidence rule:** Passing numerical tests supports implementation correctness on tested cases; it does not prove general theorems or novelty.
+**G2.1:** construct the smallest finite model with endogenously variable observation and actuation plus repair; enumerate actual admissible policies and contrast joint feasibility with separately sufficient information/action budgets. A successful counterexample or impossibility proof is a better contribution than a large simulation.
+
+**Scientific rule:** Code passing tests verifies implementations on test cases, not general theorems or scientific novelty. Record the latter separately.
