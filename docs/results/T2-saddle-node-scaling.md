@@ -1,6 +1,6 @@
 # T2.B — Saddle-node criticality: two action exponents and a crossover
 
-**Status:** elementary saddle-node normal-form derivations and checked asymptotics; a proposed joint scaling-limit theorem remains **to be formally proved**. No claim of first discovery.
+**Status:** elementary saddle-node normal-form derivations and checked asymptotics; the scalar fixed-scaled-time collapse now has a **direct quadrature proof** in [T2.C](T2-critical-collapse-proof.md); higher-dimensional generalizations remain open. No claim of first discovery.
 
 ## Why this matters
 
@@ -64,7 +64,7 @@ This is a different exponent from the quasipotential \(\Delta U_\delta\sim C\del
 
 **Important:** Both unnormalized actions converge to zero as \(\delta\downarrow0\). The noncommutativity concerns their *normalized asymptotics and scaling regimes*, not the limits of the two unnormalized numbers.
 
-## C1 — Candidate universal scaling-collapse theorem
+## C1 — Scalar scaling collapse via quadrature
 
 Introduce scaled coordinates and time:
 \[
@@ -83,7 +83,7 @@ The normalized limiting variational problem has endpoint conditions \(z(0)=-1,z(
 \mathcal F(\tau)=\frac14\inf_{z}
 \int_0^\tau[z'+1-z^2]^2ds.
 \]
-**Candidate, with proof of Gamma-convergence/compactness still required:**
+**Established in the scalar model by the direct implicit-quadrature argument of [T2.C](T2-critical-collapse-proof.md):**
 \[
 \boxed{
 J_{T(\delta)}(u_c-\delta)
@@ -96,14 +96,14 @@ in a scaling window where \(\tau\) tends to a strictly positive finite limit. Th
 \mathcal F(\tau)\sim1/\tau\quad(\tau\downarrow0),\qquad
 \mathcal F(\tau)\to4/3\quad(\tau\uparrow\infty).
 \]
-These recover the fixed-deadline \(\delta/T\) cost and the infinite-time \(\delta^{3/2}\) quasipotential. The equality above is an **unproved asymptotic candidate**; don't extrapolate uniformity outside compact positive \(\tau\) without proof.
+These recover the fixed-deadline \(\delta/T\) cost and the infinite-time \(\delta^{3/2}\) quasipotential. The fixed-positive-scaled-time limit follows by the scalar quadrature proof. Uniformity as \(\tau\to0\) or \(\tau\to\infty\) and multivariate extensions remain open.
 
 ## Methodology and next proof obligations
 
 1. **Local algebra:** compute exact cubic stationary roots and the saddle-node Taylor normal form.
 2. **Variational bound:** use Cauchy–Schwarz and straight-line construction for the fixed-\(T\) law.
 3. **Hamiltonian reduction:** use \(E=(\dot x^2-U'^2)/4\) and time quadrature for normalized action.
-4. **Critical uniformity:** prove convergence of minimizers under rescaling (compactness, endpoint motion and growth control), or produce a counterexample.
+4. **Critical uniformity:** use the scalar time/energy quadrature and implicit inverse continuity (T2.C); reserve Gamma-convergence for non-reducible settings.
 5. **Information bridge:** treat the resulting \(J_T(u,w)\) as risk exponents, form compatible-action hypergraphs, and identify where control-code cardinality jumps. Do not label a physical saddle-node an information transition automatically.
 
 ## Benchmark
