@@ -16,6 +16,13 @@
 
 The site is implemented using native browser HTML/CSS/SVG and ES modules. No analytics, cookies, tracking, third-party fonts, JavaScript libraries or external graph services are required.
 
+## Additional research extension: T3.C / T4.B
+
+- [Finite causal-cut laboratory](causal_cut.html): resource×horizon heatmap, viability curves, terminal information loss, and an adversarial actuator-configuration memory channel.
+- [Knowledge article](../articles/T3C.md), [exact proof](../results/T3C-temporal-causal-cut.md), [backward construction strategy](../strategy/finite-counterexample-synthesis-v1.md).
+- JS formulas in `cut-core.mjs` are cross-checked with exact-rational Python oracles in `cdka/causal_cut.py`.
+- The original seven canonical articles are generated from `articles.mjs`; the new T3.C page is a self-contained extension.
+
 ## Local execution
 
 From the repository root:
@@ -23,7 +30,7 @@ From the repository root:
 ```bash
 python3 -m http.server 8000 --directory docs
 # Then open http://localhost:8000/
-node --test tests/visual-lab.test.mjs tests/atlas-render.test.mjs
+node --test tests/visual-lab.test.mjs tests/atlas-render.test.mjs tests/cut-visual.test.mjs
 ```
 
 A local HTTP server is needed for ES module imports; opening `docs/index.html` directly with `file://` may fail due to browser module restrictions.

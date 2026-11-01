@@ -10,7 +10,7 @@ CDKA investigates the coevolution of physical trajectory distributions, actionab
 
 ## Interactive research atlas
 
-[Open the atlas source](docs/index.html) · [Read seven mini knowledge articles](docs/articles) · [Simulator methodology](docs/lab/README.md)
+[Open the published atlas](https://crbazevedo.github.io/cdka/) · [T3.C: interactive causal-cut experiment](https://crbazevedo.github.io/cdka/lab/causal_cut.html) · [Open the atlas source](docs/index.html) · [Read seven mini knowledge articles](docs/articles) · [Simulator methodology](docs/lab/README.md)
 
 To run the interactive site locally: `python3 -m http.server 8000 --directory docs` and open `http://localhost:8000/`. The CDKA atlas was successfully deployed to **[GitHub Pages](https://crbazevedo.github.io/cdka/)** on 2026-11-01. The [Pages workflow run](https://github.com/crbazevedo/cdka/actions/runs/41349166262) confirms deployment; browser-based external smoke checks remain a separate QA step.
 
@@ -32,6 +32,16 @@ The new classical variational and information instruments have independent stand
 - [Hypothesis register](registry/hypotheses.md)
 - [Experiment protocol](docs/experiments/E0-threshold.md)
 - [Archived research notebooks](docs/corpus/)
+
+## Finite causal-cut counterexample (T3.C / T4.B)
+
+- [Read the research result and proof](docs/results/T3C-temporal-causal-cut.md).
+- [Counterexample-synthesis strategy and ranked structural classes](docs/strategy/finite-counterexample-synthesis-v1.md).
+- [Mini knowledge article](docs/articles/T3C.md) and [interactive simulator](docs/lab/causal_cut.html).
+- Exact rational finite-policy checks: `python -m unittest tests.test_causal_cut -v`.
+- Independent reproduction: `python -m experiments.causal_cut_sweep`.
+
+The result is **not** a new theorem of agency. It exhibits the failure of marginal information/actuation/repair feasibility to guarantee a common physical policy, and shows how physical actuator configuration can bypass a narrowly specified memory bottleneck.
 
 ## Reproduce the first result
 

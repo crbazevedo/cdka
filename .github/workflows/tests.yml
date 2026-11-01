@@ -18,10 +18,13 @@ jobs:
           node --check docs/lab/core.mjs
           node --check docs/lab/articles.mjs
           node --check docs/lab/app.mjs
+          node --check docs/lab/cut-core.mjs
+          node --check docs/lab/cut-app.mjs
+          node --check tests/cut-visual.test.mjs
           node --check tests/visual-lab.test.mjs
           node --check tests/atlas-render.test.mjs
       - name: Verify all simulator kernels
-        run: node --test tests/visual-lab.test.mjs tests/atlas-render.test.mjs
+        run: node --test tests/visual-lab.test.mjs tests/atlas-render.test.mjs tests/cut-visual.test.mjs
       - name: Verify canonical article synchronization
         run: node scripts/sync-articles.mjs --check
       - name: Check atlas completeness
@@ -36,9 +39,13 @@ jobs:
               for heading in ("Motivação","Definições mínimas","Formulação","Exemplo","O que habilita","Simulador"):
                   assert heading in contents,(item,heading)
           assert (Path("docs")/"index.html").exists()
+          assert (Path("docs")/"lab"/"causal_cut.html").exists()
+          assert (Path("docs")/"articles"/"T3C.md").exists()
           print("7 knowledge articles and atlas entry point verified.")
           PY
       - name: Run independent exhaustive checks
         run: python -m unittest discover -s tests -v
       - name: Reproduce deterministic threshold table
-        run: python -m experiments.threshold_sweep
+        run: |
+          python -m experiments.threshold_sweep
+          python -m experiments.causal_cut_sweep

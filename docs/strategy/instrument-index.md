@@ -24,6 +24,19 @@
 | Girsanov | Cost of changing diffusion path laws under matched channels | Bridge physical actuation and KL without conflating units |
 | Semialgebraic sign stratification | Exact parameter cells for polynomial safety inequalities | Locate code-size thresholds; not generic ODE reachability |
 
+## Finite information cuts and organizational maintenance
+
+| Tool | Gives us | Use in CDKA |
+|---|---|---|
+| Binary Bayes risk / total variation | Exact optimal decision reliability at a terminal cut | Convert physical memory survival to viability bounds |
+| Blackwell garbling and Dobrushin contraction | Degradation of information through repair and state dynamics | Separate early sensing from late usable knowledge |
+| Time-expanded causal graph and channel cuts | Which physical states carry distinguishability past a compulsory transition | Find minimal impossibility witnesses |
+| Finite-state-controller enumeration | Independent exact oracle for bounded physical memory policies | Reject free-history policies with physically erased registers |
+| SAT/SMT and support hypergraphs | Minimal zero-error conflicting-memory certificates | Scale beyond the two-state witness |
+| Signaling through actions | Durable actuator state and resource patterns can encode prior observations | Adversarially falsify any memory-only theorem |
+
+[T3.C/T4.B exact causal-cut proof](../results/T3C-temporal-causal-cut.md) · [work-backwards counterexample synthesis](finite-counterexample-synthesis-v1.md).
+
 ## Recursive regulation and autonomy
 
 | Tool | Gives us | Use in CDKA |
