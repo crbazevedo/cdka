@@ -27,7 +27,7 @@ Requires Python 3.11+; standard library only for the baseline checks.
 
 ```bash
 python -m unittest discover -s tests -v
-python experiments/threshold_sweep.py
+python -m experiments.threshold_sweep
 ```
 
 The initial result is a **teaching/verification lemma**, not a claim of originality: a smoothly parameterized, globally stable system can exhibit discontinuous changes in the minimum information required for robust action selection.
