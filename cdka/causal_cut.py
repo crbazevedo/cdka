@@ -267,3 +267,49 @@ def enumerate_repair_schedules(system: CausalCutSystem) -> dict:
             continue
         scores[flags]=bayes_best(system.terminal_joint(flags))[0]
     return scores
+
+
+def general_safe_decision_value(
+    joint: Mapping[tuple[int, Hashable], F],
+    safe_actions: Mapping[int, frozenset[int]],
+    symbols: Iterable[Hashable],
+) -> tuple[F, dict]:
+    """Exact finite safe-decision oracle allowing multiple safe actions.
+
+    Unlike binary classification, a correct intervention need only be in
+    A_w; it need not identify w uniquely.
+    """
+    symbols=tuple(symbols)
+    actions=tuple(sorted(set().union(*safe_actions.values())))
+    if not actions:
+        return F(0), {}
+    maximum=F(-1)
+    argmax={}
+    for plan in product(actions, repeat=len(symbols)):
+        decoder=dict(zip(symbols,plan))
+        score=sum((p for (w,m),p in joint.items()
+                   if decoder[m] in safe_actions[w]),F(0))
+        if score>maximum:
+            maximum=score
+            argmax=decoder
+    return maximum,argmax
+
+
+def higher_order_compatibility_obstruction() -> tuple[F, bool, dict]:
+    """Three worlds: every pair admits a common action, but not the triple.
+
+    A compulsory repair collapses all three worlds into the same terminal
+    physical signal. No zero-error decision is possible; best success
+    with uniform prior is exactly 2/3. This is the Dowker phenomenon in
+    an actual (albeit simple) memory-transition architecture.
+    """
+    safe={
+        0:frozenset((0,1)),
+        1:frozenset((1,2)),
+        2:frozenset((0,2)),
+    }
+    joint={(w,ERASED):F(1,3) for w in safe}
+    pairwise=all(bool(safe[w]&safe[v]) for w in safe for v in safe if w!=v)
+    failures=zero_error_support_obstructions(joint,safe,(ERASED,))
+    best,_=general_safe_decision_value(joint,safe,(ERASED,))
+    return best,pairwise,failures
