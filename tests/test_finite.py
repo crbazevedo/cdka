@@ -72,6 +72,27 @@ class FiniteTests(unittest.TestCase):
         self.assertAlmostEqual(equilibrium(2.0, 1, -1), 1.0)
         self.assertAlmostEqual(equilibrium(2.0, -1, 1), -1.0)
 
+    def test_finite_horizon_shifts_thresholds(self):
+        from math import log
+        # horizon ln(2) gives gain=1/2 and effective safe bound=3.
+        h = log(2)
+        for lam, expected in [(2.0, 1), (2.01, 2), (4.0, 2), (4.01, None)]:
+            cover = minimum_action_cover(t1_safe_actions(lam, horizon=h))
+            self.assertEqual(None if cover is None else len(cover), expected)
+
+    def test_more_actions_can_reduce_required_memory(self):
+        old = minimum_action_cover(t1_safe_actions(1.0))
+        expanded = minimum_action_cover(t1_safe_actions(1.0, actions=(-1, 0, 1)))
+        self.assertEqual(minimum_memory_bits(old), 1)
+        self.assertEqual(minimum_memory_bits(expanded), 0)
+
+    def test_invalid_horizon_and_actions(self):
+        for invalid in (float('nan'), 0.0, -1.0, float('-inf')):
+            with self.assertRaises(ValueError):
+                t1_safe_actions(1.0, horizon=invalid)
+        with self.assertRaises(ValueError):
+            t1_safe_actions(1.0, actions=(float('nan'),))
+
     def test_t1_invalid_parameters(self):
         for invalid in (float('nan'), float('inf'), -0.1):
             with self.assertRaises(ValueError):

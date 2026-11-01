@@ -18,3 +18,10 @@
 ## Exclusions
 
 No stochastic LDP, autonomy experiment, information-metric novelty, or model of endogenous sensors/actuators is established by E0. Extend E0 only once T2 conditions are precisely declared.
+
+## E0.1 — Completed additional checks
+
+- Finite-horizon threshold shift at \`T=ln2\`: 2 and 4.
+- Adding \`u=0\` reduces worst-case memory at \`λ=1\` from one bit to zero.
+- Invalid horizon and action parameters rejected.
+- Total local baseline unit tests: **11 passing**.

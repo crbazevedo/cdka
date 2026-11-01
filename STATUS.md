@@ -10,7 +10,7 @@ This file is the operational source of truth. Historical notes are preserved ver
 - Ontology distinguishes possibility, prediction, influence, informed control, action sufficiency, counterfactual knowledge, viability, and operational autonomy.
 - **B1 (known baseline):** exact finite-state action-code cardinality is minimum set cover; worst-case fixed-width bits = ceil(log2 k). Not Shannon mutual information.
 - **T1 (elementary example):** for the globally stable ODE \`dx/dt=-x+lambda*w+u\`, \`w,u∈{-1,+1}\`, \`x(0)=0\`, safety \`|x(t)|≤1.5\` for all t≥0, minimum decision-code cardinality is 1 (λ≤0.5), 2 (0.5<λ≤2.5), or infeasible (λ>2.5). Thus decision-memory thresholds need not coincide with attractor bifurcations.
-- Independent finite checks compare set-cover enumeration with partition enumeration over **all 512 binary 3-world × 3-action relations**.
+- - **E0.1:** finite decision horizon shifts T1 thresholds by `B_T=(3/2)/(1-exp(-T))`; adding a neutral action can lower required memory. Verified by three new tests.\n- Independent finite checks compare set-cover enumeration with partition enumeration over **all 512 binary 3-world × 3-action relations**.
 - B1/T1 are not claimed as original scientific contributions.
 
 ## In preparation, not established

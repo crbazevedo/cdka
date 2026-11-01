@@ -9,7 +9,7 @@ not a new CDKA theorem.
 from __future__ import annotations
 
 from itertools import combinations
-from math import isfinite
+from math import expm1, inf, isfinite
 from typing import Hashable, Iterable, Mapping
 
 
@@ -70,21 +70,35 @@ def dowker_simplices(
 
 def equilibrium(lam: float, w: int, u: int) -> float:
     """Equilibrium of dx/dt=-x+lam*w+u, for constant w,u."""
-    if not isfinite(lam) or lam < 0 or w not in (-1, 1) or u not in (-1, 1):
-        raise ValueError("lam must be finite and >=0, with w,u in {-1,+1}")
+    if not isfinite(lam) or lam < 0 or w not in (-1, 1) or not isfinite(u):
+        raise ValueError("lam must be finite and >=0, w in {-1,+1}, u finite")
     return lam * w + u
 
 
-def t1_safe_actions(lam: float, boundary: float = 1.5) -> dict[int, set[int]]:
-    """Actions preserving |x(t)|<=boundary for all t>=0 from x(0)=0.
+def t1_safe_actions(
+    lam: float,
+    boundary: float = 1.5,
+    *,
+    actions: tuple[float, ...] = (-1, 1),
+    horizon: float = inf,
+) -> dict[int, set[float]]:
+    """Actions preserving |x(t)|<=boundary over t in [0,horizon].
 
-    Because x(t)=(lam*w+u)*(1-exp(-t)), this is equivalent to checking
-    the equilibrium. The plant has exactly one globally stable equilibrium
-    for all parameters and actions: no attractor bifurcation occurs.
+    Dynamics: dx/dt=-x+lam*w+u, x(0)=0, w in {-1,1}, u held
+    constant. The peak magnitude is |lam*w+u|*(1-exp(-horizon)).
+    An infinite horizon means the full limiting equilibrium magnitude.
     """
     if not isfinite(boundary) or boundary <= 0:
         raise ValueError("boundary must be positive and finite")
-    return {w: {u for u in (-1, 1) if abs(equilibrium(lam, w, u)) <= boundary}
+    if not (horizon > 0 and (isfinite(horizon) or horizon == inf)):
+        raise ValueError("horizon must be positive or infinity")
+    acts = tuple(actions)
+    if not all(isfinite(a) for a in acts):
+        raise ValueError("actions must be finite")
+    gain = 1.0 if horizon == inf else -expm1(-horizon)
+    admissible_equilibrium = boundary / gain
+    return {w: {u for u in acts
+                if abs(equilibrium(lam, w, u)) <= admissible_equilibrium}
             for w in (-1, 1)}
 
 
