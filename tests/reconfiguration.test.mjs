@@ -1,0 +1,11 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {oldQ,logicalQ,bounds,xorError,solve,indefinite,path,recovery} from '../docs/lab/reconfiguration-core.mjs';
+const base={C:8,K:8,h:5,b:0,n:20,s:.9,qN:1};
+test('exact rational anchors for funded reconfiguration',()=>{const v=indefinite(base);assert.ok(Math.abs(v.R[0]-489177/1310720)<1e-14);const p=path(base);assert.deepEqual(p.map(x=>x.action),['run:0','run:3','run:4','switch']);assert.ok(v.R[0]>oldQ(0)*oldQ(2)*.9);});
+test('finite horizon changes the installation choice',()=>{const r=solve(base);assert.ok(r.P[1][8].startsWith('run'));assert.equal(r.P[20][8],'switch');assert.ok(Math.abs(r.V[20][0]-indefinite(base).R[0])<1e-13);for(let i=1;i<r.V.length;i++)assert.ok(r.V[i][0]<=r.V[i-1][0]+1e-13);});
+test('the same reservoir without installation is no better',()=>{const r=solve(base);for(let n=0;n<=20;n++)for(let b=0;b<=8;b++)assert.ok(r.V[n][b]+1e-13>=r.no[n][b]);});
+test('positive-support perturbation destroys infinite survival',()=>{assert.equal(indefinite({...base,qN:.999}).R[0],0);assert.equal(indefinite({...base,C:7}).R[0],0);assert.equal(indefinite({...base,h:0}).R[0],0);});
+test('complete dependence bounds',()=>{assert.ok(Math.abs(xorError(.1,.1,.01)-.18)<1e-15);assert.equal(xorError(.1,.1,.1),0);assert.deepEqual(bounds(.1,.1),{low:0,high:.1,minError:0,maxError:.2});assert.throws(()=>xorError(.1,.1,.3));});
+test('three bit majority and recoverable kernel anchors',()=>{assert.ok(Math.abs(logicalQ(.1)-.972)<1e-15);const r=recovery(.01,1);assert.ok(Math.abs(r.mean-10198)<1e-9);assert.ok(r.radius<1&&r.radius>.999);});
+test('finite-to-infinite estimate',()=>{const o={...base,C:3,K:3,h:1,n:15},r=solve(o),inf=indefinite(o);for(let n=1;n<=15;n++)for(let b=0;b<=3;b++){assert.ok(r.V[n][b]>=inf.R[b]-1e-14);assert.ok(r.V[n][b]-inf.R[b]<=oldQ(3)**n+1e-14);}});
+test('invalid physics rejected',()=>{assert.throws(()=>solve({...base,b:9}));assert.throws(()=>solve({...base,h:-1}));assert.throws(()=>oldQ(-1));});

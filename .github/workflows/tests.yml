@@ -31,10 +31,10 @@ jobs:
               contents=path.read_text()
               for heading in ("Motivação","Definições mínimas","Formulação","Exemplo","O que habilita","Simulador"):
                   assert heading in contents,(item,heading)
-          for item in ("T3C", "T3D", "T4C", "T3E-T4D"):
+          for item in ("T3C", "T3D", "T4C", "T3E-T4D", "T3F-T4F"):
               assert (Path("docs/articles") / f"{item}.md").exists()
           assert (Path("docs")/"index.html").exists()
-          for lab in ("causal_cut", "policy_cuts", "implementability"):
+          for lab in ("causal_cut", "policy_cuts", "implementability", "reconfiguration"):
               assert (Path("docs")/"lab"/f"{lab}.html").exists()
           print("Canonical articles, extension corpus and atlas entry points verified.")
           PY
@@ -46,3 +46,4 @@ jobs:
           python -m experiments.causal_cut_sweep
           python -m experiments.policy_cuts_sweep
           python -m experiments.implementability_sweep
+          python -m experiments.reconfiguration_sweep
