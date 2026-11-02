@@ -1,51 +1,39 @@
 # CDKA — Research State
 
-**Active gate:** G2 — policy-dependent physical information channels and recurrent viability. **Originality:** no general original CDKA theorem established; model-specific proofs and exact counterexamples are distinguished from known instruments. Historical notebooks remain preserved under [docs/corpus](docs/corpus).
+**Active gate:** G2 — joint policy implementability and physically funded recurrent reliability. **Current increment:** Proof Engine v4, T3.E / T4.D. **Originality:** no general original CDKA theorem established; model-specific proofs and exact counterexamples remain explicitly distinguished from known tools.
 
-## Current increment: T3.D / T4.C
+[Proof Engine v4](docs/strategy/proof-engine-v4.md) · [New miniarticle](docs/articles/T3E-T4D.md) · [New interactive lab](docs/lab/implementability.html) · [Verification](docs/experiments/E-implementability-v4.md) · [Supplemental result register](registry/v4-results.md).
 
-[Proof Engine v3](docs/strategy/proof-engine-v3.md) · [interactive laboratory](https://crbazevedo.github.io/cdka/lab/policy_cuts.html) · [verification record](docs/experiments/E-policy-cuts-v3.md).
+The prior operational snapshot is preserved byte-for-byte at [status-before-v4](docs/corpus/status-before-proof-engine-v4.md); its original root-relative links can also be followed in [the immutable pre-v4 version](https://github.com/crbazevedo/cdka/blob/0d66d713da02ecec62a7d3806bcad953376faef9/STATUS.md). Historical notebooks and all earlier proof notes remain unchanged.
 
-1. **Feedback envelope:** under independently feasible row-wise actions, the maximum closed-loop TV contraction coefficient equals the largest cross-input/cross-action row distance. Fixed reset modes each have coefficient zero, while feedback can attain one. This does not create information from identical inputs. [T3.D proof](docs/results/T3D-policy-aware-cuts.md).
-2. **Survival-aware discrimination:** propagate the unnormalized joint `mu(W,C,alive)`. For a terminal binary decision, exact total success is `(mass + live separation)/2`. Perfect knowledge conditional on survival can coexist with arbitrarily small survival.
-3. **Physical-policy synthesis:** exact design-time occupancy DP over shared prescriptions `C→A(C)`. The controller never receives hidden W, a free observation history, or the designer's occupancy as runtime information. Missing transition mass means failure.
-4. **Recurrent maintenance family:** eight live physical states, four observable states, repair consumes a token, successful actuation replenishes a token from the environment and leaves a physical command latch. For repair error p and n cycles, robust survival is `(1-p)^n`; fair-context mean survival is `max(1/2,(1-p)^n)`. After seven cycles at p=0.1, the mean-optimal policy sacrifices one context rather than preserving both. [T4.C proof and caveats](docs/results/T4C-recursive-physical-viability.md).
-5. **Randomness is architectural:** one extra persistent read-only independent random bit can change the robust feasible set. Fresh per-step randomization is not a substitute; writable protected memory carrying W is a stronger resource.
-6. **Recurrence certificate:** per-context zero-error stationary policies can exist without a shared observation-consistent policy. Exact support invariants and a Boolean implication encoding certify the distinction.
-7. **Deadline/fidelity bridge:** robust risk at most alpha requires `p≤1-(1-alpha)^(1/n)`. Under the explicitly stipulated surrogate `p=exp(-J_rep/epsilon)`, this gives an action threshold asymptotically logarithmic in n. Prefactors and uniformity remain required for a true diffusion application.
+## New demonstrated results
 
-**Verification:** 18 new Python tests with rational arithmetic; 729 channel architectures; 1,875 randomized local laws; 8 JavaScript kernel tests; independent occupancy, cycle-profile and support-invariant oracles. Offline Chromium rendering/control checks passed at 1440×1000 and 390×844 with no JavaScript errors or horizontal overflow. These browser checks rendered the generated artifact bytes; they were not live public-site navigation tests. Repository CI and deployment are reported separately by GitHub Actions.
+1. **Available actions are not a policy architecture.** Two devices with identical per-state available commands can have maximal closed-loop distinguishability 0 or 1, depending on whether their conditional choices can be combined into one mechanism. The joint implementability relation must not be replaced by its Cartesian marginal relaxation.
+2. **Constructive physical selector.** A flagged erasure interface realizes exactly the prescription strip |f1-f0|<=sigma. This is a finite channel construction, not an arbitrary regularization constraint. [Proof](docs/results/T3E-physical-selector-realization.md).
+3. **Costed selectivity and repair.** With selector contrast sigma and repair error p, robust renewal survival is product [1+(1-2p_t)sigma_t]/2. Under the stipulated effort laws sigma=1-exp(-w), p=.5exp(-e), a cycle budget r=w+e optimally splits equally; q(r)=1-exp(-r/2)+.5exp(-r). [T3.E](docs/results/T3E-implementable-prescriptions.md).
+4. **Resource allocation has two regimes.** log q is convex up to r=1.06959999 and concave above it. Scarce total budget optimally concentrates in one cycle; a claim of always-uniform investment is false. Exact finite-grid DP is independently checked against enumeration.
+5. **Concave-envelope certificate.** A tangent at r=1.96872832 gives a sharp asymptotic log-survival rate under average resource limits. A resource-causal threshold rule, collecting h only after each successful intervention, attains that rate. Finite h still implies exponential decay in this architecture.
+6. **Exact high-reliability budget.** For beta>=2-sqrt(2), minimum total normalized effort is -2n log[1-sqrt(2 beta^(1/n)-1)], asymptotically 2n log n. Its coefficient and law are model-dependent, not universal thermodynamic claims.
+7. **Finite design versus infinite policy.** A sequence with leading cumulative effort 2n log n can have zero or positive infinite survival depending on its lower-order log-log term. Exact criterion in this family: sum exp(-r_t/2)<infinity. [T4.D proofs](docs/results/T4D-produced-fidelity-budgets.md).
 
-**Files:** `cdka/policy_cuts.py`, `tests/test_policy_cuts.py`, `experiments/policy_cuts_sweep.py`, `tests/policy-cuts.test.mjs`, two proof notes, two miniarticles and `docs/lab/policy_cuts.html`.
+## Verification and corpus
 
-## Established baseline corpus (known tools, retained)
+14 new Python tests, including 3,675 rational local-policy combinations and 125 constructive selector triples; 6 new JavaScript tests; exact finite-grid and independent enumeration oracles. Offline Chromium checks rendered five SVGs and exercised all controls at desktop/mobile sizes. No public-site browser validation is inferred from those offline checks. GitHub CI and Pages deployment are verified separately after publication.
 
-| Result | Content / link |
-|---|---|
-| B1 | [Minimum zero-error action code as set cover](docs/results/B1-set-cover.md), with 512 exact 3×3 relation checks |
-| T1 / T1.B | [Information thresholds without attractor bifurcation](docs/results/T1-threshold.md); [binary rate–distortion](docs/results/T1-soft-information.md) |
-| T2 / T2.A | [Strict-margin barrier-to-bits](docs/results/T2-barrier-to-bits.md); [finite-time action quadrature and OU oracle](docs/results/T2-time-constrained-action.md) |
-| T2.B / T2.C | [Saddle-node asymptotics](docs/results/T2-saddle-node-scaling.md); [critical finite-time collapse proof](docs/results/T2-critical-collapse-proof.md) |
-| T2.D | [Common-state causal information phases](docs/results/T2-causal-information-phases.md), avoiding action-dependent initial conditions |
-| T3.A | [Restricted causal-authority KL gap](docs/results/T3-causal-authority-gap.md) |
-| T3.B | [Sensor-error exponents and fixed-frame sensing/actuation allocation](docs/results/T3-fixed-frame-reliability-allocation.md) |
-| T3.C / T4.B | [Temporal causal-cut counterexample](docs/results/T3C-temporal-causal-cut.md), exact repair-budget law, higher-order support obstruction and action-dependent reset signaling |
-| T4.A | [Controlled lumpability as sufficient recursive quotient](docs/results/T4-controlled-lumpability.md) |
+Files: `cdka/implementability.py`, `cdka/selector_realization.py`, corresponding tests, `experiments/implementability_sweep.py`, three proof notes, the v4 strategy, miniarticle and `docs/lab/implementability.html` with isolated kernels and charts.
 
-The initial seven articles and their source remain in `docs/lab/articles.mjs`; standalone extensions T3.C, T3.D and T4.C are maintained separately. The published [atlas](https://crbazevedo.github.io/cdka/) links the laboratories.
+## Retained foundations
 
-## Immediate next proof gate
+[Full main register](registry/hypotheses.md) · [Proof Engine v3](docs/strategy/proof-engine-v3.md) · [T3.D policy-aware cuts](docs/results/T3D-policy-aware-cuts.md) · [T4.C recurrent organization](docs/results/T4C-recursive-physical-viability.md) · [B1 set cover](docs/results/B1-set-cover.md) · [T2 finite-time action](docs/results/T2-time-constrained-action.md) · [T2 causal phases](docs/results/T2-causal-information-phases.md) · [T3.B fixed-frame tradeoff](docs/results/T3-fixed-frame-reliability-allocation.md).
 
-**R1 — coupled implementation constraints:** replace independently selectable channel rows by a physically realizable prescription set `Phi(Z,R)`. Derive sharp bounds or a minimal strict gap against row-wise sensor/action feasibility. Circuit complexity, configuration cost and shared repair substrates must be explicit.
+## Next hypotheses
 
-**R2 — produced repair fidelity:** let error probabilities be generated by a constrained sensing/repair/resource process. A positive homogeneous error floor prevents indefinite robust survival in the proved family; a decreasing error schedule cannot be assumed free. Couple an actually derived bistable repair-error law to the finite recurrence, with correct event/deadline and prefactor limits.
+**H-structure:** costly self-reconfiguration changes the actual feasible prescription family Phi(Z,R), potentially creating a protected information channel and a nonempty recurrent safe kernel. Derive minimum enabling cost using observation-consistent support synthesis and finite controller libraries.
 
-**R3 — acquisition versus transport:** new sensing can break `W→C→C'`. Analyze its cost and information gain separately rather than applying a contraction-only theorem to an acquisition step.
+**H-correlation:** common physical noise may invalidate independent selector/write failures. Start with exact coupling/Frechet bounds and identify error cancellation versus common-mode catastrophe before new stochastic asymptotics.
 
-**R4 — beyond binary/static contexts:** compose dynamically changing action-compatibility supports with viable physical memory construction and repair; audit against constrained POMDPs and nonclassical information patterns.
+**H-redundancy:** distinguish progressively rarer errors from recoverable errors. Correction, redundancy and tolerable nonfatal actions may break the present n log n law and finite-flux no-go; their costs and physical channels must be explicit.
 
-The general question remains [issue #9](https://github.com/crbazevedo/cdka/issues/9). This increment supplies exact instruments and finite-family laws, not a universal theory of autonomy or spontaneous intentionality.
+**H-physical calibration:** derive actual error probabilities from fixed-causal-frame bistable mechanisms. Do not substitute a large-deviation exponent for a finite-noise probability or equate nats, action, normalized effort and joules.
 
-## Evidence discipline
-
-Every claim states its physical boundary, memory/clock/randomness resources, intervention class, horizon, survival criterion and prior-art relationship. Tests establish implementation correctness on the cases checked; mathematical proof and novelty audit remain distinct obligations. No energy-in-joules interpretation is inferred merely from nats, action units or resource tokens.
+The broader issue remains [#9](https://github.com/crbazevedo/cdka/issues/9). A general theory of spontaneous autonomy or intention is still not established by these finite models.

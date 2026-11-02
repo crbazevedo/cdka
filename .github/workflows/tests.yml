@@ -15,20 +15,9 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Check browser module syntax
         run: |
-          node --check docs/lab/core.mjs
-          node --check docs/lab/articles.mjs
-          node --check docs/lab/app.mjs
-          node --check docs/lab/cut-core.mjs
-          node --check docs/lab/cut-app.mjs
-          node --check docs/lab/policy-cuts-core.mjs
-          node --check docs/lab/policy-cuts-app.mjs
-          node --check tests/policy-cuts.test.mjs
-          node --check tests/cut-visual.test.mjs
-          node --check tests/cut-browser.test.mjs
-          node --check tests/visual-lab.test.mjs
-          node --check tests/atlas-render.test.mjs
+          for module in docs/lab/*.mjs tests/*.test.mjs; do node --check "$module"; done
       - name: Verify all simulator kernels
-        run: node --test tests/visual-lab.test.mjs tests/atlas-render.test.mjs tests/cut-visual.test.mjs tests/cut-browser.test.mjs tests/policy-cuts.test.mjs
+        run: node --test tests/*.test.mjs
       - name: Verify canonical article synchronization
         run: node scripts/sync-articles.mjs --check
       - name: Check atlas completeness
@@ -42,12 +31,12 @@ jobs:
               contents=path.read_text()
               for heading in ("Motivação","Definições mínimas","Formulação","Exemplo","O que habilita","Simulador"):
                   assert heading in contents,(item,heading)
-          for item in ("T3C", "T3D", "T4C"):
+          for item in ("T3C", "T3D", "T4C", "T3E-T4D"):
               assert (Path("docs/articles") / f"{item}.md").exists()
           assert (Path("docs")/"index.html").exists()
-          assert (Path("docs")/"lab"/"causal_cut.html").exists()
-          assert (Path("docs")/"lab"/"policy_cuts.html").exists()
-          print("7 canonical articles, 3 extensions, and atlas entry points verified.")
+          for lab in ("causal_cut", "policy_cuts", "implementability"):
+              assert (Path("docs")/"lab"/f"{lab}.html").exists()
+          print("Canonical articles, extension corpus and atlas entry points verified.")
           PY
       - name: Run independent exhaustive checks
         run: python -m unittest discover -s tests -v
@@ -56,3 +45,4 @@ jobs:
           python -m experiments.threshold_sweep
           python -m experiments.causal_cut_sweep
           python -m experiments.policy_cuts_sweep
+          python -m experiments.implementability_sweep
