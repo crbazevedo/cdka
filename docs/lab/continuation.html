@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fbf6ee"><meta name="description" content="CDKA v9: a mesma ação não implica a mesma continuação. Memória finita, envelopes de políticas e perdas verificadas.">
+<title>CDKA · A mesma ação, futuros diferentes</title>
+<link rel="stylesheet" href="./continuation.css"></head><body>
+<header><a href="../index.html" class="brand"><span class="mark">C·</span><span>CDKA <small>RESEARCH ATLAS</small></span></a><span class="header-note">T4.J · INTERFACES DE CONTINUAÇÃO <a href="https://github.com/crbazevedo/cdka/blob/main/docs/results/T4J-continuation-sufficient-interfaces.md">Provas ↗</a></span></header>
+<main><div class="eyebrow">NOTA DE PESQUISA / 09 <span>MODELO EXATO · FERRAMENTAS CONHECIDAS</span></div>
+<h1>A mesma ação,<br>futuros diferentes.</h1>
+<p class="intro">Duas situações podem pedir a mesma manutenção agora e decisões distintas depois. Uma memória que guarda apenas a resposta atual pode perder a continuação.</p>
+<div class="contract"><strong>O controlador lê um código físico, não o estado oculto.</strong> Mantivemos o mecanismo da v6: três células, saúde oculta, erros e recursos recuperados após acertos. Só mudam a codificação de um diagnóstico inicial e o horizonte da decisão.</div>
+<div class="workspace"><section class="plots" id="plots" aria-live="polite"></section>
+<aside class="controls"><h2>Explore a estrutura</h2>
+<label class="control" for="tail">Separação do diagnóstico <output id="o-tail">0,01</output><input id="tail" type="range" min="0" max="0.49" step="0.005" value="0.01"></label>
+<p class="hint">Os três sinais têm probabilidades de saúde ε, ½ e 1−ε. Quanto maior ε, menos informativo é o sensor; o prior físico permanece ½.</p>
+<label class="control" for="horizon">Horizonte <select id="horizon"><option value="1">Uma operação</option><option value="2" selected>Duas operações</option></select></label>
+<label class="control" for="capacity">Estados do código <output id="o-capacity">2</output><input id="capacity" type="range" min="1" max="3" step="1" value="2"></label>
+<label class="control" for="erasure">Apagamento antes do plano <output id="o-erasure">0%</output><input id="erasure" type="range" min="0" max="1" step="0.05" value="0"></label>
+<p class="hint">O apagamento é sinalizado e não altera o mundo. Esse controle não representa o seletor falível da v8. O símbolo de apagamento é um estado físico adicional.</p>
+<div class="presets"><button data-preset="gap">Mesmo início, outro fim</button><button data-preset="reverse">Horizonte pede menos</button><button data-preset="full">Guardar três classes</button></div>
+<div class="side-note">O ganho exato do terceiro estado é pequeno. Suficiência matemática não prova que uma memória maior compense o seu custo.</div>
+</aside></div>
+<div class="reading"><section><h2>O critério mínimo</h2><p>Um grupo de diagnósticos pode compartilhar um código sem perda se todos admitirem ao menos um mesmo <strong>plano completo ótimo</strong>. Compartilhar somente a primeira ação é insuficiente.</p><pre>Perda = Σ sinais max plano valor
+      − Σ códigos max plano Σ sinais valor</pre></section>
+<section><h2>Atualizar sem história gratuita</h2><p>Se duas histórias têm o mesmo código, recebem a mesma ação e o mesmo sinal novo, uma atualização determinística não pode recriar dois códigos distintos. A diferença precisa ter sido preservada ou adquirida novamente por um canal físico.</p></section>
+<section><h2>Decidir não é prever tudo</h2><p>Uma única continuação pode ser ótima para vários diagnósticos, mesmo que eles prevejam consequências diferentes para outros planos. Preservar decisões e preservar todas as previsões são requisitos distintos.</p></section>
+<section><h2>O que ainda não está resolvido</h2><p>O registro é retido e o seletor usa uma biblioteca instalada de tabelas. O custo conjunto de sua construção, atualização e manutenção continua aberto. Este não é um teorema de emergência da agência.</p></section></div>
+<div class="references"><a href="../articles/T4J.md">Miniartigo ↗</a><a href="../strategy/proof-engine-v9.md">Estratégia e próximos gates ↗</a><a href="https://github.com/crbazevedo/cdka/blob/main/registry/v9-continuation-addendum.json">Registro de alternativas ↗</a><a href="https://www.cs.toronto.edu/~cebly/Papers/vdib-abs.html">Antecedente: compressão orientada a valor, 2002 ↗</a></div>
+</main><footer><strong>CDKA</strong> Counterfactual Dynamics of Knowledge and Agency <span>Provas racionais · Simulação sem rastreamento</span></footer>
+<script type="module" src="./continuation-app.mjs"></script></body></html>

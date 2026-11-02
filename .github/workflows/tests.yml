@@ -31,10 +31,10 @@ jobs:
               contents=path.read_text()
               for heading in ("Motivação","Definições mínimas","Formulação","Exemplo","O que habilita","Simulador"):
                   assert heading in contents,(item,heading)
-          for item in ("T3C", "T3D", "T4C", "T3E-T4D", "T3F-T4F", "T4G", "T4H"):
+          for item in ("T3C", "T3D", "T4C", "T3E-T4D", "T3F-T4F", "T4G", "T4H", "T4I", "T4J"):
               assert (Path("docs/articles") / f"{item}.md").exists()
           assert (Path("docs")/"index.html").exists()
-          for lab in ("causal_cut", "policy_cuts", "implementability", "reconfiguration", "composition", "diagnosis"):
+          for lab in ("causal_cut", "policy_cuts", "implementability", "reconfiguration", "composition", "diagnosis", "diagnostic_transport", "continuation"):
               assert (Path("docs")/"lab"/f"{lab}.html").exists()
           assert Path('registry/research-options.json').exists()
           print("Canonical articles, research option ledger, extensions and atlas entries verified.")
@@ -50,3 +50,6 @@ jobs:
           python -m experiments.reconfiguration_sweep
           python -m experiments.composition_sweep
           python -m experiments.hidden_health_sweep
+          python -m experiments.diagnostic_transport_sweep
+          python -m experiments.continuation_sweep
+          python -m experiments.continuation_sweep --check

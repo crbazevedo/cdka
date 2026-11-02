@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "revision": "v9",
+  "base_commit": "b0176b3d6fbdded67caad1cbe5cb4ae4521a5d1a",
+  "base_ledger": "research-options.json",
+  "base_blob_sha": "ff935e74f57ad2c4d37d0ddebea63f408fb77edf",
+  "previous_addendum": "v8-transport-addendum.json",
+  "previous_blob_sha": "c691c0fa249e14ad7a6aa11fee57bdb5b9a4ad71",
+  "active_limit": 2,
+  "active_branches": [
+    "R11",
+    "R14"
+  ],
+  "scope": "Same v6 physical kernel, two-epoch continuation-interface certificates. Existing 37 branches unchanged; combined rejected shortcuts 23. No new mathematical originality asserted.",
+  "branch_updates": [
+    {
+      "id": "R11",
+      "status": "active",
+      "evidence": "Exact two-epoch decoder: two diagnostics share current service but need different suffixes. Three diagnostic states preserve exact value; two lose 0.0281117 percentage point. A different sensor law yields decreasing horizon-specific code need (2 to 1).",
+      "remaining_gate": "Physically update and transport a finite code while maintaining multiple decisions and a degrading selector; preserve an explicit loss tolerance.",
+      "dead_end_trigger": "Desired future code cannot be determined by current physical code and new observations, or extra exact memory yields negligible benefit.",
+      "minimal_test": "Compare full small policy library, compressed code, recursive update witness and paid physical reacquisition under one fixed causal frame.",
+      "fallbacks": [
+        "R02",
+        "R13",
+        "R15",
+        "R28",
+        "R35"
+      ],
+      "provenance": [
+        "docs/results/T4J-continuation-sufficient-interfaces.md",
+        "cdka/continuation_interfaces.py"
+      ]
+    },
+    {
+      "id": "R14",
+      "status": "active",
+      "evidence": "Removing syndrome-contingent second-stage decoders eliminates the benefit of extra diagnostic memory. Independent per-code plan choices are a library assumption, not a free physical theorem.",
+      "remaining_gate": "Joint implementation and memory-update cost with explicit physical selector states; prove a strict gap beyond independent per-row feasibility.",
+      "dead_end_trigger": "A compressed design implicitly stores a tree node, history or action trace outside its state budget.",
+      "minimal_test": "Synthesize complete code-to-plan tables from a finite coupled circuit library; compare to Cartesian relaxation and witness restoration cost.",
+      "fallbacks": [
+        "R15",
+        "R20",
+        "R28",
+        "R35",
+        "R37"
+      ],
+      "provenance": [
+        "docs/results/T4J-continuation-sufficient-interfaces.md",
+        "docs/strategy/proof-engine-v9.md"
+      ]
+    }
+  ],
+  "rejected_additions": [
+    {
+      "id": "D21",
+      "claim": "Histories sharing the optimal current action may be merged without loss of future control.",
+      "reason": "In the unchanged v6 physical kernel, two diagnostic laws both choose service at the first epoch but require different next actions after the same unanimous signal. Best merged value is strictly lower.",
+      "fallbacks": [
+        "R02",
+        "R13",
+        "R11"
+      ],
+      "provenance": [
+        "docs/results/T4J-continuation-sufficient-interfaces.md"
+      ]
+    },
+    {
+      "id": "D22",
+      "claim": "The minimum memory required for an optimum must increase with the horizon.",
+      "reason": "For the same physical kernel the one/two-epoch exact diagnostic-code requirement is 2/3 at tail=.01 and 2/1 at tail=.15. A changed horizon objective differs from preserving an expanded family of tasks.",
+      "fallbacks": [
+        "R17",
+        "R02",
+        "R13"
+      ],
+      "provenance": [
+        "docs/results/T4J-continuation-sufficient-interfaces.md"
+      ]
+    },
+    {
+      "id": "D23",
+      "claim": "A later planner can recompute a sufficient code using an original diagnostic that was already discarded.",
+      "reason": "A deterministic physical update must assign one output to each current code/action/new-signal triple. The explicit update witness rejects two required outputs for the same input.",
+      "fallbacks": [
+        "R11",
+        "R15",
+        "R35"
+      ],
+      "provenance": [
+        "cdka/continuation_interfaces.py",
+        "docs/results/T4J-continuation-sufficient-interfaces.md"
+      ]
+    }
+  ],
+  "novelty": "The max-sum identity, alpha envelopes, recursive congruence and Bellman residual decomposition use known tools. Direct predecessors: Poupart-Boutilier 2002; AIS 2022; FSC synthesis 2022. Recent recursive-prediction preprint 2610.04303 is a further audit target, not proof of novelty."
+}
