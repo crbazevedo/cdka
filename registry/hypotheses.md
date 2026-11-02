@@ -1,35 +1,39 @@
 # CDKA — Hypothesis and proof-status register
 
-**Evidence categories:** known baseline; proved example/derivation with classical tools; conditional asymptotic lemma; open original theorem candidate; falsified. A result is not classified as original until proof and antecedent audit both succeed.
+**Evidence categories:** known baseline; proved example/derivation with classical tools; conditional asymptotic lemma; open original theorem candidate; falsified. Originality requires both proof and antecedent audit.
 
 | ID | Status | Mathematical statement / distinction | Next unresolved obligation |
 |---|---|---|---|
-| B1 | Known, proved | Minimum deterministic one-shot action code = minimum set cover | Extend only with true temporal or endogenous constraints |
-| T1 | Proved illustrative | Code-cardinality thresholds can occur without attractor bifurcation | Compare finite horizon and richer actuators |
-| T1.B | Known rate–distortion | \(R(\delta)=1-h_2(\delta)\) for uniform binary Hamming decisions | Separate zero-error bits from average information |
-| T2 | Conditional known corollary | Small-noise rate thresholds induce compatible-action relations away from equality | Use actual finite-time failure action, not quasipotential by default |
-| T2.A | Known machinery, independently derived | \(J_T>\Delta U\) at finite deadline, scalar quadrature, OU benchmark | Test fixed-time escape and numerical edge cases |
-| T2.B | Derived saddle-node asymptotics | \(\Delta U\sim C\delta^{3/2}\), fixed-T \(J_T\sim\delta/(\sqrt3T)\) | Validate parameter and noise crossover limits |
-| T2.C | Derived scalar scaling limit, not original | \(J_T \sim \delta^{3/2}3^{-1/4}\mathcal F(3^{1/4}T\sqrt\delta)\) at fixed positive scaled time | Extend to action-compatible knowledge under resource constraints |
-| T2.D | Proved modeled counterfactual, known toolkit | Common initial state/failure/horizon yields 0/1/infeasible low-noise safe-action code regimes | Add endogenous actuator availability and non-asymptotic risk |
-| T3.B | Derived surrogate with fixed physical frame | Effective failure exponent min{Jgood,Jbad+κ}; optimum sensor/action resource balance equalizes competing exponents | Couple sensing/actuation to autonomous maintenance; audit reliability-function antecedents |
-| T3.A | Proved counterexample, known type | Restricted causal authority yields strictly positive KL cost gap | Couple authority with information/repair budgets nontrivially |
-| T3.C / T4.B | Exact finite counterexample, known toolkit | Perfect early information + available repaired actuation + repair budget can fail as a **joint physical policy** due to a compulsory information cut; exact TV/repair-horizon formula and a configuration-state bypass | Move from precommitted repairs to endogenous self-maintenance and physically created information channels; audit finite-state POMDP literature |
-| T3.C.H | Exact finite higher-order illustration | Three worlds all pairwise action-compatible can be jointly incompatible after physical memory collapse; optimum 2/3 for a uniform prior | Extend support hypergraph synthesis with dynamically evolving observation classes |
+| B1 | Known, proved | Minimum deterministic one-shot action code = minimum set cover | Extend only with actual temporal/endogenous constraints |
+| T1 | Proved illustration | Code thresholds without attractor bifurcation | Compare horizons and actuator repertoires |
+| T1.B | Known rate–distortion | Binary Hamming rate `1-h2(delta)` | Separate zero-error code from average information |
+| T2 | Conditional known corollary | Strict small-noise rate thresholds give action compatibility | Actual finite-time risk, not quasipotential by default |
+| T2.A | Known machinery, derived | Finite-deadline action, quadrature and OU oracle | Fixed-time escape and numerical edge cases |
+| T2.B | Derived normal-form asymptotics | Saddle-node barrier delta^(3/2) vs fixed-T action delta/T | Joint parameter/noise/horizon limits |
+| T2.C | Derived scalar scaling, not original | Normalized finite-time saddle-node collapse | Endogenous resource/observation constraints |
+| T2.D | Verified fixed-frame example | Same initial state, event and horizon yield 0/1/infeasible code regimes | Finite-noise prefactors and physical sensing |
+| T3.A | Known-type exact counterexample | Restricted actuator creates strict KL realizability gap | Endogenous organization and authority |
+| T3.B | Derived fixed-frame surrogate | `min(Jgood,Jbad+kappa)`; optimal shared sensing/actuation allocation | Endogenous upkeep and physically generated fidelity |
+| T3.C / T4.B | Exact finite counterexample, known toolkit | Marginal sensing, repaired action and budget fail to compose across compulsory information cut | Policy-dependent full-cut analysis |
+| T3.C.H | Higher-order exact illustration | Pairwise-compatible worlds can be jointly incompatible after memory collapse | Dynamic support hypergraphs |
+| T3.C.S | Controlled-signaling counterexample | Fixed repair coefficient 0 can coexist with feedback coefficient 1 | Account for physically consequential action choices |
+| T3.D.1 | Proved classical-tool consequence | Exact feedback envelope = cross-input/cross-action row diameter under independent row choices | Sharp envelope for globally coupled feasible prescriptions |
+| T3.D.2 | Classical decision identity, applied | Live terminal value `(M+D_live)/2`; conditional information can hide failed mass | Recursive sufficient statistics beyond terminal binary action |
+| T4.A | Known controlled lumpability | Exact finite-horizon quotient under strong conditions | Weaker task-relative abstractions |
+| T4.C.1 | Known planning machinery, exact implementation | Unnormalized occupancy DP over physical shared prescriptions; no free runtime state | Resource-coupled physical policy classes |
+| T4.C.2 | Exact finite-family frontier, novelty unestablished | Robust `(1-p)^n` vs mean `max(1/2,(1-p)^n)` in regenerative repair family | More contexts, actual sensing and endogenous error control |
+| T4.C.3 | Architecture-dependent counterexample | Persistent independent seed improves robust viability; fresh randomness need not | Explicit costs and permissible memory substrates |
+| T4.C.4 | Exact/surrogate horizon bridge | Error tolerance `p<=1-(1-alpha)^(1/n)`; action threshold logarithmic in n under exponential surrogate | Fixed-frame physical error law, prefactors and uniform limits |
+| T3 / T4 | Open central | Joint information/authority/maintenance frontier with endogenously changing organization | Contribution exceeding established constrained POMDP/control results |
+| T5 | Open ontological | Identify internal self-maintenance under declared causal interventions | Boundary audit and external-controller equivalence |
+| T6 | Deferred | Replicator history becomes causally useful for future regulation | Ablation versus historical correlation |
 
-| T3.C.S | Proved finite controlled-signaling counterexample; known mechanism | Every fixed repair channel can erase the register (TV contraction 0) while the input-contingent physical repair choice transmits one bit (closed-loop contraction 1) | Require policy-dependent full-cut analysis; avoid comparing only fixed-mode kernels |
+## Falsified simplifications and audit requirements
 
-| T3 | Open central | Joint information, intervention and maintenance feasibility is nonseparable in a physically grounded class | Prove a bound exceeding marginal controls |
-| T4.A | Known, proved | Controlled lumpability implies exact finite-horizon viability quotient | Find minimal weaker task-relative condition |
-| T4 | Open central | Endogenous sensor/actuator damage and repair change recursive sufficient information | Finite controlled-process theorem/counterexample |
-| T5 | Open ontological | Internal self-maintenance is experimentally distinguishable under declared interventions | Formal identifiability and boundary audit |
-| T6 | Deferred | Replicator history becomes causally useful knowledge for future regulation | Ablation vs historical correlation |
-
-## Hard novelty firewall
-
-- FW+set cover alone: bridge, not discovery.
-- Normal-form saddle-node exponents: classical results.
-- KL data processing/causal restriction: classic inequality and counterexample.
-- Controlled lumpability: classical controlled-bisimulation antecedent.
-- Physical units, admissible action classes, temporal horizons and uncertainty models must always be explicit.
-- Prefer a falsified conjecture with precise counterexample to an unfalsifiable general theory of intelligence.
+- A fixed-mode contraction bound is not generally a feedback bound.
+- Perfect information conditioned on survival is not high survival probability.
+- Free access to a design occupancy or forgotten history changes the controller.
+- Fresh coins, a durable independent random seed, and writable protected memory are different physical resources.
+- Mean-optimal viability need not preserve both contexts; retain the per-context profile.
+- FW+set cover, normal-form exponents, KL data processing, controlled lumpability and occupancy planning are established instruments, not CDKA novelty by renaming.
+- Units, full policy class, clock, randomization and viability criterion must remain explicit.
