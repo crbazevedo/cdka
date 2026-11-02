@@ -4,6 +4,9 @@ on:
     branches: [main]
     paths:
       - 'docs/**'
+      - 'cdka/trace_microscope.py'
+      - 'experiments/trace_sweep.py'
+      - 'registry/v11-trace-addendum.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -22,6 +25,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Verify trace certificates and generate browser dataset
+        run: |
+          python -m unittest discover -s tests -p 'test_trace*.py' -v
+          python -m experiments.trace_sweep --web docs/lab/trace-data.json
+          mkdir -p docs/registry
+          cp registry/v11-trace-addendum.json docs/registry/v11-trace-addendum.json
+          sed -i 's|../../registry/v11-trace-addendum.json|../registry/v11-trace-addendum.json|g' docs/lab/trace_explorer.html
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static atlas
