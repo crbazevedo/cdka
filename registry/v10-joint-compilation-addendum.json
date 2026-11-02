@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "revision": "v10",
+  "base_commit": "d802aecf99523581530a0790827f4daf26a5c43c",
+  "base_ledger": "research-options.json",
+  "base_blob_sha": "ff935e74f57ad2c4d37d0ddebea63f408fb77edf",
+  "previous_addenda": [
+    {"path": "v8-transport-addendum.json", "sha": "c691c0fa249e14ad7a6aa11fee57bdb5b9a4ad71"},
+    {"path": "v9-continuation-addendum.json", "sha": "9cffe6ec8c4dd4fcb9ec30e74460c1fd4a81e2a5"}
+  ],
+  "active_limit": 2,
+  "active_branches": ["R11", "R14"],
+  "combined_counts": {"branches": 37, "rejected": 26},
+  "scope": "Same v6 plant and v9 continuation task; physical code assignment plus a globally shared plan library. Known joint-coding/state-assignment instruments; no priority claim.",
+  "branch_updates": [
+    {"id": "R11", "status": "active", "evidence": "Two noisy diagnostic cells: joint compilation can favor deliberate merging over every injective code; exact continuous noise phase diagram certified.", "remaining_gate": "Noisy, constrained physical update between decisions rather than a single transport interval followed by ideal retention.", "dead_end_trigger": "A finite code is treated as an abstract partition without its label geometry or actual update circuit.", "minimal_test": "Fixed observation tree with two physical update libraries; exact encoder/update/decoder witness and loss/cost certificate.", "fallbacks": ["R13", "R15", "R28", "R35"], "provenance": ["docs/results/T4K-joint-physical-compilation.md", "cdka/joint_compilation.py"]},
+    {"id": "R14", "status": "active", "evidence": "Cardinality-limited decoder plan portfolios optimized jointly with physical encoding; upfront installation consumes subsequent action resources.", "remaining_gate": "Nonseparable shared-subcircuit installation/upkeep costs and one physically constrained read/write mechanism.", "dead_end_trigger": "Upper-hull pruning or separate Bayes maxima rely on equal, independently realizable program costs that the hardware lacks.", "minimal_test": "Construct two circuit libraries with identical available commands but different combined realization cost; prove minimal feasible upgrade.", "fallbacks": ["R15", "R20", "R28", "R37"], "provenance": ["docs/results/T4K-joint-physical-compilation.md", "docs/strategy/proof-engine-v10.md"]}
+  ],
+  "rejected_additions": [
+    {"id": "D24", "claim": "Permuting abstract diagnostic state labels preserves controller value on a noisy physical substrate.", "reason": "Only permutations respecting the memory channel and cost/library constraints preserve the physical experiment. Two injective two-bit encodings have equal noiseless value but unequal noisy survival.", "fallbacks": ["R11", "R13", "R14"], "provenance": ["docs/results/T4K-joint-physical-compilation.md"]},
+    {"id": "D25", "claim": "Preserve all diagnostics first and then optimize channel protection and control; this achieves the joint optimum.", "reason": "At the same two-bit hardware size, a deliberate merge beats all injective encodings for a nonempty range of corruption. At p=.10 the difference is .40328 percentage point in the fixed two-epoch task.", "fallbacks": ["R02", "R11", "R14"], "provenance": ["docs/results/T4K-joint-physical-compilation.md"]},
+    {"id": "D26", "claim": "A plan off the unpriced value envelope can always be discarded before introducing program implementation costs.", "reason": "A never-unconstrained-optimal plan may be the only affordable implementation. The hull replacement proof requires cardinality-only equal-price library constraints.", "fallbacks": ["R14", "R28", "R37"], "provenance": ["docs/results/T4K-joint-physical-compilation.md"]}
+  ],
+  "novelty": "Primary predecessors: Walrand–Varaiya causal coding; De Micheli/Brayton/Sangiovanni-Vincentelli state assignment; Poupart–Boutilier value-directed compression; FSC synthesis. Exact scoped certificate, no originality established."
+}
