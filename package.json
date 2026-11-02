@@ -7,7 +7,7 @@
   "scripts": {
     "articles:write": "node scripts/sync-articles.mjs",
     "articles:check": "node scripts/sync-articles.mjs --check",
-    "test:lab": "node --test tests/visual-lab.test.mjs tests/atlas-render.test.mjs tests/cut-visual.test.mjs tests/cut-browser.test.mjs tests/policy-cuts.test.mjs",
+    "test:lab": "node --test tests/*.test.mjs",
     "test": "npm run articles:check && npm run test:lab"
   }
 }

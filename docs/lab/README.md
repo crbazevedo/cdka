@@ -23,6 +23,13 @@ The site is implemented using native browser HTML/CSS/SVG and ES modules. No ana
 - JS formulas in `cut-core.mjs` are cross-checked with exact-rational Python oracles in `cdka/causal_cut.py`.
 - The original seven canonical articles are generated from `articles.mjs`; the new T3.C page is a self-contained extension.
 
+## New extension — T3.G / T4.H
+
+- [Physically costed hidden-health diagnosis lab](diagnosis.html), with an interactive budget×accuracy phase map, diagnostic-value curves, aging information and the exact health-hidden horizon gap.
+- [Mini knowledge article](../articles/T4H.md) · [Main proof](../results/T4H-hidden-health-diagnosis.md) · [Selector implementation proof](../results/T3G-physical-selector-cost.md).
+- Exact Python physical-model tests in `tests/test_hidden_health.py`; browser mirror in `diagnosis-core.mjs`, with `tests/diagnosis.test.mjs` and calibrated fixtures in `diagnosis-fixtures.json`.
+- The research option catalog now has 37 branches and 18 rejected shortcuts, while preserving R11 and R14 as the two active branches.
+
 ## Local execution
 
 From the repository root:

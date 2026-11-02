@@ -14,6 +14,14 @@ CDKA investigates the coevolution of physical trajectory distributions, actionab
 
 To run the interactive site locally: `python3 -m http.server 8000 --directory docs` and open `http://localhost:8000/`. The CDKA atlas was successfully deployed to **[GitHub Pages](https://crbazevedo.github.io/cdka/)** on 2026-11-01. The [Pages workflow run](https://github.com/crbazevedo/cdka/actions/runs/41349166262) confirms deployment; browser-based external smoke checks remain a separate QA step.
 
+## Current research gate — v7 hidden organizational health
+
+**[Interactive T4.H / T3.G research lab](https://crbazevedo.github.io/cdka/lab/diagnosis.html)** · [Proof of diagnosis decision threshold](docs/results/T4H-hidden-health-diagnosis.md) · [Program-implementation cost](docs/results/T3G-physical-selector-cost.md) · [Proof Engine v7](docs/strategy/proof-engine-v7.md).
+
+The new model conceals the corrector's health from runtime policy, prices a noisy diagnostic and a physically implementable conditional selector, and retains the **same** v6 physical action/failure kernel. With a fair prior and sufficient budget, diagnosis improves one-step survival only below the exact effective-error threshold `6402641323/32975801023 ≈ 19.42%`. With B=3 and d=c=1, even a perfect diagnostic cannot fund the contingent `refresh` action; with B=4 the survival gain is 2.561 percentage points. These are scoped decision-theoretic results, not original agency theorems.
+
+The [research option ledger](registry/research-options.md) preserves 37 research paths and 18 rejected shortcuts; R11 and R14 remain the only active proof branches.
+
 ## Mathematical proof program
 
 [Proof Engine — strategy and proof gates](docs/strategy/proof-engine-v1.md) · [Minimal mathematical instrument index](docs/strategy/instrument-index.md) · [Finite-time action derivation](docs/results/T2-time-constrained-action.md) · [Critical scaling proof](docs/results/T2-critical-collapse-proof.md) · [Restricted causal authority](docs/results/T3-causal-authority-gap.md) · [Recursive viability quotient](docs/results/T4-controlled-lumpability.md)
