@@ -1,0 +1,25 @@
+{
+  "source":"cdka.composition.Contract (v6) terminal event, retained in v7",
+  "date":"2026-11-02",
+  "action_table":[["27954923/31250000","118222333323/125000000000"],["13626269/15625000","824369923/1250000000"]],
+  "budgets":[
+    {"budget":4,"choice":"skip","value":"55207461/62500000","value_decimal":0.883319376,"gain":0.0,"programs":{"skip":0.883319376}},
+    {"budget":5,"choice":"skip","value":"55207461/62500000","value_decimal":0.883319376,"gain":0.0,"programs":{"skip":0.883319376,"diagnose":0.876541378398272}},
+    {"budget":6,"choice":"service","value":"34689402582329/39062500000000","value_decimal":0.8880487061076224,"gain":0.0047293301076224,"programs":{"skip":0.883319376,"diagnose":0.876541378398272,"service":0.8880487061076224,"protect+diagnose":0.88452784853498}},
+    {"budget":7,"choice":"protect+service","value":"224693348644229/250000000000000","value_decimal":0.898773394576916,"gain":0.015454018576916,"programs":{"skip":0.883319376,"diagnose":0.876541378398272,"service":0.8880487061076224,"protect+diagnose":0.88452784853498,"protect+service":0.898773394576916}}
+  ],
+  "expiration":[
+    {"ticks":1,"diagnosis_net":0.01440550333484,"mutual_information_bits":0.8},
+    {"ticks":2,"diagnosis_net":0.010717581932792,"mutual_information_bits":0.64},
+    {"ticks":3,"diagnosis_net":0.0077672448111536,"mutual_information_bits":0.512},
+    {"ticks":4,"diagnosis_net":0.00540697511384288,"mutual_information_bits":0.4096},
+    {"ticks":5,"diagnosis_net":0.003518759355994304,"mutual_information_bits":0.32768},
+    {"ticks":6,"diagnosis_net":0.0020081867497154433,"mutual_information_bits":0.262144},
+    {"ticks":7,"diagnosis_net":0.0007997286646923545,"mutual_information_bits":0.2097152},
+    {"ticks":8,"diagnosis_net":-0.00016703780332611635,"mutual_information_bits":0.16777216},
+    {"ticks":9,"diagnosis_net":-0.000940450977740893,"mutual_information_bits":0.134217728},
+    {"ticks":10,"diagnosis_net":-0.0015591815172727144,"mutual_information_bits":0.1073741824}
+  ],
+  "correlation":[{"opposite_health":false,"value":0.866412885772},{"opposite_health":true,"value":0.8986857151752}],
+  "status":"Known finite Bayes/FSC tools; no originality claim."
+}

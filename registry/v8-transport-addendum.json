@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "revision": "v8",
+  "base_ledger": "research-options.json",
+  "base_commit": "f9371cf41227eb58a869b9fbc16be9153ca31118",
+  "base_blob_sha": "ff935e74f57ad2c4d37d0ddebea63f408fb77edf",
+  "scope": "Immutable v7 catalog (37 branches/18 rejected claims) plus scoped v8 evidence and two refuted claims. No new active branches.",
+  "active_limit": 2,
+  "active_branches": ["R11", "R14"],
+  "branch_updates": [
+    {"id":"R11","status":"active","evidence":"T4.I: diagnosis physically passes n compulsory repairs; exact margin and expiry criterion; one-bit task encoder proved for one terminal decision.","remaining_gate":"Two sequential tasks and maintenance: construct a readable sufficient interface without free history or designer posterior.","dead_end_trigger":"Terminal sign code fails to preserve a later action or maintenance choice.","minimal_test":"Two tasks with distinct action-loss tables; independent bounded-register controller enumeration.","fallbacks":["R02","R13","R28","R15"],"provenance":["docs/results/T4I-diagnosis-through-repair.md","cdka/diagnostic_transport.py"]},
+    {"id":"R14","status":"active","evidence":"Hidden selector health wears and is serviced with imperfect success; complete programs reserve worst-case actual command costs.","remaining_gate":"Service policies across episodes and a priced fallback/guard circuit, not only one precommitted upkeep action.","dead_end_trigger":"An advantage disappears when its trusted fallback or action-dependent resource trace is included.","minimal_test":"Compare flip and fail-silent command drivers with an explicitly priced guard and recurrent selector states.","fallbacks":["R08","R15","R20","R35","R37"],"provenance":["docs/results/T4I-diagnosis-through-repair.md","docs/strategy/proof-engine-v8.md"]}
+  ],
+  "rejected_additions": [
+    {"id":"D19","claim":"Flagged memory erasure only scales the value of any installed diagnostic apparatus.","reason":"With flip-prone command execution, the negative selector term persists even on erased messages; correct fallback requests can be inverted. The pure scaling law requires a reliable or fail-silent output contract.","fallbacks":["R08","R14","R33"],"provenance":["docs/results/T4I-diagnosis-through-repair.md"]},
+    {"id":"D20","claim":"At equal cost, preserving more diagnostic information is always preferable to maintaining its interpreter.","reason":"Exact v8 program enumeration finds selector service strictly better than perfect erasure protection at budget 6; their marginal benefits weight the task losses differently.","fallbacks":["R14","R11","R37"],"provenance":["docs/results/T4I-diagnosis-through-repair.md"]}
+  ],
+  "strengthened_existing": ["D03", "D09", "D16", "D17"],
+  "novelty": "Classical Bayes/FSC/channel tools; no new general theorem established."
+}
