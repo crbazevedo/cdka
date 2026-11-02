@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fbf6ee"><meta name="description" content="CDKA v7 — limiares de valor do diagnóstico, saúde oculta e custo de implementar uma política">
+<title>CDKA · Quando conhecer não basta</title>
+<link rel="stylesheet" href="./diagnosis.css"></head>
+<body>
+<header class="top"><a href="../index.html" class="brand"><span class="monogram">C·</span><span>CDKA <small>COUNTERFACTUAL DYNAMICS</small></span></a><a class="repo" href="https://github.com/crbazevedo/cdka/blob/main/docs/results/T4H-hidden-health-diagnosis.md">PROVAS E MODELO ↗</a></header>
+<main class="wrap">
+  <div class="intro"><span class="kicker">RESEARCH ATLAS / T4.H + T3.G / 2026</span><span class="status">RESULTADO FINITO · MATEMÁTICA CONHECIDA</span></div>
+  <h1>Quando conhecer<br><em>não basta.</em></h1>
+  <p class="lead">O corretor pode descobrir sua própria condição — mas precisa sustentar o instrumento que converte essa informação em ação. O valor de um diagnóstico depende da sua precisão, idade e implementabilidade física.</p>
+  <div class="statement"><span class="line"></span><span>Um bit correto pode ser operacionalmente inútil quando o seletor ou a intervenção não são financiáveis.</span></div>
+  <section class="lab" aria-label="Laboratório de diagnóstico físico">
+    <div class="lab-head"><h2>Geometria do diagnóstico</h2><span>MODELO EXATO DE UMA DECISÃO</span></div>
+    <div class="labgrid">
+      <div class="charts">
+        <div class="metrics" id="metrics"></div>
+        <div class="plot"><h3>01 / REGIÕES DE DECISÃO</h3><p>Ganho do diagnóstico conforme o orçamento físico e o erro da medição. Áreas claras significam que a política contingente não traz vantagem.</p><div id="heatmap"></div><div class="legend"><span><i class="swatch lo"></i> Ganho nulo</span><span><i class="swatch hi"></i> Diagnóstico útil</span><span><i class="swatch mark"></i> Configuração selecionada</span></div></div>
+        <div class="plot"><h3>02 / VALOR DA INFORMAÇÃO</h3><p>Survival da melhor política fisicamente implementável contra a referência sem diagnóstico e o limite que revela a saúde gratuitamente.</p><div id="valuechart"></div></div>
+        <div class="plot"><h3>03 / PRAZO DE UTILIDADE</h3><p>Mesmo uma leitura inicialmente correta pode perder valor se a condição do mecanismo mudar antes da ação.</p><div id="agechart"></div></div>
+      </div>
+      <aside class="panel" aria-label="Controles dos experimentos"><div class="paneltitle">VARIÁVEIS FÍSICAS</div>
+        <label class="control">Orçamento total B <output id="v-B">4</output><input id="B" type="range" min="0" max="4" value="4" step="1"></label>
+        <label class="control">Erro diagnóstico η <output id="v-eta">0%</output><input id="eta" type="range" min="0" max="0.5" value="0" step="0.01"></label>
+        <label class="control">Mudança de saúde ν <output id="v-nu">0%</output><input id="nu" type="range" min="0" max="0.5" value="0" step="0.01"></label>
+        <label class="control">Idade da leitura (intervalos) <output id="v-age">1</output><input id="age" type="range" min="0" max="8" value="1" step="1"></label>
+        <label class="control">Falha do procedimento ζ <output id="v-inspectionFailure">0%</output><input id="inspectionFailure" type="range" min="0" max="0.10" value="0" step="0.005"></label>
+        <label class="control">Custo do diagnóstico d <output id="v-d">1</output><input id="d" type="range" min="0" max="2" value="1" step="1"></label>
+        <label class="control">Custo do seletor c <output id="v-c">1</output><input id="c" type="range" min="0" max="2" value="1" step="1"></label>
+        <label class="control">Discordância no registro k <output id="v-k">0</output><input id="k" type="range" min="0" max="1" value="0" step="1"></label>
+        <div class="presettitle">EXPERIMENTOS DE CONTROLE</div><div class="presets">
+          <button data-preset="clear">Diagnóstico perfeito</button><button data-preset="budget">Sem seletor viável</button><button data-preset="stale">Leitura obsoleta</button><button data-preset="procedure">Diagnóstico arriscado</button>
+        </div>
+        <div class="assumption"><b>Contrato causal</b><span>O mesmo intervalo de mudança da saúde ocorre com e sem diagnóstico. Custos fixos não codificam o resultado; saúde não é observada gratuitamente.</span></div>
+      </aside>
+    </div>
+  </section>
+  <section class="notes">
+    <article><div class="section-number">A / DEFINIÇÃO</div><h2>Conhecimento utilizável</h2><p>Uma leitura só altera a decisão quando uma regra de atuação disponível consegue produzir ações diferentes conforme o sinal. O diagnóstico pode aumentar informação sem melhorar a sobrevivência.</p></article>
+    <article><div class="section-number">B / FÓRMULA</div><h2>O limiar de decisão</h2><div class="formula">ΔV = ½ · max(0, g − e · (g + ℓ))<span>e = η + ν − 2ην, para um intervalo</span></div><p>Fórmula do caso equiprovável, com duas ações relevantes, orçamento suficiente e procedimento sem falha. A implementação calcula também custos e falha do diagnóstico.</p></article>
+    <article><div class="section-number">C / PROVA</div><h2>O que foi estabelecido</h2><p>O limite emerge da comparação exata entre as duas ações para cada diagnóstico possível. As políticas são enumeradas usando o sinal realmente armazenado e o orçamento restante, nunca um estado de saúde oculto.</p></article>
+    <article><div class="section-number">D / PRÓXIMA FRONTEIRA</div><h2>Memória, reparo e seleção</h2><p>Uma decisão não resolve a autonomia. O próximo certificado deve incluir o diagnóstico atravessando um reparo, o desgaste do próprio seletor e a viabilidade de repetir a operação.</p></article>
+  </section>
+  <section class="benchmark"><h2>04 / OBSERVABILIDADE E HORIZONTE</h2><p>Mesmo sem diagnóstico pago, ocultar a saúde gera uma lacuna frente ao planejador irrealista que a observa diretamente. Benchmark exato para políticas de relógio + síndrome + recursos, no modelo físico anterior.</p><div id="bench"></div><small>Valores calculados offline com aritmética racional. Não são a extensão multietapas do diagnóstico pago acima.</small></section>
+  <footer><span>CDKA / T3.G–T4.H</span><span><a href="../index.html">Voltar ao atlas</a> · <a href="https://github.com/crbazevedo/cdka">Corpus científico</a></span></footer>
+</main><script type="module" src="./diagnosis-app.mjs"></script></body></html>
