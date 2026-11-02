@@ -23,7 +23,7 @@ class DiagnosticTransportTests(unittest.TestCase):
                                     (F(0),F(1,10),F(1,2)),
                                     (F(0),F(1,10),F(1,2))):
    # 243 cases, both drivers = 486. Rotate architecture variants deterministically.
-   protect=count%2==0;service=count%3==0
+   protect=(count//2)%2==0;service=(count//2)%3==0
    for driver in ('flip','silent'):
     c=C(budget=9, ticks=2,sensor_error=eta,erasure=rho,selector_bad=bad,
         health_drift=nu,memory_flip=omega,driver=driver,selector_wear=F(1,7),
@@ -71,7 +71,9 @@ class DiagnosticTransportTests(unittest.TestCase):
  def test_full_erasure_breaks_diagnosis_but_not_signaling_bypass(self):
   c=C(budget=5,erasure=1,selector_errors=(F(0),F(0)))
   self.assertEqual(closed_value(c),skip_value(c))
-  # A durable actuator mode is a DIFFERENT explicitly readable architecture.
+  # Adversarial architectural change: a durable actuator mode stores the
+  # same diagnostic bit before reset. It is represented by retention=1,
+  # not silently given to the original policy.
   bypass=replace(c,erasure=0)
   self.assertGreater(closed_value(bypass),skip_value(bypass))
  def test_same_marginals_different_joint_health(self):
@@ -106,10 +108,14 @@ class DiagnosticTransportTests(unittest.TestCase):
    self.assertEqual(z['enumerated'],z['sign']);count+=1
   self.assertEqual(count,125)
  def test_delay_loss_not_universal_hard_deadline(self):
+  # Stable H, no bit corruption: erasure reduces gain but does not change
+  # its sign when the selector is reliable and diagnosis itself is safe.
   for t in range(1,7):
    c=C(budget=20,ticks=t,sensor_error=0,erasure=F(1,3),selector_errors=(F(0),F(0)))
    self.assertGreater(closed_value(c),skip_value(c))
  def test_future_control_not_preserved_by_task_sign(self):
+  # A universal action can make the first task require zero information;
+  # that same compression loses the next binary identification task.
   equal_task=((F(1),F(1)),(F(1),F(1)))
   joint={(0,0,0):F(1,2),(1,1,0):F(1,2)}
   collapsed={(0,2,0):F(1,2),(1,2,0):F(1,2)}
