@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "revision": "v12",
+  "base_commit": "644945674871f7b0d6dcf7de1f1693d5c237c155",
+  "active_limit": 2,
+  "active_branches": ["R11", "R14"],
+  "historical_blobs": {
+    "research-options.json": "ff935e74f57ad2c4d37d0ddebea63f408fb77edf",
+    "v8-transport-addendum.json": "c691c0fa249e14ad7a6aa11fee57bdb5b9a4ad71",
+    "v9-continuation-addendum.json": "9cffe6ec8c4dd4fcb9ec30e74460c1fd4a81e2a5",
+    "v10-joint-compilation-addendum.json": "bfd77925f5c17e932c789485ec25e2a9f5f8b240",
+    "v11-trace-addendum.json": "bdf6dc6dfe46cc26d3edb88de510b9cce9fce672"
+  },
+  "combined_counts": {"branches": 44, "rejected": 33},
+  "assessment_policy": "Separate validity, contribution, priority and fertility. The executed contribution is a constructive, physical-interface-aware equivalence/compiler instrument with exact witnesses and useful counterexamples; classical algebra is an enabling tool, not a reason to dismiss innovation.",
+  "branch_additions": [
+    {
+      "id": "R44",
+      "title": "Context-closed generative semantics and admissible operator quotients",
+      "status": "instrument",
+      "hypothesis": "Generating only independent continuation tests can expose the effective structure without enumerating all paths; declared observation/command changes can be audited as extensions of the response space.",
+      "reactivation_trigger": "The raw state or path count grows but traces suggest repeated task responses, or a supervisor gains a new sensor/intervention that may invalidate its macro-interface.",
+      "minimal_test": "Freeze physical kernels, readable inputs, tasks and resource guards; construct the least invariant continuation space with witness words; separately check stochastic lumpability and physical code realizability.",
+      "tools": ["exact operator closure", "Krylov/weighted automata", "stable partition refinement", "conditional-stochastic factorization", "trace witnesses", "observation masks"],
+      "acceptance_gate": "Exact Q_a B=B C_a certificates; independent small-word oracle; demonstrated reduction and explicit no-collapse/interface-change falsifiers; no hidden information supplied to the runtime controller.",
+      "fallbacks": ["R11", "R14", "R12", "R13", "R28", "R35", "R43"],
+      "provenance": ["cdka/semantic_closure.py", "docs/results/T4M-context-closed-semantics.md", "docs/strategy/proof-engine-v12.md"],
+      "contribution": "Executed constructive adaptation: unchanged 80-state plant gives rank 20 with four commands and rank 4 with HOLD; 81 and five candidate evaluations, exact certificates and explicit observation/quotient adversaries. A factorized family grows 2 to 128 states while retaining rank two."
+    }
+  ],
+  "branch_updates": [
+    {"id":"R11","status":"active","evidence":"A physically correct continuation space and shortest witnesses can now be generated instead of enumerating all paths.","remaining_gate":"Realize an approximate continuation signature in one of two genuinely noisy update libraries; no free real-valued evaluator coordinate.","dead_end_trigger":"The exact span is full-dimensional or its basis cannot be read/maintained by the controller.","minimal_test":"Same finite task and budget; exact encoder/update/decoder witness versus a tolerance and a forbidden-interface example.","fallbacks":["R12","R13","R28","R44"],"provenance":["docs/results/T4M-context-closed-semantics.md"]},
+    {"id":"R14","status":"active","evidence":"Equal actions and signatures do not confer a physically realizable shared selector. New authority can invalidate a quotient.","remaining_gate":"Price the whole observation/update/action implementation and certify the smallest upgrade that preserves the expanded continuation space.","dead_end_trigger":"A signature or truth-table composition requires hidden health, an unpriced persistent seed or independently chosen physical rows.","minimal_test":"One shared read/write mechanism with two coupled program libraries; cost frontier and separating history.","fallbacks":["R15","R20","R28","R35","R44"],"provenance":["docs/strategy/proof-engine-v12.md"]}
+  ],
+  "rejected_additions": [
+    {"id":"D30","claim":"Equality of current scores and every isolated command guarantees equality under compositions.","reason":"The four-state PREPARE/CHECK witness has identical single-command survival from x/y, but the two-command word separates them. Reversing order changes the result.","fallbacks":["R43","R44","R13"],"provenance":["docs/results/T4M-context-closed-semantics.md"]},
+    {"id":"D31","claim":"An open-loop equivalence certificate automatically remains valid after adding readable feedback.","reason":"Two initial laws have identical fixed-action sequence survival but differ 1 versus 1/2 under u=Z. Observation masks raise the response-space dimension from 2 to 4.","fallbacks":["R11","R15","R35","R44"],"provenance":["docs/results/T4M-context-closed-semantics.md"]},
+    {"id":"D32","claim":"Grouping states with equal linear continuation signatures always defines a stochastic macro-transition kernel.","reason":"A five-state counterexample merges x/y under all survival continuations but their transition masses to signature classes differ. Linear realization succeeds; Markov lumping fails.","fallbacks":["R12","R13","R44"],"provenance":["docs/results/T4M-context-closed-semantics.md"]},
+    {"id":"D33","claim":"A low semantic rank is a low physical bit budget and removes general search complexity.","reason":"Rank two can distinguish 17 pure states. A delayed-failure N-chain has full rank N. Explicit model construction, numerical precision, policy constraints and optimization complexity remain separate costs.","fallbacks":["R11","R14","R28","R44"],"provenance":["docs/results/T4M-context-closed-semantics.md"]}
+  ]
+}

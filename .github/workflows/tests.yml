@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Generate exact semantic closure certificate
+        run: python -m experiments.semantic_sweep --write --check
       - name: Check browser module syntax
         run: |
           for module in docs/lab/*.mjs tests/*.test.mjs; do node --check "$module"; done
@@ -31,12 +33,13 @@ jobs:
               contents=path.read_text()
               for heading in ("Motivação","Definições mínimas","Formulação","Exemplo","O que habilita","Simulador"):
                   assert heading in contents,(item,heading)
-          for item in ("T3C", "T3D", "T4C", "T3E-T4D", "T3F-T4F", "T4G", "T4H", "T4I", "T4J", "T4K"):
+          for item in ("T3C", "T3D", "T4C", "T3E-T4D", "T3F-T4F", "T4G", "T4H", "T4I", "T4J", "T4K", "T4L", "T4M"):
               assert (Path("docs/articles") / f"{item}.md").exists()
           assert (Path("docs")/"index.html").exists()
-          for lab in ("causal_cut", "policy_cuts", "implementability", "reconfiguration", "composition", "diagnosis", "diagnostic_transport", "continuation", "joint_compilation"):
+          for lab in ("causal_cut", "policy_cuts", "implementability", "reconfiguration", "composition", "diagnosis", "diagnostic_transport", "continuation", "joint_compilation", "trace_explorer", "semantic_closure"):
               assert (Path("docs")/"lab"/f"{lab}.html").exists()
           assert Path('registry/research-options.json').exists()
+          assert Path('registry/v12-semantic-addendum.json').exists()
           print("Canonical articles, research option ledger, extensions and atlas entries verified.")
           PY
       - name: Run independent exhaustive checks
@@ -54,3 +57,4 @@ jobs:
           python -m experiments.continuation_sweep
           python -m experiments.continuation_sweep --check
           python -m experiments.joint_compilation_sweep
+          python -m experiments.semantic_sweep --check

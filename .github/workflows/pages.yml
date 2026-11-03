@@ -7,6 +7,9 @@ on:
       - 'cdka/trace_microscope.py'
       - 'experiments/trace_sweep.py'
       - 'registry/v11-trace-addendum.json'
+      - 'cdka/semantic_closure.py'
+      - 'experiments/semantic_sweep.py'
+      - 'registry/v12-semantic-addendum.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -32,6 +35,11 @@ jobs:
           mkdir -p docs/registry
           cp registry/v11-trace-addendum.json docs/registry/v11-trace-addendum.json
           sed -i 's|../../registry/v11-trace-addendum.json|../registry/v11-trace-addendum.json|g' docs/lab/trace_explorer.html
+      - name: Verify semantic closure and generate exact dataset
+        run: |
+          python -m unittest discover -s tests -p 'test_semantic*.py' -v
+          python -m experiments.semantic_sweep --write --check
+          cp registry/v12-semantic-addendum.json docs/registry/v12-semantic-addendum.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static atlas
