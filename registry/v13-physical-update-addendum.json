@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "revision": "v13",
+  "date": "2026-11-03",
+  "base_commit": "6cd99bb569b746bff6c354694387f15dfb17f50b",
+  "active_limit": 2,
+  "active_branches": ["R11", "R14"],
+  "combined_counts": {"branches": 45, "rejected": 34},
+  "historical_blobs": {
+    "research-options.json": "ff935e74f57ad2c4d37d0ddebea63f408fb77edf",
+    "v11-trace-addendum.json": "bdf6dc6dfe46cc26d3edb88de510b9cce9fce672",
+    "v12-semantic-addendum.json": "14f155499b5f9b768aa634bd69dcd8f04a03b7ef"
+  },
+  "methodology": {
+    "prompt": "docs/methodology/prompt-fechamento-contextual.md",
+    "manual": "docs/methodology/manual-fechamento-contextual.md",
+    "scope": "Differentiate equivalence, weighted aggregation, dominance, abstraction and physical realization; no universal collapse claim."
+  },
+  "assessment_policy": "Correctness, contribution, priority and fertility are separate. The constructive physical update and finite hardware/noise frontier are concrete contributions enabled by established instruments.",
+  "branch_additions": [
+    {
+      "id": "R45",
+      "title": "Costed continuation update circuits",
+      "status": "instrument",
+      "hypothesis": "A task-relative continuation signature can be physically updated with a minimum shared circuit cost that changes with incoming code geometry and noise.",
+      "reactivation_trigger": "A sufficient semantic bit or evaluator signature is treated as freely available after a new observation.",
+      "minimal_test": "Same two-stage plant, initial noisy code, real readable syndrome, shared NAND update and output-write noise; independently enumerate functions and physical traces.",
+      "tools": ["continuation-weighted truth tables", "finite-circuit semantic quotient", "exact polynomial dominance", "independent microstate oracle"],
+      "acceptance_gate": "Minimum-cost physical netlist, strict lower-bound witness, full noise-interval certificate and explicit faulty-gate counterexample.",
+      "fallbacks": ["R11", "R14", "R28", "R38", "R43", "R44"],
+      "provenance": ["cdka/physical_update.py", "docs/results/T4N-noisy-physical-updates.md"],
+      "contribution": "Executed synthesis of 5824 encoder/function pairs, 2814 exact dominance checks; two versus four gates create different realizable noise thresholds."
+    }
+  ],
+  "branch_updates": [
+    {
+      "id": "R11", "status": "active",
+      "evidence": "A real update combines the transported diagnostic and fresh syndrome, writes a single action bit and supports an exact risk bound; no hidden health reaches the circuit.",
+      "remaining_gate": "Refine the continuation signature when individual gate faults change dependencies between available signals; then recurrent updates.",
+      "dead_end_trigger": "Ideal truth-function equivalence is reused as if it preserved the noisy joint law.",
+      "minimal_test": "Two noiselessly equivalent DAGs with declared independent/shared faults; preserve necessary signal correlations.",
+      "fallbacks": ["R12", "R13", "R43", "R44", "R45"],
+      "provenance": ["docs/results/T4N-noisy-physical-updates.md"]
+    },
+    {
+      "id": "R14", "status": "active",
+      "evidence": "A single shared gate network implements all update rows; exact minimum capacities of two and four gates are certified in distinct noise regimes.",
+      "remaining_gate": "Shared multioutput read/write/selection circuits and actual installation/maintenance costs beyond gate-slot capacity.",
+      "dead_end_trigger": "Separate rowwise minimization or arbitrary decoder remapping supplies an unavailable joint program.",
+      "minimal_test": "Compare two whole circuit libraries, charge common subcircuits once, prove minimal achievable upgrade.",
+      "fallbacks": ["R20", "R28", "R38", "R44", "R45"],
+      "provenance": ["docs/strategy/proof-engine-v13.md"]
+    }
+  ],
+  "rejected_additions": [
+    {
+      "id": "D34",
+      "claim": "Noiseless truth-equivalent circuit prefixes can be merged unchanged when the analysis adds internal gate faults.",
+      "reason": "An ideal wire and two NAND inversions implement the same truth function; with independent flip probability gamma in each gate, the latter has output error 2gamma(1-gamma), e.g.18% at gamma=.1. The safe continuation equivalence must include the fault contract and signal dependencies.",
+      "fallbacks": ["R11", "R14", "R43", "R44", "R45"],
+      "provenance": ["docs/results/T4N-noisy-physical-updates.md", "tests/test_physical_update.py"]
+    }
+  ]
+}

@@ -10,6 +10,9 @@ on:
       - 'cdka/semantic_closure.py'
       - 'experiments/semantic_sweep.py'
       - 'registry/v12-semantic-addendum.json'
+      - 'cdka/physical_update.py'
+      - 'experiments/physical_update_sweep.py'
+      - 'registry/v13-physical-update-addendum.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -40,6 +43,12 @@ jobs:
           python -m unittest discover -s tests -p 'test_semantic*.py' -v
           python -m experiments.semantic_sweep --write --check
           cp registry/v12-semantic-addendum.json docs/registry/v12-semantic-addendum.json
+      - name: Verify physical update and generate exact frontier
+        run: |
+          python -m unittest discover -s tests -p 'test_physical_update*.py' -v
+          python -m experiments.physical_update_sweep --write --check
+          node --test tests/physical-update-lab.test.mjs
+          cp registry/v13-physical-update-addendum.json docs/registry/v13-physical-update-addendum.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static atlas
