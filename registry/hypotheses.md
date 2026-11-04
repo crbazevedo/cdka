@@ -49,3 +49,15 @@
 
 [Article](../docs/articles/maintenance_access.md) · [Proof](../docs/results/maintenance-enabled-signatures-proof.md) · [Review](../docs/results/maintenance-access-review.md) · [Laboratory](../docs/lab/maintenance_access.html) · [Addendum](maintenance-access-addendum.json).
 
+## Reachable diagnosis — 2026-11-04 (R11/R14)
+
+| ID | Status | Claim | Scope |
+|---|---|---|---|
+| RD.1 | Exact class certificate | Worst complete-plan regret over a reachable convex hull is attained at a generated preparation; one common program is certified or refuted by correlated witnesses | Same finite admissible program library and physical contract; no free history input |
+| RD.2 | Constructive domain reduction | One shared fair-source acquisition and arbitrary D/R histories preserve four exchangeable, complement-antisymmetric contrast coordinates | Input-boundary evaluator; maintenance generally leaves the domain; full backward responses precede restriction |
+| RD.3 | Exact physical fixture | Four histories and96 programs have unique minimax DRDDM with regret0.0025321961; no program meets regret0.003 and fidelity0.85 together | Two preparation updates, four mandatory continuation updates, at most one additional paid M |
+| RD.4 | Parameter-wide identity | Shared-sensor fidelity is1/2+(1−2η)(V0−1/2), bounded by1−η; shrinking regret can accompany lost information | Fair source and substrate initially independent of source and sensor noise |
+| RD.5 | Measured implementation improvement | Four-coordinate evaluation reproduces all6144 benchmark responses with lower arithmetic/cache cost; compilation, encoding and checking separately priced | Local exact-rational benchmark; preparation/program enumeration remains explicit |
+
+[Article](../docs/articles/reachable_diagnosis.md) · [Class proof](../docs/results/reachable-interfaces-proof.md) · [Domain proof](../docs/results/reachable-domain-proof.md) · [Review](../docs/results/reachable-diagnosis-review.md) · [Laboratory](../docs/lab/reachable_diagnosis.html) · [Addendum](reachable-diagnosis-addendum.json).
+

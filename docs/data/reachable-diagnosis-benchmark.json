@@ -1,0 +1,161 @@
+{
+  "all_responses_equal": true,
+  "boundary_vs_contrast_break_even_batches": 0.04834977120195975,
+  "class_certificate": {
+    "compile_seconds": 0.1798521550008445,
+    "json_bytes": 197517,
+    "verify_seconds": 0.17320157399808522
+  },
+  "contrast4_vs_contrast16_break_even_batches": 0.022612856127670947,
+  "environment": {
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "python": "3.12.14"
+  },
+  "limits": [
+    "local measured timings; no universal speedup claim",
+    "all 2^h histories and all (k+2)*2^k plans are enumerated",
+    "input-domain reduction is not a closed maintenance quotient"
+  ],
+  "methods": [
+    {
+      "cache_json_bytes": 444556,
+      "cache_rational_entries": 3072,
+      "compile_seconds": 0.5082918510015588,
+      "max_rational_bits": 379,
+      "method": "full_joint_32",
+      "preparation_encoding_seconds": 2.9833005100954324e-05,
+      "query_batch_seconds": 2.00963104100083,
+      "total_seconds_for_query_batches": {
+        "1": 2.8239428520028014,
+        "10": 20.91062222101027,
+        "100": 201.77741591108497
+      }
+    },
+    {
+      "cache_json_bytes": 222578,
+      "cache_rational_entries": 1536,
+      "compile_seconds": 0.2522478669998236,
+      "max_rational_bits": 379,
+      "method": "contrast_16",
+      "preparation_encoding_seconds": 0.01430027400056133,
+      "query_batch_seconds": 1.0470601740016718,
+      "total_seconds_for_query_batches": {
+        "1": 1.6195984419973684,
+        "10": 11.043140008012415,
+        "100": 105.27855566816288
+      }
+    },
+    {
+      "cache_json_bytes": 111377,
+      "cache_rational_entries": 768,
+      "compile_seconds": 0.27075957899796776,
+      "max_rational_bits": 379,
+      "method": "reachable_boundary_8",
+      "preparation_encoding_seconds": 0.022194590004801285,
+      "query_batch_seconds": 0.500914301002922,
+      "total_seconds_for_query_batches": {
+        "1": 1.0998585970010026,
+        "10": 5.608087306027301,
+        "100": 50.69037439629028
+      }
+    },
+    {
+      "cache_json_bytes": 54912,
+      "cache_rational_entries": 384,
+      "compile_seconds": 0.27200229699519696,
+      "max_rational_bits": 373,
+      "method": "antisymmetric_contrast_4",
+      "preparation_encoding_seconds": 0.01284063799539581,
+      "query_batch_seconds": 0.23801624399493448,
+      "total_seconds_for_query_batches": {
+        "1": 0.8288493059808388,
+        "10": 2.970995501935249,
+        "100": 24.392457461479353
+      }
+    }
+  ],
+  "parameters": {
+    "arithmetic": "fractions.Fraction, exact",
+    "histories": 64,
+    "history_length": 6,
+    "plans": 96,
+    "repetitions": 3,
+    "responses_per_batch": 6144
+  },
+  "schema": "cdka.reachable-diagnosis-benchmark/v1",
+  "shared_kernel_seconds": 0.10166603399557061,
+  "shared_preparation_seconds": 0.20432409299974097,
+  "timing_samples": {
+    "certificate_compile": [
+      0.205859469002462,
+      0.1798521550008445,
+      0.176248828000098
+    ],
+    "certificate_verify": [
+      0.18722010200144723,
+      0.17169514299894217,
+      0.17320157399808522
+    ],
+    "compile16": [
+      0.2488071440020576,
+      0.2522478669998236,
+      0.2544166400039103
+    ],
+    "compile32": [
+      0.5063274679996539,
+      0.4806535320021794,
+      0.5172798989951843
+    ],
+    "encoding16": [
+      0.01430027400056133,
+      0.017179009002575185,
+      0.013089531996229198
+    ],
+    "encoding32": [
+      2.9833005100954324e-05,
+      7.366700447164476e-05,
+      1.4089004253037274e-05
+    ],
+    "encoding4": [
+      0.01284063799539581,
+      0.0157841800028109,
+      0.01222600100300042
+    ],
+    "encoding8": [
+      0.020004374004201964,
+      0.026709453006333206,
+      0.022194590004801285
+    ],
+    "projection4": [
+      0.019754429995373357,
+      0.022369054997398052,
+      0.01825697599997511
+    ],
+    "projection8": [
+      0.018097195999871474,
+      0.02358831600577105,
+      0.018511711998144165
+    ],
+    "query16": [
+      1.0470601740016718,
+      0.9901304200029699,
+      1.124915816995781
+    ],
+    "query32": [
+      2.00963104100083,
+      1.9636866270011524,
+      2.085195484003634
+    ],
+    "query4": [
+      0.23801624399493448,
+      0.2315850209997734,
+      0.2466861379944021
+    ],
+    "query8": [
+      0.500914301002922,
+      0.5085324469982879,
+      0.48656919700442813
+    ]
+  },
+  "total_time_convention": "kernel+preparation+encoding+query compilation+N query batches; class certificate separately priced"
+}
