@@ -37,3 +37,15 @@
 - Mean-optimal viability need not preserve both contexts; retain the per-context profile.
 - FW+set cover, normal-form exponents, KL data processing, controlled lumpability and occupancy planning are established instruments, not CDKA novelty by renaming.
 - Units, full policy class, clock, randomization and viability criterion must remain explicit.
+
+
+## Maintenance-access bridge — 2026-11-04 (R11/R14)
+
+| ID | Status | Executed statement | Scope / remaining obligation |
+|---|---|---|---|
+| MA.1 | Exact extension criterion and constructive certificate | An old linear continuation interface survives one added physical maintenance routine iff M W0 is contained in W0; otherwise a real continuation separates probability laws | Fixed finite kernels, declared terminal observations and at most one prepaid service slot |
+| MA.2 | Exact physical witness | The inherited 6-NAND voter selects repair; old D/R rank10 becomes12 with one service opportunity; paid32-state model admits24 Markov classes and22 evaluator coordinates | Linear rank includes mass; not a physical-memory minimum or complete plant-survival result |
+| MA.3 | Parametric corollary and bounded approximation | Every s>0 requires the same enlarged exact space; pairwise minimax prediction error over24 bounded words scales linearly with s | Approximation threshold belongs to the displayed pair, not all physical input laws |
+
+[Article](../docs/articles/maintenance_access.md) · [Proof](../docs/results/maintenance-enabled-signatures-proof.md) · [Review](../docs/results/maintenance-access-review.md) · [Laboratory](../docs/lab/maintenance_access.html) · [Addendum](maintenance-access-addendum.json).
+

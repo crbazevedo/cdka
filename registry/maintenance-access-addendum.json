@@ -1,0 +1,148 @@
+{
+  "id": "maintenance-access-bridge",
+  "date": "2026-11-04",
+  "base_commit": "2eb1da7b635da2165e3b767440371a69583df3d0",
+  "active_branches": [
+    "R11",
+    "R14"
+  ],
+  "scientific_status": "exact scoped physical witness, necessary/sufficient extension criterion, constructive certificates and bounded approximation",
+  "historical_files": "inherited physical kernels byte-identical; historical ledger entries preserved",
+  "linked_interface_artifact": {
+    "name": "formalizacao_interfaces_F7.zip",
+    "obligations": [
+      3,
+      4
+    ],
+    "sha256": "2aa0065659f206382c387ebb344d8124ee1d90539f1b4eb5da62c4e46b90654c"
+  },
+  "claims": [
+    {
+      "id": "MA.1",
+      "statement": "M W0 subset W0 iff old signature remains sufficient under at most one maintenance",
+      "proof": "docs/results/maintenance-enabled-signatures-proof.md"
+    },
+    {
+      "id": "MA.2",
+      "statement": "actual selector maintenance extends closed rank10 to12; paid32-state process has24 Markov classes and22 linear response coordinates",
+      "evidence": "docs/data/maintenance-access-results.json"
+    },
+    {
+      "id": "MA.3",
+      "statement": "same enlarged span for every repair success s>0; bounded pair approximation threshold exact",
+      "scope": "two stated initial laws;24 words with<=2D/R and<=1M"
+    }
+  ],
+  "negative_controls": [
+    "zero repair success",
+    "returned intermediate voter output",
+    "unconditional repair",
+    "hidden-health mean-rate replacement",
+    "second maintenance without resource",
+    "tampered algebraic certificate"
+  ],
+  "preservation": [
+    {
+      "path": "cdka/__init__.py",
+      "git_blob_sha": "18e2565fd9e89bca4ddd5744672f3e44bd53414c"
+    },
+    {
+      "path": "cdka/boundary_voting.py",
+      "git_blob_sha": "2d666302843608004575d34f3004c0ff053c5321"
+    },
+    {
+      "path": "cdka/causal_cut.py",
+      "git_blob_sha": "473e8489d2016f7e3fa1937b2db4ef5d57729557"
+    },
+    {
+      "path": "cdka/causal_tradeoff.py",
+      "git_blob_sha": "fba1187d8a7c59dd866fcec7bfe343ede70a0733"
+    },
+    {
+      "path": "cdka/composition.py",
+      "git_blob_sha": "d2b9ccc2253b326af5d494b6d14c5dac6666105c"
+    },
+    {
+      "path": "cdka/continuation_interfaces.py",
+      "git_blob_sha": "d18aba3fca411d5db07d71952d2e64d0b3842f29"
+    },
+    {
+      "path": "cdka/diagnostic_transport.py",
+      "git_blob_sha": "db13f4e0a0189150b31945dec8ceb33d33d49bc4"
+    },
+    {
+      "path": "cdka/faulty_updates.py",
+      "git_blob_sha": "020bb4f82e81268cfe7f75416013a91e4e1842f6"
+    },
+    {
+      "path": "cdka/finite.py",
+      "git_blob_sha": "00dc68e0e822f5c3731c57c1e0b61e9dab0e346f"
+    },
+    {
+      "path": "cdka/hidden_health.py",
+      "git_blob_sha": "10e3492bf45e8626a5966099ca789a43ad5f83bb"
+    },
+    {
+      "path": "cdka/implementability.py",
+      "git_blob_sha": "1d8ab5043ad56d65d8eaf677d7e91ebb20569d8a"
+    },
+    {
+      "path": "cdka/joint_compilation.py",
+      "git_blob_sha": "ff737472535d6022c09d55813a005dab6b19e8d4"
+    },
+    {
+      "path": "cdka/physical_update.py",
+      "git_blob_sha": "c9055a0503e841ed5fa1bd245e485e4077dbe1aa"
+    },
+    {
+      "path": "cdka/policy_cuts.py",
+      "git_blob_sha": "b894b5d3964dc817d0c0ab66ff1b95e49c0e297a"
+    },
+    {
+      "path": "cdka/reconfiguration.py",
+      "git_blob_sha": "d67fc71f395dcd07479f7e1807e8014832003cc8"
+    },
+    {
+      "path": "cdka/reliability.py",
+      "git_blob_sha": "a693354a264f2979b87cdb285d44a605e926d330"
+    },
+    {
+      "path": "cdka/selector_realization.py",
+      "git_blob_sha": "cbfeb140eec0328da3db9841c24b01fa8dec56e4"
+    },
+    {
+      "path": "cdka/semantic_closure.py",
+      "git_blob_sha": "b3a61a2ed0c3bc8b0b661d118013013db8afeb53"
+    },
+    {
+      "path": "cdka/trace_microscope.py",
+      "git_blob_sha": "bf516b9094d3ec0142dedc28aed6dd176a9f6e1d"
+    },
+    {
+      "path": "cdka/variational.py",
+      "git_blob_sha": "4ca56b742d1afac486d3e4dc6d58bd5f62154d67"
+    }
+  ],
+  "reproduction": [
+    "python -m unittest discover -s tests -p 'test_maintenance*.py' -v",
+    "python -m experiments.maintenance_access_sweep --check",
+    "node --test tests/maintenance-access-lab.test.mjs"
+  ],
+  "artifacts": [
+    "cdka/maintenance_access.py",
+    "cdka/maintenance_signatures.py",
+    "experiments/maintenance_access_sweep.py",
+    "docs/articles/maintenance_access.md",
+    "docs/results/maintenance-enabled-signatures-proof.md",
+    "docs/results/maintenance-access-review.md",
+    "docs/strategy/maintenance-access-bridge.md",
+    "docs/lab/maintenance_access.html"
+  ],
+  "limits": [
+    "linear evaluator ranks are not physical bits",
+    "main grammar returns only one terminal readout",
+    "input preparations are not proved reachable from one sensor",
+    "service slot is hard budget; other physical costs separately counted",
+    "readout objective is not complete plant survival"
+  ]
+}
