@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "revision": "v15",
+  "date": "2026-11-04",
+  "base_commit": "7fa14299961937a580f0de7c0af46511313e834e",
+  "active_limit": 2,
+  "active_branches": ["R11", "R14"],
+  "combined_counts": {"branches": 47, "rejected": 40},
+  "historical_blobs": {
+    "research-options.json": "ff935e74f57ad2c4d37d0ddebea63f408fb77edf",
+    "v12-semantic-addendum.json": "14f155499b5f9b768aa634bd69dcd8f04a03b7ef",
+    "v14-stochastic-boundary-addendum.json": "2fe9100e5c81b6904e581ca022d0c7f31c40fff3"
+  },
+  "assessment_policy": "Separate validity, concrete contribution, priority and fertility. Exact physical-interface refinement, costed maintenance comparison and verified two-update composition are contributions enabled by known lumpability and PTM tools.",
+  "branch_additions": [{
+    "id": "R47", "title": "Implementation-relative stochastic symmetry and costed corrective maintenance", "status": "instrument",
+    "hypothesis": "A real correction mechanism may break the symmetry of its ideal task and thereby enlarge the sufficient stochastic boundary; maintaining an existing interpreter can outperform redundancy.",
+    "reactivation_trigger": "A mathematically symmetric primitive is replaced by a physical noisy circuit, or redundant designs are compared without paying for their voter and its maintenance.",
+    "minimal_test": "Three physical bits, hidden bank health, six-NAND majority, two update primitives; independent raw-event and quotient laws; compare six priced architectures against direct selector maintenance.",
+    "tools": ["exact polynomial fault expansion", "symmetry-aware stochastic lumping", "continuation-space closure", "affine maintenance certificates", "conditional joint laws"],
+    "acceptance_gate": "Exact projection identities, explicit equal-count counterexample, whole-interval service comparison and a physically affordable policy. Do not generalize beyond the grammar or fixed portfolio.",
+    "fallbacks": ["R11", "R14", "R12", "R13", "R20", "R43", "R44", "R46"],
+    "provenance": ["cdka/boundary_voting.py", "docs/results/T4P-realized-correction-interfaces.md"],
+    "contribution": "Physical16-state register reduces to12 classes while ideal majority would permit8; exact symmetry gap2gamma(1-gamma)(1-2gamma)^2;192 row and384 two-update checks; maintaining four gates dominates maintaining the voter of a triplicated design over the whole service-success interval in the fixed task."
+  }],
+  "branch_updates": [
+    {"id":"R11","status":"active","evidence":"A reduced stochastic boundary preserves arbitrary repeated words of the two declared updates, including hidden substrate noise. The physical circuit demands a distinguished-port refinement.","remaining_gate":"One physically updated diagnostic must select operation or maintenance in a recurrent process with a hidden selector condition.","dead_end_trigger":"A reduced current register law loses a persistent source of future failures or gains a free health observation.","minimal_test":"Exactly two shared-component controller libraries, same plant and budget; construct update/decision witness and a smallest separating history.","fallbacks":["R12","R13","R43","R44","R46","R47"],"provenance":["docs/strategy/proof-engine-v15.md"]},
+    {"id":"R14","status":"active","evidence":"The final voter is paid and fallible. Same-technology triplication loses; maintenance restores value, but cheaper direct selector maintenance is better in the fixture.","remaining_gate":"Price the circuit that selects maintenance, not an exogenous reliable trigger; derive the joint recurrent resource/interface guarantee.","dead_end_trigger":"Extra copies cannot change the last-port limitation or a purported benefit ignores a simpler same-budget alternative.","minimal_test":"One recurrent model with bank-health diagnosis, noisy read/write and finite repair resources; exact oracle and a necessary/sufficient condition or strict impossibility.","fallbacks":["R20","R28","R38","R45","R46","R47"],"provenance":["docs/strategy/proof-engine-v15.md"]}
+  ],
+  "rejected_additions": [
+    {"id":"D38","claim":"Permutation symmetry of the ideal majority function guarantees count-only stochastic reduction of its faulty implementation.","reason":"The six-NAND channel distinguishes011 from101 by2gamma(1-gamma)(1-2gamma)^2. The correct physical partition retains the distinguished port, yielding12 instead of8 states with hidden health.","fallbacks":["R13","R44","R46","R47"],"provenance":["docs/results/T4P-realized-correction-interfaces.md"]},
+    {"id":"D39","claim":"A hidden repaired/degraded bank can always be replaced by independent gates having the mean failure rate.","reason":"The common maintenance outcome couples later failures. The task value of the mixture differs exactly from the value computed using mean error .0048.","fallbacks":["R11","R43","R46","R47"],"provenance":["tests/test_boundary_maintenance_mixture.py"]},
+    {"id":"D40","claim":"Adding triplication and maintaining its voter necessarily improves upon maintaining the original selector at the same number of service operations.","reason":"In the declared fixture, direct four-gate selector maintenance dominates the18-gate redundant design for every service-success probability in[0,1], certified by affine endpoints. This is not a universal architecture ordering.","fallbacks":["R14","R20","R47"],"provenance":["docs/results/T4P-realized-correction-interfaces.md"]}
+  ]
+}

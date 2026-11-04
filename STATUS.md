@@ -1,38 +1,35 @@
 # CDKA — Research State
 
-**2026-11-03 · v14 / T4.O–T3.K: stochastic physical boundaries and consolidated finite core. Active branches: R11/R14.** The previous state and all historical artifacts remain preserved at commit10d963c5dd190ce10f90270b88e0ee6373ea2efe. The original physical process and v13 task are unchanged.
+**2026-11-04 · v15 / T4.P–T3.L: realized correction, two-update signatures and paid maintenance. Active proof branches: R11/R14.** All prior physical kernels and ledgers remain unchanged; v14 is preserved at commit7fa14299961937a580f0de7c0af46511313e834e.
 
-[Consolidation v9–v14](docs/synthesis/finite-core-v9-v14.md) · [Result/proofs](docs/results/T4O-stochastic-physical-boundaries.md) · [Strategy](docs/strategy/proof-engine-v14.md) · [Miniarticle](docs/articles/T4O.md) · [Lab](docs/lab/faulty_update.html) · [Research addendum](registry/v14-stochastic-boundary-addendum.json).
+[Result](docs/results/T4P-realized-correction-interfaces.md) · [Strategy](docs/strategy/proof-engine-v15.md) · [Miniarticle](docs/articles/T4P.md) · [Lab](docs/lab/boundary_voting.html) · [Additive ledger](registry/v15-realized-correction-addendum.json).
 
-## Contributions executed
+## Executed results
 
-1. The finite chain from relevant distinctions through continuation signatures, physical codes and real updates is consolidated into a claim/dependency/predecessor map. This closes a corpus-organization gate, not the whole agency program.
-2. Independent faulty NANDs replace ideal gates. Actual physical nodes preserve shared noise and duplicate gates; ideal truth-table merging is not reused for incomplete circuits.
-3. A complete joint port-law contract is sufficient for safe stochastic continuation. Per-wire marginals fail; a common hidden future-noise source must also be included if relevant.
-4. Complete bounded synthesis:12,395 rooted netlists,611 terminal conditional-channel/cost classes and39,104 code/channel programs. Sourcewise encoder optimization is independently checked under the existing equal-price library.
-5. Same four gates, same ideal function and same code: at p=gamma=.01, parallel survival .8088208243744518 versus sequential .8091942664634513. The baseline .8091779607700227 lies between them.
-6. One-fault traces localize the topology advantage. Total sensitivity at zero gate noise changes from−.064655581015 to−.025822377433; the final gate remains the dominant remaining liability.
-7.8,854 exact Bernstein polynomial checks certify a sequential circuit as globally optimal over gamma∈[0,.01] for p=.01 and capacity<=4. Wider settings are solved pointwise, not claimed continuously certified.
-8. Last-port upper bound applies even to unlimited upstream Boolean logic under the same independent final-output contract. At p=.01, gamma>=.01182419796035257 prevents beating the common trusted bypass. A voter or extra outputs must be included as a different paid architecture.
+1. The six-NAND majority voter has exact asymmetry f(011)-f(101)=2gamma(1-gamma)(1-2gamma)^2. Ideal function symmetry does not certify its faulty physical realization.
+2. For the two declared register updates with hidden substrate health, the complete16-state process has an exact12-class physical quotient (Z,a,b+c). The abstract symmetric majority would allow8 classes (Z,a+b+c). Independent row and two-update oracles agree exactly; current joint bits alone do not determine future failures when Z is persistent.
+3. Exact invariant response spaces have ranks10 and5 respectively in the fixed rational fixture. These are evaluator coordinates, not hardware-memory bits or a newly readable health input.
+4. Explicit18-gate triplication+voter,10-gate shared-output voter, and4-gate original selector are compared in the SAME SERVICE-first terminal task. A paid one-bank maintenance attempt changes conditional voter/selector reliability and is not revealed to the policy. One resource token leaves both terminal actions affordable.
+5. In the default fixture p=.01, degraded gamma=.02, restored gamma=.001, maintenance success=.8: bypass .809177960770; unmaintained triple .808854141237; voter-maintained triple .809277629247; maintained single .809328337152. Absolute differences are small; the structural comparison is exact within this portfolio.
+6. Minimum service success to beat bypass is .490971934444 for the single selector and .611718916306 for the redundant voter. Affine endpoint certificates prove that direct selector maintenance dominates voter maintenance for the ENTIRE success interval[0,1], other parameters fixed.
+7. Repair health must be retained as a common latent cause; replacing it by a mean independent gate-error rate changes the outcome. More installed copies do not remove the last-port limit.
+
+## Scope and contribution
+
+The portfolio and register-closure experiments share the actual voter but are not a jointly optimized recurrent agent. The result is an implementation-relative stochastic reduction and costed maintenance separation with complete witnesses. It is not universal optimality among all18-gate circuits. Existing PTM and Markov aggregation tools support the adaptation; correctness, contribution, priority and fertility remain separate assessments.
 
 ## Research memory
 
-**46 approaches and37 rejected shortcuts.** R46 is an instrument for stochastic physical boundaries. D35–D37 reject marginal composition, ideal-truth/gate-count equivalence under physical faults, and unlimited upstream compensation for a fixed unreliable final port. All prior ledgers remain byte-identical. Only R11/R14 are active.
+**47 approaches,40 rejected shortcuts**; R47 records this verified instrument. D38–D40 preserve failures of ideal-symmetry transfer, averaging hidden bank health, and unconditional preference for redundancy. Historical files remain immutable. R11/R14 only are active.
 
-Correctness, contribution, priority and fertility remain separate. The established PTM framework enables the specific synthesis, certificate, trace analysis and operational bounds; it is not a reason to dismiss these advances as noninnovative.
+## Next gate
 
-## Next narrow gates
-
-**R11:** reduce complete joint laws to task-sufficient stochastic signatures under an explicit two-update grammar, preserving latent fault dependence and runtime observability.
-
-**R14:** shared multioutput selection with priced final voting/fail-silent behavior and maintenance. Use the final-port bound to decide when changing the architecture is necessary, rather than merely adding upstream gates.
-
-No claim yet of recurrent maintenance of all gates, thermodynamic calibration, or general agency emergence. Gamma and installed gate count are declared physical-library parameters, not endogenous energy production.
+One small recurrent model must include selection of maintenance by a physically stored diagnostic and a fallible selector, with hidden mechanism health, shared components and the same resource ledger. Reuse the certified quotient rather than adding unrelated components. Require a necessity/sufficiency condition, or strict impossibility with a minimum realizable upgrade, before broadening the model.
 
 ## Verification
 
-15 new scientific Python tests plus catalog integrity; seven browser-kernel tests. Independent scalar oracle3,120 executions; exact continuous8,854 inequalities;128 complete conditional traces; exhaustive library and encoder checks. Generated certificate is rebuilt and tested by CI/Pages.
+17 scientific Python tests plus one catalog test and seven JS tests. 192 exact quotient rows;384 two-update comparisons;2048 raw voter masks;2560 independent module/voter fault cases;128 complete conditional traces. Polynomial identity is coefficientwise; service dominance uses exact affine endpoints. No Monte Carlo inference.
 
-Local Chromium desktop1440×1100 and mobile390×844: two SVGs,16 trace rows, five controls, no JavaScript exceptions or document overflow. This is local-byte QA, not independent live-public-site navigation.
+Local Chromium desktop1440×1100 and mobile390×844: six portfolio rows, three panels, three exercised controls, two SVGs, no JS errors or horizontal overflow. These are offline file-byte checks; live publication is checked separately through GitHub Actions.
 
-Reproduce: `python -m unittest discover -s tests -p 'test_faulty*.py' -v`; `python -m experiments.faulty_update_sweep --write --check`; `node --test tests/faulty-update-lab.test.mjs`.
+Reproduce: `python -m unittest discover -s tests -p 'test_boundary*.py' -v`; `python -m experiments.boundary_voting_sweep --write --check`; `node --test tests/boundary-voting-lab.test.mjs`.

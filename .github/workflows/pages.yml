@@ -16,6 +16,9 @@ on:
       - 'cdka/faulty_updates.py'
       - 'experiments/faulty_update_sweep.py'
       - 'registry/v14-stochastic-boundary-addendum.json'
+      - 'cdka/boundary_voting.py'
+      - 'experiments/boundary_voting_sweep.py'
+      - 'registry/v15-realized-correction-addendum.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -58,6 +61,12 @@ jobs:
           python -m experiments.faulty_update_sweep --write --check
           node --test tests/faulty-update-lab.test.mjs
           cp registry/v14-stochastic-boundary-addendum.json docs/registry/v14-stochastic-boundary-addendum.json
+      - name: Verify realized correction and two-update signatures
+        run: |
+          python -m unittest discover -s tests -p 'test_boundary*.py' -v
+          python -m experiments.boundary_voting_sweep --write --check
+          node --test tests/boundary-voting-lab.test.mjs
+          cp registry/v15-realized-correction-addendum.json docs/registry/v15-realized-correction-addendum.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static atlas
