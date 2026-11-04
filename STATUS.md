@@ -1,32 +1,38 @@
 # CDKA — Research State
 
-**2026-11-03 · v13 / T4.N–T3.J: from a continuation signature to a costed physical update. Active branches: R11/R14.** Previous state and all v1–v12 artifacts remain preserved at commit 6cd99bb569b746bff6c354694387f15dfb17f50b.
+**2026-11-03 · v14 / T4.O–T3.K: stochastic physical boundaries and consolidated finite core. Active branches: R11/R14.** The previous state and all historical artifacts remain preserved at commit10d963c5dd190ce10f90270b88e0ee6373ea2efe. The original physical process and v13 task are unchanged.
 
-[Reusable prompt](docs/methodology/prompt-fechamento-contextual.md) · [Methodology manual](docs/methodology/manual-fechamento-contextual.md) · [Proof Engine v13](docs/strategy/proof-engine-v13.md) · [Exact result](docs/results/T4N-noisy-physical-updates.md) · [Knowledge article](docs/articles/T4N.md) · [Interactive update lab](docs/lab/physical_update.html).
+[Consolidation v9–v14](docs/synthesis/finite-core-v9-v14.md) · [Result/proofs](docs/results/T4O-stochastic-physical-boundaries.md) · [Strategy](docs/strategy/proof-engine-v14.md) · [Miniarticle](docs/articles/T4O.md) · [Lab](docs/lab/faulty_update.html) · [Research addendum](registry/v14-stochastic-boundary-addendum.json).
 
-## Executed increment
+## Contributions executed
 
-1. **General combinatorial research method:** contract → continuations → appropriate quotient/aggregation/dominance → exact small traces → certificate → executable realization → refinement. The prompt distinguishes counting, probability, optimization, adversarial control and approximation instead of treating all problems as linear algebra. It preserves multiplicity, observability, costs, input/output complexity and fallback evidence.
-2. **Real update between decisions:** the same v6 plant, restricted explicitly to SERVICE as the first action. The updater reads only a transported two-bit diagnosis and the new physical syndrome, executes a shared NAND network, and overwrites one bit used by the final HOLD/REFRESH interface. Health and the original diagnostic never enter runtime policy.
-3. **Costed joint implementation:** exact gate libraries of capacity 0..4 provide 5,11,23,48,91 different Boolean functions. Prefix circuits are merged by available-function sets only under the ideal-gate contract. Each class retains a concrete netlist. The largest joint search is 64 encoders ×91 functions = 5824 programs.
-4. **Certified noise/gate frontier:** two/three gates gain over the fixed command only for p<.01377800175004621 when final write is perfect; four gates do so until p<.10570305126989384. Between thresholds four gates are the smallest capacity with a strict improvement. Exact rational polynomial dominance covers the full p range and a common affine transformation covers every uniform output-write error q≤1/2.
-5. **Task-relative one-bit realization:** at p=.01,q=0, baseline is .8091779607700227, best two/three gates .8092550445703148, best four gates .8094514713772433. These gains are small but the strict lower bound and attaining hardware witness are exact. This is not the unrestricted optimum over all first actions or arbitrary architectures.
-6. **Contract-change falsifier:** a wire and two NAND inverters have the same ideal truth table, but internal independent gate-flip probability .1 gives error .18 in the latter. Noiseless functional equivalence cannot be reused for fault analysis without preserving signal dependencies.
+1. The finite chain from relevant distinctions through continuation signatures, physical codes and real updates is consolidated into a claim/dependency/predecessor map. This closes a corpus-organization gate, not the whole agency program.
+2. Independent faulty NANDs replace ideal gates. Actual physical nodes preserve shared noise and duplicate gates; ideal truth-table merging is not reused for incomplete circuits.
+3. A complete joint port-law contract is sufficient for safe stochastic continuation. Per-wire marginals fail; a common hidden future-noise source must also be included if relevant.
+4. Complete bounded synthesis:12,395 rooted netlists,611 terminal conditional-channel/cost classes and39,104 code/channel programs. Sourcewise encoder optimization is independently checked under the existing equal-price library.
+5. Same four gates, same ideal function and same code: at p=gamma=.01, parallel survival .8088208243744518 versus sequential .8091942664634513. The baseline .8091779607700227 lies between them.
+6. One-fault traces localize the topology advantage. Total sensitivity at zero gate noise changes from−.064655581015 to−.025822377433; the final gate remains the dominant remaining liability.
+7.8,854 exact Bernstein polynomial checks certify a sequential circuit as globally optimal over gamma∈[0,.01] for p=.01 and capacity<=4. Wider settings are solved pointwise, not claimed continuously certified.
+8. Last-port upper bound applies even to unlimited upstream Boolean logic under the same independent final-output contract. At p=.01, gamma>=.01182419796035257 prevents beating the common trusted bypass. A voter or extra outputs must be included as a different paid architecture.
 
 ## Research memory
 
-**45 approaches and 34 rejected shortcuts** in the combined ledger. Historical files remain unchanged; the additive [v13 ledger](registry/v13-physical-update-addendum.json) adds R45 (costed continuation-update synthesis) as an instrument, and D34 (ideal circuit equivalence does not preserve internal fault behavior). R11/R14 remain the only active branches.
+**46 approaches and37 rejected shortcuts.** R46 is an instrument for stochastic physical boundaries. D35–D37 reject marginal composition, ideal-truth/gate-count equivalence under physical faults, and unlimited upstream compensation for a fixed unreliable final port. All prior ledgers remain byte-identical. Only R11/R14 are active.
 
-## Concluding the finite core
+Correctness, contribution, priority and fertility remain separate. The established PTM framework enables the specific synthesis, certificate, trace analysis and operational bounds; it is not a reason to dismiss these advances as noninnovative.
 
-The program now contains a coherent finite chain: task-relative distinctions, causal/temporal cut obstructions, continuation preservation, exact generative closure, jointly coded physical memory, and one actual costed update circuit. Consolidate these as a precise claim/dependency map before expanding models.
+## Next narrow gates
 
-The next narrow gates are (R11) task-sufficient noisy signal signatures when gates share faults, and (R14) jointly costed multioutput read/write/select circuits with upkeep. General recurrent self-maintenance and agency emergence are not declared completed. The successful finite case is an advancement and an executable reference, not a substitute for those obligations.
+**R11:** reduce complete joint laws to task-sufficient stochastic signatures under an explicit two-update grammar, preserving latent fault dependence and runtime observability.
+
+**R14:** shared multioutput selection with priced final voting/fail-silent behavior and maintenance. Use the final-port bound to decide when changing the architecture is necessary, rather than merely adding upstream gates.
+
+No claim yet of recurrent maintenance of all gates, thermodynamic calibration, or general agency emergence. Gamma and installed gate count are declared physical-library parameters, not endogenous energy production.
 
 ## Verification
 
-14 scientific Python tests + one preservation/methodology test; six JavaScript tests. Evidence: 24 raw microstate cases, 728 gate/input truth checks, 1092 direct/polynomial evaluations, independent unquotiented netlist enumeration to three gates, 2814 exact interval dominance checks and a fault-contract counterexample. All mathematical values use Fractions; browser charts use the generated certificate.
+15 new scientific Python tests plus catalog integrity; seven browser-kernel tests. Independent scalar oracle3,120 executions; exact continuous8,854 inequalities;128 complete conditional traces; exhaustive library and encoder checks. Generated certificate is rebuilt and tested by CI/Pages.
 
-The standalone lab was exercised in local Chromium desktop 1440×1100 and mobile 390×844: two SVGs, eight trace rows, three controls, no JS errors or horizontal document overflow. These are offline generated-byte checks, not independent live public-site browsing. CI and Pages are verified separately after the commit.
+Local Chromium desktop1440×1100 and mobile390×844: two SVGs,16 trace rows, five controls, no JavaScript exceptions or document overflow. This is local-byte QA, not independent live-public-site navigation.
 
-Reproduce: `python -m unittest discover -s tests -p 'test_physical_update*.py' -v`; `python -m experiments.physical_update_sweep --write --check`; `node --test tests/physical-update-lab.test.mjs`.
+Reproduce: `python -m unittest discover -s tests -p 'test_faulty*.py' -v`; `python -m experiments.faulty_update_sweep --write --check`; `node --test tests/faulty-update-lab.test.mjs`.

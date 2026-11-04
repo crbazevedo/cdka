@@ -1,0 +1,10 @@
+import test from'node:test';import assert from'node:assert/strict';import{readFileSync}from'node:fs';
+import{compile,channel,upperBound,causalWitness,traces,number}from'../docs/lab/faulty-core.mjs';
+const d=JSON.parse(readFileSync('docs/lab/faulty-update-data.json','utf8'));
+test('browser optimizer matches every exact point certificate',()=>{for(const r of d.examples){const x=compile(d,{p:number(r.p),gamma:number(r.gamma),q:number(r.q),capacity:r.capacity});assert.ok(Math.abs(x.value-number(r.value))<1e-12);}});
+test('shared dependence witness is not a marginal calculation',()=>{const x=causalWitness(.1);assert.ok(Math.abs(x.shared-.18)<1e-14);assert.ok(Math.abs(x.independent-.252)<1e-14);});
+test('last-port upper bound dominates searched networks',()=>{for(const p of[0,.01,.1])for(const g of[0,.001,.01,.02])assert.ok(compile(d,{p,gamma:g}).value<=upperBound(d,p,g)+1e-12);});
+test('all conditional fault traces retain their entire mass',()=>{const c=d.same_function.sequential;for(let word=0;word<4;word++)for(let k=0;k<2;k++){const r=traces(c,word,k,.1);assert.equal(r.length,16);assert.ok(Math.abs(r.reduce((a,b)=>a+b.probability,0)-1)<1e-12);}});
+test('terminal channels are normalized physical probabilities',()=>{for(const r of d.channels)for(const g of[0,.01,.5])assert.ok(channel(r.profile,g).every(x=>x>=-1e-12&&x<=1+1e-12));});
+test('global certificate is explicitly bounded',()=>{assert.equal(d.continuous_certificate.distinct_polynomials,8854);assert.equal(d.continuous_certificate.programs_checked,39104);assert.equal(number(d.continuous_certificate.p),.01);assert.deepEqual(d.continuous_certificate.gamma_interval.map(number),[0,.01]);});
+test('page preserves physical scope and trace controls',()=>{const h=readFileSync('docs/lab/faulty_update.html','utf8');for(const k of['p','gamma','q','capacity','trace-input'])assert.ok(h.includes('id="'+k+'"'));assert.ok(h.includes('Saúde oculta'));assert.ok(h.includes('faulty-update-app.mjs'));});

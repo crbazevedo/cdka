@@ -13,6 +13,9 @@ on:
       - 'cdka/physical_update.py'
       - 'experiments/physical_update_sweep.py'
       - 'registry/v13-physical-update-addendum.json'
+      - 'cdka/faulty_updates.py'
+      - 'experiments/faulty_update_sweep.py'
+      - 'registry/v14-stochastic-boundary-addendum.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -49,6 +52,12 @@ jobs:
           python -m experiments.physical_update_sweep --write --check
           node --test tests/physical-update-lab.test.mjs
           cp registry/v13-physical-update-addendum.json docs/registry/v13-physical-update-addendum.json
+      - name: Verify faulty boundaries and publish exact certificate
+        run: |
+          python -m unittest discover -s tests -p 'test_faulty*.py' -v
+          python -m experiments.faulty_update_sweep --write --check
+          node --test tests/faulty-update-lab.test.mjs
+          cp registry/v14-stochastic-boundary-addendum.json docs/registry/v14-stochastic-boundary-addendum.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static atlas

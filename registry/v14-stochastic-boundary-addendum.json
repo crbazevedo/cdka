@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "revision": "v14",
+  "date": "2026-11-03",
+  "base_commit": "10d963c5dd190ce10f90270b88e0ee6373ea2efe",
+  "active_limit": 2,
+  "active_branches": ["R11", "R14"],
+  "combined_counts": {"branches": 46, "rejected": 37},
+  "historical_blobs": {"v13-physical-update-addendum.json": "32651df338f3aebd6d42d04275a5de9cbaec2991"},
+  "assessment_policy": "Correctness, concrete contribution, priority and fertility are independent. PTM and coding theory enable an operational synthesis contribution; established tools do not negate innovation.",
+  "branch_additions": [{
+    "id": "R46", "title": "Costed stochastic boundaries and task-weighted noisy physical synthesis", "status": "instrument",
+    "hypothesis": "Joint conditional port laws plus the extension/resource contract support safe stochastic composition; marginal reliabilities do not.",
+    "reactivation_trigger": "Shared faults, reconvergent signals or a new physical extension invalidate an ideal truth-table or per-wire abstraction.",
+    "minimal_test": "Two small circuit families with equal ideal behavior; exact fault masks, joint boundary, attaining optimal netlist and independent scalar oracle.",
+    "tools": ["probabilistic transfer matrices", "Bernstein polynomial certificates", "conditional joint laws", "signed physical fault traces", "joint encoder/circuit search"],
+    "acceptance_gate": "Same-cost physical value separation, exact library optimum or bound, and a negative test for omitted future correlated noise.",
+    "fallbacks": ["R11", "R14", "R12", "R20", "R38", "R43", "R44", "R45"],
+    "provenance": ["cdka/faulty_updates.py", "docs/results/T4O-stochastic-physical-boundaries.md"],
+    "contribution": "Executed 39104-program bounded synthesis and 8854 continuous dominance checks, conditional joint-law lemma, topology witness and task-specific last-port bound."
+  }],
+  "branch_updates": [
+    {"id":"R11","status":"active","evidence":"Local signature refined to complete accessible joint law; terminal channel merging used only after completion.","remaining_gate":"Smaller task-relative stochastic boundary with latent common-noise context and two successive physical updates.","dead_end_trigger":"A sufficient interface matches marginals but not an accessible joint event or future conditional fault.","minimal_test":"Two live ports, one common cause, explicit separating continuation and costed realization.","fallbacks":["R12","R13","R43","R44","R46"],"provenance":["docs/results/T4O-stochastic-physical-boundaries.md"]},
+    {"id":"R14","status":"active","evidence":"Ideal truth and gate count do not determine value; the last physical output bounds all upstream architectures.","remaining_gate":"Joint multioutput selector with explicit final voting/fail-silent cost and maintenance, not free output processing.","dead_end_trigger":"Extra gates cannot improve the last-port bound or require free trusted repair.","minimal_test":"Compare two output contracts with common priced subcircuits, exact masks and minimum-cost upgrade.","fallbacks":["R20","R28","R38","R45","R46"],"provenance":["docs/strategy/proof-engine-v14.md"]}
+  ],
+  "rejected_additions": [
+    {"id":"D35","claim":"Equal marginal reliability of every boundary wire preserves every subsequent stochastic composition.","reason":"Shared versus independent parents have equal marginals but a noisy NAND gives .18 versus .252 error at gamma=.1.","fallbacks":["R11","R43","R46"],"provenance":["docs/results/T4O-stochastic-physical-boundaries.md"]},
+    {"id":"D36","claim":"Equal code, ideal truth and installed gate count determine operational value under equal per-gate faults.","reason":"Two four-gate realizations straddle the same bypass value when p=gamma=.01.","fallbacks":["R14","R38","R43","R46"],"provenance":["docs/results/T4O-stochastic-physical-boundaries.md"]},
+    {"id":"D37","claim":"Upstream precision or unlimited upstream redundancy always compensates a fixed independently faulty final command port.","reason":"The last-port relaxation gives a task-specific threshold beyond which no upstream Boolean computation beats the bypass. Extra output voting changes the costed contract.","fallbacks":["R14","R20","R45","R46"],"provenance":["docs/results/T4O-stochastic-physical-boundaries.md"]}
+  ]
+}
