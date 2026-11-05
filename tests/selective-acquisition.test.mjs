@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+import {polynomial,cost,choose,pareto,harmlessInput} from '../docs/lab/selective-core.mjs';
+const d=JSON.parse(fs.readFileSync('docs/lab/selective-certificate.json','utf8'));
+test('exact fixture mirrored in browser projection',()=>{assert.equal(d.physical_library.reduce((n,x)=>n+x.netlists,0),64);assert.equal(d.ui_library.length,336);assert.ok(Math.abs(d.ideal_elision.survival.value-d.baseline.survival.value)<1e-14);});
+test('noise polynomial matches tested case and sign',()=>{const x=polynomial(d.noise_certificate.polynomials.survival,.005);assert.ok(Math.abs(x-d.noisy_example.survival.value)<1e-14);assert.ok(polynomial(d.noise_certificate.loss,.01)>.0001);});
+test('price-constrained selection chooses actually feasible full program',()=>{const r=choose(d.ui_library,d.baseline.survival.value,.001);assert.equal(r.gates,1);assert.deepEqual(r.truth,[1,1,1,0]);assert.equal(r.policy,'vote/vote');});
+test('strict tolerance falls back to acquired baseline',()=>{const r=choose(d.ui_library,d.baseline.survival.value,.0001);assert.equal(r.gates,0);assert.deepEqual(r.truth,[1,1,1,1]);});
+test('not every price favors omission',()=>{const one={writes:d.ideal_elision.writes,gate_executions:d.ideal_elision.gate_executions,gates:1};assert.ok(cost(one,.01,.1)<d.baseline.writes.value);assert.ok(cost(one,.1,.1)>d.baseline.writes.value);});
+test('pareto frontier is ordered, no equal-value duplicate',()=>{const f=pareto(d.ui_library);for(let i=1;i<f.length;i++){assert.ok(cost(f[i])>=cost(f[i-1]));assert.ok(f[i].survival>f[i-1].survival);}});
+test('safety direction and artifact controls retained',()=>{assert.ok(harmlessInput(1,1));assert.ok(!harmlessInput(1,0));const h=fs.readFileSync('docs/lab/selective_acquisition.html','utf8');for(const id of ['gamma','epsilon','price','install','tolerance'])assert.ok(h.includes('id="'+id+'"'));assert.ok(h.includes('Não são joules'));});

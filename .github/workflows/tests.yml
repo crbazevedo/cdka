@@ -25,6 +25,8 @@ jobs:
         run: python -m experiments.recurrent_sweep --write --check
       - name: Generate exact renewal and selected-memory certificate
         run: python -m experiments.memory_renewal_sweep --write --check
+      - name: Generate costed selective-acquisition certificate
+        run: python -m experiments.selective_acquisition_sweep --write --check
       - name: Check browser module syntax
         run: |
           for module in docs/lab/*.mjs tests/*.test.mjs; do node --check "$module"; done
@@ -43,15 +45,17 @@ jobs:
               contents=path.read_text()
               for heading in ("Motivação","Definições mínimas","Formulação","Exemplo","O que habilita","Simulador"):
                   assert heading in contents,(item,heading)
-          for item in ("T3C", "T3D", "T4C", "T3E-T4D", "T3F-T4F", "T4G", "T4H", "T4I", "T4J", "T4K", "T4L", "T4M", "T4N", "T4O", "T4P", "T4Q", "T4R"):
+          for item in ("T3C", "T3D", "T4C", "T3E-T4D", "T3F-T4F", "T4G", "T4H", "T4I", "T4J", "T4K", "T4L", "T4M", "T4N", "T4O", "T4P", "T4Q", "T4R", "T4S"):
               assert (Path("docs/articles") / f"{item}.md").exists()
           assert (Path("docs")/"index.html").exists()
-          for lab in ("causal_cut", "policy_cuts", "implementability", "reconfiguration", "composition", "diagnosis", "diagnostic_transport", "continuation", "joint_compilation", "trace_explorer", "semantic_closure", "physical_update", "faulty_update", "boundary_voting", "recurrent_maintenance", "memory_renewal"):
+          for lab in ("causal_cut", "policy_cuts", "implementability", "reconfiguration", "composition", "diagnosis", "diagnostic_transport", "continuation", "joint_compilation", "trace_explorer", "semantic_closure", "physical_update", "faulty_update", "boundary_voting", "recurrent_maintenance", "memory_renewal", "selective_acquisition"):
               assert (Path("docs")/"lab"/f"{lab}.html").exists()
           assert Path('registry/research-options.json').exists()
           assert Path('registry/v16-recurrent-learning-addendum.json').exists()
           assert Path('registry/v17-renewal-addendum.json').exists()
+          assert Path('registry/v18-selective-acquisition-addendum.json').exists()
           assert Path('docs/strategy/learning-compass-v16.md').exists()
+          assert Path('docs/strategy/direction-v18.md').exists()
           assert Path('docs/synthesis/finite-core-v9-v14.md').exists()
           assert Path('docs/synthesis/research-direction-v17.md').exists()
           assert Path('docs/methodology/prompt-fechamento-contextual.md').exists()
@@ -79,3 +83,4 @@ jobs:
           python -m experiments.boundary_voting_sweep --check
           python -m experiments.recurrent_sweep --check
           python -m experiments.memory_renewal_sweep --check
+          python -m experiments.selective_acquisition_sweep --check

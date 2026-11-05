@@ -25,6 +25,9 @@ on:
       - 'cdka/memory_renewal.py'
       - 'experiments/memory_renewal_sweep.py'
       - 'registry/v17-renewal-addendum.json'
+      - 'cdka/selective_acquisition.py'
+      - 'experiments/selective_acquisition_sweep.py'
+      - 'registry/v18-selective-acquisition-addendum.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -85,6 +88,12 @@ jobs:
           python -m experiments.memory_renewal_sweep --write --check
           node --test tests/renewal-lab.test.mjs
           cp registry/v17-renewal-addendum.json docs/registry/v17-renewal-addendum.json
+      - name: Verify priced selective acquisition and noise threshold
+        run: |
+          python -m unittest discover -s tests -p 'test_selective*.py' -v
+          python -m experiments.selective_acquisition_sweep --write --check
+          node --test tests/selective-acquisition.test.mjs
+          cp registry/v18-selective-acquisition-addendum.json docs/registry/v18-selective-acquisition-addendum.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static atlas

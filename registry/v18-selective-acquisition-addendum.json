@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "revision": "v18",
+  "date": "2026-11-05",
+  "base_commit": "a32b9a4bf7ecf558ce9bd7fadd90385698ba759f",
+  "active_limit": 2,
+  "active_branches": ["R11", "R14"],
+  "combined_counts": {"branches": 50, "rejected": 48},
+  "historical_blobs": {"v17-renewal-addendum.json": "567819b210c46ccd467624f9658cd5fd442d9c23"},
+  "provenance_reconciliation": "Canonical v17 has49/44. The previously delivered local v17 adds a write-elision lemma and D45 but was not the same artifact as remote v17. Both are retained; D45 is explicitly imported here, and D46–D48 are new. No historical ledger is replaced.",
+  "assessment_policy": "Correctness, concrete contribution, priority and fertility are separate. A physical synthesis, application or adapted proof can be innovative even when event-triggered control and matrix tools are established.",
+  "branch_additions": [{
+    "id": "R50", "title": "Continuation-certified work suppression with a priced physical selector", "status": "instrument",
+    "hypothesis": "A physically realizable acquisition selector can remove semantically invisible writes while paying for its own installation and invocations; stochastic false omissions require a quantitative survival certificate.",
+    "reactivation_trigger": "A useful abstract omission rule still uses free logic, a common operating bundle hides acquisition expenditure, or gate failures are averaged without distinguishing their consequences.",
+    "minimal_test": "Same v16 plant; two readable inputs (executed service, pre-balance3); up to2 faulty NAND;16 whole maintenance programs; exact rational synthesis and a separate expected acquisition-workload ledger.",
+    "tools": ["operator annihilation", "whole-program circuit enumeration", "integer-scaled probability propagation", "Bernstein monotonicity", "exact root bracketing", "causal fault attribution"],
+    "acceptance_gate": "A realizable program, independent raw-event oracle, exact price condition, a strict tolerance guarantee, and a failed-proof witness under a changed resource ledger.",
+    "fallbacks": ["R11", "R14", "R12", "R20", "R38", "R43", "R44", "R46", "R49"],
+    "provenance": ["cdka/selective_acquisition.py", "docs/results/T4S-priced-selective-acquisition.md", "docs/strategy/direction-v18.md"],
+    "contribution": "One NAND realizes all-horizon lossless elision;1024 raw circuit/maintenance programs represented by336 channels; explicit cost break-even; finite8-cycle tolerance threshold gamma≈.00825224817; exact fault-direction and changed-budget falsifiers."
+  }],
+  "branch_updates": [
+    {"id":"R11","status":"active","evidence":"The omitted update lies in a continuation-null direction; harmful and harmless selector faults are now separated exactly.","remaining_gate":"Uniform omission interfaces for multiple future tasks under noisy realizable update libraries, with a loss tolerance and a separating test when task authority changes.","dead_end_trigger":"A finite-horizon average guarantee is silently promoted to all contexts or indefinite safety.","minimal_test":"One additional continuation that reads the interim record; verify whether DQ remains zero and identify the first witness.","fallbacks":["R12","R13","R43","R44","R49","R50"],"provenance":["docs/strategy/direction-v18.md"]},
+    {"id":"R14","status":"active","evidence":"Installation, gate invocation and write counts are jointly priced. The selector can be uneconomic; refunding saved work to the operational ledger changes the dynamics.","remaining_gate":"A unified pathwise acquisition/actuation budget with a shared noisy selector, including the feedback from saved resources to future information demand.","dead_end_trigger":"Expected workload prices are presented as measured energy or a refund is introduced without recertifying the old omission proof.","minimal_test":"Two whole resource-accounting libraries; a costed attaining program and a necessity/lower-bound certificate.","fallbacks":["R20","R28","R38","R46","R49","R50"],"provenance":["docs/results/T4S-priced-selective-acquisition.md"]}
+  ],
+  "imported_local_lessons": [{
+    "id":"D45", "origin":"previously delivered local v17 package",
+    "claim":"Every newly available diagnostic must be written to preserve all future survival guarantees.",
+    "reason":"The service-from3 branch leads to forced skip at balance2 and subsequent renewal. D1=0 and DQ=0 certify omitting that interim write for all finite horizons.",
+    "fallbacks":["R11","R14","R44","R49"], "provenance":["docs/results/T4S-priced-selective-acquisition.md"]
+  }],
+  "rejected_additions": [
+    {"id":"D46","claim":"Removing writes automatically reduces the total cost of the physical controller.","reason":"The NAND must be installed and executed. Expected cost improves iff c_w S>c_I+c_g E; a high gate price reverses the conclusion without changing survival.","fallbacks":["R14","R38","R50"],"provenance":["docs/results/T4S-priced-selective-acquisition.md"]},
+    {"id":"D47","claim":"All write-selector faults have the same effect on operational value.","reason":"An extra write on the safe omission branch has zero survival derivative; false omissions in the other three contexts have negative contributions. The final write also has no retrospective survival effect.","fallbacks":["R11","R43","R46","R50"],"provenance":["tests/test_selective_acquisition.py"]},
+    {"id":"D48","claim":"A write-elision certificate remains valid after its saved cost is refunded to the actuation balance.","reason":"A refund changes the post-service balance from2 to3, enabling a maintenance choice that can use the retained record. The old DQ=0 proof no longer applies; the measured value changes.","fallbacks":["R11","R14","R20","R49","R50"],"provenance":["docs/results/T4S-priced-selective-acquisition.md"]}
+  ]
+}

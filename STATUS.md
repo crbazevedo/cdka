@@ -1,33 +1,30 @@
-# CDKA — Research State
+# CDKA — v18 execution snapshot
 
-**2026-11-05 · v17 / T4.R–T3.N: renewing the conditions of knowing. Active proof branches R11/R14.** V16 and all previous sources remain preserved at d1877a33d5c011d3c11f2e1080dd20358a1178a5. Its physical kernel is unchanged and byte-verified.
+**2026-11-05 · T4.S/T3.O: continuation-certified selective acquisition, now physically realized and priced. R11/R14 remain the only active branches.** Historical sources are not changed.
 
-[Integrated direction](docs/synthesis/research-direction-v17.md) · [Strategy](docs/strategy/proof-engine-v17.md) · [Result/proof](docs/results/T4R-renewal-and-selected-memory.md) · [Miniarticle](docs/articles/T4R.md) · [Lab](docs/lab/memory_renewal.html) · [Research memory](registry/v17-renewal-addendum.json).
+[Proof](docs/results/T4S-priced-selective-acquisition.md) · [Learning/direction](docs/strategy/direction-v18.md) · [Knowledge article](docs/articles/T4S.md) · [Lab](docs/lab/selective_acquisition.html) · [Additive catalog](registry/v18-selective-acquisition-addendum.json).
 
-## Executed increment
+## Provenance and execution
 
-1. Four equally priced memory-update tables (retain, renew, renew after service, renew after skip) crossed with the16 old physical routing programs. The same faulty bank, hidden health, three diagnostic cells, resources, failure and task remain fixed. Retention is ideal; refresh is the noisy v16 sensor. Matching prices isolates causality, not thermodynamic cost.
-2. The fixed contingent controller achieves eight-cycle survival .9174767896493894 for renewal, .8958752016508781 for retention, .8874864374106240 after-service renewal and .9164918233322648 after-skip renewal.
-3. All64 complete programs were reoptimized, not only compared under one routing. Best per sublibrary: .9174767896493894 / .9115317652171799 / .9115512983110162 / .9164918233322648 respectively. Renewal remains best in this declared library.
-4. The old12-phase emission realization fails for retained bits: action/resource/survival selection creates unequal011/101 masses outside every mixture of old exchangeable source-health emissions. A second noiseless-selector support witness confirms the issue without gate asymmetry or health drift.
-5. The residual swap symmetry gives a valid48-state physical quotient of the64-state process for all64 programs;4096 exact row checks and repeated propagation agree. This is a sufficient evaluator, not a claim of minimal hardware memory.
-6. A telescoping kernel decomposition locates the2.1601588 percentage-point renewal gain across time. The final update contributes exactly zero because no future task uses it; all rules have identical one-cycle survival.
-7. A stale healthy report can suppress both maintenance and the observation needed to justify maintenance. This explains the timing counterexample, not a universal superiority of a renewal schedule.
+Canonical v17 at a32b9a4 contains renewal/retention. The previously delivered local v17 additionally proved write elision. V18 integrates these sources without replacing either and uses the unchanged v16 core (blob0a01bbf40f78f314a56285c15822e7ac06c9848b).
 
-## Integration and decisions
+1. One NAND on (executed service, pre-balance3) implements the omission. Exact D1=0,DQ=0 proof preserves all finite-horizon survival, for every initial live measure and all16 maintenance programs.
+2.64 raw enable netlists (0–2 gates),21 cost-indexed channels,16 whole maintenance programs:1024 physical combinations, at most336 distinct exact program evaluations per noise point. False independence in noisy partial circuits is not used.
+3. Installation, invocation and write counts are jointly priced in a SEPARATE expected acquisition-overhead ledger. The operational token budget remains unchanged. At illustrative costs(1 per write,.01 per gate execution,.10 per gate installed), ideal elision costs8.064998 versus8.587510,6.08455% lower at identical survival.
+4. For the one actual noisy NAND, a rational degree-eight polynomial and positive derivative Bernstein coefficients on[0,.1] certify a unique noise threshold .008252248170071292 for mean eight-cycle loss tolerance .0001. At gamma=.005 the loss is .00605076 percentage point and example overhead6.49666% lower.
+5. Context-wise fault attribution: accidental extra writes on the safe branch have exactly zero survival derivative; false omissions in other contexts are harmful. Counts distinguish writes omitted from tasks lost to failures.
+6. Refund counterexample: returning a saved token changes the post-service state and future decision. The old elision equality no longer applies. In the chosen fixed policy the value improves, but requires a new proof.
 
-The central research interest is a constructive theory of physically realized and renewable continuation interfaces, not an unrestricted scalar of intelligence or an indefinitely growing simulator. The integration note preserves the original knowledge/control/agency motivation and explicitly retains applications and necessary adaptations as contributions.
+## Research memory and next gate
 
-The current next gate is selective acquisition based on physically available evidence and memory, jointly priced with its selector. Before further model growth, consolidate a precise finite-core manuscript statement, proof dependencies, positive constructions and failure certificates.
+50 approaches,48 rejected shortcuts after explicit import of local-v17 D45 and addition of D46–D48. R50 is an executed instrument; R11/R14 remain active. The next gate is one unified pathwise acquisition/actuation budget and a physically shared selector, not another unrelated component.
 
-## Research memory
+The finite-core manuscript should organize a single result family around interface sufficiency, physical implementation, all-horizon certificates and tolerance/cost frontiers. Originality is assessed at exact-result level; classical event-triggered/POMDP tools do not negate concrete synthesis contributions.
 
-**49 approaches,44 rejected shortcuts.** R49 records renewal under action-dependent memory selection. D43 rejects frozen emission calibration under retention; D44 rejects unconditional preference for observing after the intervention it should trigger. Earlier ledgers remain untouched. Only R11/R14 are active.
+## Verification scope
 
-## Scope and verification
+16 scientific Python tests +1 catalog test,7 JavaScript tests. 1024 v16 fresh-row equalities,256 independent raw gate/cell rows,1536 annihilation-row identities across all16 maintenance programs, exact whole-library comparisons at four declared noise points and rational threshold brackets. No Monte Carlo inference. Expected overhead is not a deterministic per-run energy budget.
 
-20 new scientific Python tests plus catalog integrity, six JS tests;4096 quotient rows,1024 original fresh-kernel rows,64 independent raw rows, exact forward/backward agreement across64 programs, two temporal decompositions and stationary/noiseless falsifiers. Decisive values use Fractions. No Monte Carlo estimates or infinite-survival claim.
+Local Chromium desktop/mobile: three panels, two SVGs, five exercised controls, no JS errors or document overflow. This is local-byte QA. Remote CI and Pages status are separate records and are not presumed by this document.
 
-Local Chromium desktop1440×1100 and mobile390×844 exercised two controls and three panels, two SVGs and eight full diagnostic trace rows without JS errors or document overflow. Local-byte visual QA is distinct from public-site navigation. CI and deploy require separate confirmation.
-
-Run `python -m unittest discover -s tests -p 'test_memory_renewal*.py' -v`; `python -m experiments.memory_renewal_sweep --write --check`; `node --test tests/renewal-lab.test.mjs`.
+Run `python -m unittest discover -s tests -p 'test_selective*.py' -v`; `python -m experiments.selective_acquisition_sweep --write --check`; `node --test tests/selective-acquisition.test.mjs`.
