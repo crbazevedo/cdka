@@ -3,6 +3,10 @@ from copy import deepcopy
 from fractions import Fraction as F
 from itertools import product
 import json
+import os
+from pathlib import Path
+import subprocess
+import sys
 import unittest
 from unittest.mock import patch
 
@@ -31,6 +35,36 @@ class MaintenanceSignatureTests(unittest.TestCase):
              patch('cdka.maintenance_signatures.ExactBasis',side_effect=AssertionError('basis search forbidden')):
             self.assertTrue(self.check(portable))
             self.assertTrue(verify_finite_horizon(self.f,self.old,self.ops['M'],self.p,contract=self.meta))
+
+    def test_generator_certificate_is_identical_with_assertions_disabled(self):
+        script = '''
+import json
+import sys
+from cdka.maintenance_access import base_operators, base_probes, contract, witness_laws
+from cdka.maintenance_signatures import compile_one_maintenance, verify_one_maintenance, separator
+ops = base_operators()
+old = {k: ops[k] for k in ('D', 'R')}
+probes, scope = base_probes(), contract()
+certificate = compile_one_maintenance(old, ops['M'], probes, contract=scope)
+verified = verify_one_maintenance(certificate, old, ops['M'], probes, contract=scope)
+print(json.dumps({'optimization': sys.flags.optimize, 'certificate': certificate,
+                  'verified': verified, 'separator': separator(certificate, *witness_laws())}))
+'''
+        env = os.environ.copy()
+        env.pop('PYTHONOPTIMIZE', None)
+        for level, flags in ((0, ()), (1, ('-O',))):
+            with self.subTest(optimization=level):
+                result = subprocess.run(
+                    [sys.executable, '-S', *flags, '-c', script],
+                    cwd=Path(__file__).resolve().parents[1], env=env,
+                    capture_output=True, text=True, timeout=30,
+                )
+                self.assertEqual(result.returncode, 0, result.stderr)
+                payload = json.loads(result.stdout)
+                self.assertEqual(payload['optimization'], level)
+                self.assertTrue(payload['verified'])
+                self.assertEqual(payload['certificate'], self.c)
+                self.assertEqual(payload['separator']['word'], ['M'])
 
     def test_rank_lower_bound_and_operator_certificate_reject_tampering(self):
         corruptions=[]

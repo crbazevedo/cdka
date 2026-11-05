@@ -1,10 +1,12 @@
 # Núcleo do manuscrito: interfaces de continuação realizáveis e renováveis
 
-**5 de novembro de 2026.** Formulação de integração após o certificado de
-preparações e a incorporação do v17 canônico. Este é um núcleo de manuscrito
-com dependências explícitas; a auditoria de prioridade do enunciado unificado
-permanece aberta. As provas, implementações e contraexemplos citados já têm
-seus próprios contratos e evidências.
+**5 de novembro de 2026.** Núcleo consolidado pela auditoria formal, de
+mecanismos e de antecedentes identificados. O
+[manuscrito com exemplo exato](../articles/core_interfaces.md) é agora a
+exposição principal. O fechamento desta etapa é relativo às fontes
+efetivamente consultadas: oito obras em passagens do texto integral e três
+registros/resumos com acesso limitado. Prioridade histórica global permanece
+aberta. Não houve ampliação do simulador físico recorrente.
 
 ## Tese e pergunta delimitada
 
@@ -54,8 +56,10 @@ originais. Suponha:
 
 1. `conv(Q)=conv(X)`, por identidades exatas de cobertura de preparações.
 2. Para cada p em L, existe f em F com `V_x(f)>=V_x(p)` para todo x em X.
-3. A física, as respostas, as duas coberturas e a viabilidade comum são
-   verificadas sob o mesmo contrato.
+3. As respostas e as duas coberturas são verificadas a partir das leis e
+   kernels fornecidos. Aquisição, observações, mecanismos e viabilidade comum
+   são premissas do mesmo contrato, auditadas separadamente; o certificado
+   algébrico não demonstra implementação de hardware.
 
 Então calcular sobre Q e F preserva o valor minimax de arrependimento, o
 valor maximin de fidelidade e a existência de pelo menos um programa comum que satisfaça
@@ -81,17 +85,18 @@ afim. Tampouco uma única história de pior caso certifica optimalidade global.
 O programa escolhido e seu comparador usam a mesma preparação; todos os
 candidatos restantes precisam de limites suficientes.
 
-## 3. Uma realização renovável tem uma obrigação diferente
+## 3. Fechamento de leis, seleção e regeneração têm obrigações distintas
 
 Uma representação estocástica de leis completas exige mais que a interface
 de valores acima. Seja E uma matriz estocástica que emite estados físicos a
-partir de fases do avaliador. Se cada kernel físico admitido satisfaz
+partir de fases do avaliador. Para uma gramática de palavras fixas,
+a condição mais fraca
 
 \[
-K_a=A_aE,\qquad M_a=EA_a,
+E K_a=M_a E
 \]
 
-com A_a substocástica, então `E K_a=M_a E`. Para uma lei inicial `mu=lambda E`,
+com M_a substocástica já basta. Para uma lei inicial `mu=lambda E`,
 com lambda uma submedida não negativa nas fases, qualquer composição admitida
 conserva essa família e sua massa de falha:
 
@@ -100,10 +105,32 @@ conserva essa família e sua massa de falha:
 =\lambda M_{a_1}\cdots M_{a_n}E.
 \]
 
-Essa é a realização de emissão fresca do v16. Renovar o diagnóstico no fim
-do ciclo estabelece a distribuição condicional necessária à fatoração.
-As fases continuam ocultas e pertencem ao avaliador.
+Uma seleção dependente de estado, `K_pi=sum_a D_a K_a`, exige verificar
+primeiro essa decomposição como lei conjunta física. Fechamento por
+primitiva não basta. Uma condição suficiente adicional é
+`E D_a=Dhat_a E`, com máscaras diagonais não negativas que somam a
+identidade em seus respectivos espaços. Então
+`E K_pi=(sum_a Dhat_a M_a)E`.
+
+A hipótese de regeneração `K_a=A_a E` é mais forte que o entrelaçamento.
+Com A_a substocástica, qualquer seleção fisicamente verificada satisfaz
+`K_pi=(sum_a D_a A_a)E`, mesmo sem compatibilidade das máscaras. O v16
+realiza essa estrutura pela emissão fresca ao fim do ciclo. As fases
+continuam ocultas e pertencem ao avaliador. Regeneração na saída não garante
+que uma assinatura antiga da entrada determine os novos pesos de fase.
 [Realização recorrente](../results/T4Q-recurrent-maintenance-loop.md)
+
+O novo exemplo de três estados distingue todas essas obrigações. Um escalar
+afim conserva os valores de todas as palavras fixas da gramática anterior;
+uma seleção entre identidade e permutação rompe a família de leis. Uma nova
+escolha condicionada entre dois kernels regeneradores preserva a emissão na
+saída, mas separa duas entradas com o mesmo escalar antigo. Reutilizar o
+decodificador fresco nessas entradas produz uma garantia falsa de decisão.
+O teste usa uma etapa restante, preparações com o mesmo recurso e todas as
+quatro políticas determinísticas do seletor binário. Dar duas etapas ou uma
+moeda adicional muda os resultados, como mostram controles exatos.
+[Auditoria e critérios](../results/core-formal-audit.md) ·
+[Testemunho](../data/core-interface-witness.json)
 
 O v17 muda uma premissa: permite reter os bits. A própria seleção por ações,
 saldo e sobrevivência repondera os registros. No testemunho, as palavras 011
@@ -126,6 +153,7 @@ inferior geral de representação da tarefa.
 | Realização de programas e atualização física | Uma tabela abstrata precisa de seletor, memória, execução e recursos | Um avaliador exato não instala esses mecanismos |
 | Contraste alcançável de quatro coordenadas | Suficiência de valores no domínio da aquisição e das histórias D/R | Não é quociente de quatro estados; M pode sair do domínio |
 | Coberturas de preparações e programas | Uma decisão comum e seus limites sobre duas famílias não enumeradas | Não preserva todas as identidades empatadas nem reduz custos físicos automaticamente |
+| Caso analítico de três estados | Distingue fechamento por operação, compatibilidade do seletor e regeneração de saída | Uma etapa determinística; ampliar prazo ou randomização muda o problema |
 | Emissão fresca v16 | Uma família de leis fecha sob os kernels admitidos | Doze fases de avaliação não são doze observações disponíveis |
 | Retenção selecionada v17 | Uma mudança de gramática invalida a família de emissão antiga | Não é uma impossibilidade para todas as representações de mesma dimensão |
 | Quociente físico v17 de 48 estados | Uma redução suficiente sobrevive à gramática ampliada | Não há prova de minimalidade ou de memória material concedida ao agente |
@@ -136,23 +164,28 @@ O exemplo recorrente usa 64 estados vivos e sobrevivência sob recursos.
 Nenhuma dimensão, porcentagem ou comparação deve atravessar esses contratos
 sem uma tradução demonstrada.
 
-## 5. Unidade mínima do manuscrito e critério de conclusão
+## 5. Etapa concluída e próxima obrigação
 
-O corpo principal precisa de um contrato, da proposição de decisão comum,
-de uma realização física positiva e de um contraexemplo à reutilização
-indevida de sua interface. Os compiladores e suas medições podem sustentar
-um apêndice construtivo; o corpus inteiro não precisa virar uma coleção de
-modelos dentro do mesmo texto.
+O manuscrito agora contém contrato, critérios de seleção e regeneração,
+exemplo de garantia falsa, proposição de decisão comum e aplicação v17.
+As auditorias separam instrumentos estabelecidos, corolários demonstrados,
+adaptações executadas e alegações ainda abertas. Os dois resumos próximos de
+Murray já incluem suficiência de ação e fechamento recursivo; seus textos
+integrais não foram obtidos. Essa limitação impede uma auditoria completa de
+prioridade e permanece registrada, sem bloquear a verificação interna.
 
-A auditoria seguinte deve verificar a proposição contra cada hipótese das
-provas existentes, localizar os antecedentes primários mais próximos e
-separar instrumentos gerais, acoplamentos implementados e adaptações úteis.
-O critério de conclusão é um enunciado preciso, uma cadeia de dependências
-sem passagem gratuita entre contratos e um caso mínimo que o torne útil ou
-refutável. A prioridade histórica é avaliada sobre esse enunciado.
+[Instrumentos matemáticos](../results/core-mathematical-antecedents.md) ·
+[Mecanismos e manutenção](../results/core-realization-antecedents.md) ·
+[Escopo e acesso às fontes](../results/core-scope-antecedents.md)
 
-Só depois se amplia o mecanismo de aquisição seletiva. Seu seletor precisa
+A próxima etapa amplia o mecanismo de aquisição seletiva. Seu seletor precisa
 usar evidência e memória física disponíveis, ter seus custos e falhas
 contabilizados e enfrentar o melhor programa estacionário completo. O
 controle v17 de preços iguais continua como referência; não se alteram os
 preços para produzir artificialmente uma vantagem.
+
+A primeira obrigação dessa etapa é derivar o kernel conjunto do seletor e
+da execução, mantendo causas persistentes e sorteios compartilhados
+explícitos. Só então se testa qual interface fecha e se a aquisição seletiva
+compensa seu custo completo. Conservar uma família de saída não autoriza
+computar sua decisão a partir de uma entrada insuficiente.

@@ -20,7 +20,7 @@ Record exact counterexamples and negative cost results as well as improvements.
 Update the research memory when evidence changes the next decision; do not
 silently replace earlier failed claims or expand the physical model to hide them.
 
-The current completed increment is
+The previous completed computational increment is
 [two-sided preparation/program coverage](docs/strategy/preparation-family-integration.md).
 Exact convex preparation witnesses preserve per-program same-history regret
 and minimum fidelity; complete-program domination preserves the common optimum.
@@ -36,11 +36,27 @@ being published. Its old twelve-phase fresh-emission family fails under
 retained-record selection; its 48-state quotient is valid but not proved
 minimal. Preserve that result and all new main sources when integrating.
 
-The next single gate is the audit and consolidation of the
-[finite manuscript core](docs/strategy/realizable-renewable-core.md), before
-expanding the physical simulator. The following physical obligation is selective
-acquisition using only actual finite memory and evidence, with a priced faulty
-selector. The 16-state source-fidelity compiler and distinct 64-state recurrent
-model retain their own contracts and metrics; failure of an old stochastic
-emission family does not rule out every same-dimensional task-value interface.
-Another compiler scaling probe is not the next default objective.
+The current completed increment is the
+[audited finite manuscript](docs/articles/core_interfaces.md). Its three-state
+exact witness separates value sufficiency, stochastic law reconstruction,
+selector compatibility and output regeneration. Primitive-wise closure need
+not survive state-dependent selection. A common reset can restore the output
+law family while an old input signature gives a false decision guarantee.
+Keep its one-step deterministic policy contract and its two-step/randomization
+boundary controls; do not transfer its numerical bounds to another grammar.
+
+The source audit covers eight primary works at relevant full-text passages
+and three limited records/abstracts. General instruments are attributed as
+established; the integration is a constructive adaptation. Global priority
+is open, including full-text comparison with two Murray preprints. Do not
+frame those antecedents as only static, and do not confuse a certificate over
+supplied kernels with proof of physical implementation.
+
+The next single physical gate is selective acquisition using actual finite
+memory and evidence, with a priced faulty selector. First derive and verify
+the joint selector/execution kernel with persistent and shared causes; then
+test interface closure and complete-policy value against the best stationary
+program and the v17 matched-price controls. The 16-state source-fidelity and
+64-state recurrent models retain their own contracts. Failure of an old
+stochastic emission family does not rule out every same-dimensional value
+interface. Another compiler scaling probe is not the next default objective.

@@ -106,7 +106,7 @@ Evidence: [article](../docs/articles/suffix_contexts.md),
 | PC.4 | Measured conditional full-cost improvement | h16/K4 complete-run medians fall39.417228s→3.244689s, ratio12.148229; h12/K4 andh12/K12 also win | Three fresh processes per method/case; h2 ranges overlap andh8 loses; certificate19,683→1,261,965bytes; no polynomial, universal-crossover or resident-memory claim |
 | PC.5 | Exact falsified simplifications | Conic-only coverage changes physical maximin feasibility; informed optima do not interpolate; attainment alone is not optimality; separate extrema invent regret | Retained actual acquisition/continuation fixtures, exact fractions and independent checks |
 | PC.6 | Resolved independently in integrated main v17 | Retained-record selection leaves the inherited twelve-phase fresh-emission family; a sufficient48-state symmetry quotient covers the enlarged grammar | Distinct64-state recurrent model; exact main a32b9a4b provenance; no lower bound against every12D value interface or minimality claim for48 |
-| PC.7 | Prepared manuscript core; audit open | Common-decision coverage, physical feasibility/access and renewable law-family realization form separate obligations in one finite constructive account | Consolidate closest antecedents and proof dependencies before a new priced faulty observation selector |
+| PC.7 | Consolidated by bounded formal/source audit; see CA | Common-decision coverage, physical feasibility/access and renewable law-family realization form separate obligations in one finite constructive account | Historical priority remains open; next physical gate is a priced faulty observation selector |
 
 Evidence: [article](../docs/articles/preparation_families.md),
 [proof](../docs/results/preparation-family-proof.md),
@@ -116,4 +116,25 @@ Evidence: [article](../docs/articles/preparation_families.md),
 [failure controls](../docs/data/preparation-family-controls.json),
 [addendum](preparation-family-addendum.json),
 [integration and next obligation](../docs/strategy/preparation-family-integration.md).
+
+## Audited finite core and selector boundary — 2026-11-05 (R11/R14)
+
+| ID | Status | Statement | Contract and remaining boundary |
+|---|---|---|---|
+| CA.1 | Established instrument, exact corollary | A common stochastic intertwining and a nonnegative initial phase submeasure reconstruct every admitted fixed-word law and therefore its task values | Does not install a controller observer or imply a converse from values to laws |
+| CA.2 | Proved sufficient selector criterion and exact counterexample | Primitive-wise intertwining survives a verified selection if E D_a=Dhat_a E; without compatibility, separately invariant I/T can select into collapse C outside the old family | Sufficient, not necessary; selector/execution joint law and actual observation access must be established |
+| CA.3 | Proved common-reset corollary and exact input counterexample | K_a=A_a E survives any verified row selection, but restored output emissions need not make an old input task signature sufficient | U preserves E while separating two equal-signature inputs, one outside E; no contradiction with complete observation-test PSRs |
+| CA.4 | Exact finite decision reversal | All four deterministic one-step binary R/S selectors have minimax regret1/10 and maximin3/5; stale fresh reconstruction falsely certifies U against regret1/10/fidelity2/3 | Equally charged/padded preparations, one remaining step, no added coin; R covers W and old terminal-equivalent primitives |
+| CA.5 | Exact boundary controls | A two-step budget makes SU feasible; added randomization improves deterministic minimax; terminal W domination does not survive arbitrary continuations | Full16 two-step words and retained9 are different contracts; no universal horizon, randomization or contextual-cover claim |
+| CA.6 | Audited constructive integration | Two-sided covers, selector/renewal distinctions and the implemented recurrent case form a precise finite account | Eight relevant full-text primary-source audits plus three limited records/abstracts; global historical priority open |
+
+Evidence: [manuscript](../docs/articles/core_interfaces.md),
+[formal audit](../docs/results/core-formal-audit.md),
+[exact witness](../docs/data/core-interface-witness.json),
+[interactive laboratory](../docs/lab/core_interfaces.html),
+[mathematical antecedents](../docs/results/core-mathematical-antecedents.md),
+[realization antecedents](../docs/results/core-realization-antecedents.md),
+[scope and access limits](../docs/results/core-scope-antecedents.md),
+[machine-readable addendum](core-audit-addendum.json),
+[integrated core](../docs/strategy/realizable-renewable-core.md).
 

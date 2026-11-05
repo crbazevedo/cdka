@@ -363,3 +363,67 @@ realization, and one explicit invalidation mechanism. Check closest primary
 antecedents before broad priority claims. Only then develop selective
 acquisition using actual finite memory and a priced faulty selector, retaining
 the v17 matched-price control and best stationary whole program.
+
+## Decision record — 5 November 2026: finite-core audit completed
+
+**Question resolved.** Consolidate the common-decision certificate with
+stochastic realization and physical access, using closest identified primary
+antecedents and an exact small failure case before expanding the recurrent
+hardware model. The [manuscript](../articles/core_interfaces.md) is the
+integrated account; the scope of historical priority remains explicitly open.
+
+**New decisive case.** Three states A0,A1,B have fresh emissions
+`e_A=(1/2,1/2,0)` and `e_B=(0,0,1)`. One affine task scalar suffices for every
+fixed word over I,T,C,R,S. I and the A0/A1 swap T separately preserve the
+emission family, but selecting I/T by the discarded distinction produces
+collapse C outside it. Compatible selector masks preserve intertwining;
+the stronger common-reset factorization preserves output emissions under
+any physically verified row selection.
+
+Output renewal does not recover lost input distinctions. Equal-length,
+equally charged/padded I/C preparations from `(3/10,3/10,2/5)` share the old
+scalar. New conditional U returns to the emission family but has values
+`7/10` and `2/5` on those inputs. Across all four deterministic binary R/S
+selectors with one remaining step, R is a common minimax/maximin representative
+with regret `1/10` and minimum fidelity `3/5`. Reconstructing both inputs as
+fresh falsely certifies U against regret `1/10` and fidelity `2/3`.
+
+**Adversarial scope checks.** With two steps, SU reaches `4/5` in both
+histories. W is dominated by R terminally, but WU changes the two-step informed
+envelope, so W cannot be dropped without a contextual proof. An additionally
+enabled random mixture of U/R reduces regret to `1/15`. The certificate
+records these changes of contract instead of extending the one-step bound.
+[Formal audit](../results/core-formal-audit.md) ·
+[Exact evidence](../data/core-interface-witness.json).
+
+**Attribution and physical review.** Eight primary works were inspected at
+relevant full-text passages; three other records/abstracts have declared
+access limits. The reviewed instruments are established. Murray's two
+identified preprints already cover action sufficiency and recursive closure;
+their full text was not obtained. The concrete contribution is constructive
+integration and independently checked instances, without an unsupported
+first-occurrence claim. In the recurring circuit, gate errors are freshly
+drawn conditional on persistent hidden health; ideal guards and acquisition
+tables remain. Algebraic checking over supplied kernels is not a hardware
+implementation proof. The computational and physical contracts remain separate.
+
+### Rules carried from the audit
+
+| ID | Evidence | Decision consequence |
+|---|---|---|
+| RM.27 | Each primitive and every fixed word may preserve an emission family while a state-dependent selector breaks it. | Verify the selector/execution joint law and either selector compatibility or a stronger closure argument. Do not infer feedback closure from primitive closure alone. |
+| RM.28 | U regenerates its output yet distinguishes inputs with the same old task scalar. Reusing the fresh decoder falsely certifies a common gate. | Audit input sufficiency and output realization separately. A reset is not a proof that old input phase weights are recoverable. |
+| RM.29 | Two steps, an extra randomizer and retaining W inside continuations change the result in different ways. | Place horizon, memory, randomization and the whole program class beside every optimum claim. Terminal domination requires a new proof before reuse inside a context. |
+| RM.30 | Close antecedents cover both static and recursive sufficiency; the audit includes inaccessible full texts. | Attribute known instruments, classify concrete adaptations on their merits, and distinguish verified mathematics from unresolved historical priority. |
+| RM.31 | The executable checker validates supplied matrices and grammars; several realizer components remain ideal. | Keep observation, acquisition, shared-fault and resource premises as explicit enclosing obligations. Metadata does not discharge them. |
+| RM.32 | A three-state decision reversal connects representation, selection and renewal more directly than another scaling experiment. | Advance the main scientific question after a gate closes. Preserve useful counterexamples and measured costs, and choose the next experiment by the unresolved mechanism. |
+| RM.33 | An assertion-disabled audit found the old generator's required basis insertion inside `assert`; removing assertions produced incomplete certificates that the checker rejected. | Keep state-changing operations outside assertions. Check discovery as well as verification in optimized mode, and retain exact equality with the ordinary certificate as a regression. |
+
+**Next single physical gate.** Implement selective acquisition from actual
+finite observations and memory with a priced faulty selector. Derive the
+joint selector/execution kernel first; retain persistent health and any
+shared fault variables. Test interface closure and the complete policy
+against the strongest stationary program and v17 matched-price controls.
+Do not add a free posterior, a free history identifier or a new price chosen
+to manufacture improvement. The first possible outcome is an exact account
+of the distinction or cost that the enlarged capability requires.

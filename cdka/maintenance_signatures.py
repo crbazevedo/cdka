@@ -137,7 +137,9 @@ def compile_one_maintenance(base_operators, maintenance, probes, *,
     new = ExactBasis(n)
     witnesses = []
     for value, witness in zip(old.basis.originals, old.witnesses):
-        assert new.add(value)
+        # Seeding mutates the basis and must also run with Python -O.
+        if not new.add(value):
+            raise AssertionError('old continuation basis must be independent')
         witnesses.append(witness)
     queue = deque()
     maintenance_attempts = 0
