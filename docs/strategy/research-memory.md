@@ -21,11 +21,13 @@ The preparation-family gate is complete. Resume from
 convex covers and the existing program covers now certify the common decision
 on both axes, with compact per-program extrema and actual-history attainers.
 The streamed reference receives the same verified arithmetic specialization;
-full costs and the adverse small regime remain explicit. The next single gate
-is the physical acquisition/retention boundary of the distinct recurrent model,
-where a changed capability may invalidate a previously sufficient emission
-interface. The older gates and dated records below remain historical evidence,
-not parallel active tasks.
+full costs and the adverse small regime remain explicit. Main then advanced to
+v17 at a32b9a4b and completed the acquisition/retention boundary independently.
+That result is integrated with its own provenance and physical contract. The
+next single gate is the audit and consolidation of the
+[finite manuscript core](realizable-renewable-core.md), before a new physical
+observation selector. The older gates and dated records below remain historical
+evidence, not parallel active tasks.
 
 ## Established checkpoint
 
@@ -331,3 +333,33 @@ physically executable refresh/retain controls with the same hidden causes,
 selector and resource prices. The old 16-state source-fidelity values and the
 64-state recurrent survival values cannot be pooled. This gate is prepared,
 not reported as executed. [Integrated scope](preparation-family-integration.md)
+
+### Synchronization during publication: v17 already resolves the prepared gate
+
+The paragraph above records the preparation science commit's original next
+obligation. Main advanced during publication to
+`a32b9a4bf7ecf558ce9bd7fadd90385698ba759f` and independently executed it. The
+branch integrates that source unchanged, resolving both workflow and atlas
+conflicts without removing either line's tests or links.
+
+V17's retained records leave the old twelve-phase stochastic emission family
+after selection by actions, resources and survival, even with static health.
+Its valid 48-state symmetry quotient is sufficient, not proved minimal. The
+counterexample is to that inherited emission realization, not to every possible
+twelve-dimensional value interface. Keep the 16-state source-fidelity and
+64-state survival contracts separate.
+[Canonical physical result](../results/T4R-renewal-and-selected-memory.md)
+
+| ID | New evidence | Decision consequence |
+|---|---|---|
+| RM.24 | Canonical main completed a planned gate while a related branch was being published. | Re-read the actual repository state before finalizing continuity. Integrate completed evidence and preserve both histories; do not repeat a stale next task. |
+| RM.25 | Perfectly retained bits leave a fresh-emission family after endogenous selection. A larger symmetry quotient remains valid without a minimality proof. | Separate data integrity, statistical calibration, task-value sufficiency and physical realization. State exactly which interface a counterexample invalidates. |
+| RM.26 | Review of the manuscript core found that finite physical states do not make the set of laws finite; X=Q=(0,1), V_x=x has an infimum without an attainer. Joint feasibility also does not preserve uniqueness of program identities. | Require a finite nonempty retained preparation cover and nonempty program library for attaining claims. State existence of a common program without claiming uniqueness. |
+
+**Current next gate.** Audit and consolidate the
+[finite manuscript core](realizable-renewable-core.md): a common-decision
+certificate, its physical feasibility and observation premises, a renewal
+realization, and one explicit invalidation mechanism. Check closest primary
+antecedents before broad priority claims. Only then develop selective
+acquisition using actual finite memory and a priced faulty selector, retaining
+the v17 matched-price control and best stationary whole program.

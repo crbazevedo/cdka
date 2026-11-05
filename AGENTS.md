@@ -30,11 +30,17 @@ histories has an exponential output cost. Preserve the strongest streamed
 baseline, shared two-amplitude/trailing-D specialization, eight-feature program
 algebra, all negative controls and measured small-case losses.
 
-The next single research gate is the physical retention/acquisition boundary
-of the existing recurrent-maintenance model: test whether its policy-uniform
-emission interface survives when acquiring a new report competes with retaining
-the old one at the same resource cost. Recover only distinctions forced by an
-exact counterexample. The 16-state source-fidelity compiler and the distinct
-64-state recurrent model must retain their own contracts and metrics. Consult
-the integration record before expanding either model; another compiler scaling
-probe is not the next default objective.
+Main v17 at `a32b9a4bf7ecf558ce9bd7fadd90385698ba759f` independently completed
+the previously prepared retention/acquisition gate while this increment was
+being published. Its old twelve-phase fresh-emission family fails under
+retained-record selection; its 48-state quotient is valid but not proved
+minimal. Preserve that result and all new main sources when integrating.
+
+The next single gate is the audit and consolidation of the
+[finite manuscript core](docs/strategy/realizable-renewable-core.md), before
+expanding the physical simulator. The following physical obligation is selective
+acquisition using only actual finite memory and evidence, with a priced faulty
+selector. The 16-state source-fidelity compiler and distinct 64-state recurrent
+model retain their own contracts and metrics; failure of an old stochastic
+emission family does not rule out every same-dimensional task-value interface.
+Another compiler scaling probe is not the next default objective.

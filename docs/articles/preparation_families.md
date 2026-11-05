@@ -4,7 +4,7 @@
 da decisão: os históricos físicos compatíveis com a preparação e os programas
 completos permitidos. A composição conserva arrependimento, fidelidade e
 viabilidade conjunta, com testemunhas verificáveis. O controlador continua
-executando um único programa, sem receber a identidade do histórico oculto.
+executando um mesmo programa para toda a classe, sem receber a identidade do histórico oculto.
 
 No maior caso medido, com 65.536 históricos e quatro atualizações obrigatórias
 de continuação, o tempo completo caiu de **39,4172 s para 3,2447 s**: razão de
@@ -93,7 +93,7 @@ R(p)=\max_x\max_q\bigl[V_x(q)-V_x(p)\bigr].
 Para cada par fixo p,q, a diferença também é afim. Trocar a ordem dos dois
 máximos permite calcular o arrependimento apenas nos históricos retidos.
 Isso conserva o melhor programa minimax, o melhor programa maximin e a
-existência de um único programa que satisfaça simultaneamente um limite de
+existência de pelo menos um programa comum que satisfaça simultaneamente um limite de
 arrependimento e um piso de fidelidade.
 
 O valor informado `B(x)=max_q V_x(q)` exige cuidado: ele é um máximo de funções
@@ -198,14 +198,21 @@ podem ser cobertos sem enumerar toda a gramática, e o resultado conserva uma
 ação comum fisicamente permitida. A descoberta propõe; o verificador exato
 reconstrói as obrigações locais e suas consequências globais.
 
-A próxima questão muda de nível. No modelo recorrente distinto, com 64
-estados e uma interface de emissão de doze fases, adquirir um relatório novo
-pode competir com reter o antigo. A obrigação será testar se a interface
-continua suficiente e recuperar somente a dependência relatório/saúde que um
-contraexemplo exigir. Isso mantém o foco em conhecimento utilizável quando
-as capacidades mudam. A redução deste artigo é do avaliador offline; a
-extensão física seguinte permanece uma obrigação preparada.
-[Integração e próximo teste](../strategy/preparation-family-integration.md)
+Durante a publicação deste incremento, o estado canônico avançou para
+[v17](../results/T4R-renewal-and-selected-memory.md) e executou, em seu modelo
+recorrente distinto de 64 estados, a comparação entre adquirir um relatório
+novo e reter o antigo. A família de emissão fresca de doze fases deixa de
+representar a memória retida após seleção por ações, recursos e sobrevivência.
+Uma redução por simetria com 48 estados continua válida. Isso não demonstra
+que toda interface de valores de doze dimensões seja impossível, nem que 48
+seja mínimo.
+
+A integração reúne dois resultados com funções diferentes: cobertura exata
+da decisão em um contrato fixo e um contraexemplo físico à reutilização de
+uma representação quando a gramática muda. O próximo passo foi atualizado
+para consolidar e auditar o [núcleo do manuscrito](../strategy/realizable-renewable-core.md),
+antes de ampliar o seletor físico de observações.
+[Integração e continuidade](../strategy/preparation-family-integration.md)
 
 ## Reprodução
 

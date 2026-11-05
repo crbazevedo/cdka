@@ -9,9 +9,10 @@ preparation-family obligation in the [previous decision](suffix-context-integrat
 Accept exact convex preparation coverage as a verified finite-family mechanism
 and as a conditional full-cost improvement in the demonstrated larger cases.
 Keep the strongest streamed reference for small cases. End this sequence of
-compiler scaling probes here: the next default research task concerns the
-physical validity of a representation when retention and fresh acquisition
-become competing capabilities.
+compiler scaling probes here. The physical retention/acquisition gate was
+completed independently on main while this result was being published. The
+current next task is to consolidate and audit the finite manuscript core before
+adding a physical observation selector.
 
 The central research interest is **how a task-relevant distinction becomes a
 physically usable decision, and which changes make the old representation
@@ -117,7 +118,7 @@ fidelity is approximately 0.69245846.
 [Exact negative fixtures](../data/preparation-family-controls.json) ·
 [Decision memory](research-memory.md)
 
-## One next gate: acquisition competes with retention
+## Synchronization with main: the physical boundary has advanced
 
 The source-fidelity compiler has **16 physical states** and fixed D/R
 preparations followed by a fixed complete program. Main's
@@ -128,26 +129,51 @@ performing work. Its policy-uniform twelve-phase stochastic-emission
 factorization is an evaluator interface. Its survival metric and resource
 accounting do not transfer to source fidelity.
 
-The next task follows the [v16 compass](learning-compass-v16.md): make one
-controlled change in that recurrent model so fresh report acquisition competes
-with physical retention at the declared equal resource price. Preserve the
-existing hidden causes, physical selector, resource guard and task sequence;
-write the changed observation/retention contract before deriving any reduction.
+The preparation science commit `2cecda52a05afc90f83c585e2ed6259e2276a4ea`
+initially prepared that comparison as its next obligation. Publication then
+found main advanced from d1877a33 to
+`a32b9a4bf7ecf558ce9bd7fadd90385698ba759f`, which had independently completed
+the [v17 renewal/retention experiment](../results/T4R-renewal-and-selected-memory.md).
+The branch integrates that main checkpoint instead of repeating the completed
+task or leaving stale future claims in its current guidance. The workflow and
+atlas are reconciled by preserving both branches' checks and entries.
 
-The testable claim is whether all allowed policies still share one emission
-interface E with `K_pi=A_pi E` and `E K_pi=M_pi E`. A positive result must verify
-the identities for every admitted action/policy and preserve failure mass. A
-negative result must give an exact physical law or continuation witnessing the
-lost report/health dependence, then add only the distinction that witness
-forces. A free belief state, free history label or ideal selector is not a
-repair of the physical model.
+V17 crosses four equally priced memory-update tables with sixteen physical
+routing programs. Ideal retention and noisy fresh acquisition use the same
+task, bank and declared memory-service price. The best of the 64 stationary
+whole programs is vote/vote with renewal; retention is also reoptimized rather
+than judged only under a routing policy selected for renewal.
 
-The complete experiment must compare always-refresh, always-retain and the
-inherited physically executable controls under the same resource prices. It
-must report viability, resource trajectories and the cost of the evaluator,
-with an independent raw-state oracle. A new distinction, a proved surviving
-interface, or a justified negative result resolves the gate. Another faster
-offline table alone does not.
+The decisive interface witness is structural. Retaining the bits while action,
+resource and survival events select trajectories produces unequal 011/101
+masses where every old exchangeable source-health emission gives equality.
+The failure persists with static health. A second support witness removes
+selector error. A valid 48-state residual-symmetry quotient covers the enlarged
+grammar. These results refute reuse of that particular twelve-phase stochastic
+emission family; they do not rule out every twelve-dimensional task-value
+representation or prove 48-state minimality.
 
-This is a prepared next obligation. No acquisition/retention extension or
-physical autonomy claim is reported as completed in this increment.
+The common lesson is now supported on two fronts: compress only under a
+checked operational contract, and retest the premises when the organization
+changes how information is produced or selected. The two experiments keep
+their distinct models and metrics.
+
+## One next gate: audit the finite manuscript core
+
+The [prepared core](realizable-renewable-core.md) states the common-decision
+proposition, separates its premises from physical realization, maps the
+dependency proofs, and gives the v17 renewal identity and failure witness their
+proper scope. It follows main's [integrated direction](../synthesis/research-direction-v17.md).
+
+The next single acceptance gate is an audit of that precise manuscript claim
+against its closest primary antecedents and the corpus's proofs: identify
+which results are general instruments, which are the concrete coupling and
+adaptation, and which claims still lack a proof or implementation. Reduce the
+manuscript to the smallest positive construction, common-decision certificate
+and physical invalidation example that support the central statement.
+
+The subsequent physical gate remains selective acquisition based only on
+available evidence and finite memory, with the selector's price and faults
+included. Its comparison must retain the matched-price v17 control and the
+best stationary whole program. No new selector, hidden-state observation,
+free posterior or industrial-energy conclusion is reported as completed here.

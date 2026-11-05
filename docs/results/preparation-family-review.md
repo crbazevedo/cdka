@@ -123,7 +123,21 @@ regret. All controls have exact fractions and standard-library reproduction.
 [Controls](../data/preparation-family-controls.json)
 
 The current result closes an offline evaluator obligation in the inherited
-16-state source-fidelity model. It does not close the physical acquisition/
-retention question in the different recurrent 64-state model. The next gate
-is explicitly prepared in the [integration record](../strategy/preparation-family-integration.md),
-with no new observation, ideal selector or free belief state presumed.
+16-state source-fidelity model. During publication, main independently
+completed the physical acquisition/retention question at
+`a32b9a4bf7ecf558ce9bd7fadd90385698ba759f`. The integrated branch preserves that
+v17 source and its distinct 64-state contract, and resolves the workflow and
+atlas conflicts by retaining both sets of tests and links. The old twelve-phase
+emission-family failure does not exclude every twelve-dimensional task-value
+interface or prove that the new sufficient 48-state quotient is minimal.
+The [integration record](../strategy/preparation-family-integration.md) now
+points to a finite manuscript core and its audit before further physical
+observation-selection work. No new observation or free belief state is presumed.
+
+The integrated manuscript outline received a separate formal review. It now
+requires a finite nonempty retained preparation set, a nonempty admissible
+class and a finite nonempty program library before claiming attained extrema.
+A finite physical state space alone does not supply those premises. The text
+also states existence of a common feasible program rather than uniqueness of
+its identity. These were outline corrections; the production checkers already
+enforce finite nonempty covers and do not claim preservation of all ties.

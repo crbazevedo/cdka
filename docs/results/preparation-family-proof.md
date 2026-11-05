@@ -510,9 +510,14 @@ It remains a design-time evaluator and compiler result. The history label is
 not exposed to the controller. No physical organism acquires this certificate
 for free, and no enduring ability to observe, act, repair or maintain the
 compiler follows from fewer arithmetic operations. The recurrent-maintenance
-work on the main branch concerns a distinct 64-state, twelve-emission physical
-loop; the present theorem uses the 16-state source-fidelity model. Connecting the two
-requires testing the representations when actual available capabilities,
-resource states or observation interfaces change, including counterexamples
-when the previously certified interface ceases to suffice. That bridge is a
-further scientific obligation, not a consequence of this hull theorem.
+work concerns a distinct 64-state model, with a twelve-phase fresh-emission
+realization in v16; the present theorem uses the 16-state source-fidelity model.
+During publication, [main v17](T4R-renewal-and-selected-memory.md) independently
+established that retained-record selection leaves that particular emission
+family, and supplied a valid 48-state symmetry quotient for its enlarged grammar.
+Those are separate physical results, not consequences of this hull theorem.
+They neither exclude every twelve-dimensional value interface nor establish
+48-state minimality. The [integrated manuscript core](../strategy/realizable-renewable-core.md)
+keeps common-decision sufficiency, law-family realization and controller access
+as distinct obligations when capabilities, resources or observation interfaces
+change.
