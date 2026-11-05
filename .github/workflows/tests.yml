@@ -27,6 +27,19 @@ jobs:
         run: python -m experiments.reachable_diagnosis_sweep --check
       - name: Verify inductive complete-program family certificates
         run: python -m experiments.program_family_sweep --check
+      - name: Verify finite suffix-context certificates without optional solvers
+        run: python -S -O -m experiments.suffix_context_sweep --check
+      - name: Verify exact suffix obstructions and rejected-control sanity
+        run: |
+          python -S -O - <<'PY'
+          import json
+          from pathlib import Path
+          from experiments.suffix_context_controls import run
+          if run() != json.loads(Path('docs/data/suffix-context-controls.json').read_text()):
+              raise ValueError('stale suffix structural evidence')
+          print('Exact suffix reversal, lineality and empty-cone controls verified.')
+          PY
+          python -S -O -m experiments.suffix_span_control
       - name: Check browser module syntax
         run: |
           for module in docs/lab/*.mjs tests/*.test.mjs; do node --check "$module"; done

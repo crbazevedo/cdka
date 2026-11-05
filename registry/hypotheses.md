@@ -76,3 +76,23 @@ Evidence: [proof](../docs/results/program-family-proof.md),
 
 [Article](../docs/articles/reachable_diagnosis.md) · [Class proof](../docs/results/reachable-interfaces-proof.md) · [Domain proof](../docs/results/reachable-domain-proof.md) · [Review](../docs/results/reachable-diagnosis-review.md) · [Laboratory](../docs/lab/reachable_diagnosis.html) · [Addendum](reachable-diagnosis-addendum.json).
 
+## Finite suffix contexts — 2026-11-05 (R11/R14)
+
+| ID | Status | Claim | Scope and limitation |
+|---|---|---|---|
+| SC.1 | Exact signed dual-observer certificate | Eight fixed rows close under D/R and extract both E and EM; ordinary suffix responses can be propagated exactly in eight coordinates | Supplied physical identities in all 16 coordinates; no eight-state physical quotient, positive feature order or M-state closure is asserted |
+| SC.2 | Exact finite-horizon inductive cover | Nested context cones and one retained executable representative per candidate preserve every ordinary suffix through the remaining contexts and maintenance boundary | Depth K−1 suffices; nonnegative combinations certify context identities, not mixed controllers; no polynomial frontier or bit bound |
+| SC.3 | Exact complete-program decision preservation | Contextual seeds compose with the prior outer cover, preserving informed values, minimax, maximin and joint feasibility; all 384 principal parent values agree | Same acquisition, hidden shared causes, mandatory workload, observation boundary and reserved resource box; not all ties, prediction envelopes or execution-cost objectives |
+| SC.4 | Measured conditional full-cost advantage | With 16 preparations/K=14, complete-run medians fall 16.192115 s → 4.326973 s against the shared eight-feature parent; K=12 also wins and K=4/8 lose | Three fresh processes per method/case include cold imports and first solver initialization, all discovery and checking; proof bytes rise 71,505 → 796,063 at K=14; no universal crossover claim |
+| SC.5 | Exact shortcut obstructions | E-order reverses through M on a reachable D^32 history; every closed all-horizon context cone containing EM forces equality of both degraded contrast responses | The first refutes order preservation, not necessarily a global optimizer; the second yields finite 67/272 class lower bounds at K=8/12, not impossibility of every universal pruning method |
+| SC.6 | Falsified prototype and retained negative control | A vacuous empty-cone checker lost MR coverage; production rejects it. A uniform span-error cover compresses too little at the tested tolerances | Independent exact and malformed-input checks remain; exploratory concurrent timings are excluded from the central comparison |
+
+Evidence: [article](../docs/articles/suffix_contexts.md),
+[proof](../docs/results/suffix-context-proof.md),
+[independent review](../docs/results/suffix-context-review.md),
+[exact evidence](../docs/data/suffix-context-results.json),
+[cold benchmark](../docs/data/suffix-context-benchmark.json),
+[adverse controls](../docs/data/suffix-context-controls.json),
+[addendum](suffix-context-addendum.json),
+[integration and next obligation](../docs/strategy/suffix-context-integration.md).
+

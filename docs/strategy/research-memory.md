@@ -14,6 +14,17 @@ adaptations and implementations remain useful contributions when their
 antecedents are established; originality, correctness and practical advantage
 are separate claims. [Prior strategic decision](proof-engine-v15.md)
 
+## Current checkpoint — 5 November 2026
+
+The suffix-context gate is complete and conditionally accepted. Resume from
+[its integration record](suffix-context-integration.md). Exact finite-horizon
+context covers avoid ordinary suffix enumeration, while a shared eight-row
+dual observer strengthens both candidate and baseline. Full cold-use cost
+improves at the tested K=12 and K=14 cases and loses at K=4 and K=8. The one
+next obligation is preparation-family coverage with compact decision outputs;
+no experiment on that axis has yet been executed. The older gates and dated
+records below remain historical evidence, not parallel active tasks.
+
 ## Established checkpoint
 
 The maintenance-access and reachable-diagnosis increments reuse one inherited
@@ -79,7 +90,7 @@ Evidence: [cost and implementation benchmark](../data/reachable-diagnosis-benchm
 [class checker scope](../results/reachable-interfaces-proof.md), and
 [earlier dead ends](proof-engine-v15.md).
 
-## Active next gate: certify program families before enumeration
+## Original gate: certify program families before enumeration
 
 The established baseline is the cached four-coordinate evaluator, with exact
 rational arithmetic. The current unresolved bottleneck is constructing all
@@ -179,3 +190,71 @@ accepted implementation including checking cost; retain an obstruction if no
 net gain survives. Preparation enumeration `2^h` remains explicitly open and
 does not become a second active experiment in this step.
 [Integrated decision](program-family-integration.md)
+
+## Decision record — 5 November 2026: suffix-context gate accepted conditionally
+
+**Claim tested.** Avoid the `2^K` ordinary suffix seeds with an exact order
+valid under all remaining ordinary extensions and the `E K_M` boundary, while
+preserving complete-program decisions in the inherited physical contract.
+
+**Accepted mechanism.** A fixed eight-row dual response observer satisfies
+full 16 physical identities for D/R and extracts both E and EM. It is shared
+with the stronger parent baseline. A nested finite context cone supplies the
+suffix order at each remaining horizon; every cover chooses one actual
+executable suffix. The resulting outer cover preserves informed maxima,
+minimax, maximin and joint regret/fidelity feasibility. The checker verifies
+supplied exact identities and coverage without cone or Pareto discovery.
+[Proof](../results/suffix-context-proof.md) ·
+[Review](../results/suffix-context-review.md)
+
+**Decisive evidence.** At K=14, the method constructs 160 of 262,144 complete
+programs and retains 53. The strengthened parent constructs 32,860, so 32,700
+additional complete word constructions are avoided at the final level.
+The sweep verifies 170 retained physical responses, 340 two-way frontier
+comparisons, 120 small exhaustive physical/coverage cases and all 384 principal
+parent values. The principal DRDDM result and joint infeasibility remain exact.
+[Exact evidence](../data/suffix-context-results.json)
+
+**Cost decision.** Three complete fresh-process observations per method/case
+include physical setup, encoding, shared feature construction, discovery,
+cold numerical imports and first solver startup, serialization/parsing,
+independent checking and compact decisions. Complete-run median ratios are
+0.2277 at 4 preparations/K=4, 0.3733 at 16/K=8, 1.3650 at 16/K=12 and
+3.7421 at 16/K=14. At the latter case, 16.1921 s becomes 4.3270 s. The K=4
+and K=8 losses remain explicit. The proof grows from 71,505 to 796,063
+serialized bytes at K=14. Accept the
+demonstrated larger regime; do not extrapolate a universal crossover or claim
+memory savings from fewer suffixes. Component-median sums and reuse estimates
+are separately labeled. [Cold benchmark](../data/suffix-context-benchmark.json)
+
+**Adverse evidence retained.** E-order fails through M on an actual D^32
+preparation. A closed context cone required to cover every horizon forces
+equality of both degraded response coordinates, yielding at least 67 classes
+at K=8 and 272 at K=12, versus 9 and 19 finite-context representatives. The first
+scratch checker accepted an empty witness list through a truncated zip and
+lost coverage of MR; production rejects that attack. A uniformly approximate
+span cover retained nearly all suffixes at tight tolerance and was rejected.
+[Exact controls](../data/suffix-context-controls.json) ·
+[Span route](../results/suffix-span-control.md)
+
+### New rules carried into the next decision
+
+| ID | Evidence | Consequence |
+|---|---|---|
+| RM.13 | Eight exact signed features lower both methods' arithmetic costs, but do not themselves preserve a positive order. E-dominance reverses through M. | Separate representational sufficiency, order preservation and physical realizability. Verify the full operational context of every discard. |
+| RM.14 | An all-horizon context cone imposes two equalities that the finite decision does not require. | Match the proof's context allowance to the declared task. Extra universality can remove useful dominance and has a computational price. |
+| RM.15 | The empty-cone prototype satisfied every equality it happened to inspect while omitting mandatory identities. | Check completeness, dimensions and dependency levels before accepting local witnesses. Keep adversarial regressions and verify with assertions disabled. |
+| RM.16 | Suffix counts fall strongly at K=8 while cold total time increases; K=14 wins but carries a larger certificate. | Price the strengthened baseline, imports, first solver use, proof construction/checking, rational size and outputs. Keep program counts, proof bytes and physical quality distinct. |
+| RM.17 | Explicit informed values for all 2^h histories already require exponential output. Informed maxima are convex, not affine, in a preparation signature. | Declare a compact next output contract; preserve same-preparation differences, and answer informed queries by evaluating the certified program frontier rather than averaging endpoint maxima. |
+
+**One next gate.** Certify reachable preparation families under the existing
+ordinary transports, with actual retained history witnesses and exact convex
+combinations of their task-sufficient signatures whose coefficients sum to one.
+Preserve every common program's
+correlated worst regret and minimum fidelity. Request compact decisions and
+their attaining/optimality witnesses, with informed values queryable, and
+compare against streamed four-coordinate preparation enumeration returning
+the same outputs. Include hull discovery, witness recovery, checking and
+bit costs. Four input coordinates do not bound the number of necessary
+extreme histories. This is the next obligation, not a result of this increment.
+[Integrated scope](suffix-context-integration.md)

@@ -19,3 +19,11 @@ encoding, discovery, certificate construction/checking and reuse costs included.
 Record exact counterexamples and negative cost results as well as improvements.
 Update the research memory when evidence changes the next decision; do not
 silently replace earlier failed claims or expand the physical model to hide them.
+
+The current completed increment is the
+[finite suffix-context cover](docs/strategy/suffix-context-integration.md).
+Its cold-use advantage is conditional on the measured larger cases. The next
+single gate is preparation-family coverage with compact correlated decision
+outputs; an explicit list of all informed history values has an exponential
+output cost. Preserve the shared eight-feature baseline and the empty-cone,
+maintenance-order and adverse-cost controls when continuing.

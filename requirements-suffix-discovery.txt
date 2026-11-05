@@ -1,0 +1,4 @@
+# Optional discovery/benchmark dependencies used by the recorded Python3.12 run.
+# Frozen certificates and independent checkers use the standard library only.
+numpy==2.3.5
+scipy==1.17.0
