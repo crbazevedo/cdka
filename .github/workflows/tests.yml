@@ -25,6 +25,8 @@ jobs:
         run: python -m experiments.maintenance_access_sweep --check
       - name: Verify reachable diagnosis and common-plan certificates
         run: python -m experiments.reachable_diagnosis_sweep --check
+      - name: Verify inductive complete-program family certificates
+        run: python -m experiments.program_family_sweep --check
       - name: Check browser module syntax
         run: |
           for module in docs/lab/*.mjs tests/*.test.mjs; do node --check "$module"; done

@@ -1,0 +1,128 @@
+{
+  "id": "certified-complete-program-families",
+  "date": "2026-11-05",
+  "date_basis": "UTC",
+  "parent_commit": "5972303fb8728fe0d0bbea9beed796c8209f9b40",
+  "active_branches": [
+    "R11",
+    "R14"
+  ],
+  "status": "exact inductive cover; matched-output cost gate accepted on declared cases; conditional adoption",
+  "physical_contract_changed": false,
+  "claims": [
+    {
+      "id": "PF.1",
+      "statement": "Verified nonnegative D/R transports preserve dominance on the reachable nonpositive contrast cone."
+    },
+    {
+      "id": "PF.2",
+      "statement": "Every legal complete word is dominated by a retained original physical program; informed values, minimax/maximin values and joint feasibility survive."
+    },
+    {
+      "id": "PF.3",
+      "statement": "Full cost including cold physical setup and independent family checking is lower on the declared16-preparation/K8 fixture than the same-algebra no-prune baseline."
+    },
+    {
+      "id": "PF.4",
+      "statement": "Maintenance-last fails on a generated preparation; correct Bellman family bounds are rejected by their recorded total costs."
+    }
+  ],
+  "mechanism": {
+    "ordinary_transport": "E K_a=A_a E with A_a>=0 for D/R",
+    "maintenance_boundary": "B=E K_M, four-by-sixteen; noM suffix stays16-dimensional",
+    "coverage": "retained physical representative for every generated candidate, extended by grammar induction",
+    "preparation_guard": "four signed coordinates <=0",
+    "outputs": "informed maxima, one minimax and one maximin; joint gates require separate retained-matrix scan"
+  },
+  "principal_counts": {
+    "n": 8,
+    "no_m_suffixes": 256,
+    "candidates": 286,
+    "retained": 17,
+    "complete_words_generated": 542,
+    "complete_words_never_generated": 2018
+  },
+  "accepted_case": {
+    "histories": 16,
+    "ordinary_updates": 8,
+    "baseline_total_seconds": 3.8125189740167116,
+    "frontier_total_seconds": 1.4004729939915705,
+    "speedup": 2.7223080990304758,
+    "baseline_cache_bytes": 2477392,
+    "frontier_cache_bytes": 11078,
+    "family_certificate_bytes": 3309
+  },
+  "benchmark_protocol": "Sum of median component times from three sequential runs, including a cold physical-kernel construction with its channel caches reset. Both methods return informed values, one minimax and one maximin. The enumerator receives the same suffix sharing,4D prefixes and4x16 M contraction. Only the pruned method pays the independent family checker. Totals include kernel/preparation/encoding/compilation, certificate serialization and parsing, queries and both decision certificate construction/checking. Optional query-cache export is measured but excluded from the decision-only total.",
+  "validation": {
+    "checked_horizons": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      8
+    ],
+    "complete_program_dominance_checks": 3192,
+    "retained_physical_response_checks": 53,
+    "principal_parent_response_agreements": 384,
+    "checker_enumerates_pruned_complete_words": false,
+    "new_python_tests": 11,
+    "independent_review_horizons": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "historical_source_policy": "No inherited physical, maintenance or reachable evaluator modules edited."
+  },
+  "controls": [
+    "false covers and malformed witnesses",
+    "exact value/identity/contract binding",
+    "out-of-cone preparations",
+    "uninformative sensor and omitted tied identities",
+    "zero repair",
+    "invalid maintenance4D bridge",
+    "reachable MR>RM counterexample",
+    "three rejected residual Bellman bounds",
+    "cold versus warmed setup accounting"
+  ],
+  "limits": [
+    "Every 2^K no-maintenance suffix remains in full16.",
+    "Every 2^h preparation history remains explicit.",
+    "One optimum and feasibility are preserved, not all ties or prediction envelopes.",
+    "Executed physical cost is not an objective of this response dominance.",
+    "Frontier size has no polynomial bound.",
+    "Small measured cases tie or lose; no unconditional solver replacement.",
+    "Serialized caches do not measure resident memory.",
+    "The primary benchmark uses component medians of three runs; negative controls use one fresh run each.",
+    "No general novelty claim or comparison with all possible planning algorithms."
+  ],
+  "next_gate": "Reduce the2^K unpruned noM seeds with an order or bound valid under both suffix extension and E K_M; otherwise retain a concrete obstruction. Keep the physical contract fixed.",
+  "reproduction": [
+    "python -m experiments.program_family_sweep --write --check",
+    "python -m experiments.program_family_sweep --benchmark",
+    "python -m unittest discover -s tests -p 'test_program_families.py' -v",
+    "python -m experiments.program_family_bound_controls --h 2 --k 4",
+    "python -m experiments.program_family_bound_controls --h 2 --k 6"
+  ],
+  "artifacts": [
+    "AGENTS.md",
+    "cdka/program_families.py",
+    "tests/test_program_families.py",
+    "experiments/program_family_sweep.py",
+    "experiments/program_family_bound_controls.py",
+    "docs/articles/program_families.md",
+    "docs/results/program-family-proof.md",
+    "docs/results/program-family-review.md",
+    "docs/results/program-family-bounds-rejected.md",
+    "docs/data/program-family-results.json",
+    "docs/data/program-family-benchmark.json",
+    "docs/data/program-family-bound-control-k4.json",
+    "docs/data/program-family-bound-control-k6.json",
+    "docs/strategy/research-memory.md",
+    "docs/strategy/program-family-integration.md",
+    "registry/program-family-addendum.json",
+    "registry/hypotheses.md",
+    ".github/workflows/tests.yml"
+  ]
+}

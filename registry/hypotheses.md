@@ -59,5 +59,20 @@
 | RD.4 | Parameter-wide identity | Shared-sensor fidelity is1/2+(1−2η)(V0−1/2), bounded by1−η; shrinking regret can accompany lost information | Fair source and substrate initially independent of source and sensor noise |
 | RD.5 | Measured implementation improvement | Four-coordinate evaluation reproduces all6144 benchmark responses with lower arithmetic/cache cost; compilation, encoding and checking separately priced | Local exact-rational benchmark; preparation/program enumeration remains explicit |
 
+## Program-family certificates — 2026-11-04 (R11/R14)
+
+| ID | Status | Claim | Scope and limitation |
+|---|---|---|---|
+| PF.1 | Exact cone and order certificate | Nonpositive reachable contrast coordinates and nonnegative D/R transports preserve physical-program response dominance under every ordinary prefix | Same acquisition domain; maintenance uses a verified4x16 boundary map on a full16 suffix, not a4D transition |
+| PF.2 | Exact inductive grammar cover | A retained physical program dominates every legal complete word; informed optima, minimax, maximin and joint regret/fidelity feasibility are preserved | ExactlyK D/R updates and at most one additionalM, same prepaid resource box; one optimum, not all ties or full prediction envelopes |
+| PF.3 | Measured conditional improvement | At16 preparations/K8, total3.812519s becomes1.400473s against the same shared4 algebra with compact decision outputs;2018 of2560 complete words are never generated | Local cold-setup/component-median benchmark; small cases tie or lose, and all2^K noM suffixes remain |
+| PF.4 | Exact counterexample and measured rejection | After reachable historyDDDD, MR beatsRM; three correct Bellman bounds prune families but lose total cost in the recordedK4/K6 controls | Rejects a universal maintenance-last rule and these implementations' measured acceptance; not a universal impossibility theorem for Bellman bounds |
+
+Evidence: [proof](../docs/results/program-family-proof.md),
+[exact experiment](../docs/data/program-family-results.json),
+[matched benchmark](../docs/data/program-family-benchmark.json),
+[negative controls](../docs/results/program-family-bounds-rejected.md),
+[integration](../docs/strategy/program-family-integration.md).
+
 [Article](../docs/articles/reachable_diagnosis.md) · [Class proof](../docs/results/reachable-interfaces-proof.md) · [Domain proof](../docs/results/reachable-domain-proof.md) · [Review](../docs/results/reachable-diagnosis-review.md) · [Laboratory](../docs/lab/reachable_diagnosis.html) · [Addendum](reachable-diagnosis-addendum.json).
 
