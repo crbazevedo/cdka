@@ -1,0 +1,31 @@
+{
+  "schema_version":1,
+  "revision":"v17",
+  "date":"2026-11-05",
+  "base_commit":"d1877a33d5c011d3c11f2e1080dd20358a1178a5",
+  "active_limit":2,
+  "active_branches":["R11","R14"],
+  "combined_counts":{"branches":49,"rejected":44},
+  "historical_blobs":{"v16-recurrent-learning-addendum.json":"4c3567028a40571f9330dd8ebd27a0ad58cdb14c"},
+  "integration_note":"docs/synthesis/research-direction-v17.md",
+  "assessment_policy":"Correctness, concrete contribution, priority and fertility remain separate. Matched-cost acquisition synthesis, the emission-family counterexample and exact renewal/retention quotient are contributions enabled by known tools, not dismissed because conditioning and stochastic lumping are classical.",
+  "branch_additions":[{
+    "id":"R49","title":"Renewable knowledge interfaces under action-dependent memory selection","status":"instrument",
+    "hypothesis":"Fresh acquisition can restore an invariant diagnostic interface; retaining exact bits does not in general preserve that family after actions, resources and survival select the stored signals.",
+    "reactivation_trigger":"A recurrent evaluator reuses its acquisition law after a change from fresh sensing to physical retention, or diagnosis is refreshed only after the intervention it is meant to trigger.",
+    "minimal_test":"Same v16 task, source hash, budget and bank. Four equally priced acquisition rules times sixteen physical routing programs, full rational kernels, independent fault oracle and a static-health counterexample.",
+    "tools":["conditional selection","stochastic emission families","symmetry quotients","finite program enumeration","telescoping kernel differences","raw fault traces"],
+    "acceptance_gate":"Exact same-task comparison, reoptimization as well as fixed-controller results, a witness outside the old emission family and an independently verified replacement quotient.",
+    "fallbacks":["R11","R14","R12","R13","R43","R44","R46","R48"],
+    "provenance":["cdka/memory_renewal.py","docs/results/T4R-renewal-and-selected-memory.md","docs/synthesis/research-direction-v17.md"],
+    "contribution":"Executed64-program comparison; ideal retention with fixed contingent control yields .8958752 versus .9174768 for renewal; 4096 exact quotient rows; a selection witness invalidates even a source-health mixture after retention, with no health change required."
+  }],
+  "branch_updates":[
+    {"id":"R11","status":"active","evidence":"Renewal closes the prior stochastic interface; retention can leave its entire exchangeable emission family. A48-state physical quotient remains exact for all64 programs.","remaining_gate":"Costed selective acquisition based solely on actual evidence and finite physical memory, not known health or an evaluator posterior.","dead_end_trigger":"The evaluator keeps recalibrating retained bits by a fresh sensor law or invents a readout of hidden health.","minimal_test":"One small acquisition selector, same resource ledger, complete loss/cost frontier and separating history.","fallbacks":["R12","R13","R43","R44","R48","R49"],"provenance":["docs/strategy/proof-engine-v17.md"]},
+    {"id":"R14","status":"active","evidence":"The exact physical routing and acquisition tables must be reoptimized together; result comparisons report fixed and best-per-library policies.","remaining_gate":"Price and fault the shared observation-selection/update interface; do not infer energy advantage from the matched-price control experiment.","dead_end_trigger":"A claimed improvement changes the physical task, grants a hidden signal or omits a cheaper whole program.","minimal_test":"Preserve one model and compare two genuinely priced complete libraries; derive a witness and a bound.","fallbacks":["R20","R28","R38","R46","R48","R49"],"provenance":["docs/synthesis/research-direction-v17.md"]}
+  ],
+  "rejected_additions":[
+    {"id":"D43","claim":"Perfectly retaining a diagnostic preserves its original emission law, possibly by retaining its source-health label.","reason":"Actions, balance and surviving reweight the stored words. A retained live distribution gives unequal011/101 masses although every original source-health emission is exchangeable; a static-health, perfect-selector support example independently refutes the mixture representation.","fallbacks":["R11","R13","R44","R48","R49"],"provenance":["tests/test_memory_renewal.py"]},
+    {"id":"D44","claim":"At equal acquisition price, observing only after maintenance is necessarily better than observing after a skipped maintenance decision.","reason":"In the frozen recurrent fixture, fixed-contingent survival is .8874864 versus .9164918; reoptimizing the entire routing library gives .9115513 versus .9164918. A stale healthy report can delay both the repair and the new observation needed to trigger it. This is a scoped counterexample, not the opposite universal ordering.","fallbacks":["R11","R14","R43","R48","R49"],"provenance":["docs/results/T4R-renewal-and-selected-memory.md"]}
+  ]
+}

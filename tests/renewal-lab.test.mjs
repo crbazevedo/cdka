@@ -1,0 +1,8 @@
+import test from'node:test';import assert from'node:assert/strict';import{readFileSync}from'node:fs';import{propagate,value,namedRule}from'../docs/lab/renewal-core.mjs';
+const data=JSON.parse(readFileSync('docs/lab/renewal-certificate.json','utf8'));
+test('browser kernels reproduce exact eight-cycle certificate',()=>{for(const r of data.fixed_routing)assert.ok(Math.abs(propagate(data,r.acquisition,8).curve.at(-1)-value(r.value))<1e-12);});
+test('all final-update variants preserve one-cycle mass',()=>{const xs=Object.keys(data.browser.kernels).map(r=>propagate(data,r,1).curve[1]);assert.ok(Math.max(...xs)-Math.min(...xs)<1e-12);});
+test('survival mass never renormalized',()=>{for(const r of Object.keys(data.browser.kernels)){const c=propagate(data,r,24).curve;for(let i=1;i<c.length;i++)assert.ok(c[i]<=c[i-1]+1e-12);}});
+test('exact certificate keeps selection witness and correct counts',()=>{assert.equal(data.counts.programs,64);assert.equal(data.counts.quotient_row_checks,4096);assert.equal(data.emission_witness.fresh_difference.exact,'0');assert.ok(value(data.emission_witness.retained_difference)<0);});
+test('telescoping contributions recover gain and terminal zero',()=>{let p=data.temporal_contributions['renew-retain'];assert.equal(p.at(-1).exact,'0');let gap=propagate(data,'renew',8).curve[8]-propagate(data,'retain',8).curve[8];assert.ok(Math.abs(p.map(value).reduce((a,b)=>a+b,0)-gap)<1e-12);});
+test('UI contract and invalid controls',()=>{assert.throws(()=>propagate(data,'missing',8));assert.throws(()=>propagate(data,'renew',-1));assert.equal(namedRule('retain'),'Reter os bits');const h=readFileSync('docs/lab/memory_renewal.html','utf8');for(const s of['id="horizon"','id="rule"','massa original'])assert.ok(h.includes(s));});
