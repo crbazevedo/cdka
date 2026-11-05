@@ -31,6 +31,18 @@ jobs:
         run: python -m experiments.program_family_sweep --check
       - name: Verify finite suffix-context certificates without optional solvers
         run: python -S -O -m experiments.suffix_context_sweep --check
+      - name: Verify both-sided preparation and program certificates without optional solvers
+        run: python -S -O -m experiments.preparation_family_sweep --check
+      - name: Verify exact preparation coverage failure controls
+        run: |
+          python -S -O - <<'PY'
+          import json
+          from pathlib import Path
+          from experiments.preparation_family_controls import run
+          if run() != json.loads(Path('docs/data/preparation-family-controls.json').read_text()):
+              raise ValueError('stale preparation coverage controls')
+          print('Convex mass, informed-envelope and common-decision controls verified.')
+          PY
       - name: Verify exact suffix obstructions and rejected-control sanity
         run: |
           python -S -O - <<'PY'

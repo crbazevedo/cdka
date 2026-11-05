@@ -20,10 +20,21 @@ Record exact counterexamples and negative cost results as well as improvements.
 Update the research memory when evidence changes the next decision; do not
 silently replace earlier failed claims or expand the physical model to hide them.
 
-The current completed increment is the
-[finite suffix-context cover](docs/strategy/suffix-context-integration.md).
-Its cold-use advantage is conditional on the measured larger cases. The next
-single gate is preparation-family coverage with compact correlated decision
-outputs; an explicit list of all informed history values has an exponential
-output cost. Preserve the shared eight-feature baseline and the empty-cone,
-maintenance-order and adverse-cost controls when continuing.
+The current completed increment is
+[two-sided preparation/program coverage](docs/strategy/preparation-family-integration.md).
+Exact convex preparation witnesses preserve per-program same-history regret
+and minimum fidelity; complete-program domination preserves the common optimum.
+The composed checker starts from raw physical inputs and discharges both cover
+obligations. Informed values are exact queries; an explicit list for all
+histories has an exponential output cost. Preserve the strongest streamed
+baseline, shared two-amplitude/trailing-D specialization, eight-feature program
+algebra, all negative controls and measured small-case losses.
+
+The next single research gate is the physical retention/acquisition boundary
+of the existing recurrent-maintenance model: test whether its policy-uniform
+emission interface survives when acquiring a new report competes with retaining
+the old one at the same resource cost. Recover only distinctions forced by an
+exact counterexample. The 16-state source-fidelity compiler and the distinct
+64-state recurrent model must retain their own contracts and metrics. Consult
+the integration record before expanding either model; another compiler scaling
+probe is not the next default objective.

@@ -96,3 +96,23 @@ Evidence: [article](../docs/articles/suffix_contexts.md),
 [addendum](suffix-context-addendum.json),
 [integration and next obligation](../docs/strategy/suffix-context-integration.md).
 
+## Preparation-family coverage — 2026-11-05 (R11/R14)
+
+| ID | Status | Statement | Scope |
+|---|---|---|---|
+| PC.1 | Exact physical closure and inductive convex cover | Actual retained history signatures have the same convex hull as every original fixed-length D/R preparation; local rational witnesses avoid enumerating omitted descendants | Fair-source negative contrast cone, full physical D/R identities, weights nonnegative and summing to one; equality of task signatures, not full laws |
+| PC.2 | Exact composed common-decision certificate | Preparation coverage plus complete-program domination preserves per-retained-program regret/minimum fidelity and the original-library minimax, maximin and joint feasibility | Same preparation for comparator and chosen program; actual-history attainers and complete candidate bounds; compact outputs, informed values by query |
+| PC.3 | Exact shared arithmetic specialization | Two health amplitudes plus a trailing-D shape index reproduce concrete preparation evaluation when full affine physical identities hold | Delivered to both algorithms; generic4 fallback; no fixed global two-dimensional linear quotient or readable physical state |
+| PC.4 | Measured conditional full-cost improvement | h16/K4 complete-run medians fall39.417228s→3.244689s, ratio12.148229; h12/K4 andh12/K12 also win | Three fresh processes per method/case; h2 ranges overlap andh8 loses; certificate19,683→1,261,965bytes; no polynomial, universal-crossover or resident-memory claim |
+| PC.5 | Exact falsified simplifications | Conic-only coverage changes physical maximin feasibility; informed optima do not interpolate; attainment alone is not optimality; separate extrema invent regret | Retained actual acquisition/continuation fixtures, exact fractions and independent checks |
+| PC.6 | Open next physical obligation | Acquisition competing with retention may require a new report/health distinction in the recurrent emission interface | Distinct64-state recurrent model and equal declared resource price; no new physical experiment or autonomy claim in this increment |
+
+Evidence: [article](../docs/articles/preparation_families.md),
+[proof](../docs/results/preparation-family-proof.md),
+[review](../docs/results/preparation-family-review.md),
+[exact sweep](../docs/data/preparation-family-results.json),
+[full-cost samples](../docs/data/preparation-family-benchmark.json),
+[failure controls](../docs/data/preparation-family-controls.json),
+[addendum](preparation-family-addendum.json),
+[integration and next obligation](../docs/strategy/preparation-family-integration.md).
+

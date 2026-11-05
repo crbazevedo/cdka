@@ -16,14 +16,16 @@ are separate claims. [Prior strategic decision](proof-engine-v15.md)
 
 ## Current checkpoint — 5 November 2026
 
-The suffix-context gate is complete and conditionally accepted. Resume from
-[its integration record](suffix-context-integration.md). Exact finite-horizon
-context covers avoid ordinary suffix enumeration, while a shared eight-row
-dual observer strengthens both candidate and baseline. Full cold-use cost
-improves at the tested K=12 and K=14 cases and loses at K=4 and K=8. The one
-next obligation is preparation-family coverage with compact decision outputs;
-no experiment on that axis has yet been executed. The older gates and dated
-records below remain historical evidence, not parallel active tasks.
+The preparation-family gate is complete. Resume from
+[its integrated decision](preparation-family-integration.md). Exact local
+convex covers and the existing program covers now certify the common decision
+on both axes, with compact per-program extrema and actual-history attainers.
+The streamed reference receives the same verified arithmetic specialization;
+full costs and the adverse small regime remain explicit. The next single gate
+is the physical acquisition/retention boundary of the distinct recurrent model,
+where a changed capability may invalidate a previously sufficient emission
+interface. The older gates and dated records below remain historical evidence,
+not parallel active tasks.
 
 ## Established checkpoint
 
@@ -258,3 +260,74 @@ the same outputs. Include hull discovery, witness recovery, checking and
 bit costs. Four input coordinates do not bound the number of necessary
 extreme histories. This is the next obligation, not a result of this increment.
 [Integrated scope](suffix-context-integration.md)
+
+## Decision record — 5 November 2026: preparation-family gate completed
+
+**Claim tested.** Cover all actual fixed-length D/R preparation histories
+without enumerating them, while preserving common complete-program regret,
+minimum fidelity and their joint feasibility. Return compact extrema and
+actual-history witnesses; answer informed values as exact individual queries.
+
+**Accepted mechanism.** Generate D/R children only from retained actual
+histories and certify each discard by a nonnegative rational combination of
+the final retained signatures with weights summing to one. Induction preserves
+the entire convex hull. A fixed program's value and a fixed pair's difference
+are affine in the preparation, so worst fidelity and same-history regret are
+attained in the retained family. The existing program-domination cover and
+this preparation cover compose in a checker starting from raw physical inputs.
+All per-retained-program extrema and their independent actual attainers are
+verified; their comparison certifies the common optimum over the original
+program grammar. [Proof](../results/preparation-family-proof.md) ·
+[Review](../results/preparation-family-review.md)
+
+**Decisive evidence.** At h=16, the last layer generates 348 children and
+retains 199 actual histories from the 65,536 original histories. All levels
+together generate 1,867 candidates. At h=12,K=12, 107 preparations and 37
+complete programs require 3,959 decision-construction value evaluations,
+versus 151,552 with the same program cover and streamed preparations. The
+sweep checks the original 384 joint32 values, 81 full16 preparation
+propagations, 26 informed queries and all per-program extrema against full
+streams through h=12. The fresh h=16 benchmark independently compiles and
+checks the whole stream and matches every retained program's exact bounds
+in every repetition. [Exact evidence](../data/preparation-family-results.json)
+
+**Cost decision.** Both methods receive the exact two-amplitude/trailing-D
+codec and the same program compiler. Each first-use sample pays all physical
+construction, acquisition, discovery, cold numerical startup when needed,
+encoding, serialization, independent checking and compact answers. Ratios of
+complete-use medians are 0.9833 at h2/K4, 0.4576 at h8/K4, 1.6758 at h12/K4,
+12.1482 at h16/K4 and 3.7661 at h12/K12. The smallest case has overlapping
+ranges; h8 is an adverse case. At h16/K4, 39.4172 s becomes 3.2447 s while the
+full certificate grows from 19,683 to 1,261,965 bytes. Accept the demonstrated
+larger regime and stop scaling this gate. No resident-memory saving,
+polynomial bound, universal threshold or reuse timing is inferred.
+[Full samples and protocol](../data/preparation-family-benchmark.json)
+
+**Adverse evidence retained.** A real all-bad h2 case has x_RR=alpha x_DR with
+0<alpha<1. Accepting conic coverage raises maximin fidelity falsely from
+0.75304333 to 0.78715596. Averaging informed optima at DD and DR produces a
+strict 0.00152621 Jensen gap. DDDDM has an attained regret but loses to DRDDM;
+separate-history extrema also overstate DRDDM's regret. The standard-library
+checker rejects missing or malformed coverage and false attainers, including
+with assertions disabled. [Exact controls](../data/preparation-family-controls.json)
+
+### Rules carried from this closure
+
+| ID | Evidence | Consequence |
+|---|---|---|
+| RM.18 | Inductive local convex identities cover unenumerated descendants; the equality is in contrast signatures rather than complete physical laws. | State precisely what the representation preserves. Compose complete local coverage instead of demanding an explicit witness for every original history. |
+| RM.19 | A positive conic identity with total weight below one removes a physically worst preparation and changes global feasibility. | Verify the affine mass constraint as well as coordinates and signs. Empty witnesses remain invalid even at zero contrast. |
+| RM.20 | A fixed program interpolates, while the informed maximum has a strict Jensen gap; an attained inferior plan is still inferior. | Evaluate the envelope and common-input differences directly. Distinguish an extremum witness from all-candidate optimality or infeasibility. |
+| RM.21 | Two amplitudes plus trailing-D shape accelerate both algorithms; the union has affine dimension four by h3. | Share every sound arithmetic improvement with the reference. Do not equate a parameterized family of low-dimensional slices with a fixed linear quotient. |
+| RM.22 | Strong preparation reduction loses at h8, wins at h16, and increases certificate bytes substantially. | Adopt by the measured complete-use regime. Stop adding scaling probes after the declared gate resolves; keep the adverse cost and proof size visible. |
+| RM.23 | Both uncertainty and program coverage are now closed for one fixed physical task, while the recurrent model's next capability changes its emission premise. | Advance the larger question: test representation validity under a concrete capability change. Keep offline efficiency, physical observability and implemented agency distinct. |
+
+**One next gate.** In the separate recurrent-maintenance model, let fresh
+report acquisition compete with physical retention at the declared equal
+resource price. Check whether one policy-uniform emission interface still
+factors all admitted physical kernels. If it fails, extract an exact report/
+health counterexample and recover only the missing distinction. Compare
+physically executable refresh/retain controls with the same hidden causes,
+selector and resource prices. The old 16-state source-fidelity values and the
+64-state recurrent survival values cannot be pooled. This gate is prepared,
+not reported as executed. [Integrated scope](preparation-family-integration.md)
