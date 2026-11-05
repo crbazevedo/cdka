@@ -1,35 +1,35 @@
 # CDKA — Research State
 
-**2026-11-04 · v15 / T4.P–T3.L: realized correction, two-update signatures and paid maintenance. Active proof branches: R11/R14.** All prior physical kernels and ledgers remain unchanged; v14 is preserved at commit7fa14299961937a580f0de7c0af46511313e834e.
+**2026-11-05 · v16 / T4.Q–T3.M: a diagnostic-controlled recurrent maintenance loop. Active proof branches R11/R14.** All prior sources and ledgers remain unchanged; v15 is preserved at commit2eb1da7b635da2165e3b767440371a69583df3d0.
 
-[Result](docs/results/T4P-realized-correction-interfaces.md) · [Strategy](docs/strategy/proof-engine-v15.md) · [Miniarticle](docs/articles/T4P.md) · [Lab](docs/lab/boundary_voting.html) · [Additive ledger](registry/v15-realized-correction-addendum.json).
+[Learning compass](docs/strategy/learning-compass-v16.md) · [Strategy](docs/strategy/proof-engine-v16.md) · [Result/proof](docs/results/T4Q-recurrent-maintenance-loop.md) · [Miniarticle](docs/articles/T4Q.md) · [Decision record](docs/synthesis/decision-record-v16.md) · [Lab](docs/lab/recurrent_maintenance.html) · [Research-memory addendum](registry/v16-recurrent-learning-addendum.json).
 
-## Executed results
+## Executed contribution
 
-1. The six-NAND majority voter has exact asymmetry f(011)-f(101)=2gamma(1-gamma)(1-2gamma)^2. Ideal function symmetry does not certify its faulty physical realization.
-2. For the two declared register updates with hidden substrate health, the complete16-state process has an exact12-class physical quotient (Z,a,b+c). The abstract symmetric majority would allow8 classes (Z,a+b+c). Independent row and two-update oracles agree exactly; current joint bits alone do not determine future failures when Z is persistent.
-3. Exact invariant response spaces have ranks10 and5 respectively in the fixed rational fixture. These are evaluator coordinates, not hardware-memory bits or a newly readable health input.
-4. Explicit18-gate triplication+voter,10-gate shared-output voter, and4-gate original selector are compared in the SAME SERVICE-first terminal task. A paid one-bank maintenance attempt changes conditional voter/selector reliability and is not revealed to the policy. One resource token leaves both terminal actions affordable.
-5. In the default fixture p=.01, degraded gamma=.02, restored gamma=.001, maintenance success=.8: bypass .809177960770; unmaintained triple .808854141237; voter-maintained triple .809277629247; maintained single .809328337152. Absolute differences are small; the structural comparison is exact within this portfolio.
-6. Minimum service success to beat bypass is .490971934444 for the single selector and .611718916306 for the redundant voter. Affine endpoint certificates prove that direct selector maintenance dominates voter maintenance for the ENTIRE success interval[0,1], other parameters fixed.
-7. Repair health must be retained as a common latent cause; replacing it by a mean independent gate-error rate changes the outcome. More installed copies do not remove the last-port limit.
+1. One recurrent64-state process integrates stored noisy health diagnosis, maintenance chosen by the same fallible six-NAND bank that executes work, hidden restoration, resource harvest and report renewal. It is a NEW task, not an undeclared change to v15's terminal benchmark.
+2. Initialization and common operation/diagnostic acquisition cost1 each; maintenance costs2 extra and must be funded before work. Correct work returns2, never after failure. Guard/routing remain explicit trusted base interfaces.
+3.16 complete stationary routing programs are enumerated, with4 diagnosis-blind programs as a restricted baseline. The circuit reads only actual report cells and balance, not hidden health, designer posterior or a free clock-dependent policy.
+4. An exact stochastic realization K_pi=A_pi E and M_pi=E A_pi yields E K_pi=M_pi E. The12-phase evaluator preserves health at report-writing time, current health and balance. It does not expose those variables to runtime or assert a deterministic state quotient.
+5. Eight-cycle default survival: diagnostic .9174767896493894; best blind .9115317652171799; never maintain .7325971487141393. Expected service attempts1.2734000271 versus3.8507390345. Both initial health contexts improve over always-maintain, but the .915 separating target concerns the mean, not the degraded-context guarantee.
+6. Procedure risk explains why repairing healthy hardware can hurt. Complete branch traces preserve health, physical report, selection faults and resources. An uninformative report ablation selects always-maintain; internal hardware can nevertheless create an action-health dependence without information in the report.
+7. Uniform task success ceiling q*=.9952702938313536<1 implies V_n≤(q*)^n→0. Resource-recurrent operation is not immortal operation or full autonomous maintenance of all infrastructure.
 
-## Scope and contribution
+## Lessons converted into policy
 
-The portfolio and register-closure experiments share the actual voter but are not a jointly optimized recurrent agent. The result is an implementation-relative stochastic reduction and costed maintenance separation with complete witnesses. It is not universal optimality among all18-gate circuits. Existing PTM and Markov aggregation tools support the adaptation; correctness, contribution, priority and fertility remain separate assessments.
+`learning-compass-v16.md` records twelve decision rules: preserve causality and correlations, price every step, separate average and contextual guarantees, retain future competence, distinguish evaluator rank from hardware memory, compare simpler baselines and separate correctness/contribution/priority/fertility. Expansion requires a new separation, certificate or relevant adaptation rather than merely more components.
 
 ## Research memory
 
-**47 approaches,40 rejected shortcuts**; R47 records this verified instrument. D38–D40 preserve failures of ideal-symmetry transfer, averaging hidden bank health, and unconditional preference for redundancy. Historical files remain immutable. R11/R14 only are active.
+**48 approaches,42 rejected shortcuts.** R48 records regenerative recurrent maintenance. D41 rejects merging current health with report-time health; D42 rejects inferring hidden-state independence of actions from an uninformative input register. Historical ledgers are not edited. Only R11/R14 remain active.
 
-## Next gate
+## Next decision gate
 
-One small recurrent model must include selection of maintenance by a physically stored diagnostic and a fallible selector, with hidden mechanism health, shared components and the same resource ledger. Reuse the certified quotient rather than adding unrelated components. Require a necessity/sufficiency condition, or strict impossibility with a minimum realizable upgrade, before broadening the model.
+Compare fresh diagnosis and memory retention at equal declared cost. Test whether the common emission E remains valid; if not, identify the smallest lost dependence. R14 must separately account for alternate acquisition/routing libraries and their reliability before claiming a cheaper whole architecture.
+
+The contribution is an executable recurrent coupling, stochastic realization certificate and scoped physical-policy separation. Existing FSC/POMDP and Markov tools enable these advances; broader priority remains an exact-result audit, not a reason to dismiss the adaptation.
 
 ## Verification
 
-17 scientific Python tests plus one catalog test and seven JS tests. 192 exact quotient rows;384 two-update comparisons;2048 raw voter masks;2560 independent module/voter fault cases;128 complete conditional traces. Polynomial identity is coefficientwise; service dominance uses exact affine endpoints. No Monte Carlo inference.
+17 scientific Python tests +1 catalog test,7 JS tests;192 independent raw rows,192 policy/phase identities,2048 raw task fault/sensor cases,116 complete conditional trace rows. Exact Fraction arithmetic for decisive values. Offline Chromium desktop/mobile:7 controls,3 panels,2 SVGs, no JS error or overflow. Canonical CI and live deployment are checked separately.
 
-Local Chromium desktop1440×1100 and mobile390×844: six portfolio rows, three panels, three exercised controls, two SVGs, no JS errors or horizontal overflow. These are offline file-byte checks; live publication is checked separately through GitHub Actions.
-
-Reproduce: `python -m unittest discover -s tests -p 'test_boundary*.py' -v`; `python -m experiments.boundary_voting_sweep --write --check`; `node --test tests/boundary-voting-lab.test.mjs`.
+Reproduce: `python -m unittest discover -s tests -p 'test_recurrent*.py' -v`; `python -m experiments.recurrent_sweep --write --check`; `node --test tests/recurrent-lab.test.mjs`.

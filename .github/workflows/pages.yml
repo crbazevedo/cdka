@@ -19,6 +19,9 @@ on:
       - 'cdka/boundary_voting.py'
       - 'experiments/boundary_voting_sweep.py'
       - 'registry/v15-realized-correction-addendum.json'
+      - 'cdka/recurrent_maintenance.py'
+      - 'experiments/recurrent_sweep.py'
+      - 'registry/v16-recurrent-learning-addendum.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -67,6 +70,12 @@ jobs:
           python -m experiments.boundary_voting_sweep --write --check
           node --test tests/boundary-voting-lab.test.mjs
           cp registry/v15-realized-correction-addendum.json docs/registry/v15-realized-correction-addendum.json
+      - name: Verify recurrent maintenance and research-memory decisions
+        run: |
+          python -m unittest discover -s tests -p 'test_recurrent*.py' -v
+          python -m experiments.recurrent_sweep --write --check
+          node --test tests/recurrent-lab.test.mjs
+          cp registry/v16-recurrent-learning-addendum.json docs/registry/v16-recurrent-learning-addendum.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static atlas
