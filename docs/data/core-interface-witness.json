@@ -1,0 +1,1100 @@
+{
+  "schema": "cdka.core-interface-witness/v1",
+  "scope": "finite algebraic audit witness; not new CDKA hardware or a priority claim",
+  "model": {
+    "states": [
+      "A0",
+      "A1",
+      "B"
+    ],
+    "emission": [
+      [
+        "1/2",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "operators": {
+      "I": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "T": [
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "R": [
+        [
+          "1/2",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "S": [
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "0"
+        ]
+      ],
+      "C": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ]
+    },
+    "terminal": [
+      "1",
+      "1",
+      "0"
+    ],
+    "feature": [
+      "1/2",
+      "1/2",
+      "-1/2"
+    ],
+    "reset_factors": {
+      "R": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "S": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ]
+    },
+    "old_phases": {
+      "I": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "T": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "R": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ]
+      ],
+      "S": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ]
+    },
+    "selector_masks": [
+      [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0"
+        ]
+      ]
+    ]
+  },
+  "old_fixed_word_grammar": [
+    "I",
+    "T",
+    "R",
+    "S"
+  ],
+  "first_extended_fixed_word_grammar": [
+    "I",
+    "T",
+    "R",
+    "S",
+    "C"
+  ],
+  "decision_contract": {
+    "preparation_slots": 1,
+    "remaining_continuation_slots": 1,
+    "preparation_histories": [
+      "I",
+      "C"
+    ],
+    "matched_resource": "I is padded/charged to the same preparation slot as C; both leave one macro slot.",
+    "complete_deterministic_continuation_library": [
+      "R",
+      "S",
+      "U",
+      "W"
+    ],
+    "retained_continuation_library": [
+      "R",
+      "S",
+      "U"
+    ],
+    "external_controller_coin_available": false,
+    "preparation_history_identifier_available": false,
+    "controller_input": "One current binary flag, followed by one deterministic R/S selection; no later decision in that slot.",
+    "C_status": "Opaque baseline primitive; its algebraic selector decomposition does not export an observation.",
+    "U_W_status": "Separately installed conditional R/S rules using the declared binary flag; no new observation alphabet is logically required.",
+    "resource_scope": "Abstract matched-slot/deadline contract, not a CDKA hardware price or access grant."
+  },
+  "old_emission_failure": {
+    "annihilator": [
+      "1",
+      "-1",
+      "0"
+    ],
+    "E_C": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "E_annihilator": [
+      "0",
+      "0"
+    ],
+    "E_C_annihilator": [
+      "1",
+      "0"
+    ],
+    "reachable_full_law_span_rank": 3,
+    "sufficient_full_law_emission": [
+      [
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ]
+  },
+  "task_interface": {
+    "known_mass": "1",
+    "affine_scalar": "z=mu(A0)+mu(A1)-1/2",
+    "response_span_rank_including_mass": 2,
+    "free_affine_coordinates": 1,
+    "all_word_value": "1/2+(-1)^number_of_S*z",
+    "global_after_U_response_rank_including_mass": 3
+  },
+  "selectors": {
+    "weak_invariance_counterexample": {
+      "primitives": [
+        "I",
+        "T"
+      ],
+      "masks": [
+        [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "result": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1"
+        ]
+      ],
+      "E_D0_annihilator": [
+        "1/2",
+        "0"
+      ]
+    },
+    "compatible_control": {
+      "primitives": [
+        "I",
+        "S"
+      ],
+      "masks": [
+        [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "phase_masks": [
+        [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1"
+          ]
+        ]
+      ],
+      "kernel": [
+        [
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1",
+          "0"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "0"
+        ]
+      ],
+      "phase_kernel": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ]
+    },
+    "common_reset_control": {
+      "primitives": [
+        "S",
+        "R"
+      ],
+      "masks": [
+        [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ]
+        ],
+        [
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ]
+      ],
+      "kernel_U": [
+        [
+          "0",
+          "0",
+          "1"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "0"
+        ],
+        [
+          "1/2",
+          "1/2",
+          "0"
+        ]
+      ],
+      "factor_A_U": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "phase_kernel_U": [
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "1",
+          "0"
+        ]
+      ],
+      "post_U_phase_weights": [
+        [
+          "7/10",
+          "3/10"
+        ],
+        [
+          "2/5",
+          "3/5"
+        ]
+      ]
+    }
+  },
+  "decision_reversal": {
+    "acquisition": [
+      "3/10",
+      "3/10",
+      "2/5"
+    ],
+    "histories": [
+      "I",
+      "C"
+    ],
+    "preparations": [
+      [
+        "3/10",
+        "3/10",
+        "2/5"
+      ],
+      [
+        "3/5",
+        "0",
+        "2/5"
+      ]
+    ],
+    "old_signatures": [
+      "1/10",
+      "1/10"
+    ],
+    "actual_values": [
+      [
+        "3/5",
+        "2/5",
+        "7/10"
+      ],
+      [
+        "3/5",
+        "2/5",
+        "2/5"
+      ]
+    ],
+    "actual": {
+      "labels": [
+        "R",
+        "S",
+        "U"
+      ],
+      "informed_values": [
+        "7/10",
+        "3/5"
+      ],
+      "worst_regrets": [
+        "1/10",
+        "3/10",
+        "1/5"
+      ],
+      "minimum_values": [
+        "3/5",
+        "2/5",
+        "2/5"
+      ],
+      "minimax_program": "R",
+      "minimax_regret": "1/10",
+      "maximin_program": "R",
+      "maximin_value": "3/5",
+      "gate": {
+        "maximum_regret": "1/10",
+        "minimum_value": "2/3",
+        "feasible_programs": []
+      }
+    },
+    "false_fresh_reconstructions": [
+      [
+        "3/10",
+        "3/10",
+        "2/5"
+      ],
+      [
+        "3/10",
+        "3/10",
+        "2/5"
+      ]
+    ],
+    "false_values": [
+      [
+        "3/5",
+        "2/5",
+        "7/10"
+      ],
+      [
+        "3/5",
+        "2/5",
+        "7/10"
+      ]
+    ],
+    "false_decision": {
+      "labels": [
+        "R",
+        "S",
+        "U"
+      ],
+      "informed_values": [
+        "7/10",
+        "7/10"
+      ],
+      "worst_regrets": [
+        "1/10",
+        "3/10",
+        "0"
+      ],
+      "minimum_values": [
+        "3/5",
+        "2/5",
+        "7/10"
+      ],
+      "minimax_program": "U",
+      "minimax_regret": "0",
+      "maximin_program": "U",
+      "maximin_value": "7/10",
+      "gate": {
+        "maximum_regret": "1/10",
+        "minimum_value": "2/3",
+        "feasible_programs": [
+          "U"
+        ]
+      }
+    }
+  },
+  "deterministic_policy_cover": {
+    "observation_by_state": [
+      0,
+      1,
+      0
+    ],
+    "routing_by_observation": {
+      "R": [
+        "R",
+        "R"
+      ],
+      "S": [
+        "S",
+        "S"
+      ],
+      "U": [
+        "S",
+        "R"
+      ],
+      "W": [
+        "R",
+        "S"
+      ]
+    },
+    "labels": [
+      "R",
+      "S",
+      "U",
+      "W"
+    ],
+    "kernel_W": [
+      [
+        "1/2",
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "0",
+        "1"
+      ]
+    ],
+    "factor_A_W": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "1"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "W_values": [
+      "3/10",
+      "3/5"
+    ],
+    "response_R": [
+      "1",
+      "1",
+      "0"
+    ],
+    "response_W": [
+      "1",
+      "0",
+      "0"
+    ],
+    "R_dominates_W_at_every_physical_input": true,
+    "retained_cover": {
+      "R": "R",
+      "S": "S",
+      "U": "U",
+      "W": "R"
+    },
+    "actual_values": [
+      [
+        "3/5",
+        "2/5",
+        "7/10",
+        "3/10"
+      ],
+      [
+        "3/5",
+        "2/5",
+        "2/5",
+        "3/5"
+      ]
+    ],
+    "full_decision": {
+      "labels": [
+        "R",
+        "S",
+        "U",
+        "W"
+      ],
+      "informed_values": [
+        "7/10",
+        "3/5"
+      ],
+      "worst_regrets": [
+        "1/10",
+        "3/10",
+        "1/5",
+        "2/5"
+      ],
+      "minimum_values": [
+        "3/5",
+        "2/5",
+        "2/5",
+        "3/10"
+      ],
+      "minimax_program": "R",
+      "minimax_regret": "1/10",
+      "maximin_program": "R",
+      "maximin_value": "3/5",
+      "gate": {
+        "maximum_regret": "1/10",
+        "minimum_value": "2/3",
+        "feasible_programs": []
+      }
+    },
+    "scope": "Complete one-step deterministic binary-observation R/S policy class; terminal dominance only."
+  },
+  "two_step_positive_control": {
+    "remaining_continuation_slots": 2,
+    "within_actual_contract": false,
+    "labels": [
+      "RR",
+      "RS",
+      "RU",
+      "RW",
+      "SR",
+      "SS",
+      "SU",
+      "SW",
+      "UR",
+      "US",
+      "UU",
+      "UW",
+      "WR",
+      "WS",
+      "WU",
+      "WW"
+    ],
+    "actual_values": [
+      [
+        "3/5",
+        "2/5",
+        "7/10",
+        "3/10",
+        "2/5",
+        "3/5",
+        "4/5",
+        "1/5",
+        "7/10",
+        "3/10",
+        "13/20",
+        "7/20",
+        "3/10",
+        "7/10",
+        "17/20",
+        "3/20"
+      ],
+      [
+        "3/5",
+        "2/5",
+        "7/10",
+        "3/10",
+        "2/5",
+        "3/5",
+        "4/5",
+        "1/5",
+        "2/5",
+        "3/5",
+        "4/5",
+        "1/5",
+        "3/5",
+        "2/5",
+        "7/10",
+        "3/10"
+      ]
+    ],
+    "decision": {
+      "labels": [
+        "RR",
+        "RS",
+        "RU",
+        "RW",
+        "SR",
+        "SS",
+        "SU",
+        "SW",
+        "UR",
+        "US",
+        "UU",
+        "UW",
+        "WR",
+        "WS",
+        "WU",
+        "WW"
+      ],
+      "informed_values": [
+        "17/20",
+        "4/5"
+      ],
+      "worst_regrets": [
+        "1/4",
+        "9/20",
+        "3/20",
+        "11/20",
+        "9/20",
+        "1/4",
+        "1/20",
+        "13/20",
+        "2/5",
+        "11/20",
+        "1/5",
+        "3/5",
+        "11/20",
+        "2/5",
+        "1/10",
+        "7/10"
+      ],
+      "minimum_values": [
+        "3/5",
+        "2/5",
+        "7/10",
+        "3/10",
+        "2/5",
+        "3/5",
+        "4/5",
+        "1/5",
+        "2/5",
+        "3/10",
+        "13/20",
+        "1/5",
+        "3/10",
+        "2/5",
+        "7/10",
+        "3/20"
+      ],
+      "minimax_program": "SU",
+      "minimax_regret": "1/20",
+      "maximin_program": "SU",
+      "maximin_value": "4/5",
+      "gate": {
+        "maximum_regret": "1/10",
+        "minimum_value": "2/3",
+        "feasible_programs": [
+          "SU",
+          "WU"
+        ]
+      }
+    },
+    "selected_values": {
+      "RU": [
+        "7/10",
+        "7/10"
+      ],
+      "SU": [
+        "4/5",
+        "4/5"
+      ],
+      "WU": [
+        "17/20",
+        "7/10"
+      ]
+    },
+    "restricted_RSU_library": {
+      "labels": [
+        "RR",
+        "RS",
+        "RU",
+        "SR",
+        "SS",
+        "SU",
+        "UR",
+        "US",
+        "UU"
+      ],
+      "actual_values": [
+        [
+          "3/5",
+          "2/5",
+          "7/10",
+          "2/5",
+          "3/5",
+          "4/5",
+          "7/10",
+          "3/10",
+          "13/20"
+        ],
+        [
+          "3/5",
+          "2/5",
+          "7/10",
+          "2/5",
+          "3/5",
+          "4/5",
+          "2/5",
+          "3/5",
+          "4/5"
+        ]
+      ],
+      "decision": {
+        "labels": [
+          "RR",
+          "RS",
+          "RU",
+          "SR",
+          "SS",
+          "SU",
+          "UR",
+          "US",
+          "UU"
+        ],
+        "informed_values": [
+          "4/5",
+          "4/5"
+        ],
+        "worst_regrets": [
+          "1/5",
+          "2/5",
+          "1/10",
+          "2/5",
+          "1/5",
+          "0",
+          "2/5",
+          "1/2",
+          "3/20"
+        ],
+        "minimum_values": [
+          "3/5",
+          "2/5",
+          "7/10",
+          "2/5",
+          "3/5",
+          "4/5",
+          "2/5",
+          "3/10",
+          "13/20"
+        ],
+        "minimax_program": "SU",
+        "minimax_regret": "0",
+        "maximin_program": "SU",
+        "maximin_value": "4/5",
+        "gate": {
+          "maximum_regret": "1/10",
+          "minimum_value": "2/3",
+          "feasible_programs": [
+            "RU",
+            "SU"
+          ]
+        }
+      }
+    },
+    "scope": "A changed deadline. One-step terminal dominance of W by R does not justify deleting W before U."
+  },
+  "randomization_boundary_control": {
+    "within_actual_contract": false,
+    "external_coin": {
+      "R": "2/3",
+      "U": "1/3"
+    },
+    "values": [
+      "19/30",
+      "8/15"
+    ],
+    "same_input_regrets": [
+      "1/15",
+      "1/15"
+    ],
+    "worst_regret": "1/15",
+    "minimum_value": "8/15",
+    "deterministic_minimax_regret": "1/10",
+    "strict_regret_improvement": true,
+    "maximin_value_with_any_mixture": "3/5",
+    "maximin_bound_reason": "At mu_1 every deterministic rule has value at most 3/5; R attains 3/5 on both inputs.",
+    "joint_gate_feasible_with_any_mixture": false,
+    "scope": "Independent externally available common coin changes the policy class; no randomized minimax optimality claim."
+  },
+  "bounded_control": {
+    "maximum_word_length": 4,
+    "words": 781,
+    "physical_basis_laws": 3,
+    "value_comparisons": 2343,
+    "all_horizons_guaranteed_by_matrix_identities": true
+  },
+  "limits": [
+    "All-word old sufficiency concerns the declared terminal task and fixed-word grammar.",
+    "U/W require verified selector access and installed conditional composition; opaque C alone does not grant this capability.",
+    "The decision certificate has exactly one remaining macro slot and deterministic routing; extra time or a common external coin changes its class.",
+    "No contradiction to a PSR that already covers those observations and policy contingencies.",
+    "One scalar uses known unit mass; linear response span has dimension two.",
+    "The rank-three full-law bound concerns this reachable law family, not controller bits or T4R48.",
+    "Output regeneration does not recover input distinctions or phase weights lost by an old code.",
+    "A row-selector mixture must be the verified joint physical kernel; shared causes cannot be factored away."
+  ]
+}

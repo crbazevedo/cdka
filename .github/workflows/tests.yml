@@ -25,6 +25,39 @@ jobs:
         run: python -m experiments.recurrent_sweep --write --check
       - name: Generate exact renewal and selected-memory certificate
         run: python -m experiments.memory_renewal_sweep --write --check
+      - name: Verify paid-maintenance signature certificates
+        run: python -m experiments.maintenance_access_sweep --check
+      - name: Verify reachable diagnosis and common-plan certificates
+        run: python -m experiments.reachable_diagnosis_sweep --check
+      - name: Verify inductive complete-program family certificates
+        run: python -m experiments.program_family_sweep --check
+      - name: Verify finite suffix-context certificates without optional solvers
+        run: python -S -O -m experiments.suffix_context_sweep --check
+      - name: Verify both-sided preparation and program certificates without optional solvers
+        run: python -S -O -m experiments.preparation_family_sweep --check
+      - name: Verify exact preparation coverage failure controls
+        run: |
+          python -S -O - <<'PY'
+          import json
+          from pathlib import Path
+          from experiments.preparation_family_controls import run
+          if run() != json.loads(Path('docs/data/preparation-family-controls.json').read_text()):
+              raise ValueError('stale preparation coverage controls')
+          print('Convex mass, informed-envelope and common-decision controls verified.')
+          PY
+      - name: Verify exact interface and selector audit witness
+        run: python -S -O -m experiments.core_interface_witness --check
+      - name: Verify exact suffix obstructions and rejected-control sanity
+        run: |
+          python -S -O - <<'PY'
+          import json
+          from pathlib import Path
+          from experiments.suffix_context_controls import run
+          if run() != json.loads(Path('docs/data/suffix-context-controls.json').read_text()):
+              raise ValueError('stale suffix structural evidence')
+          print('Exact suffix reversal, lineality and empty-cone controls verified.')
+          PY
+          python -S -O -m experiments.suffix_span_control
       - name: Generate costed selective-acquisition certificate
         run: python -m experiments.selective_acquisition_sweep --write --check
       - name: Check browser module syntax
@@ -51,8 +84,12 @@ jobs:
           for lab in ("causal_cut", "policy_cuts", "implementability", "reconfiguration", "composition", "diagnosis", "diagnostic_transport", "continuation", "joint_compilation", "trace_explorer", "semantic_closure", "physical_update", "faulty_update", "boundary_voting", "recurrent_maintenance", "memory_renewal", "selective_acquisition"):
               assert (Path("docs")/"lab"/f"{lab}.html").exists()
           assert Path('registry/research-options.json').exists()
+          assert Path('registry/v15-realized-correction-addendum.json').exists()
           assert Path('registry/v16-recurrent-learning-addendum.json').exists()
           assert Path('registry/v17-renewal-addendum.json').exists()
+          assert Path('registry/core-audit-addendum.json').exists()
+          assert Path('docs/articles/core_interfaces.md').exists()
+          assert Path('docs/lab/core_interfaces.html').exists()
           assert Path('registry/v18-selective-acquisition-addendum.json').exists()
           assert Path('docs/strategy/learning-compass-v16.md').exists()
           assert Path('docs/strategy/direction-v18.md').exists()
