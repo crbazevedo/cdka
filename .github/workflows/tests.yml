@@ -21,6 +21,8 @@ jobs:
         run: python -m experiments.faulty_update_sweep --write --check
       - name: Generate exact two-update and voting certificate
         run: python -m experiments.boundary_voting_sweep --write --check
+      - name: Generate exact recurrent-maintenance certificate
+        run: python -m experiments.recurrent_sweep --write --check
       - name: Verify paid-maintenance signature certificates
         run: python -m experiments.maintenance_access_sweep --check
       - name: Verify reachable diagnosis and common-plan certificates
@@ -58,13 +60,15 @@ jobs:
               contents=path.read_text()
               for heading in ("Motivação","Definições mínimas","Formulação","Exemplo","O que habilita","Simulador"):
                   assert heading in contents,(item,heading)
-          for item in ("T3C", "T3D", "T4C", "T3E-T4D", "T3F-T4F", "T4G", "T4H", "T4I", "T4J", "T4K", "T4L", "T4M", "T4N", "T4O", "T4P"):
+          for item in ("T3C", "T3D", "T4C", "T3E-T4D", "T3F-T4F", "T4G", "T4H", "T4I", "T4J", "T4K", "T4L", "T4M", "T4N", "T4O", "T4P", "T4Q"):
               assert (Path("docs/articles") / f"{item}.md").exists()
           assert (Path("docs")/"index.html").exists()
-          for lab in ("causal_cut", "policy_cuts", "implementability", "reconfiguration", "composition", "diagnosis", "diagnostic_transport", "continuation", "joint_compilation", "trace_explorer", "semantic_closure", "physical_update", "faulty_update", "boundary_voting"):
+          for lab in ("causal_cut", "policy_cuts", "implementability", "reconfiguration", "composition", "diagnosis", "diagnostic_transport", "continuation", "joint_compilation", "trace_explorer", "semantic_closure", "physical_update", "faulty_update", "boundary_voting", "recurrent_maintenance"):
               assert (Path("docs")/"lab"/f"{lab}.html").exists()
           assert Path('registry/research-options.json').exists()
           assert Path('registry/v15-realized-correction-addendum.json').exists()
+          assert Path('registry/v16-recurrent-learning-addendum.json').exists()
+          assert Path('docs/strategy/learning-compass-v16.md').exists()
           assert Path('docs/synthesis/finite-core-v9-v14.md').exists()
           assert Path('docs/methodology/prompt-fechamento-contextual.md').exists()
           assert Path('docs/methodology/manual-fechamento-contextual.md').exists()
@@ -89,3 +93,4 @@ jobs:
           python -m experiments.physical_update_sweep --check
           python -m experiments.faulty_update_sweep --check
           python -m experiments.boundary_voting_sweep --check
+          python -m experiments.recurrent_sweep --check

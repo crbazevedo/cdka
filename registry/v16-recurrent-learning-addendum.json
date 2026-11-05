@@ -1,0 +1,33 @@
+{
+  "schema_version":1,
+  "revision":"v16",
+  "date":"2026-11-05",
+  "base_commit":"2eb1da7b635da2165e3b767440371a69583df3d0",
+  "active_limit":2,
+  "active_branches":["R11","R14"],
+  "combined_counts":{"branches":48,"rejected":42},
+  "historical_blobs":{"v15-realized-correction-addendum.json":"fca6fda90fa8962d33a5c00a274cbcf26bf03110"},
+  "learning_compass":"docs/strategy/learning-compass-v16.md",
+  "assessment_policy":"Validity, contribution, priority and fertility are separate. Classical FSC/Markov tools enable the operational closure and exact regeneration certificate; assess innovation at the actual coupling and guarantee, not by whether the tools are familiar.",
+  "branch_additions":[{
+    "id":"R48",
+    "title":"Diagnostic-controlled recurrent maintenance with a regenerative physical interface",
+    "status":"instrument",
+    "hypothesis":"A shared faulty decision/work bank can maintain itself through physically stored diagnosis and success-funded resources; fresh report generation can yield a policy-uniform stochastic realization without exposing hidden health.",
+    "reactivation_trigger":"Diagnosis, correction, maintenance and resource renewal have only been tested as separate components, or current health is averaged independently of a stale report.",
+    "minimal_test":"One six-NAND shared bank, three stored health bits, four resource levels, hidden bank mode, paid startup/operation/service and a16-program stationary library. Compare an independent raw event kernel with a12-phase regenerative evaluator.",
+    "tools":["finite-state controller enumeration","conditional joint laws","stochastic intertwining","exact Fraction propagation","causal branch traces","pathwise resource guard"],
+    "acceptance_gate":"One recurrent physical/resource process, a strictly separated implementable target, exact kernel certificate and independent oracle; retain fatal-hazard and uninformative-diagnosis controls.",
+    "fallbacks":["R11","R14","R12","R13","R20","R43","R44","R46","R47"],
+    "provenance":["cdka/recurrent_maintenance.py","docs/results/T4Q-recurrent-maintenance-loop.md","docs/strategy/learning-compass-v16.md"],
+    "contribution":"Executed64-state loop and12-phase stochastic realization;16 complete stationary programs; fair-prior8-cycle survival .917476789649 vs best blind .911531765217, with fewer maintenance attempts. No global history-policy or immortal-agency claim."
+  }],
+  "branch_updates":[
+    {"id":"R11","status":"active","evidence":"A physically refreshed report determines fallible maintenance; current and report-time health remain correlated. Exact shared-emission factorization closes all fixed-program continuations.","remaining_gate":"Compare fresh acquisition versus physical retention under one paid contract and derive the smallest interface when emission closure breaks.","dead_end_trigger":"Evaluator health, exact posterior or a one-step quotient is silently granted to runtime memory.","minimal_test":"Two memory-update primitives with identical task and ledger; minimal separating history or a certified stochastic realization.","fallbacks":["R12","R13","R43","R44","R48"],"provenance":["docs/strategy/proof-engine-v16.md"]},
+    {"id":"R14","status":"active","evidence":"The same six-NAND bank selects its repair and executes later tasks. Maintenance is charged before work harvest and may fail without a revealed outcome.","remaining_gate":"Price alternative routing/acquisition libraries and their failure modes; the current resource guard and routing remain trusted common interfaces.","dead_end_trigger":"A maintenance advantage relies on free external triggering, an unused diagnostic charged unfairly to a competing design, or negative intermediate resource.","minimal_test":"Two whole recurrent libraries under equal acquisition/service accounting, with a physically attained guarantee and independent blind competitor.","fallbacks":["R20","R28","R38","R46","R48"],"provenance":["docs/strategy/proof-engine-v16.md"]}
+  ],
+  "rejected_additions":[
+    {"id":"D41","claim":"Current bank health and resource balance suffice even when the diagnostic was written before a possible health change.","reason":"The two phases(v=0,z=1,b=3) and(v=1,z=1,b=3) have identical current health/resources but different stored-report laws and next-cycle transition rows. A stale report is an operationally relevant correlation.","fallbacks":["R11","R13","R46","R48"],"provenance":["tests/test_recurrent_maintenance.py"]},
+    {"id":"D42","claim":"An uninformative stored report forces the action to be independent of hidden physical bank health.","reason":"With fair independent report cells, the actual voter outputs1 with probabilities .501617015984006 and .5294254592 in healthy/degraded modes. The hardware itself supplies a causal dependence; this is not information in the register.","fallbacks":["R11","R43","R46","R48"],"provenance":["tests/test_recurrent_maintenance.py"]}
+  ]
+}
