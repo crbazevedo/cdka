@@ -3,9 +3,8 @@
   "date": "2026-11-05",
   "date_basis": "UTC",
   "parent_commit": "9b7dbd15d63531dc0fa873c6f80a74e3a763120a",
-  "integrated_canonical_main": "a32b9a4bf7ecf558ce9bd7fadd90385698ba759f",
+  "integrated_canonical_main": "c8eb621acf04c6581795662596c3c41cf2cac43c",
   "status": "formal consolidation, bounded antecedent audit and exact constructive illustration",
-  "recurring_physical_model_changed": false,
   "historical_priority": "not established; identified primary-source comparison is bounded and two close preprints remain abstract-only",
   "claims": [
     {
@@ -187,7 +186,7 @@
     "python -S -O -m unittest discover -s tests -p 'test_core_interface_witness.py' -v",
     "node --test tests/core-interfaces-lab.test.mjs"
   ],
-  "next_single_gate": "Priced faulty selective acquisition from actual finite observations and memory: first derive the joint selector/execution law, then check interface closure and complete-policy value against the best stationary and v17 matched-price controls.",
+  "next_single_gate": "One pathwise acquisition/actuation budget with physically shared selector resources; rederive the joint kernel and resource successors, then certify continuation sufficiency and complete-policy cost/survival against strongest no-gate, no-renewal and stationary controls.",
   "implementation_hardening": {
     "module": "cdka/maintenance_signatures.py",
     "preexisting_defect": "A necessary basis insertion occurred inside assert and vanished under Python -O; the independent checker rejected the incomplete certificate.",
@@ -196,5 +195,18 @@
     "ordinary_certificate_sha256_unchanged": "8e7d8f55d3037fe9174442a28e7bd5c5ff7b38742c9fc3249242b4f4a729d717",
     "independent_verifier_changed": false,
     "physical_model_changed": false
+  },
+  "prior_canonical_main": "a32b9a4bf7ecf558ce9bd7fadd90385698ba759f",
+  "audit_science_checkpoint": "63c218e34d3e2132eef58a28f9fbf4e51e15fbd3",
+  "recurring_physical_model_changed_by_audit": false,
+  "publication_integration": {
+    "upstream_result": "v18 priced selective acquisition, independently completed while audit was being published",
+    "upstream_preserved": true,
+    "merged_shared_files": [
+      ".github/workflows/tests.yml",
+      "docs/index.html"
+    ],
+    "scope": "Ideal continuation-equivalent omission is not full-law equality; noisy finite tolerance and expected acquisition costs remain separate contracts.",
+    "additional_cost_obligation": "Scalar survival domination does not preserve a cost frontier without same-domain cost responses and nonincreasing cost."
   }
 }

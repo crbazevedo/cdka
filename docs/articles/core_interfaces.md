@@ -332,6 +332,51 @@ não prova impossibilidade de toda interface de valores com doze dimensões,
 nem minimalidade do quociente de 48 estados.
 [Auditoria do mecanismo](../results/core-realization-antecedents.md).
 
+### Integração durante a publicação: omissão seletiva v18
+
+Enquanto esta auditoria era concluída, o main avançou independentemente para
+`c8eb621acf04c6581795662596c3c41cf2cac43c`. Seu
+[resultado v18](../results/T4S-priced-selective-acquisition.md) executa o
+seletor de aquisição que estava preparado como próximo passo. A integração
+preserva seus arquivos e sua proveniência; não o apresenta como um
+experimento novo desta auditoria.
+
+O novo circuito de habilitação lê apenas serviço executado e saldo prévio
+igual a três. Uma NAND ideal omite a escrita após serviço nesse saldo, pois
+o ramo bem-sucedido termina com saldo dois. A continuação é então forçada a
+pular a manutenção e renova o diagnóstico antes de voltar a usá-lo. Para o
+kernel Q de renovação e o kernel T de omissão, `D=T-Q` satisfaz
+`D 1=0`, `D Q=0` e `D T=0`. Isso conserva sobrevivência para todos os
+horizontes e medidas iniciais, em cada um dos 16 programas basais. A memória
+terminal pode diferir. É equivalência para as continuações da tarefa, sem
+alegação de igualdade de leis ou regeneração comum em toda etapa.
+
+O kernel é construído por ramos conjuntos condicionados ao comando executado.
+Substituí-lo por uma probabilidade marginal de escrita multiplicada por
+kernels incondicionais perderia dependências entre serviço, saúde e saldo.
+Esse mecanismo exemplifica a obrigação de lei conjunta da seção 4.
+
+A NAND de habilitação é separada do banco de seis portas e tem falhas novas
+com taxa fixa gamma. Com gamma positivo, omissões em outros contextos podem
+ser prejudiciais; a garantia ideal para todo horizonte não se transfere.
+O v18 oferece então certificados finitos de tolerância e uma síntese
+delimitada que inclui não instalar o circuito e não renovar o diagnóstico.
+
+Sua economia ideal de 6,08455% usa preços ilustrativos de escrita, invocação
+e instalação em uma **contabilidade esperada separada** do saldo operacional.
+Ela não é economia de energia medida nem garantia de gasto por trajetória.
+A cobertura escalar da seção 6 não preserva automaticamente uma fronteira
+de sobrevivência e custo: um representante precisaria também não aumentar
+o custo em todo o mesmo domínio, com ambas as respostas certificadas.
+
+Um controle devolve um token por aquisição omitida: a próxima decisão muda,
+e a igualdade antiga deixa de valer. A representação necessária depende,
+portanto, também das continuações abertas pelo recurso economizado.
+Certas distinções podem deixar de ser atualizadas com segurança quando a
+organização garante sua substituição antes de qualquer uso relevante. O
+próximo teste deve verificar essa garantia quando a economia altera a
+própria continuação. [Direção canônica v18](../strategy/direction-v18.md).
+
 ## 8. Antecedentes, contribuição e limites
 
 O núcleo utiliza fechamento de respostas de continuação [S1], distinções
@@ -386,11 +431,12 @@ Fontes: [experimento](../../experiments/core_interface_witness.py),
 
 ## 10. O que habilita e próxima obrigação
 
-A próxima expansão física é aquisição seletiva usando evidência e memória
-finitas realmente disponíveis, com seletor cobrado e falível. O contrato
-deve verificar o kernel conjunto de seleção e execução, identificar qual
-interface continua válida e comparar a política completa com o melhor
-programa estacionário admissível e os controles v17 de preços iguais.
+Com o v18 integrado, a próxima obrigação é colocar aquisição e atuação em
+um orçamento comum por trajetória e realizar a seleção com recursos físicos
+compartilhados. O custo economizado passa a alterar o saldo que determina
+as próximas decisões; o kernel conjunto e a suficiência de continuação
+precisam ser derivados novamente. A comparação inclui a melhor política
+completa admissível, renovação, retenção e ausência de circuito adicional.
 
 Um resultado negativo permanece informativo: pode mostrar que o seletor
 custa mais que o benefício, que a retenção exige uma distinção adicional ou

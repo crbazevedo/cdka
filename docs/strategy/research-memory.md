@@ -427,3 +427,44 @@ against the strongest stationary program and v17 matched-price controls.
 Do not add a free posterior, a free history identifier or a new price chosen
 to manufacture improvement. The first possible outcome is an exact account
 of the distinction or cost that the enlarged capability requires.
+
+### Synchronization during publication: v18 executes the priced-selector gate
+
+The audit science checkpoint is `63c218e34d3e2132eef58a28f9fbf4e51e15fbd3`.
+Before updating the branch, main was re-read and had advanced to
+`c8eb621acf04c6581795662596c3c41cf2cac43c`, independently executing the next
+priced selective-acquisition gate. Preserve both parents and every upstream
+file; union the workflow and atlas changes. The earlier next-gate paragraph
+records the audit checkpoint's state, not the current outstanding task.
+
+V18's ideal NAND omits writing after service from pre-balance three, landing
+at balance two. Forced skip and renewal before the next relevant memory use
+give `D 1=D Q=D T=0`. This is survival equivalence for every initial live
+measure and horizon, separately for each of the 16 baseline programs; it is
+not terminal-memory equality or an automatic common emission reset. Its
+implementation composes joint executed-service branches and then enable
+probabilities within each branch. Do not replace that law by independent
+marginal service/acquisition choices.
+
+The new enable gate has fixed fresh iid noise, separate from the old bank's
+health-conditioned faults. Positive symmetric noise permits harmful omissions
+outside the ideal safe branch. The finite eight-cycle threshold and illustrative
+cost improvements therefore retain narrower scope than the ideal equality.
+The cost ledger prices expected writes, gate invocations and installation per
+initial system, separately from actuator tokens. Returning a saved token
+changes the successor balance and invalidates the old equality certificate.
+[Canonical result](../results/T4S-priced-selective-acquisition.md) ·
+[Current direction](direction-v18.md).
+
+| ID | Integrated evidence | Decision consequence |
+|---|---|---|
+| RM.34 | V18 can omit an update safely because the fixed resource state prevents using the stale distinction before renewal. A token refund changes that continuation. | Judge omission against the actual future access and resource transitions. Savings that change future actions require a new joint certificate. |
+| RM.35 | V18's expected acquisition frontier has two outputs, survival and cost, while the previous program cover dominates one task value. | Preserve both responses and the correct common dominance order before transferring coverage. Expected overhead and pathwise physical budgets remain distinct. |
+
+**Current next single gate:** one pathwise budget for acquisition and
+actuation, with a physically shared selector. Reconstruct the joint kernel,
+resource successor and continuation responses; only then test omission and
+renewal and synthesize the complete admissible policy class. Preserve the
+best stationary policy, no-added-circuit and no-renewal competitors, and
+the matched-price controls. The v18 installed/priced selector is completed
+evidence and must not be repeated as an unexecuted plan.

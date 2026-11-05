@@ -106,7 +106,7 @@ Evidence: [article](../docs/articles/suffix_contexts.md),
 | PC.4 | Measured conditional full-cost improvement | h16/K4 complete-run medians fall39.417228s→3.244689s, ratio12.148229; h12/K4 andh12/K12 also win | Three fresh processes per method/case; h2 ranges overlap andh8 loses; certificate19,683→1,261,965bytes; no polynomial, universal-crossover or resident-memory claim |
 | PC.5 | Exact falsified simplifications | Conic-only coverage changes physical maximin feasibility; informed optima do not interpolate; attainment alone is not optimality; separate extrema invent regret | Retained actual acquisition/continuation fixtures, exact fractions and independent checks |
 | PC.6 | Resolved independently in integrated main v17 | Retained-record selection leaves the inherited twelve-phase fresh-emission family; a sufficient48-state symmetry quotient covers the enlarged grammar | Distinct64-state recurrent model; exact main a32b9a4b provenance; no lower bound against every12D value interface or minimality claim for48 |
-| PC.7 | Consolidated by bounded formal/source audit; see CA | Common-decision coverage, physical feasibility/access and renewable law-family realization form separate obligations in one finite constructive account | Historical priority remains open; next physical gate is a priced faulty observation selector |
+| PC.7 | Consolidated by bounded formal/source audit; see CA | Common-decision coverage, physical feasibility/access and renewable law-family realization form separate obligations in one finite constructive account | Historical priority remains open; integrated v18 completes the priced selector, with shared pathwise budget now next |
 
 Evidence: [article](../docs/articles/preparation_families.md),
 [proof](../docs/results/preparation-family-proof.md),
@@ -137,4 +137,11 @@ Evidence: [manuscript](../docs/articles/core_interfaces.md),
 [scope and access limits](../docs/results/core-scope-antecedents.md),
 [machine-readable addendum](core-audit-addendum.json),
 [integrated core](../docs/strategy/realizable-renewable-core.md).
+
+**Concurrent canonical result integrated:** v18 at `c8eb621acf04c6581795662596c3c41cf2cac43c`
+executes priced selective acquisition. Its all-horizon ideal omission,
+finite-noise tolerance, expected-cost frontier and refund counterexample
+remain registered in the [original addendum](v18-selective-acquisition-addendum.json).
+These results preserve their own contracts. They do not automatically inherit
+the scalar-value cover's conclusions for a second cost objective.
 

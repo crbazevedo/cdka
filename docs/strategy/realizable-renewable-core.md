@@ -6,7 +6,9 @@ mecanismos e de antecedentes identificados. O
 exposição principal. O fechamento desta etapa é relativo às fontes
 efetivamente consultadas: oito obras em passagens do texto integral e três
 registros/resumos com acesso limitado. Prioridade histórica global permanece
-aberta. Não houve ampliação do simulador físico recorrente.
+aberta. A auditoria não ampliou o simulador físico recorrente; o resultado
+v18 que chegou independentemente ao main durante a publicação foi integrado
+com sua proveniência e altera a próxima obrigação, como registrado abaixo.
 
 ## Tese e pergunta delimitada
 
@@ -178,14 +180,25 @@ prioridade e permanece registrada, sem bloquear a verificação interna.
 [Mecanismos e manutenção](../results/core-realization-antecedents.md) ·
 [Escopo e acesso às fontes](../results/core-scope-antecedents.md)
 
-A próxima etapa amplia o mecanismo de aquisição seletiva. Seu seletor precisa
-usar evidência e memória física disponíveis, ter seus custos e falhas
-contabilizados e enfrentar o melhor programa estacionário completo. O
-controle v17 de preços iguais continua como referência; não se alteram os
-preços para produzir artificialmente uma vantagem.
+O passo de aquisição seletiva paga e falível foi executado independentemente
+no main v18, commit `c8eb621acf04c6581795662596c3c41cf2cac43c`, enquanto a
+auditoria era publicada. A seleção NAND usa comando de serviço e saldo
+prévio; seu kernel mantém os ramos conjuntos. A omissão ideal preserva a
+tarefa por `D 1=D Q=D T=0`, sem conservar necessariamente a memória terminal.
+A prova vale em cada um dos 16 programas basais com as continuações e
+transições de recursos fixadas. Ruído simétrico positivo tem um certificado
+distinto de tolerância finita; preços de aquisição pertencem a uma
+contabilidade esperada separada do saldo operacional.
 
-A primeira obrigação dessa etapa é derivar o kernel conjunto do seletor e
-da execução, mantendo causas persistentes e sorteios compartilhados
-explícitos. Só então se testa qual interface fecha e se a aquisição seletiva
-compensa seu custo completo. Conservar uma família de saída não autoriza
-computar sua decisão a partir de uma entrada insuficiente.
+[Resultado v18](../results/T4S-priced-selective-acquisition.md) ·
+[Direção atual](direction-v18.md)
+
+**Próxima obrigação:** unir aquisição e atuação em um orçamento por trajetória
+e realizar a seleção com recursos físicos compartilhados. Derivar novamente
+o kernel e o sucessor de recursos: devolver o token economizado já invalida
+a antiga igualdade porque permite usar o registro antes de renová-lo. Uma
+cobertura de custo/sobrevivência deve certificar ambas as respostas e a
+dominância adequada; dominância apenas de sobrevivência não preserva aquela
+fronteira automaticamente. Comparar políticas completas com as melhores
+referências, incluindo não instalar e não renovar. Conservar uma família
+de saída continua sem autorizar uma decisão a partir de entrada insuficiente.

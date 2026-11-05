@@ -52,11 +52,20 @@ is open, including full-text comparison with two Murray preprints. Do not
 frame those antecedents as only static, and do not confuse a certificate over
 supplied kernels with proof of physical implementation.
 
-The next single physical gate is selective acquisition using actual finite
-memory and evidence, with a priced faulty selector. First derive and verify
-the joint selector/execution kernel with persistent and shared causes; then
-test interface closure and complete-policy value against the best stationary
-program and the v17 matched-price controls. The 16-state source-fidelity and
-64-state recurrent models retain their own contracts. Failure of an old
-stochastic emission family does not rule out every same-dimensional value
-interface. Another compiler scaling probe is not the next default objective.
+During publication, main advanced to v18 at
+`c8eb621acf04c6581795662596c3c41cf2cac43c`; this branch integrates it unchanged
+apart from unioning workflow and atlas additions. Its priced faulty NAND
+write-enable gate is already executed. The ideal omission preserves survival
+through continuation annihilation, not full-law equality; noisy guarantees
+and expected acquisition prices have narrower declared scopes. Read
+[v18 direction](docs/strategy/direction-v18.md) and the manuscript integration.
+
+The next single physical gate is a common pathwise acquisition/actuation
+budget with physically shared selection resources. Derive the joint kernel
+and successor resource transitions before transferring the omission proof:
+v18's refund control changes which distinctions matter next. Cost-frontier
+coverage also requires same-domain cost responses and cost domination, beyond
+scalar survival domination. Preserve the strongest complete policies, no-gate
+and no-renewal competitors and prior matched-price controls. The 16-state
+source-fidelity and recurrent models retain their own contracts. Another
+compiler scaling probe is not the next default objective.
