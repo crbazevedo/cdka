@@ -1,0 +1,26 @@
+test_bad_goals_and_nonabsorbing_rejected (test_context_product.ContextProductTests.test_bad_goals_and_nonabsorbing_rejected) ... ok
+test_constant_context_recovers_v19 (test_context_product.ContextProductTests.test_constant_context_recovers_v19) ... ok
+test_contract_rejections (test_context_product.ContextProductTests.test_contract_rejections) ... ok
+test_horizon_validation_all_evaluators (test_context_product.ContextProductTests.test_horizon_validation_all_evaluators) ... ok
+test_initial_world_zero_time_general_case (test_context_product.ContextProductTests.test_initial_world_zero_time_general_case) ... ok
+test_mass_not_renormalized_to_survivors (test_context_product.ContextProductTests.test_mass_not_renormalized_to_survivors) ... ok
+test_no_commutation_order_witness (test_context_product.ContextProductTests.test_no_commutation_order_witness) ... ok
+test_numerical_tensor_keeps_global_dependence (test_context_product.ContextProductTests.test_numerical_tensor_keeps_global_dependence) ... ok
+test_occupation_dp_counts_correct_current_context (test_context_product.ContextProductTests.test_occupation_dp_counts_correct_current_context) ... ok
+test_original_storm_models_have_identical_bytes (test_context_product.ContextProductTests.test_original_storm_models_have_identical_bytes) ... ok
+test_parser_empty_environment_and_trailing_illegal (test_context_product.ContextProductTests.test_parser_empty_environment_and_trailing_illegal) ... ok
+test_parser_rejects_nonlocal_guard (test_context_product.ContextProductTests.test_parser_rejects_nonlocal_guard) ... ok
+test_parser_rejects_nonlocal_write_or_extra_query (test_context_product.ContextProductTests.test_parser_rejects_nonlocal_write_or_extra_query) ... ok
+test_random_rational_families (test_context_product.ContextProductTests.test_random_rational_families) ... ok
+test_recovered_official_solver_values (test_context_product.ContextProductTests.test_recovered_official_solver_values) ... ok
+test_same_counts_have_different_weights_not_different_response (test_context_product.ContextProductTests.test_same_counts_have_different_weights_not_different_response) ... ok
+test_shared_context_is_not_independent_product (test_context_product.ContextProductTests.test_shared_context_is_not_independent_product) ... ok
+test_single_time_conditioned_product (test_context_product.ContextProductTests.test_single_time_conditioned_product) ... ok
+test_stochastic_inputs_validate_before_algebra (test_context_product.ContextProductTests.test_stochastic_inputs_validate_before_algebra) ... ok
+test_task_relative_commutation_accepts_noncommuting_dynamics (test_context_product.ContextProductTests.test_task_relative_commutation_accepts_noncommuting_dynamics) ... ok
+test_three_independent_oracles_on_small_instances (test_context_product.ContextProductTests.test_three_independent_oracles_on_small_instances) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.758s
+
+OK

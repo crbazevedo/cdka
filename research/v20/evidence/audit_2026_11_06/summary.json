@@ -1,0 +1,154 @@
+{
+  "cases": [
+    {
+      "H": 10,
+      "methods": {
+        "cdka_context": {
+          "check_s": 0.0003405650000161131,
+          "max_abs_error": 0.0,
+          "maxrss_kib": 40828,
+          "process_wall_s": 0.1129490790000034,
+          "total_s": 0.002137000999994143
+        },
+        "storm_sparse": {
+          "check_s": 0.0002329179999946973,
+          "max_abs_error": 3.469446951953614e-18,
+          "maxrss_kib": 117888,
+          "process_wall_s": 0.14785792600000036,
+          "total_s": 0.019339531000014176
+        },
+        "storm_symbolic": {
+          "check_s": 0.0319239019999884,
+          "max_abs_error": 1.214306433183765e-17,
+          "maxrss_kib": 170960,
+          "process_wall_s": 0.20847379100001717,
+          "total_s": 0.0721969779999938
+        }
+      },
+      "n": 2
+    },
+    {
+      "H": 10,
+      "methods": {
+        "cdka_context": {
+          "check_s": 0.00033712300000843243,
+          "max_abs_error": 0.0,
+          "maxrss_kib": 40828,
+          "process_wall_s": 0.11546981500001152,
+          "total_s": 0.002994322999995802
+        },
+        "storm_sparse": {
+          "check_s": 0.000417048000002751,
+          "max_abs_error": 3.2526065174565133e-19,
+          "maxrss_kib": 117888,
+          "process_wall_s": 0.14687450299999227,
+          "total_s": 0.022590261999994254
+        },
+        "storm_symbolic": {
+          "check_s": 0.3199020290000192,
+          "max_abs_error": 1.1926223897340549e-18,
+          "maxrss_kib": 1427964,
+          "process_wall_s": 1.0536592690000077,
+          "total_s": 0.5897846530000095
+        }
+      },
+      "n": 4
+    },
+    {
+      "H": 10,
+      "methods": {
+        "cdka_context": {
+          "check_s": 0.00034054899998636756,
+          "max_abs_error": 0.0,
+          "maxrss_kib": 40828,
+          "process_wall_s": 0.11231649000001198,
+          "total_s": 0.0038072010000007594
+        },
+        "storm_sparse": {
+          "check_s": 0.008603286999999682,
+          "max_abs_error": 2.710505431213761e-20,
+          "maxrss_kib": 117992,
+          "process_wall_s": 0.1952838159999999,
+          "total_s": 0.07476592200001164
+        },
+        "storm_symbolic": {
+          "check_s": 0.5699115529999972,
+          "max_abs_error": 2.168404344971009e-19,
+          "maxrss_kib": 3041216,
+          "process_wall_s": 2.3451902639999958,
+          "total_s": 1.6901852210000072
+        }
+      },
+      "n": 6
+    },
+    {
+      "H": 10,
+      "methods": {
+        "cdka_context": {
+          "check_s": 0.0003528729999970892,
+          "max_abs_error": 0.0,
+          "maxrss_kib": 40828,
+          "process_wall_s": 0.11660131399997908,
+          "total_s": 0.004690382999996245
+        },
+        "storm_sparse": {
+          "check_s": 0.3737226709999959,
+          "max_abs_error": 1.3552527156068805e-20,
+          "maxrss_kib": 379068,
+          "process_wall_s": 2.006220022000008,
+          "total_s": 1.88358476800002
+        },
+        "storm_symbolic": {
+          "check_s": 24.653524825999995,
+          "max_abs_error": 8.809142651444724e-20,
+          "maxrss_kib": 4006832,
+          "process_wall_s": 33.267249383999996,
+          "total_s": 31.94687085000001
+        }
+      },
+      "n": 8
+    },
+    {
+      "H": 50,
+      "methods": {
+        "cdka_context": {
+          "check_s": 0.0009435829999802081,
+          "max_abs_error": 0.0,
+          "maxrss_kib": 40828,
+          "process_wall_s": 0.11496761000000788,
+          "total_s": 0.004454320999968786
+        },
+        "storm_sparse": {
+          "check_s": 0.013417000000004009,
+          "max_abs_error": 4.163336342344337e-17,
+          "maxrss_kib": 117980,
+          "process_wall_s": 0.20149349600001187,
+          "total_s": 0.07917705400001296
+        },
+        "storm_symbolic": {
+          "check_s": 3.264674308999986,
+          "max_abs_error": 9.43689570931383e-16,
+          "maxrss_kib": 3330328,
+          "process_wall_s": 5.301085608999983,
+          "total_s": 4.401842452999972
+        }
+      },
+      "n": 6
+    }
+  ],
+  "environment": {
+    "case_order": "within-case seeded random method/repetition order; fresh child per observation",
+    "cpu": "\t: Intel(R) Xeon(R) Platinum 8370C CPU @ 2.80GHz",
+    "numpy": "2.3.4",
+    "platform": "Linux-7.0.0-1017-azure-x86_64-with-glibc2.39",
+    "python": "3.13.18 (main, Oct 26 2026, 14:20:56) [GCC 13.3.0]",
+    "scope": "CPU, Storm default sparse/symbolic calls, no backend tuning; not Tessa GPU or Dice",
+    "source_commit": "3124cd650444223f3bc1245f1b5d35c74df0d132",
+    "threads": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "timing": "one query: read+parse+certification or model build+check; imports excluded from total_s, included in process_wall_s"
+  }
+}

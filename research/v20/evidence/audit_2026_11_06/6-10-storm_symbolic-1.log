@@ -1,0 +1,3 @@
+AUDIT_CHILD {"build_s": 1.1176201309999954, "check_s": 0.5699115529999972, "import_s": 0.07418541300000925, "maxrss_kib": 3041216, "parse_s": 0.002653537000014694, "states": 1458, "storm_core": "not exposed by binding", "stormpy": "2.0.0", "total_s": 1.6901852210000072, "transitions": 124560, "value": 0.00015321535567427712}
+
+STDERR
