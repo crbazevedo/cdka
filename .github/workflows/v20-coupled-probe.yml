@@ -1,0 +1,53 @@
+name: CDKA v20 coupled-context solver probe
+on:
+  push:
+    branches: [research/v20-coupled-verification]
+    paths: ['experiments/v20_coupled_probe.py', '.github/workflows/v20-coupled-probe.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  compare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    env:
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      NUMEXPR_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/v20-coupled-verification
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install 'stormpy==2.0.0' 'numpy==2.3.4'
+      - name: Recover original successful same-host benchmark evidence
+        uses: actions/download-artifact@v4
+        with:
+          name: cdka-v20-official-probe
+          run-id: 42150755674
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: research/v20/evidence/meeting_official
+      - name: Compare coupled contexts on the same runner
+        run: python -u experiments/v20_coupled_probe.py
+      - name: Preserve complete evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cdka-v20-coupled-probe
+          path: v20_coupled_evidence
+      - name: Record bounded research evidence on research branch only
+        if: always()
+        run: |
+          mkdir -p research/v20/evidence/coupled_official
+          if [ -d v20_coupled_evidence ]; then cp -r v20_coupled_evidence/. research/v20/evidence/coupled_official/; fi
+          git config user.name 'CDKA reproducibility runner'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/v20/evidence
+          if ! git diff --cached --quiet; then
+            git commit -m 'evidence: preserve official same-host comparisons and complete logs [skip ci]'
+            git push origin HEAD:research/v20-coupled-verification
+          fi
