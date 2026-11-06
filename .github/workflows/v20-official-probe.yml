@@ -4,6 +4,7 @@ on:
     branches: [research/v20-coupled-verification]
     paths:
       - 'experiments/v20_official_probe.py'
+      - 'experiments/v20_storm2_adapter.py'
       - '.github/workflows/v20-official-probe.yml'
   workflow_dispatch:
 permissions:
@@ -24,8 +25,8 @@ jobs:
           python-version: '3.13'
       - name: Install pinned official Storm bindings and numerical baseline
         run: python -m pip install 'stormpy==2.0.0' 'numpy==2.3.4'
-      - name: Same-host subprocess benchmark
-        run: python -u experiments/v20_official_probe.py
+      - name: Same-host subprocess benchmark with current official API
+        run: python -u experiments/v20_storm2_adapter.py
       - name: Preserve complete evidence
         if: always()
         uses: actions/upload-artifact@v4
