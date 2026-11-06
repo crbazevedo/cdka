@@ -1,0 +1,37 @@
+name: CDKA competitive family pilot
+on:
+  push:
+    paths:
+      - 'cdka/family_certificate.py'
+      - 'experiments/competitive_family_benchmark.py'
+      - '.github/workflows/competitive-pilot.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  storm-comparison:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      PYTHONHASHSEED: '0'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned external comparator
+        run: python -m pip install 'stormpy==2.0.0' 'numpy==2.3.5' 'scipy==1.16.3'
+      - name: Record machine
+        run: |
+          mkdir -p evidence
+          lscpu > evidence/cpu.txt
+          python -m pip freeze > evidence/requirements.txt
+      - name: Execute whole-family comparison
+        run: python -m experiments.competitive_family_benchmark --storm --repeats 3
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cdka-competitive-pilot
+          path: evidence/
