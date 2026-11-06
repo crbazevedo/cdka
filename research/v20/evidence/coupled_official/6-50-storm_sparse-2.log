@@ -1,0 +1,3 @@
+V20_COUPLED_CHILD {"build_s": 0.045576067000013154, "check_s": 0.0063482899999769415, "import_s": 0.04481249500000217, "maxrss_kib": 126684, "parse_s": 0.0018264160000001084, "states": 1458, "stormpy_version": "2.0.0", "total_s": 0.053750772999990204, "transitions": 124560, "value": 0.11963305989109549}
+
+STDERR

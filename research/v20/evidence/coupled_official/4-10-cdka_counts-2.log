@@ -1,0 +1,3 @@
+V20_COUPLED_CHILD {"certificate": {"commutation": "exact full matrices", "components": 4, "context_modes": 2, "goal": "all absorbing local goals", "initial_context": 0, "scheduler": "use current context then transition environment", "sha256": "5ade86d2e68d5b0a852fca274bca2589a79fbf7f2f22667c7cf26ce6dae49bd1"}, "check_s": 0.000222473000000889, "import_s": 0.03215573299999619, "informed_count_median_s": 9.68400000047609e-05, "maxrss_kib": 44140, "parse_build_s": 0.0013969319999986851, "total_s": 0.001619404999999574, "value": 0.0008608097758093335}
+
+STDERR

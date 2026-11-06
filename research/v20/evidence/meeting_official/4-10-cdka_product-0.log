@@ -1,0 +1,3 @@
+V20_CHILD {"certificate": {"components": 4, "goal_absorbing": true, "owned_reads": true, "scheduler": "single synchronous label", "sha256": "6617dfa7da5ae076ff7e3f3c5d4b679ef626517687cc8390bf3b6b0a0b738efd"}, "check_s": 0.00013357699999971828, "direct_prevalidated_s": 1.9854500003191333e-05, "import_s": 0.03698950300000092, "maxrss_kib": 43944, "method": "cdka_product", "numpy_version": "2.3.4", "parse_build_s": 0.000747175000000766, "total_s": 0.0008807520000004843, "value": 0.010480386765398602}
+
+STDERR

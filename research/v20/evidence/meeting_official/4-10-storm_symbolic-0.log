@@ -1,0 +1,3 @@
+V20_CHILD {"build_s": 0.0812245340000004, "check_s": 0.11993781500000011, "import_s": 0.05481881900000474, "maxrss_kib": 505272, "method": "storm_symbolic", "parse_s": 0.0011022430000053873, "states": 81, "stormpy_version": "2.0.0", "total_s": 0.2022645920000059, "transitions": 625, "value": 0.010480386765398596}
+
+STDERR
