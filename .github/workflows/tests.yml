@@ -13,6 +13,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Install numerical specialization dependency
+        run: python -m pip install 'numpy==2.3.4'
       - name: Generate exact semantic closure certificate
         run: python -m experiments.semantic_sweep --write --check
       - name: Generate exact physical update certificate
