@@ -1,0 +1,53 @@
+name: V21 regenerative exposure certification
+on:
+  push:
+    branches: ['research/v21-regenerative-exposure']
+    paths:
+      - 'research/v21/cdka/**'
+      - 'research/v21/tests/**'
+      - 'research/v21/experiments/**'
+      - 'research/v21/external/**'
+      - '.github/workflows/v21_regenerative.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  certify-and-compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: research/v21-regenerative-exposure
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install fixed solver and numerical versions
+        run: python -m pip install 'numpy==2.3.4' 'stormpy==2.0.0'
+      - name: Exact and independent regression tests
+        working-directory: research/v21
+        run: |
+          mkdir -p evidence/official
+          python -m unittest discover -s tests -v 2>&1 | tee evidence/official/tests.log
+          python -O -m unittest discover -s tests -v 2>&1 | tee evidence/official/tests_optimized.log
+      - name: Same-file subprocess comparison including strong bisimulation
+        working-directory: research/v21
+        run: python experiments/benchmark.py official | tee evidence/official/workflow_stdout.log
+      - name: Preserve raw evidence on the research branch
+        if: success()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add research/v21/evidence/official
+          git diff --cached --quiet || git commit -m 'evidence: v21 same-host Storm comparisons and exact tests [skip ci]'
+          git push origin HEAD:research/v21-regenerative-exposure
+      - name: Preserve failure evidence as workflow artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v21-regenerative-evidence
+          path: research/v21/evidence/official
