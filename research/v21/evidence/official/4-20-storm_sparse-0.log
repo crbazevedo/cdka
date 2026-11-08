@@ -1,10 +1,3 @@
+CDKA_V21_RESULT {"bisim_s": 9.519999935037049e-07, "build_s": 0.019789102000004277, "check_s": 0.00023434899998164838, "import_s": 0.07037001200001214, "input_sha256": "c4c7729657c94072da8d4f695cb35c568270c31bb2fa5e59779fe8e3026be7a2", "parse_s": 0.0017026370000507995, "peak_rss_kib": 123236, "states": 162, "states_before": 162, "stormpy_version": "2.0.0", "total_s": 0.02172704000003023, "transitions": 1410, "value": 0.03772016443126838}
 
 STDERR
-Traceback (most recent call last):
-  File "/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py", line 93, in <module>
-    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))
-                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py", line 37, in child
-    else:value=float(out.at(model.initial_states[0]))
-                     ^^^^^^
-AttributeError: 'stormpy.developer._core._ExplicitQuantitativeCheckResult_Double' object has no attribute 'at'

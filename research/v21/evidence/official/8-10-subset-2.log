@@ -1,3 +1,3 @@
-CDKA_V21_RESULT {"check_s": 0.004799931000000868, "detail": {"condition_estimate": 105551.22113170737, "numeric_warning": false, "probability": 0.0006098998281921092}, "import_s": 0.03733014600000217, "input_sha256": "7fea3176df10eec41003e8b93e2d81130e559bae6dbe967a187f2805b535a98f", "parse_build_s": 0.0022246119999991265, "peak_rss_kib": 42544, "total_s": 0.007024542999999994, "value": 0.0006098998281921092}
+CDKA_V21_RESULT {"check_s": 0.008854494999980034, "detail": {"condition_estimate": 105551.2211316209, "numeric_warning": false, "probability": 0.0006098998281926088}, "import_s": 0.06145046500000717, "input_sha256": "7fea3176df10eec41003e8b93e2d81130e559bae6dbe967a187f2805b535a98f", "parse_build_s": 0.0043623150000371425, "peak_rss_kib": 43640, "total_s": 0.013216810000017176, "value": 0.0006098998281926088}
 
 STDERR

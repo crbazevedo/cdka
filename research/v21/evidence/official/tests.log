@@ -22,6 +22,6 @@ test_reset_not_rank_one_rejected (test_regenerative.RegenerationTests.test_reset
 test_v20_count_equivalence_really_fails (test_regenerative.RegenerationTests.test_v20_count_equivalence_really_fails) ... ok
 
 ----------------------------------------------------------------------
-Ran 22 tests in 0.466s
+Ran 22 tests in 0.855s
 
 OK

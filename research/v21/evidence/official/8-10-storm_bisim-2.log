@@ -1,0 +1,3 @@
+CDKA_V21_RESULT {"bisim_s": 0.04334961399999315, "build_s": 0.3942827070000021, "check_s": 0.031166406000011193, "import_s": 0.07020451799999705, "input_sha256": "7fea3176df10eec41003e8b93e2d81130e559bae6dbe967a187f2805b535a98f", "parse_s": 0.002771738999996387, "peak_rss_kib": 141136, "states": 6816, "states_before": 13122, "stormpy_version": "2.0.0", "total_s": 0.47157046600000285, "transitions": 456415, "value": 0.0006098998281920371}
+
+STDERR
