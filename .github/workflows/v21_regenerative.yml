@@ -15,6 +15,9 @@ jobs:
   certify-and-compare:
     runs-on: ubuntu-latest
     timeout-minutes: 12
+    defaults:
+      run:
+        shell: bash
     env:
       OPENBLAS_NUM_THREADS: '1'
       OMP_NUM_THREADS: '1'
@@ -31,21 +34,30 @@ jobs:
       - name: Exact and independent regression tests
         working-directory: research/v21
         run: |
+          set -euo pipefail
           mkdir -p evidence/official
           python -m unittest discover -s tests -v 2>&1 | tee evidence/official/tests.log
           python -O -m unittest discover -s tests -v 2>&1 | tee evidence/official/tests_optimized.log
+      - name: API compatibility and same-value smoke gate
+        working-directory: research/v21
+        run: |
+          set -euo pipefail
+          python experiments/benchmark.py smoke | tee evidence/official/smoke.log
       - name: Same-file subprocess comparison including strong bisimulation
         working-directory: research/v21
-        run: python experiments/benchmark.py official | tee evidence/official/workflow_stdout.log
-      - name: Preserve raw evidence on the research branch
+        run: |
+          set -euo pipefail
+          python experiments/benchmark.py official | tee evidence/official/workflow_stdout.log
+      - name: Preserve successful raw evidence on the research branch
         if: success()
         run: |
+          set -euo pipefail
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add research/v21/evidence/official
-          git diff --cached --quiet || git commit -m 'evidence: v21 same-host Storm comparisons and exact tests [skip ci]'
+          git diff --cached --quiet || git commit -m 'evidence: corrected v21 official comparison with strict failure gate [skip ci]'
           git push origin HEAD:research/v21-regenerative-exposure
-      - name: Preserve failure evidence as workflow artifact
+      - name: Preserve raw evidence as workflow artifact even on failure
         if: always()
         uses: actions/upload-artifact@v4
         with:
