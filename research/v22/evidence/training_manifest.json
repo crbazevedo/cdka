@@ -1,0 +1,242 @@
+[
+  {
+    "family": "meeting",
+    "h": 6,
+    "id": "train-m-2-6",
+    "n": 2,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1206
+  },
+  {
+    "family": "meeting",
+    "h": 10,
+    "id": "train-m-2-10",
+    "n": 2,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1210
+  },
+  {
+    "family": "meeting",
+    "h": 14,
+    "id": "train-m-2-14",
+    "n": 2,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1214
+  },
+  {
+    "family": "meeting",
+    "h": 20,
+    "id": "train-m-2-20",
+    "n": 2,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1220
+  },
+  {
+    "family": "meeting",
+    "h": 26,
+    "id": "train-m-2-26",
+    "n": 2,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1226
+  },
+  {
+    "family": "meeting",
+    "h": 32,
+    "id": "train-m-2-32",
+    "n": 2,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1232
+  },
+  {
+    "family": "meeting",
+    "h": 6,
+    "id": "train-m-4-6",
+    "n": 4,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1406
+  },
+  {
+    "family": "meeting",
+    "h": 10,
+    "id": "train-m-4-10",
+    "n": 4,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1410
+  },
+  {
+    "family": "meeting",
+    "h": 14,
+    "id": "train-m-4-14",
+    "n": 4,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1414
+  },
+  {
+    "family": "meeting",
+    "h": 20,
+    "id": "train-m-4-20",
+    "n": 4,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1420
+  },
+  {
+    "family": "meeting",
+    "h": 26,
+    "id": "train-m-4-26",
+    "n": 4,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1426
+  },
+  {
+    "family": "meeting",
+    "h": 32,
+    "id": "train-m-4-32",
+    "n": 4,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1432
+  },
+  {
+    "family": "meeting",
+    "h": 6,
+    "id": "train-m-6-6",
+    "n": 6,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1606
+  },
+  {
+    "family": "meeting",
+    "h": 10,
+    "id": "train-m-6-10",
+    "n": 6,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1610
+  },
+  {
+    "family": "meeting",
+    "h": 14,
+    "id": "train-m-6-14",
+    "n": 6,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1614
+  },
+  {
+    "family": "meeting",
+    "h": 20,
+    "id": "train-m-6-20",
+    "n": 6,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1620
+  },
+  {
+    "family": "meeting",
+    "h": 26,
+    "id": "train-m-6-26",
+    "n": 6,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1626
+  },
+  {
+    "family": "meeting",
+    "h": 32,
+    "id": "train-m-6-32",
+    "n": 6,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1632
+  },
+  {
+    "family": "meeting",
+    "h": 6,
+    "id": "train-m-8-6",
+    "n": 8,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1806
+  },
+  {
+    "family": "meeting",
+    "h": 10,
+    "id": "train-m-8-10",
+    "n": 8,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1810
+  },
+  {
+    "family": "meeting",
+    "h": 14,
+    "id": "train-m-8-14",
+    "n": 8,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1814
+  },
+  {
+    "family": "meeting",
+    "h": 20,
+    "id": "train-m-8-20",
+    "n": 8,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1820
+  },
+  {
+    "family": "meeting",
+    "h": 26,
+    "id": "train-m-8-26",
+    "n": 8,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1826
+  },
+  {
+    "family": "meeting",
+    "h": 32,
+    "id": "train-m-8-32",
+    "n": 8,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 1832
+  }
+]

@@ -1,0 +1,490 @@
+[
+  {
+    "family": "sequential",
+    "h": 8,
+    "id": "test-sequential-3-8",
+    "n": 3,
+    "nu0": 2,
+    "r00": 8,
+    "r10": 5,
+    "seed": 20261108
+  },
+  {
+    "family": "sequential",
+    "h": 12,
+    "id": "test-sequential-3-12",
+    "n": 3,
+    "nu0": 7,
+    "r00": 5,
+    "r10": 4,
+    "seed": 20261145
+  },
+  {
+    "family": "sequential",
+    "h": 18,
+    "id": "test-sequential-3-18",
+    "n": 3,
+    "nu0": 5,
+    "r00": 7,
+    "r10": 2,
+    "seed": 20261182
+  },
+  {
+    "family": "sequential",
+    "h": 24,
+    "id": "test-sequential-3-24",
+    "n": 3,
+    "nu0": 3,
+    "r00": 9,
+    "r10": 7,
+    "seed": 20261219
+  },
+  {
+    "family": "sequential",
+    "h": 30,
+    "id": "test-sequential-3-30",
+    "n": 3,
+    "nu0": 2,
+    "r00": 6,
+    "r10": 6,
+    "seed": 20261256
+  },
+  {
+    "family": "sequential",
+    "h": 8,
+    "id": "test-sequential-5-8",
+    "n": 5,
+    "nu0": 7,
+    "r00": 8,
+    "r10": 4,
+    "seed": 20261293
+  },
+  {
+    "family": "sequential",
+    "h": 12,
+    "id": "test-sequential-5-12",
+    "n": 5,
+    "nu0": 5,
+    "r00": 5,
+    "r10": 2,
+    "seed": 20261330
+  },
+  {
+    "family": "sequential",
+    "h": 18,
+    "id": "test-sequential-5-18",
+    "n": 5,
+    "nu0": 4,
+    "r00": 7,
+    "r10": 1,
+    "seed": 20261367
+  },
+  {
+    "family": "sequential",
+    "h": 24,
+    "id": "test-sequential-5-24",
+    "n": 5,
+    "nu0": 2,
+    "r00": 9,
+    "r10": 6,
+    "seed": 20261404
+  },
+  {
+    "family": "sequential",
+    "h": 30,
+    "id": "test-sequential-5-30",
+    "n": 5,
+    "nu0": 7,
+    "r00": 6,
+    "r10": 4,
+    "seed": 20261441
+  },
+  {
+    "family": "sequential",
+    "h": 8,
+    "id": "test-sequential-7-8",
+    "n": 7,
+    "nu0": 5,
+    "r00": 8,
+    "r10": 3,
+    "seed": 20261478
+  },
+  {
+    "family": "sequential",
+    "h": 12,
+    "id": "test-sequential-7-12",
+    "n": 7,
+    "nu0": 4,
+    "r00": 5,
+    "r10": 1,
+    "seed": 20261515
+  },
+  {
+    "family": "sequential",
+    "h": 18,
+    "id": "test-sequential-7-18",
+    "n": 7,
+    "nu0": 2,
+    "r00": 7,
+    "r10": 6,
+    "seed": 20261552
+  },
+  {
+    "family": "sequential",
+    "h": 24,
+    "id": "test-sequential-7-24",
+    "n": 7,
+    "nu0": 7,
+    "r00": 9,
+    "r10": 5,
+    "seed": 20261589
+  },
+  {
+    "family": "sequential",
+    "h": 30,
+    "id": "test-sequential-7-30",
+    "n": 7,
+    "nu0": 6,
+    "r00": 6,
+    "r10": 3,
+    "seed": 20261626
+  },
+  {
+    "family": "sequential",
+    "h": 8,
+    "id": "test-sequential-9-8",
+    "n": 9,
+    "nu0": 4,
+    "r00": 8,
+    "r10": 1,
+    "seed": 20261663
+  },
+  {
+    "family": "sequential",
+    "h": 12,
+    "id": "test-sequential-9-12",
+    "n": 9,
+    "nu0": 2,
+    "r00": 5,
+    "r10": 7,
+    "seed": 20261700
+  },
+  {
+    "family": "sequential",
+    "h": 18,
+    "id": "test-sequential-9-18",
+    "n": 9,
+    "nu0": 7,
+    "r00": 7,
+    "r10": 5,
+    "seed": 20261737
+  },
+  {
+    "family": "sequential",
+    "h": 24,
+    "id": "test-sequential-9-24",
+    "n": 9,
+    "nu0": 6,
+    "r00": 9,
+    "r10": 3,
+    "seed": 20261774
+  },
+  {
+    "family": "sequential",
+    "h": 30,
+    "id": "test-sequential-9-30",
+    "n": 9,
+    "nu0": 4,
+    "r00": 6,
+    "r10": 2,
+    "seed": 20261811
+  },
+  {
+    "family": "dense",
+    "h": 8,
+    "id": "test-dense-3-8",
+    "n": 3,
+    "nu0": 2,
+    "r00": 8,
+    "r10": 7,
+    "seed": 20261848
+  },
+  {
+    "family": "dense",
+    "h": 12,
+    "id": "test-dense-3-12",
+    "n": 3,
+    "nu0": 8,
+    "r00": 5,
+    "r10": 5,
+    "seed": 20261885
+  },
+  {
+    "family": "dense",
+    "h": 18,
+    "id": "test-dense-3-18",
+    "n": 3,
+    "nu0": 6,
+    "r00": 7,
+    "r10": 4,
+    "seed": 20261922
+  },
+  {
+    "family": "dense",
+    "h": 24,
+    "id": "test-dense-3-24",
+    "n": 3,
+    "nu0": 4,
+    "r00": 9,
+    "r10": 2,
+    "seed": 20261959
+  },
+  {
+    "family": "dense",
+    "h": 30,
+    "id": "test-dense-3-30",
+    "n": 3,
+    "nu0": 2,
+    "r00": 6,
+    "r10": 7,
+    "seed": 20261996
+  },
+  {
+    "family": "dense",
+    "h": 8,
+    "id": "test-dense-5-8",
+    "n": 5,
+    "nu0": 8,
+    "r00": 8,
+    "r10": 6,
+    "seed": 20262033
+  },
+  {
+    "family": "dense",
+    "h": 12,
+    "id": "test-dense-5-12",
+    "n": 5,
+    "nu0": 6,
+    "r00": 5,
+    "r10": 4,
+    "seed": 20262070
+  },
+  {
+    "family": "dense",
+    "h": 18,
+    "id": "test-dense-5-18",
+    "n": 5,
+    "nu0": 4,
+    "r00": 7,
+    "r10": 2,
+    "seed": 20262107
+  },
+  {
+    "family": "dense",
+    "h": 24,
+    "id": "test-dense-5-24",
+    "n": 5,
+    "nu0": 3,
+    "r00": 9,
+    "r10": 1,
+    "seed": 20262144
+  },
+  {
+    "family": "dense",
+    "h": 30,
+    "id": "test-dense-5-30",
+    "n": 5,
+    "nu0": 8,
+    "r00": 6,
+    "r10": 6,
+    "seed": 20262181
+  },
+  {
+    "family": "dense",
+    "h": 8,
+    "id": "test-dense-7-8",
+    "n": 7,
+    "nu0": 6,
+    "r00": 8,
+    "r10": 4,
+    "seed": 20262218
+  },
+  {
+    "family": "dense",
+    "h": 12,
+    "id": "test-dense-7-12",
+    "n": 7,
+    "nu0": 4,
+    "r00": 5,
+    "r10": 3,
+    "seed": 20262255
+  },
+  {
+    "family": "dense",
+    "h": 18,
+    "id": "test-dense-7-18",
+    "n": 7,
+    "nu0": 3,
+    "r00": 7,
+    "r10": 1,
+    "seed": 20262292
+  },
+  {
+    "family": "dense",
+    "h": 24,
+    "id": "test-dense-7-24",
+    "n": 7,
+    "nu0": 8,
+    "r00": 9,
+    "r10": 6,
+    "seed": 20262329
+  },
+  {
+    "family": "dense",
+    "h": 30,
+    "id": "test-dense-7-30",
+    "n": 7,
+    "nu0": 6,
+    "r00": 6,
+    "r10": 5,
+    "seed": 20262366
+  },
+  {
+    "family": "dense",
+    "h": 8,
+    "id": "test-dense-9-8",
+    "n": 9,
+    "nu0": 5,
+    "r00": 8,
+    "r10": 3,
+    "seed": 20262403
+  },
+  {
+    "family": "dense",
+    "h": 12,
+    "id": "test-dense-9-12",
+    "n": 9,
+    "nu0": 3,
+    "r00": 5,
+    "r10": 1,
+    "seed": 20262440
+  },
+  {
+    "family": "dense",
+    "h": 18,
+    "id": "test-dense-9-18",
+    "n": 9,
+    "nu0": 8,
+    "r00": 7,
+    "r10": 7,
+    "seed": 20262477
+  },
+  {
+    "family": "dense",
+    "h": 24,
+    "id": "test-dense-9-24",
+    "n": 9,
+    "nu0": 6,
+    "r00": 9,
+    "r10": 5,
+    "seed": 20262514
+  },
+  {
+    "family": "dense",
+    "h": 30,
+    "id": "test-dense-9-30",
+    "n": 9,
+    "nu0": 5,
+    "r00": 6,
+    "r10": 3,
+    "seed": 20262551
+  },
+  {
+    "exponent": 25,
+    "family": "rare",
+    "h": 24,
+    "id": "test-rare-2-24-25",
+    "n": 2,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 7002
+  },
+  {
+    "exponent": 10,
+    "family": "rare",
+    "h": 18,
+    "id": "test-rare-3-18-10",
+    "n": 3,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 7003
+  },
+  {
+    "exponent": 8,
+    "family": "rare",
+    "h": 12,
+    "id": "test-rare-4-12-8",
+    "n": 4,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 7004
+  },
+  {
+    "exponent": 6,
+    "family": "rare",
+    "h": 10,
+    "id": "test-rare-5-10-6",
+    "n": 5,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 7005
+  },
+  {
+    "exponent": 5,
+    "family": "rare",
+    "h": 8,
+    "id": "test-rare-6-8-5",
+    "n": 6,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 7006
+  },
+  {
+    "exponent": 4,
+    "family": "rare",
+    "h": 4,
+    "id": "test-rare-8-4-4",
+    "n": 8,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 7008
+  },
+  {
+    "exponent": 3,
+    "family": "rare",
+    "h": 6,
+    "id": "test-rare-9-6-3",
+    "n": 9,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 7009
+  },
+  {
+    "exponent": 3,
+    "family": "rare",
+    "h": 3,
+    "id": "test-rare-10-3-3",
+    "n": 10,
+    "nu0": 10,
+    "r00": 9,
+    "r10": 2,
+    "seed": 7010
+  }
+]

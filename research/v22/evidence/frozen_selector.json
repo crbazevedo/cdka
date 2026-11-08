@@ -1,0 +1,21 @@
+{
+  "calibration_sha256": "50dcee0b021f125a987338bcdbb9e4990135ce2d36d6d85d18bec37ea7c2faa1",
+  "histogram_coefficients": [
+    0.00045403917643641024,
+    5.470207366619277e-06,
+    0.0,
+    1.2787780718857958e-06,
+    3.1981839277238332e-06
+  ],
+  "max_histograms": 100000,
+  "max_subset_components": 16,
+  "subset_coefficients": [
+    0.0003948780676114498,
+    1.259191263997868e-06,
+    2.84599725667116e-07,
+    0.0,
+    7.0712574918480016e-06
+  ],
+  "training_manifest_sha256": "c63713cf10a5acc44b41af0bf1023c31156e5a07cfe19d271d3d33416c354b04",
+  "version": "v22-structural-nnls-1"
+}
