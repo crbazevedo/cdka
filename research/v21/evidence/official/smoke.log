@@ -1,0 +1,5 @@
+API_SMOKE_OK cdka
+API_SMOKE_OK storm_sparse
+API_SMOKE_OK storm_bisim
+API_SMOKE_OK storm_symbolic
+API_SMOKE_OK subset

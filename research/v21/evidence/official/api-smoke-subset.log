@@ -1,0 +1,3 @@
+CDKA_V21_RESULT {"check_s": 0.00030745500001216897, "detail": {"condition_estimate": 551.268098253985, "numeric_warning": false, "probability": 0.006706220802530916}, "import_s": 0.06010224999999991, "input_sha256": "a17beeaa3a8170f8f8f0a65e87e8d7d05a19300aa235a9a53a1db44eb6012931", "parse_build_s": 0.0016677319999871543, "peak_rss_kib": 43388, "total_s": 0.0019751869999993232, "value": 0.006706220802530916}
+
+STDERR

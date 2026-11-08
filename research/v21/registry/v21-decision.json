@@ -1,0 +1,17 @@
+{
+ "revision":"v21", "date_local":"2026-11-07", "active_foundational_branches":["R11","R14"],
+ "instrument_id":"COMP-REGEN-21", "status":"executed-specialization",
+ "hypothesis":"Rank-one restart of unfinished progress can close a run-histogram response family even when operators do not commute on the goal.",
+ "trigger":"Goal-relative commutation fails but the common reset regenerates every unfinished component.",
+ "minimal_test":"Heterogeneous DTMCs, exogenous binary Markov work/reset modes, absorbing conjunction, restart law equal to initial law; exact histories, product states and independent renewal evaluator.",
+ "evidence":["partition count p(H+1)","75 valid same-host official timings","strong bisimulation baseline","22 exact/independent tests","same-histogram partial-reset falsifier"],
+ "fallbacks":["V20-TASK-COMMUTATION","SUBSET-RENEWAL","GLOBAL-SOLVER","R11","R14"],
+ "refutations":[
+  {"id":"COMP-REGEN-21-D1","claim":"No commutation means full history enumeration is necessary.","witness":"Noncommuting rank-one resets give a closed histogram response."},
+  {"id":"COMP-REGEN-21-D2","claim":"Time since last reset summarizes all completion.","witness":"Completed jobs persist across resets; equal final age can hide earlier success."},
+  {"id":"COMP-REGEN-21-D3","claim":"Partial reset preserves the same histogram certificate.","witness":"Run orders(1,1,2)/(1,2,1) differ by1/64 under half-reset."},
+  {"id":"COMP-REGEN-21-D4","claim":"One reduced backend dominates allN/H regimes.","witness":"Subset-renewal wins at smallN/largeH; histogram wins at largerN/moderateH."},
+  {"id":"COMP-REGEN-21-D5","claim":"Green workflow proves a benchmark succeeded.","witness":"First attempt masked API errors through tee; invalid evidence retained; smoke/pipefail fix verified."}
+ ],
+ "contribution_policy":"Separate validity, concrete adaptation, priority and fertility. Do not modify global catalogue counts without reconciling existing branch ledgers.",
+ "next_gate":"A predeclared certified portfolio and external held-out coverage, not broader unsupported SOTA claims."

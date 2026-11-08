@@ -1,0 +1,3 @@
+CDKA_V21_RESULT {"check_s": 0.0012154949999967357, "detail": {"histogram_classes": 56, "log_probability": -5.2263934396947, "nonempty_classes": 55, "path_mass": 1.0000000000000004, "positive_contributions": 50, "probability": 0.005372867973798575}, "import_s": 0.06101792499998737, "input_sha256": "c4c7729657c94072da8d4f695cb35c568270c31bb2fa5e59779fe8e3026be7a2", "parse_build_s": 0.002555011999987755, "peak_rss_kib": 43384, "total_s": 0.003770506999984491, "value": 0.005372867973798575}
+
+STDERR
