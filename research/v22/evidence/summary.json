@@ -1,0 +1,45 @@
+{
+  "all": {
+    "cases": 48,
+    "exact_checked": 24,
+    "gmean_slowdown_vs_oracle": 1.0178026181562243,
+    "max_bits": 224,
+    "total_s": {
+      "histogram": 1.1184796179999523,
+      "portfolio": 0.7268382759999881,
+      "subset": 2.038063788999999
+    },
+    "winner_agreement": 45,
+    "worst_slowdown": 1.0637271926849516
+  },
+  "certificate_violations": 0,
+  "new_official_solver_comparison": false,
+  "ordinary": {
+    "cases": 40,
+    "exact_checked": 16,
+    "gmean_slowdown_vs_oracle": 1.0175910584848775,
+    "max_bits": 64,
+    "total_s": {
+      "histogram": 0.9993118759999575,
+      "portfolio": 0.6843555559999714,
+      "subset": 1.7469140660000022
+    },
+    "winner_agreement": 37,
+    "worst_slowdown": 1.0637271926849516
+  },
+  "rare": {
+    "cases": 8,
+    "exact_checked": 8,
+    "gmean_slowdown_vs_oracle": 1.0188610764524737,
+    "max_bits": 224,
+    "total_s": {
+      "histogram": 0.1191677419999948,
+      "portfolio": 0.04248272000001663,
+      "subset": 0.29114972299999664
+    },
+    "winner_agreement": 8,
+    "worst_slowdown": 1.0358505519244543
+  },
+  "selector_sha256": "3427a49b41f21a05ef13619c258ce00af590ab25699ad7f533ed455af88ce292",
+  "source_commit": "671962eece1ac9d82dcebc3087d66fa01a8199ba"
+}

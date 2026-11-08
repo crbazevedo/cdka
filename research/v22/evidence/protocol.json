@@ -1,0 +1,18 @@
+{
+  "atol": "0",
+  "holdout": 48,
+  "holdout_manifest_sha256": "1a432e3fc1c6e7362d631e0bb784e8a73afee97700673a1d52195c9d14686b71",
+  "max_bits": 512,
+  "numpy": "2.3.5",
+  "platform": "Linux-7.0.0-1019-azure-x86_64-with-glibc2.43",
+  "python": "3.13.18 (main, Oct 26 2026, 14:19:33) [GCC 15.2.0]",
+  "rtol": "1/100000000",
+  "scope": "generated held-out parameter/topology families, not curated external benchmark; no new Storm comparison",
+  "source_commit": "671962eece1ac9d82dcebc3087d66fa01a8199ba",
+  "start_bits": 64,
+  "started_utc": "2026-11-08T02:49:10Z",
+  "step_bits": 32,
+  "timing": "same process; input generation/imports excluded equally; validation/choice/all interval retries included;3 rotations",
+  "train": 24,
+  "training_manifest_sha256": "c63713cf10a5acc44b41af0bf1023c31156e5a07cfe19d271d3d33416c354b04"
+}

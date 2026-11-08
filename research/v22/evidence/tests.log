@@ -1,0 +1,14 @@
+test_arithmetic (test_certified.CertifiedTests.test_arithmetic) ... ok
+test_bad_inputs (test_certified.CertifiedTests.test_bad_inputs) ... ok
+test_both_backends_exact_words (test_certified.CertifiedTests.test_both_backends_exact_words) ... ok
+test_exhaustion (test_certified.CertifiedTests.test_exhaustion) ... ok
+test_frozen_and_all_holdout (test_certified.CertifiedTests.test_frozen_and_all_holdout) ... ok
+test_precision (test_certified.CertifiedTests.test_precision) ... ok
+test_rare_and_adaptive (test_certified.CertifiedTests.test_rare_and_adaptive) ... ok
+test_wrong_selector_still_sound (test_certified.CertifiedTests.test_wrong_selector_still_sound) ... ok
+test_zero (test_certified.CertifiedTests.test_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.197s
+
+OK
