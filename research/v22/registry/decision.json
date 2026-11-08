@@ -1,0 +1,14 @@
+{
+ "revision":"v22", "instrument_id":"COMP-PORTFOLIO-22", "date_local":"2026-11-07",
+ "active_foundational_branches":["R11","R14"],
+ "hypothesis":"A frozen structural cost selector can exploit complementary regenerative algorithms while numerical enclosure independently preserves the requested accuracy.",
+ "minimal_test":"24 calibration cases,48 predefined heldouts; both fixed baselines and selector; include validation/retries; exact model inputs, interval outputs and rational spot checks.",
+ "fallbacks":["COMP-REGEN-21","SUBSET-RENEWAL","NORMALIZED-POSITIVE-INTERVALS","STORM-SOUND-EXACT","R11","R14"],
+ "refutations":[
+  {"id":"COMP-PORTFOLIO-22-D1","claim":"A small absolute discrepancy guarantees useful relative precision on rare probabilities.","evidence":"2.22e-16 floating cancellation result vs2.4644e-31 rational probability; adaptive enclosures reject inadequate precision."},
+  {"id":"COMP-PORTFOLIO-22-D2","claim":"Correctness depends on choosing the fastest algorithm correctly.","evidence":"Even a deliberately wrong predictor returns only intervals meeting the same mathematical gate."},
+  {"id":"COMP-PORTFOLIO-22-D3","claim":"Arithmetic-operation counts alone capture equivalent solver costs.","evidence":"All precision-refinement passes and integer resolution costs are included; algebraic equivalence does not imply numerical interchangeability."}
+ ],
+ "next_gate":"Independent public-model coverage and matched-accuracy official comparison; no general SOTA claim from generated holdouts.",
+ "historical_policy":"Additive record; no altered global counts or erased prior evidence. Validity, concrete contribution, priority and fertility are distinct."
+}
