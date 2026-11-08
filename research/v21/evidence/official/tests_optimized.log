@@ -1,0 +1,27 @@
+test_all_queries_validate_horizon_even_optimized_python (test_regenerative.RegenerationTests.test_all_queries_validate_horizon_even_optimized_python) ... ok
+test_all_work_agrees_with_independent_finite_chains (test_regenerative.RegenerationTests.test_all_work_agrees_with_independent_finite_chains) ... ok
+test_compiled_does_not_construct_global_tensor (test_regenerative.RegenerationTests.test_compiled_does_not_construct_global_tensor) ... ok
+test_degenerate_environment_transitions (test_regenerative.RegenerationTests.test_degenerate_environment_transitions) ... ok
+test_dependency_flags_and_bad_dimensions_rejected (test_regenerative.RegenerationTests.test_dependency_flags_and_bad_dimensions_rejected) ... ok
+test_exact_all_history_weights_not_only_values (test_regenerative.RegenerationTests.test_exact_all_history_weights_not_only_values) ... ok
+test_exact_three_independent_algorithms (test_regenerative.RegenerationTests.test_exact_three_independent_algorithms) ... ok
+test_histogram_keeps_order_boundaries (test_regenerative.RegenerationTests.test_histogram_keeps_order_boundaries) ... ok
+test_initial_and_reset_distribution_must_match (test_regenerative.RegenerationTests.test_initial_and_reset_distribution_must_match) ... ok
+test_joint_state_oracle (test_regenerative.RegenerationTests.test_joint_state_oracle) ... ok
+test_last_reset_does_not_erase_completed_jobs (test_regenerative.RegenerationTests.test_last_reset_does_not_erase_completed_jobs) ... ok
+test_more_than_one_absorbing_goal_state (test_regenerative.RegenerationTests.test_more_than_one_absorbing_goal_state) ... ok
+test_original_external_parameters_first_twelve (test_regenerative.RegenerationTests.test_original_external_parameters_first_twelve) ... ok
+test_partition_histogram_bijection (test_regenerative.RegenerationTests.test_partition_histogram_bijection) ... ok
+test_prism_complete_roundtrip (test_regenerative.RegenerationTests.test_prism_complete_roundtrip) ... ok
+test_product_of_marginals_loses_common_history (test_regenerative.RegenerationTests.test_product_of_marginals_loses_common_history) ... ok
+test_production_against_generic_tensor (test_regenerative.RegenerationTests.test_production_against_generic_tensor) ... ok
+test_random_rational_transient_components (test_regenerative.RegenerationTests.test_random_rational_transient_components) ... ok
+test_refuse_cross_reads_unknown_source_and_goal (test_regenerative.RegenerationTests.test_refuse_cross_reads_unknown_source_and_goal) ... ok
+test_reset_must_not_destroy_completion (test_regenerative.RegenerationTests.test_reset_must_not_destroy_completion) ... ok
+test_reset_not_rank_one_rejected (test_regenerative.RegenerationTests.test_reset_not_rank_one_rejected) ... ok
+test_v20_count_equivalence_really_fails (test_regenerative.RegenerationTests.test_v20_count_equivalence_really_fails) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.462s
+
+OK

@@ -1,0 +1,10 @@
+
+STDERR
+Traceback (most recent call last):
+  File "/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py", line 93, in <module>
+    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py", line 32, in child
+    if method=='storm_bisim':model=stormpy.perform_bisimulation(model,props,stormpy.BisimulationType.STRONG)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'stormpy' has no attribute 'perform_bisimulation'

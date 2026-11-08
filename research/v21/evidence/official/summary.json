@@ -1,0 +1,239 @@
+{
+  "environment": {
+    "cpu": "\t: AMD EPYC 9V45 96-Core Processor",
+    "platform": "Linux-7.0.0-1019-azure-x86_64-with-glibc2.43",
+    "python": "3.12.16 (main, Oct 26 2026, 02:48:44) [GCC 15.2.0]",
+    "scope": "new execution on this host; synthetic common-reset extension of first12 published Meeting parameter pairs",
+    "source_commit": "d39a6e6e1e7582fc9fe71dbf035876657de3fe9f",
+    "threads": {
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "timing": "same PRISM read/parse/validate-build/check included; imports and process wall separately retained"
+  },
+  "failures": [
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 37, in child\n    else:value=float(out.at(model.initial_states[0]))\n                     ^^^^^^\nAttributeError: 'stormpy.developer._core._ExplicitQuantitativeCheckResult_Double' object has no attribute 'at'\n",
+      "horizon": 10,
+      "method": "storm_sparse",
+      "n": 2,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 32, in child\n    if method=='storm_bisim':model=stormpy.perform_bisimulation(model,props,stormpy.BisimulationType.STRONG)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'stormpy' has no attribute 'perform_bisimulation'\n",
+      "horizon": 10,
+      "method": "storm_bisim",
+      "n": 2,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 36, in child\n    f=stormpy.create_filter_initial_states_symbolic(model);out.filter(f);value=float(out.get_min())\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'stormpy' has no attribute 'create_filter_initial_states_symbolic'. Did you mean: 'create_filter_initial_states'?\n",
+      "horizon": 10,
+      "method": "storm_symbolic",
+      "n": 2,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 37, in child\n    else:value=float(out.at(model.initial_states[0]))\n                     ^^^^^^\nAttributeError: 'stormpy.developer._core._ExplicitQuantitativeCheckResult_Double' object has no attribute 'at'\n",
+      "horizon": 10,
+      "method": "storm_sparse",
+      "n": 4,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 32, in child\n    if method=='storm_bisim':model=stormpy.perform_bisimulation(model,props,stormpy.BisimulationType.STRONG)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'stormpy' has no attribute 'perform_bisimulation'\n",
+      "horizon": 10,
+      "method": "storm_bisim",
+      "n": 4,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 36, in child\n    f=stormpy.create_filter_initial_states_symbolic(model);out.filter(f);value=float(out.get_min())\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'stormpy' has no attribute 'create_filter_initial_states_symbolic'. Did you mean: 'create_filter_initial_states'?\n",
+      "horizon": 10,
+      "method": "storm_symbolic",
+      "n": 4,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 37, in child\n    else:value=float(out.at(model.initial_states[0]))\n                     ^^^^^^\nAttributeError: 'stormpy.developer._core._ExplicitQuantitativeCheckResult_Double' object has no attribute 'at'\n",
+      "horizon": 10,
+      "method": "storm_sparse",
+      "n": 6,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 32, in child\n    if method=='storm_bisim':model=stormpy.perform_bisimulation(model,props,stormpy.BisimulationType.STRONG)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'stormpy' has no attribute 'perform_bisimulation'\n",
+      "horizon": 10,
+      "method": "storm_bisim",
+      "n": 6,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 36, in child\n    f=stormpy.create_filter_initial_states_symbolic(model);out.filter(f);value=float(out.get_min())\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'stormpy' has no attribute 'create_filter_initial_states_symbolic'. Did you mean: 'create_filter_initial_states'?\n",
+      "horizon": 10,
+      "method": "storm_symbolic",
+      "n": 6,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 37, in child\n    else:value=float(out.at(model.initial_states[0]))\n                     ^^^^^^\nAttributeError: 'stormpy.developer._core._ExplicitQuantitativeCheckResult_Double' object has no attribute 'at'\n",
+      "horizon": 10,
+      "method": "storm_sparse",
+      "n": 8,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 32, in child\n    if method=='storm_bisim':model=stormpy.perform_bisimulation(model,props,stormpy.BisimulationType.STRONG)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'stormpy' has no attribute 'perform_bisimulation'\n",
+      "horizon": 10,
+      "method": "storm_bisim",
+      "n": 8,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 36, in child\n    f=stormpy.create_filter_initial_states_symbolic(model);out.filter(f);value=float(out.get_min())\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'stormpy' has no attribute 'create_filter_initial_states_symbolic'. Did you mean: 'create_filter_initial_states'?\n",
+      "horizon": 10,
+      "method": "storm_symbolic",
+      "n": 8,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 37, in child\n    else:value=float(out.at(model.initial_states[0]))\n                     ^^^^^^\nAttributeError: 'stormpy.developer._core._ExplicitQuantitativeCheckResult_Double' object has no attribute 'at'\n",
+      "horizon": 20,
+      "method": "storm_sparse",
+      "n": 4,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 32, in child\n    if method=='storm_bisim':model=stormpy.perform_bisimulation(model,props,stormpy.BisimulationType.STRONG)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'stormpy' has no attribute 'perform_bisimulation'\n",
+      "horizon": 20,
+      "method": "storm_bisim",
+      "n": 4,
+      "rep": 0,
+      "status": "error"
+    },
+    {
+      "error": "exit 1: Traceback (most recent call last):\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 93, in <module>\n    if len(sys.argv)>1 and sys.argv[1]=='child':child(sys.argv[2],Path(sys.argv[3]),int(sys.argv[4]))\n                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/cdka/cdka/research/v21/experiments/benchmark.py\", line 36, in child\n    f=stormpy.create_filter_initial_states_symbolic(model);out.filter(f);value=float(out.get_min())\n      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'stormpy' has no attribute 'create_filter_initial_states_symbolic'. Did you mean: 'create_filter_initial_states'?\n",
+      "horizon": 20,
+      "method": "storm_symbolic",
+      "n": 4,
+      "rep": 0,
+      "status": "error"
+    }
+  ],
+  "medians": [
+    {
+      "horizon": 10,
+      "method": "cdka",
+      "n": 2,
+      "peak_rss_kib": 42416,
+      "process_wall_s": 0.07558269100000103,
+      "repeats": 3,
+      "total_s": 0.0016238400000005981,
+      "value": 0.0386235982657137
+    },
+    {
+      "horizon": 10,
+      "method": "subset",
+      "n": 2,
+      "peak_rss_kib": 42416,
+      "process_wall_s": 0.07261540400000399,
+      "repeats": 3,
+      "total_s": 0.001287124000000972,
+      "value": 0.03862359826571349
+    },
+    {
+      "horizon": 10,
+      "method": "cdka",
+      "n": 4,
+      "peak_rss_kib": 42416,
+      "process_wall_s": 0.0771625239999949,
+      "repeats": 3,
+      "total_s": 0.002124973000000807,
+      "value": 0.005372867973798575
+    },
+    {
+      "horizon": 10,
+      "method": "subset",
+      "n": 4,
+      "peak_rss_kib": 42416,
+      "process_wall_s": 0.0733847090000026,
+      "repeats": 3,
+      "total_s": 0.0019514919999963354,
+      "value": 0.005372867973798545
+    },
+    {
+      "horizon": 10,
+      "method": "cdka",
+      "n": 6,
+      "peak_rss_kib": 42416,
+      "process_wall_s": 0.07660545799999596,
+      "repeats": 3,
+      "total_s": 0.0025796549999981266,
+      "value": 0.0014611271915332626
+    },
+    {
+      "horizon": 10,
+      "method": "subset",
+      "n": 6,
+      "peak_rss_kib": 42416,
+      "process_wall_s": 0.07962387299999563,
+      "repeats": 3,
+      "total_s": 0.0032106629999972824,
+      "value": 0.0014611271915329904
+    },
+    {
+      "horizon": 10,
+      "method": "cdka",
+      "n": 8,
+      "peak_rss_kib": 42544,
+      "process_wall_s": 0.07743267699999734,
+      "repeats": 3,
+      "total_s": 0.0030814489999997363,
+      "value": 0.0006098998281920354
+    },
+    {
+      "horizon": 10,
+      "method": "subset",
+      "n": 8,
+      "peak_rss_kib": 42544,
+      "process_wall_s": 0.08283986899999718,
+      "repeats": 3,
+      "total_s": 0.007355388999997103,
+      "value": 0.0006098998281921092
+    },
+    {
+      "horizon": 20,
+      "method": "cdka",
+      "n": 4,
+      "peak_rss_kib": 42672,
+      "process_wall_s": 0.08201883099999918,
+      "repeats": 3,
+      "total_s": 0.006321837999998081,
+      "value": 0.037720164431268306
+    },
+    {
+      "horizon": 20,
+      "method": "subset",
+      "n": 4,
+      "peak_rss_kib": 42544,
+      "process_wall_s": 0.07708126299999662,
+      "repeats": 3,
+      "total_s": 0.0024601659999987646,
+      "value": 0.03772016443126852
+    }
+  ]
+}
