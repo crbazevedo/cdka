@@ -69,20 +69,6 @@ jobs:
           for module in docs/lab/*.mjs tests/*.test.mjs; do node --check "$module"; done
       - name: Verify all simulator kernels
         run: node --test tests/*.test.mjs
-      - name: Render and exercise the shared-budget laboratory
-        if: matrix.python-version == '3.12'
-        run: |
-          cdka_smoke_dir=$(mktemp -d)
-          npm install --prefix "$cdka_smoke_dir" --no-package-lock --ignore-scripts playwright@1.56.1
-          node "$cdka_smoke_dir/node_modules/playwright/cli.js" install --with-deps chromium
-          CDKA_PLAYWRIGHT_PATH="$cdka_smoke_dir/node_modules/playwright/index.mjs" node scripts/shared-budget-browser-smoke.mjs
-      - name: Retain shared-budget browser review artifacts
-        if: always() && matrix.python-version == '3.12'
-        uses: actions/upload-artifact@v4
-        with:
-          name: shared-budget-browser-smoke
-          path: browser-smoke/
-          retention-days: 14
       - name: Verify canonical article synchronization
         run: node scripts/sync-articles.mjs --check
       - name: Check atlas completeness
@@ -142,3 +128,22 @@ jobs:
           python -m experiments.recurrent_sweep --check
           python -m experiments.memory_renewal_sweep --check
           python -m experiments.selective_acquisition_sweep --check
+  browser-smoke:
+    # The browser version is pinned; keep its supported OS pinned as well.
+    # This independent job cannot cancel the scientific Python matrix.
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Render and exercise the shared-budget laboratory
+        run: |
+          cdka_smoke_dir=$(mktemp -d)
+          npm install --prefix "$cdka_smoke_dir" --no-package-lock --ignore-scripts playwright@1.56.1
+          node "$cdka_smoke_dir/node_modules/playwright/cli.js" install --with-deps chromium
+          CDKA_PLAYWRIGHT_PATH="$cdka_smoke_dir/node_modules/playwright/index.mjs" node scripts/shared-budget-browser-smoke.mjs
+      - name: Retain shared-budget browser review artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: shared-budget-browser-smoke
+          path: browser-smoke/
+          retention-days: 14

@@ -68,6 +68,11 @@ degradada `1/50`; erro de diagnóstico `3/20`; erro de sensor da tarefa
 Cada tarefa tem uma nova fonte binária equiprovável. A retenção dos bits é
 ideal dentro desta planta. Todas as taxas são hipóteses do modelo.
 
+A preparação usa probabilidade inicial `1/2` para cada condição de saúde,
+seguida do diagnóstico realmente adquirido sobre essa saúde. Os ótimos da
+varredura são relativos a essa preparação fixa; não são garantias uniformes
+sobre todas as leis iniciais de saúde e memória.
+
 O recurso é fungível por hipótese; um token antigo corresponde a 24 quanta.
 
 | Operação ou limite | Preço em quanta |

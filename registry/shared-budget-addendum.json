@@ -29,6 +29,7 @@
     "enable_observations":["executed service","frozen entry middle-resource bin","0","1"],
     "trusted_boundary":["routing","clocking","signal taps","resource guard","bin decoder","acquisition actuator"],
     "startup":"mandatory paid fresh acquisition for every program, including blind candidates",
+    "initial_degraded_health_probability":"1/2",
     "primary_endpoint":"seven complete cycles followed by the eighth task; no final enable, write, wear or harvest for any candidate",
     "secondary_endpoint":"eight complete maintenance/work/acquisition cycles"
   },
