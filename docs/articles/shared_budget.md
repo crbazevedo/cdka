@@ -1,5 +1,10 @@
 # Um orçamento comum muda o valor da informação
 
+**Extensão posterior executada:** [preparação opcional e valor causal do
+diagnóstico](optional_startup.md) remove a aquisição inicial obrigatória
+para programas cegos. Seus 420 candidatos e controles causais não alteram
+os resultados históricos de 336 candidatos apresentados neste artigo.
+
 **15 de novembro de 2026 · SB · R11/R14.** Extensão executada da planta
 recorrente v18, com um único recurso por trajetória e reutilização do banco
 físico de NANDs. Síntese exata em uma biblioteca finita; preços ilustrativos,

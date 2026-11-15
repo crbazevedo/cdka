@@ -237,3 +237,42 @@ não bastam para essa conclusão.
 [Critério e prova](../results/shared-budget-continuation.md) ·
 [Revisão independente](../results/shared-budget-review.md) ·
 [Resultados exatos](../data/shared-budget-results.json).
+
+## 7. O direito de não adquirir — 15 de novembro de 2026
+
+A comparação física foi ampliada para permitir que as quatro tabelas
+cegas dispensem a aquisição inicial. Os 336 programas pagos permanecem
+disponíveis;84 preparações omitidas completam a nova família. A referência
+serviço/serviço com retenção, sem diagnóstico inicial, atinge o ótimo
+em 22 dos 24 pontos, incluindo todos os preços positivos de execução ou
+escrita. Os dois ganhos anteriores com escrita 6 desaparecem frente a essa
+referência admissível, sem alterar a validade histórica do contrato anterior.
+
+O controle causal mantém preços e saldo preparados e troca apenas a lei
+do relatório. A mistura preserva a dependência entre células. A intervenção
+inicial e a intervenção em todas as aquisições respondem a perguntas
+distintas; esta última mantém o prior nulo fixo e não elimina os sinais
+indiretos de saúde presentes nas falhas da computação. Reotimizar a família
+de comparação deixa vantagem de 0,594502 ponto percentual apenas nos dois
+pontos de execução/escrita gratuitas. A perda de 3,209762 pontos do programa
+fixo sob ablação é um efeito diferente.
+
+Uma preparação que consome saldo pode ajudar um programa cego fixo somente
+por mudar a fase de manutenção. O exemplo serviço/serviço com enable-r
+cai de 0,8863706416 para zero quando passa de saldo inicial66 para72:
+antecipa serviço e tarefa e não consegue pagar a escrita antes da colheita.
+Esse benefício de consumir recursos não demonstra valor do conteúdo.
+
+A integração reforça a obrigação central: uma representação precisa ter
+vantagem decisória contra alternativas realizáveis, com acesso, aquisição,
+recursos e reotimização explicitados. O próximo limite é a primeira leitura
+de um registro após aquisição adiada. Um marcador de validade no verificador
+pode provar acesso seguro sem existir no controlador. Qualquer teste de
+validade executado fisicamente exige sua própria interface e preço.
+O resultado atual não supõe esse mecanismo nem proíbe que uma prova offline
+certifique programas adicionais na mesma gramática.
+
+[Artigo](../articles/optional_startup.md) ·
+[Prova](../results/optional-startup-formal.md) ·
+[Síntese](../data/optional-startup-results.json) ·
+[Oráculo independente](../data/optional-startup-independent.json).

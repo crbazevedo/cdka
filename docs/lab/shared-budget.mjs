@@ -7,6 +7,29 @@ export function selectCase(data, gate, write, setup, objective = 'tasks') {
   return {point, result: point[objective]};
 }
 
+export function startupComparison(data, gate, write, setup, objective = 'tasks') {
+  if (data.schema !== 'cdka.optional-startup/v1') throw new TypeError('Optional-startup certificate required');
+  const {point, result} = selectCase(data, gate, write, setup, objective);
+  const rows = [
+    {key: 'paid_only', label: 'Ótimo anterior: início pago', kind: 'physical'},
+    {key: 'physical', label: 'Ótimo físico ampliado', kind: 'physical'},
+    {key: 'blind_optional', label: 'Melhor regra cega: início opcional', kind: 'physical'},
+    {key: 'all_null_world', label: 'Canal sem conteúdo: reotimizado', kind: 'counterfactual'},
+  ].map(item => ({...item, row: result.best[item.key]}));
+  // The last row is an analytical world comparison even when its best
+  // program itself omits acquisition.  It is not an extra physical candidate.
+  const gaps = {
+    paid: result.physical_gain_over_paid_only,
+    blind: result.physical_gap_over_optional_blind,
+    channel: result.reoptimized_all_channel_effect,
+  };
+  for (const {row} of rows) {
+    displayNumber(row.survival); displayNumber(row.spent);
+  }
+  for (const gap of Object.values(gaps)) displayNumber(gap);
+  return {point, result, rows, gaps, omittedBlind: result.best.blind_omitted};
+}
+
 export function conditionedTrace({balance, gate, write, gateCount, requested = 1,
   mode = 'vote', enabled = 1, terminal = false}) {
   for (const [name, value] of Object.entries({balance, gate, write, gateCount, requested, enabled})) {

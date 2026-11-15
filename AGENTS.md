@@ -70,7 +70,7 @@ and no-renewal competitors and prior matched-price controls. The 16-state
 source-fidelity and recurrent models retain their own contracts. Another
 compiler scaling probe is not the next default objective.
 
-## Current decision — 15 November 2026
+## Shared-budget decision — 15 November 2026
 
 The shared pathwise-budget gate is now executed in
 [SB](docs/articles/shared_budget.md). Keep its explicit event order, common
@@ -94,7 +94,7 @@ the old omission equality. A failed sufficient residual condition is not a
 program rejection: inspect the exact paired continuation. Low residual rank
 does not bound the final invariant-interface dimension.
 
-**Next single obligation:** admit a blind preparation that can decline the
+**Obligation recorded at SB completion, resolved below:** admit a blind preparation that can decline the
 initial diagnostic acquisition at the same gross endowment, then certify
 the causal decision value of diagnosis against that stronger common-resource
 reference. Preserve the current negative result and fixed price grid. Do
@@ -102,3 +102,43 @@ not expand the circuit family or tune prices to seek a gain before this
 obligation is resolved. Read the [independent review](docs/results/shared-budget-review.md)
 and updated research memory before continuing. Adjacent PR13–15 concern
 verification algorithms and retain their own lineages and assumptions.
+
+## Current decision — optional startup and channel value
+
+[OS](docs/articles/optional_startup.md) resolves the preceding obligation.
+The frozen SB compiler and original results are unchanged. The physical
+family now includes all 336 paid programs plus 84 syntactically blind programs
+that omit startup acquisition at the same 96 gross capital. Both maintenance
+bins must be skip/service; no free correlated report or unpriced validity
+observation is supplied. Keep the paid alternatives: omission can make a
+fixed resource-bin program fail by changing its service phase.
+
+The independent raw-physics oracle covers all 4,032 omitted response pairs;
+the main scan also reproduces all 48 original paid response hashes. Across
+both H8 endpoints, omitted service/service+RETAIN attains the full optimum
+at 22/24 prices. The remaining two points have zero NAND and write prices.
+All 24 optima are attainable without additional enable NANDs. The previous
+two write 6 gains remain valid only in the historical mandatory-startup family.
+
+Distinguish three quantities: the physical-family gap against optional blind,
+the fixed-program content effect at matched cost, and the reoptimized effect
+of a declared channel intervention. Initial-only independence and the
+all-acquisition frozen-prior marginal are different controls. Both preserve
+the entire joint report-word marginal at startup. The all-acquisition control
+does not preserve every endogenous later marginal or remove bank-health
+signals. It is an analytical counterfactual, not a free installed sensor.
+The optimized causal gain is 0.00594502443220947 probability only at the two
+free points and zero at the other 22. A larger fixed-program ablation loss
+must not be reported as the optimized value of information.
+
+**Next single obligation:** certify first-read safety after deferred
+acquisition over the existing 16 maintenance tables and 21 enable channels.
+A verifier-only validity marker can establish that no positive-mass read
+precedes a real acquisition. It does not supply a runtime observation.
+Any validity test actually executed by the controller requires an explicit
+physical interface and price; do not add one silently.
+The 420-program result is complete under its declared syntax, not a general
+optimality claim over delayed-read or history-dependent controllers. Preserve
+the fixed plant, grid, negative result, strongest blind reference, failed
+prefixes and task/cycle boundary. Circuit expansion and favorable-price
+search are not substitutes for that observation-access obligation.

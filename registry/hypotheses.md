@@ -57,7 +57,7 @@
 | RD.2 | Constructive domain reduction | One shared fair-source acquisition and arbitrary D/R histories preserve four exchangeable, complement-antisymmetric contrast coordinates | Input-boundary evaluator; maintenance generally leaves the domain; full backward responses precede restriction |
 | RD.3 | Exact physical fixture | Four histories and96 programs have unique minimax DRDDM with regret0.0025321961; no program meets regret0.003 and fidelity0.85 together | Two preparation updates, four mandatory continuation updates, at most one additional paid M |
 | RD.4 | Parameter-wide identity | Shared-sensor fidelity is1/2+(1−2η)(V0−1/2), bounded by1−η; shrinking regret can accompany lost information | Fair source and substrate initially independent of source and sensor noise |
-| RD.5 | Measured implementation improvement | Four-coordinate evaluation reproduces all6144 benchmark responses with lower arithmetic/cache cost; compilation, encoding and checking separately priced | Local exact-rational benchmark; preparation/program enumeration remains explicit |
+| RD.5 | Measured implementation improvement | Four-coordinate evaluation reproduces all 6144 benchmark responses with lower arithmetic/cache cost; compilation, encoding and checking separately priced | Local exact-rational benchmark; preparation/program enumeration remains explicit |
 
 ## Program-family certificates — 2026-11-04 (R11/R14)
 
@@ -151,8 +151,8 @@ the scalar-value cover's conclusions for a second cost objective.
 |---|---|---|---|
 | SB.1 | Implemented finite physical extension | Actual selection, work, enable, service and acquisition debit the same path resource; the same hidden-health bank is reused and failed prefixes remain charged | Illustrative fungible prices, trusted interfaces and mandatory fresh startup; no empirical hardware/energy claim |
 | SB.2 | Exact continuation and accounting criterion | Finite residual identities preserve startup and terminal boundary terms; response equality and sufficient cost order are checked separately | Failed local sufficient tests require exact paired evaluation; infinite equality only after verified stabilization, no infinite cost-order inference |
-| SB.3 | Exact complete-library negative result | At all16 positive gate-price points, enable NANDs add no maximum-survival gain in either eight-step endpoint; all four declared cost-tolerance winners require zero enable NANDs | Full336 representatives cover1024 raw programs at each of24 predeclared prices; not global domination across the entire low-survival frontier |
-| SB.4 | Exact limited positive result | At free gate execution/write6, noisy NOT(service) improves task survival over strongest no-enable-NAND by0.228746147/0.118550883 percentage points for setup0/6 | Does not establish an execution-paid advantage; endpoint can change winning circuit |
+| SB.3 | Exact complete-library negative result | At all 16 positive gate-price points, enable NANDs add no maximum-survival gain in either eight-step endpoint; all four declared cost-tolerance winners require zero enable NANDs | Full336 representatives cover1024 raw programs at each of24 predeclared prices; not global domination across the entire low-survival frontier |
+| SB.4 | Exact limited positive result | At free gate execution/write 6, noisy NOT(service) improves task survival over strongest no-enable-NAND by0.228746147/0.118550883 percentage points for setup0/6 | Does not establish an execution-paid advantage; endpoint can change winning circuit |
 | SB.5 | Exact causal-use control | The blind service/service+RETAIN program equals the global selected survival/spend pair at20/24 points in both endpoints; actual diagnostic-selection invocation count is zero | Mandatory startup report is still paid; no operational value of that unused diagnosis follows |
 | SB.6 | Exact reachable invalidation and algebraic scope control | A reachable balance84 state preserves immediate/short responses but has positive DQ²g; separately a rank-one update can expand a2D interface toN | Physical witness within five tasks; algebraic rank control is not a simulated hardware family or a minimality claim |
 
@@ -168,4 +168,28 @@ Evidence: [article](../docs/articles/shared_budget.md),
 The next gate is optional initial diagnosis for a blind preparation at the
 same gross capital, followed by an exact causal information-value comparison.
 Circuit expansion and parameter selection to manufacture a win are deferred.
+
+## Optional startup and causal report value — 2026-11-15 (R11/R14)
+
+The preceding SB next gate is resolved here without changing its original
+physical model or data.
+
+| ID | Status | Statement | Scope and limitation |
+|---|---|---|---|
+| OS.1 | Implemented finite physical extension |336 original paid programs plus 84 syntactically blind omitted preparations form a420-representative physical union with common gross capital | Covers1,280 raw preparation/program pairs; no uninitialized diagnostic read or free correlated word |
+| OS.2 | Proved projection and independently checked | For all blind policies and admitted enables, health/resource transitions and every same-step reward are independent of the unread record | Finite194-label projection, not minimality; actual later writes remain paid even when unread |
+| OS.3 | Exact complete-family result | Omitted service/service+RETAIN attains the maximum survival/minimum-spend pair at 22/24 fixed prices in both H8 endpoints; no enable NAND adds maximum-survival gain at any of24 points | All16 positive gate-price points and all 6 free-gate/positive-write points; not whole-frontier domination or arbitrary-controller optimality |
+| OS.4 | Exact limited causal positive result | At gate=write=0, informative vote/vote+FRESH has survival0.9174767896493894 versus0.9115317652171799; initial-only and all-report reoptimized null worlds have the latter optimum | Gain0.00594502443220947 only in the two free-price cases; hardware noise remains present |
+| OS.5 | Exact causal distinction | Fixed-program all-report effect0.0320976233611303 differs from optimized effect0.00594502443220947 at the positive case | Whole-word prior-marginal intervention; later endogenous margins and health-dependent computation are preserved only as explicitly stated, not erased |
+| OS.6 | Exact physical counterexample | Omission makes service/service+direct-r survival fall from0.8863706416129852 to0 at gate0/write 6 by advancing service before an unfundable write | Same prior1/2 and grid; no report is read. Optional optimum cannot worsen because the paid family is retained |
+| OS.7 | Complete response reproduction |52,416 exact evaluations match48 frozen paid hashes and48 independent omitted hashes covering4,032 response pairs;8,064 blind intervention comparisons preserve tracked scalar metrics | Independent raw sensor/NAND oracle and failed-prefix accounting; no Monte Carlo or empirical-hardware claim |
+| OS.8 | Open observation-access boundary | A verifier-only validity marker may certify delayed first reads for additional omitted-startup programs under the existing grammar | Every positive-mass read must follow a real acquisition; runtime validity tests need explicit physical access and cost |
+
+Evidence: [article](../docs/articles/optional_startup.md),
+[proof](../docs/results/optional-startup-formal.md),
+[review](../docs/results/optional-startup-review.md),
+[exact scan](../docs/data/optional-startup-results.json),
+[independent physical certificate](../docs/data/optional-startup-independent.json),
+[laboratory](../docs/lab/shared_budget.html),
+[addendum](optional-startup-addendum.json).
 

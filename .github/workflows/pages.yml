@@ -33,6 +33,11 @@ on:
       - 'experiments/shared_budget_sweep.py'
       - 'experiments/shared_budget_controls.py'
       - 'registry/shared-budget-addendum.json'
+      - 'cdka/optional_startup.py'
+      - 'cdka/diagnostic_ablation.py'
+      - 'experiments/optional_startup_sweep.py'
+      - 'experiments/optional_startup_independent.py'
+      - 'registry/optional-startup-addendum.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -107,6 +112,14 @@ jobs:
           python -S -O -m unittest discover -s tests -p 'test_budget_continuation.py' -v
           node --test tests/shared-budget-lab.test.mjs
           cp registry/shared-budget-addendum.json docs/registry/shared-budget-addendum.json
+      - name: Verify optional preparation and causal report content
+        run: |
+          python -S -O -m experiments.optional_startup_independent --check
+          python -S -O -m experiments.optional_startup_sweep --check
+          python -S -O -m unittest discover -s tests -p 'test_optional_startup.py' -v
+          python -S -O -m unittest discover -s tests -p 'test_diagnostic_ablation.py' -v
+          node --test tests/shared-budget-lab.test.mjs
+          cp registry/optional-startup-addendum.json docs/registry/optional-startup-addendum.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static atlas

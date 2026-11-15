@@ -486,10 +486,10 @@ startup, failed prefixes, spill and remaining resources. The task endpoint
 uniformly omits final acquisition. Zero-price FRESH agrees with the inherited
 v16/v18 value for every maintenance policy.
 
-**Decisive comparison.** At all16 positive gate-price points, the maximum
+**Decisive comparison.** At all 16 positive gate-price points, the maximum
 survival equals the strongest zero-enable-NAND reference in both endpoints.
 All four declared cost-tolerance winners also use no enable NAND there.
-Two positive survival gains occur only at free gate execution, write6, with
+Two positive survival gains occur only at free gate execution, write 6, with
 NOT(service), preserving their narrower scope. This does not establish
 universal domination of paid gates throughout the entire cost frontier.
 
@@ -541,3 +541,53 @@ PR13–15 independently develop continuation verification, regeneration
 evaluation and arithmetic enclosures. Their inherited physical source blobs
 match v18; they had not executed this budget gate. Their synthetic rank2,
 exogenous-context and rank-one-restart premises were not imported into SB.
+
+## Decision record — 15 November 2026: optional startup and channel value
+
+[OS](../articles/optional_startup.md) resolves SB's remaining compulsory
+startup expense. The physical union keeps all 336 paid representatives and
+adds 84 omitted preparations whose complete maintenance table never reads
+diagnostic memory. Gross capital, commissioning, prices, hidden health,
+event order, failure charges and terminal-task fairness are unchanged.
+The original SB model and certificates remain historical evidence.
+
+The omitted service/service+RETAIN reference attains the full optimum at
+22/24 fixed price points in both H8 endpoints. Every optimum is attainable
+without an additional enable NAND. The two previous free-execution/write 6
+gains are overtaken by that newly admissible reference. Only gate=write=0
+retains a diagnostic advantage:0.9174767896493894 versus0.9115317652171799.
+Both installation prices give the same response because those winners use
+zero enable NANDs. No search for favorable prices accompanied this extension.
+
+Matched-cost initial-only and all-acquisition interventions isolate the
+specified report channel. They preserve the whole report marginal at startup;
+the recurring null law is frozen at the initial prior. They are analytical
+counterfactuals, not installed alternative sensors. Current bank faults still
+depend on hidden health, and later conditioning can recouple a retained
+record and health. Full reoptimization leaves the0.00594502443220947
+probability gain only at the two free points, zero at the remaining22.
+
+| ID | Evidence | Decision consequence |
+|---|---|---|
+| RM.43 | The previously optimal blind program paid for a report it never read; omission raises its attainable value and removes two apparent paid-writing gains. | Make acquisition absence physically admissible for a comparator that does not use the record. Compare gross resource endowments and complete programs. |
+| RM.44 | At gate0/write 6, omitted service/service+direct-r spends its initial72 on service/work and cannot fund the enabledwrite; itsH8 survival falls from0.8863706416 to0. | More prepared balance need not improve a fixed coarse controller. Retain both paid and omitted alternatives; use family inclusion for the non-worsening optimum guarantee. |
+| RM.45 | The winning free-price program loses3.209762 points under all-report ablation, but the reoptimized gap is only0.594502 point. | Report fixed-program dependence and optimized information value separately. Give the null world the strongest complete competitor. |
+| RM.46 | Removing report/health dependence preserves correlated cells within the whole report; bank faults and endogenous conditioning still carry health dependence. | Declare the intervened causal channel precisely. Do not equate a null acquisition channel with absence of every information source or every later correlation. |
+| RM.47 | All4,032 omitted responses match a raw two-coordinate physical oracle; all 48 paid fingerprints remain unchanged. | A verifier can project unread state while preserving physical charges. A smaller evaluator label set is not a new runtime observation or a minimality result. |
+
+**Current next single obligation:** certify when the first diagnostic read
+is legal after omitted startup, using the existing 16 maintenance tables
+and 21 enable channels. Track validity in the verifier and reject a program
+if any positive-mass execution reads before a real acquisition. An offline
+validity marker does not itself install a controller signal; any runtime
+validity test requires an explicit physical interface and cost. This closes
+the syntactic-blindness boundary without changing prices or circuit grammar.
+Keep the 420-program optimum as a proved lower bound for any broader admissible
+family, not as its unproved optimum. No circuit expansion or price tuning
+precedes that access audit.
+
+Evidence: [exact synthesis](../data/optional-startup-results.json),
+[independent physical certificate](../data/optional-startup-independent.json),
+[formal criterion](../results/optional-startup-formal.md),
+[review](../results/optional-startup-review.md),
+[addendum](../../registry/optional-startup-addendum.json).
