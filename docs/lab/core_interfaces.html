@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Um exemplo exato com três estados separa suficiência de valores, reconstrução de leis e escolha de um programa comum.">
+<title>Mesma assinatura. Outra decisão. — CDKA</title>
+<style>
+:root{--paper:#f5f3eb;--white:#fcfbf6;--ink:#203028;--muted:#5f6b60;--line:#d7dccf;--moss:#3e6851;--moss-light:#e8eee3;--ochre:#a77932;--rust:#984f3d;--rust-light:#f4e8e1;--mono:ui-monospace,SFMono-Regular,Consolas,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-underline-offset:4px}button,input{font:inherit}button,input[type=range]{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--ochre);outline-offset:4px}header{max-width:1200px;margin:auto;padding:24px 30px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;font-size:12px}header span{letter-spacing:.1em;text-transform:uppercase}header nav{display:flex;gap:20px}main{max-width:1200px;margin:auto;padding:40px 30px}.eyebrow{font-size:11px;font-weight:700;color:var(--moss);text-transform:uppercase;letter-spacing:.12em;margin:0 0 15px}h1{font-size:clamp(39px,5.4vw,65px);letter-spacing:-.05em;line-height:1.04;margin:0 0 22px;font-weight:650;max-width:850px}h2{font-size:21px;line-height:1.25;letter-spacing:-.02em;margin:0 0 8px}h3{font-size:16px;line-height:1.3;margin:0 0 12px}p{margin:0 0 14px}.intro{font-size:19px;color:#435247;max-width:860px}.scope{font-size:13px;border-left:3px solid var(--ochre);background:#eeede2;padding:14px 18px;margin:25px 0 26px}.scope strong{font-weight:650}.lab-grid{display:grid;grid-template-columns:minmax(0,1fr) 305px;gap:22px;align-items:start}.panel,.controls{background:var(--white);border:1px solid var(--line);border-radius:7px;padding:24px;min-width:0}.panel{margin-bottom:22px}.controls{background:#eaece2}.caption{font-size:12px;color:var(--muted);margin:8px 0 0;line-height:1.55}.tag{font:10px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:10px}.law{margin-top:23px}.law-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:7px;font-size:13px}.law-head strong{font-weight:650}.law-head small{font-size:11px;color:var(--muted)}.bar{display:flex;overflow:hidden;border:1px solid #b8c3b3;border-radius:3px;height:37px;background:#e5e9df}.segment{display:flex;justify-content:center;align-items:center;overflow:hidden;white-space:nowrap;font:12px var(--mono);min-width:0}.segment.a0{background:var(--moss);color:#fff}.segment.a1{background:#c2a066;color:#1f2c25}.segment.b{background:#cdd3c7;color:#203028}.law.false .bar{outline:2px dashed #b77762;outline-offset:3px;margin-top:11px}.law.false .law-head strong{color:var(--rust)}.law-values{font:11px var(--mono);display:flex;flex-wrap:wrap;gap:7px 18px;margin-top:7px;color:var(--muted)}.legend{display:flex;flex-wrap:wrap;gap:18px;font-size:11px;color:var(--muted);margin:18px 0 0}.legend span{display:flex;align-items:center;gap:7px}.swatch{height:10px;width:17px;background:var(--moss);display:inline-block}.swatch.a1{background:#c2a066}.swatch.b{background:#cdd3c7}.controls label{display:block;font-size:13px;font-weight:600;margin-bottom:12px}.parameter{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:0 0 15px}.parameter output{font:600 33px var(--mono);letter-spacing:-.04em;color:var(--moss)}.parameter small{font:12px var(--mono);color:var(--muted)}input[type=range]{width:100%;accent-color:var(--moss);margin:7px 0;display:block}.range-ends{display:flex;justify-content:space-between;font:11px var(--mono);color:var(--muted)}.presets{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:20px 0 16px}.presets button{border:1px solid #b7c4b0;border-radius:4px;background:transparent;padding:8px;color:var(--ink);font:12px var(--mono)}.presets button[aria-pressed=true]{background:var(--moss);border-color:var(--moss);color:#fff}.metric{border-top:1px solid #cad2c2;padding-top:17px;margin-top:18px}.metric span{font-size:11px;color:var(--muted);display:block}.metric output{font:600 22px var(--mono);display:block;margin:4px 0}.metric.rust output{color:var(--rust)}.table-panel{margin-top:0}.table-scroll{overflow-x:auto;padding-bottom:3px}table{width:100%;border-collapse:collapse;font-size:13px;margin-top:18px}th,td{padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:middle;text-align:center}th{font-size:11px;font-weight:600;color:var(--muted)}th:first-child,td:first-child{text-align:left;padding-left:0}thead tr:first-child th{border-bottom:0;padding-bottom:3px}thead tr:nth-child(2) th{padding-top:3px}th.actual-group{color:var(--moss)}th.false-group{color:var(--rust)}td.false-cell,th.false-sub{background:#f6efe8}td.difference{background:#efdbd0;color:var(--rust);font-weight:600}td.program{width:30%;min-width:166px}.program strong{font:600 17px var(--mono)}.program small{display:block;color:var(--muted);font-size:10px;margin-top:4px}.fraction{font:15px var(--mono);display:block;white-space:nowrap}.decimal{font:10px var(--mono);display:block;margin-top:3px;color:var(--muted)}tr.dominated td{border-top:2px solid var(--line);opacity:.8}.oracle-line{font-size:12px;color:var(--muted);margin-top:16px}.oracle-line strong{color:var(--ink)}.table-note{font-size:12px;color:var(--rust);margin-top:14px}.section-label{margin:35px 0 18px}.decision-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.decision-card{border-top:3px solid var(--moss)}.decision-card.false{border-top-color:var(--rust)}.decision-card .tag{color:var(--moss)}.decision-card.false .tag{color:var(--rust)}.decision-summary{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:20px 0}.decision-summary small{display:block;font-size:11px;color:var(--muted)}.decision-summary output{display:block;font:600 23px var(--mono);color:var(--moss);margin:5px 0}.false .decision-summary output{color:var(--rust)}.decision-summary p{font-size:11px;margin:0}.decision-card table{font-size:12px;margin-top:0}.decision-card table td{font-family:var(--mono);padding:9px 5px}.decision-card table th{padding:8px 5px}.gate{border-top:1px solid var(--line);padding-top:17px;margin-top:18px}.gate strong{display:block;font-size:14px;margin-bottom:5px}.badge{display:inline-block;border-radius:3px;padding:4px 7px;font-size:10px;letter-spacing:.04em;text-transform:uppercase;font-weight:700;background:var(--moss-light);color:var(--moss);margin-bottom:8px}.badge.outside{background:var(--rust-light);color:var(--rust)}.gate p{font-size:12px;margin:0}.formula{font:12px/1.75 var(--mono);padding:15px 18px;border:1px solid var(--line);border-radius:5px;background:var(--white);overflow-wrap:anywhere}.mechanism{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:26px 0}.mechanism>section{padding:18px;background:#eaede3;border-top:2px solid #a7b79d}.mechanism p{font-size:13px;line-height:1.6;margin:0}.mechanism h3{font-size:15px}.control-note{border-left:3px solid var(--ochre);padding:17px 20px;background:#eeede2;font-size:13px;margin:22px 0}.control-note h3{font-size:15px;margin-bottom:7px}.control-note p{margin:0}details{border:1px solid var(--line);background:var(--white);border-radius:5px;padding:17px 20px;font-size:13px;margin-top:22px}summary{cursor:pointer;font-weight:600}details p{margin-top:16px}pre{font:11px/1.6 var(--mono);white-space:pre-wrap;overflow-wrap:anywhere;background:#eef0e7;padding:16px;border-radius:4px;margin:16px 0}footer{border-top:1px solid var(--line);margin-top:30px;padding-top:20px;color:var(--muted);font-size:11px;display:flex;justify-content:space-between;gap:20px}footer nav{display:flex;gap:18px;flex-wrap:wrap}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.error{color:var(--rust);background:var(--rust-light);padding:15px;margin:20px 0}
+@media(max-width:850px){.lab-grid{grid-template-columns:1fr}.controls{order:-1;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}.controls .control-block{grid-row:span 2}.controls h2,.controls>.caption{grid-column:1/-1}.metric{margin-top:10px}.decision-grid{gap:16px}.mechanism{grid-template-columns:1fr;gap:12px}.mechanism>section{padding:16px}.mechanism h3{margin-bottom:8px}.panel{padding:20px}.table-scroll table{min-width:540px}.decision-summary{gap:10px}.decision-summary output{font-size:20px}}
+@media(max-width:570px){header{padding:19px 18px;font-size:10px;gap:12px}header nav{gap:12px}main{padding:28px 18px}h1{font-size:44px}.intro{font-size:17px}.scope{font-size:12px;padding:13px 15px}.panel,.controls{padding:18px}.controls{display:block}.controls>.caption{margin-bottom:14px}.controls .control-block{margin-bottom:18px}.parameter output{font-size:30px}.presets{grid-template-columns:repeat(6,1fr);gap:5px}.presets button{padding:8px 3px;font-size:10px}.metric{display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px;padding-top:12px;margin-top:12px}.metric output{font-size:20px}.metric .caption{grid-column:1/-1;margin-top:0}.law-head{display:block}.law-head small{display:block;margin-top:3px}.law-values{font-size:10px;gap:5px 12px}.legend{gap:15px}.decision-grid{grid-template-columns:1fr;gap:0}.decision-summary output{font-size:23px}.formula{font-size:11px}footer{display:block}footer nav{margin-top:12px}.table-panel h2{font-size:20px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><span>CDKA · Interfaces de continuação</span><nav aria-label="Navegação"><a href="../index.html">Atlas</a><a href="../articles/core_interfaces.md">Artigo e prova</a></nav></header>
+<main id="core-interface-lab">
+<p class="eyebrow">Ilustração provada · três estados · um passo restante</p>
+<h1>Mesma assinatura.<br>Outra decisão.</h1>
+<p class="intro">Duas preparações concordam nas previsões antigas. Uma escolha condicionada passa a distingui-las. Reconstruir ambas como se fossem uma aquisição fresca pode certificar um programa que não satisfaz a tarefa.</p>
+<div class="scope"><strong>Contrato fixo:</strong> histórias I e C com preparação igualmente debitada ou preenchida até o mesmo orçamento; exatamente <strong>uma operação de continuação</strong>; valor terminal g = (1, 1, 0). A escolha de programa é comum às duas histórias, sem receber seu nome. Trata-se de uma ilustração finita, sem alegação de realização em hardware.</div>
+<div id="load-error" hidden class="error" role="alert"></div>
+<noscript><p class="error">O cálculo interativo requer JavaScript. O caso exato de referência está no artigo: a = 3/5, U vale 7/10 após I e 2/5 após C; R é a escolha comum com regret 1/10 e valor mínimo 3/5.</p></noscript>
+
+<div class="lab-grid">
+<section class="panel" aria-labelledby="laws-heading">
+<span class="tag">01 · O que a assinatura deixou de distinguir</span>
+<h2 id="laws-heading">A massa total de A é a mesma.</h2>
+<p class="caption">I conserva a aquisição. C desloca a massa de A₁ para A₀. A assinatura x = a − 1/2 registra a massa de A = {A₀, A₁}, sem registrar sua divisão interna.</p>
+<div id="laws"></div>
+<div class="legend" aria-label="Estados"><span><i class="swatch" aria-hidden="true"></i>A₀</span><span><i class="swatch a1" aria-hidden="true"></i>A₁</span><span><i class="swatch b" aria-hidden="true"></i>B</span></div>
+<p class="caption" id="law-explanation"></p>
+</section>
+<aside class="controls" aria-labelledby="control-heading">
+<h2 id="control-heading">Variação controlada</h2>
+<p class="caption">Só a massa inicial a varia. A tarefa, a biblioteca e o orçamento permanecem fixos.</p>
+<div class="control-block"><label for="a">Massa inicial em A</label><div class="parameter"><output id="a-exact" for="a">3/5</output><small id="a-decimal">0,600</small></div><input type="range" id="a" min="0" max="1000" step="1" value="600" aria-describedby="precision-note"><div class="range-ends"><span>0 · só B</span><span>1 · só A</span></div><div class="presets" aria-label="Frações de referência"><button type="button" data-a="0">0</button><button type="button" data-a="1/3">1/3</button><button type="button" data-a="4/7">4/7</button><button type="button" data-a="3/5" aria-pressed="true">3/5</button><button type="button" data-a="2/3">2/3</button><button type="button" data-a="1">1</button></div><p class="caption" id="precision-note">Passo da régua: 1/1000. Os atalhos preservam as frações exatas.</p></div>
+<div class="metric"><span>Assinatura de I e C</span><output id="signature">1/10</output></div>
+<div class="metric rust"><span>Erro da reconstrução para U após C</span><output id="prediction-gap">3/10</output><p class="caption">Diferença exata: a/2.</p></div>
+</aside>
+</div>
+
+<section class="panel table-panel" aria-labelledby="values-heading">
+<span class="tag">02 · Uma escolha condicionada admitida</span>
+<h2 id="values-heading">A previsão de U depende da divisão interna.</h2>
+<p class="caption">O seletor recebe a classe O(A₀) = O(B) = 0 e O(A₁) = 1. U escolhe S na classe 0 e R na classe 1. Admitir essa composição é uma premissa da gramática; não é uma prova da implementação material do seletor.</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="Valores reais e reconstruídos dos quatro programas"><table><caption class="sr-only">Probabilidade de terminar em A após uma operação, por programa e preparação.</caption><thead><tr><th scope="col" rowspan="2">Programa instalado</th><th scope="colgroup" colspan="2" class="actual-group">Lei real</th><th scope="colgroup" colspan="2" class="false-group">Reconstrução suposta via E</th></tr><tr><th scope="col">Após I</th><th scope="col">Após C</th><th scope="col" class="false-sub">Após I</th><th scope="col" class="false-sub">Após C</th></tr></thead><tbody id="values-body"></tbody></table></div>
+<p class="oracle-line" id="oracle-values"></p>
+<p class="caption">R, S, U e W cobrem as quatro regras determinísticas de escolha entre R e S nas duas classes. Para este valor terminal e um passo, R domina W em cada estado físico. Reter {R, S, U} preserva os valores ótimos e a existência de uma decisão comum admissível; não preserva todas as identidades empatadas.</p>
+<p class="table-note" id="table-explanation"></p>
+</section>
+
+<div class="section-label"><p class="eyebrow">03 · Um mesmo programa para as duas histórias</p><h2>A garantia precisa valer antes de saber a história.</h2><p class="caption">Regret compara cada programa ao melhor na <strong>mesma história</strong>. O limite conjunto exige regret ≤ 1/10 e valor mínimo ≥ 2/3.</p></div>
+<div class="decision-grid" aria-live="polite" aria-atomic="false">
+<section class="panel decision-card" aria-labelledby="actual-heading"><span class="tag">Avaliação correta</span><h3 id="actual-heading">Preparações reais I e C</h3><div class="decision-summary"><div><small>Minimax de regret</small><output id="actual-minimax">R</output><p id="actual-regret">regret = 1/10</p></div><div><small>Maximin do valor</small><output id="actual-maximin">R</output><p id="actual-floor">valor mínimo = 3/5</p></div></div><table><caption class="sr-only">Garantias reais dos programas retidos.</caption><thead><tr><th scope="col">Programa</th><th scope="col">Pior regret</th><th scope="col">Valor mínimo</th></tr></thead><tbody id="actual-guarantees"></tbody></table><div class="gate"><span id="actual-badge" class="badge outside">Sem programa admissível</span><strong id="actual-gate">O limite conjunto falha.</strong><p id="actual-gate-note">R respeita o teto de regret, mas seu valor mínimo 3/5 fica abaixo de 2/3.</p></div></section>
+<section class="panel decision-card false" aria-labelledby="false-heading"><span class="tag">Reconstrução não justificada</span><h3 id="false-heading">As duas entradas são tratadas como frescas</h3><div class="decision-summary"><div><small>Minimax calculado</small><output id="false-minimax">U</output><p id="false-regret">regret = 0</p></div><div><small>Maximin calculado</small><output id="false-maximin">U</output><p id="false-floor">valor mínimo = 7/10</p></div></div><table><caption class="sr-only">Garantias calculadas pela reconstrução suposta.</caption><thead><tr><th scope="col">Programa</th><th scope="col">Pior regret</th><th scope="col">Valor mínimo</th></tr></thead><tbody id="false-guarantees"></tbody></table><div class="gate"><span id="false-badge" class="badge outside">Aprovação indevida</span><strong id="false-gate">U parece satisfazer o limite.</strong><p id="false-gate-note">A entrada real após C foi substituída por outra lei.</p></div></section>
+</div>
+<p class="formula" aria-label="Regret máximo de p é o máximo, nas histórias I e C, da diferença entre o maior valor de um programa q na história h e o valor de p na mesma história.">regret(p) = max<sub>h∈{I,C}</sub> [max<sub>q∈{R,S,U}</sub> V<sub>h</sub>(q) − V<sub>h</sub>(p)]</p>
+<p class="caption">A escolha entre programas é determinística. Acrescentar uma moeda para misturá-los amplia a biblioteca e muda o problema minimax. Não há acesso gratuito ao nome I ou C.</p>
+
+<div class="mechanism">
+<section><span class="tag">Suficiência de valores</span><h3>R e S ainda concordam.</h3><p>R vale a; S vale 1 − a, em ambas as preparações. Sair da família de emissão não torna automaticamente inútil a assinatura para toda tarefa.</p></section>
+<section><span class="tag">Reconstrução de leis</span><h3>E impõe massas iguais em A₀ e A₁.</h3><p>Quando a &gt; 0, a lei após C tem massas a e 0. Ela não é uma mistura das linhas de E. A reconstrução inventa uma divisão que C eliminou.</p></section>
+<section><span class="tag">Renovação na saída</span><h3>U volta à família de E.</h3><p>As linhas de U são e<sub>B</sub>, e<sub>A</sub> e e<sub>A</sub>. A saída é renovada, mas seus pesos dependem da entrada real. Isso não autoriza reconstruir a entrada antes de aplicar U.</p></section>
+</div>
+<section class="control-note" aria-labelledby="two-step-heading"><h3 id="two-step-heading">Dois passos mudam o contrato.</h3><p id="two-step-note">Se outra operação fosse permitida, SU produziria 4/5 nas duas histórias. Esse programa está fora do orçamento de uma continuação usado acima.</p></section>
+
+<details><summary>Definições exatas e reprodução</summary><p>Estados físicos do exemplo: A₀, A₁, B. A aquisição inicial é μ = (a/2, a/2, 1 − a). I não a altera; C leva A₀ e A₁ a A₀ e conserva B. As fases de emissão são e<sub>A</sub> = (1/2, 1/2, 0) e e<sub>B</sub> = (0, 0, 1). O escalar antigo é μ·(1/2, 1/2, −1/2) = a − 1/2.</p><pre>R = [ e_A ; e_A ; e_B ]       S = [ e_B ; e_B ; e_A ]
+U = [ e_B ; e_A ; e_A ]       W = [ e_A ; e_B ; e_B ]
+U = D0 S + D1 R              W = D0 R + D1 S
+D0 = diag(1,0,1)             D1 = diag(0,1,0)
+
+V_I(R,S,U,W) = (a, 1-a, 1-a/2, a/2)
+V_C(R,S,U,W) = (a, 1-a, 1-a,   a)
+
+node --test tests/core-interfaces-lab.test.mjs</pre><p>O núcleo JavaScript usa aritmética racional exata. As larguras dos gráficos e os decimais são apenas apresentação. O teste cruza o caso a = 3/5 com o certificado produzido em Python e cobre fronteiras, empates, dominância e a restrição de horizonte.</p><p><a href="./core-interfaces.mjs">Núcleo puro</a> · <a href="../data/core-interface-witness.json">Certificado canônico</a> · <a href="../articles/core_interfaces.md">Artigo, prova e limites</a></p></details>
+<footer><span>Ilustração analítica · resultados relativos à gramática declarada</span><nav aria-label="Continuidade"><a href="./reachable_diagnosis.html">Decisão comum</a><a href="./maintenance_access.html">Manutenção e distinções</a></nav></footer>
+</main>
+
+<!-- Standalone extension: follows maintenance_access/reachable_diagnosis without
+     changing the recurrent hardware simulator or shared routes. The independent
+     pure module makes this finite witness testable without the application DOM.
+     Canonical article, scientific registry and navigation are integrated by the
+     main author, as required by ARTICLE_STANDARD.md. -->
+<script id="certified-data" type="application/json">{"schema":"cdka.core-interface-witness/v1","a":"3/5","preparations":[["3/10","3/10","2/5"],["3/5","0","2/5"]],"old_signatures":["1/10","1/10"],"actual_values":[["3/5","2/5","7/10"],["3/5","2/5","2/5"]],"false_fresh_reconstructions":[["3/10","3/10","2/5"],["3/10","3/10","2/5"]],"false_values":[["3/5","2/5","7/10"],["3/5","2/5","7/10"]],"actual_gate":[],"false_gate":["U"]}</script>
+<script type="module" id="lab-script">
+import {DEFAULT_A, MODEL, LABELS, evaluateWitness, exact, asNumber, compareExact} from './core-interfaces.mjs';
+
+const decimal = value => asNumber(value).toLocaleString('pt-BR', {minimumFractionDigits:3, maximumFractionDigits:3});
+const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+const names = values => values.join(' / ');
+
+function lawMarkup(title, note, law, isFalse = false) {
+  const states = ['A₀','A₁','B'], classes = ['a0','a1','b'];
+  const accessible = states.map((state,i) => `${state}: ${law[i]}`).join('; ');
+  return `<div class="law${isFalse?' false':''}"><div class="law-head"><strong>${escape(title)}</strong><small>${escape(note)}</small></div><div class="bar" role="img" aria-label="${escape(title+' — '+accessible)}">${law.map((mass,i) => `<span class="segment ${classes[i]}" aria-hidden="true" style="width:${100*asNumber(mass)}%">${asNumber(mass)>=.12?escape(mass):''}</span>`).join('')}</div><div class="law-values">${states.map((state,i)=>`<span>${state} = ${escape(law[i])}</span>`).join('')}</div></div>`;
+}
+
+function valueCell(value, extra = '') {
+  return `<td${extra}><span class="fraction">${escape(value)}</span><span class="decimal">${decimal(value)}</span></td>`;
+}
+
+function renderDecision(doc, prefix, decision, actual) {
+  const get = id => doc.getElementById(id);
+  get(prefix+'-minimax').textContent = names(decision.minimax_programs);
+  get(prefix+'-maximin').textContent = names(decision.maximin_programs);
+  get(prefix+'-regret').textContent = `regret = ${decision.minimax_regret}`;
+  get(prefix+'-floor').textContent = `valor mínimo = ${decision.maximin_value}`;
+  get(prefix+'-guarantees').innerHTML = LABELS.map((label,i)=>`<tr><td>${label}</td><td>${decision.worst_regrets[i]}</td><td>${decision.minimum_values[i]}</td></tr>`).join('');
+  const allowed = decision.gate.feasible_programs;
+  const falsePositive = prefix==='false' && allowed.some(label=>!actual.gate.feasible_programs.includes(label));
+  get(prefix+'-badge').textContent = falsePositive ? 'Aprovação indevida' : allowed.length ? 'Há programa admissível' : 'Sem programa admissível';
+  get(prefix+'-badge').className = 'badge'+(falsePositive || !allowed.length?' outside':'');
+  get(prefix+'-gate').textContent = allowed.length ? `Admissíveis: ${names(allowed)}.` : 'O limite conjunto falha.';
+  if (prefix==='actual') {
+    get(prefix+'-gate-note').textContent = allowed.length
+      ? 'Estes programas respeitam os dois limites em ambas as histórias reais.'
+      : `Nenhum programa retido combina regret ≤ 1/10 e valor mínimo ≥ 2/3. O maior valor mínimo é ${decision.maximin_value}.`;
+  } else {
+    get(prefix+'-gate-note').textContent = falsePositive
+      ? 'A reconstrução aprova uma escolha que não satisfaz os limites nas preparações reais.'
+      : 'A coincidência deste limite com a avaliação real, por si só, não certifica a reconstrução das leis.';
+  }
+}
+
+export function mount(doc = document) {
+  const get = id => doc.getElementById(id), slider = get('a');
+  let parameter = DEFAULT_A;
+  const embedded = JSON.parse(get('certified-data').textContent);
+  const reference = evaluateWitness(DEFAULT_A);
+  for (const key of ['preparations','old_signatures','actual_values','false_fresh_reconstructions','false_values']) {
+    if (JSON.stringify(reference[key]) !== JSON.stringify(embedded[key])) throw new Error(`Certificado de referência divergente: ${key}`);
+  }
+  function update(value = parameter) {
+    parameter = exact(value);
+    const data = evaluateWitness(parameter);
+    slider.value = String(asNumber(parameter)*1000);
+    slider.setAttribute('aria-valuetext',`${parameter}; ${decimal(parameter)}`);
+    get('a-exact').textContent = parameter;
+    get('a-decimal').textContent = decimal(parameter);
+    get('signature').textContent = data.old_signatures[0];
+    get('prediction-gap').textContent = data.false_prediction_gap;
+    get('laws').innerHTML = lawMarkup('I · preparação conservada','Lei real',data.preparations[0])
+      + lawMarkup('C · massa reunida em A₀','Lei real',data.preparations[1])
+      + lawMarkup('C reconstruída via E','A hipótese que precisa de prova',data.false_fresh_reconstructions[1],true);
+    get('law-explanation').textContent = data.old_family_contains[1]
+      ? 'Em a = 0, as duas preparações são B. A reconstrução coincide com a lei real e não há separação.'
+      : `Após C, a massa de A₁ é zero. A reconstrução atribui ${data.acquisition[1]} a A₁; a assinatura antiga não autoriza essa troca.`;
+    const rules = ['R nas duas classes','S nas duas classes','S na classe 0; R na classe 1','R na classe 0; S na classe 1 · dominado'];
+    get('values-body').innerHTML = data.full_class.labels.map((label,j) => {
+      const actual = data.full_class.actual_values.map(row=>row[j]);
+      const falseValues = data.full_class.false_values.map(row=>row[j]);
+      return `<tr${label==='W'?' class="dominated"':''}><td class="program"><strong>${label}</strong><small>${rules[j]}</small></td>`
+        + actual.map(value=>valueCell(value)).join('')
+        + falseValues.map((value,i)=>valueCell(value,` class="false-cell${compareExact(value,actual[i])!==0?' difference':''}"`)).join('')+'</tr>';
+    }).join('');
+    get('oracle-values').textContent = `Melhor valor informado entre os programas retidos: após I, ${names(data.actual.informed_programs[0])} = ${data.actual.informed_values[0]}; após C, ${names(data.actual.informed_programs[1])} = ${data.actual.informed_values[1]}. São referências por história, não uma política que receba seu nome.`;
+    get('table-explanation').textContent = data.old_family_contains[1]
+      ? 'Neste extremo, as tabelas coincidem. Não há massa em A para ser redistribuída.'
+      : `Para U após C: valor real ${data.actual_values[1][2]}, valor reconstruído ${data.false_values[1][2]}. O erro é ${data.false_prediction_gap}. R e S continuam exatos.`;
+    renderDecision(doc,'actual',data.actual,data.actual);
+    renderDecision(doc,'false',data.false_decision,data.actual);
+    get('two-step-note').textContent = `Se outra operação fosse permitida, SU produziria ${data.two_step_SU[0]} nas duas histórias: (1 + a)/2. Esse programa está fora do orçamento de uma continuação usado acima. A garantia e a eliminação de W precisam ser revalidadas quando o horizonte muda.`;
+    doc.querySelectorAll('[data-a]').forEach(button=>button.setAttribute('aria-pressed',compareExact(button.dataset.a,parameter)===0?'true':'false'));
+    return data;
+  }
+  slider.addEventListener('input',()=>update(`${Math.round(Number(slider.value))}/1000`));
+  doc.querySelectorAll('[data-a]').forEach(button=>button.addEventListener('click',()=>update(button.dataset.a)));
+  update();
+  return {update, current:()=>evaluateWitness(parameter)};
+}
+
+try { mount(); } catch (error) {
+  const box = document.getElementById('load-error');
+  box.hidden = false;
+  box.textContent = 'O exemplo não pôde ser validado. Consulte o certificado e o artigo antes de usar os valores.';
+  console.error(error);
+}
+</script>
+</body>
+</html>

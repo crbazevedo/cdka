@@ -1,0 +1,182 @@
+{
+  "id": "optional-startup-and-causal-report-value",
+  "date": "2026-11-15",
+  "date_basis": "Europe/Lisbon",
+  "parent_commit": "24d1e35ecde75defd495b5272bfb653f427bf528",
+  "inherited_physical_main": "c8eb621acf04c6581795662596c3c41cf2cac43c",
+  "active_research_lines": [
+    "R11",
+    "R14"
+  ],
+  "status": "executed exact bounded synthesis with independent physical oracle and matched-cost channel interventions",
+  "physical_family": {
+    "paid_representatives": 336,
+    "omitted_blind_representatives": 84,
+    "total_representatives": 420,
+    "raw_preparation_programs": 1280,
+    "blind_definition": "both installed maintenance bins are skip or service; diagnostic register cannot be read",
+    "preserved_paid_preparation": true,
+    "delayed_first_read_programs_included": false
+  },
+  "contract": {
+    "gross_endowment": 96,
+    "commissioning": 24,
+    "capacity": 96,
+    "initial_degraded_prior": "1/2",
+    "paid_start_balance": "72 - enable_gate_count * setup_price - write_price",
+    "omitted_start_balance": "72 - enable_gate_count * setup_price",
+    "omitted_initial_report": "no physical acquisition; evaluator dummy record has no accessible content",
+    "prices": {
+      "gate": [
+        0,
+        1,
+        2
+      ],
+      "write": [
+        0,
+        6,
+        12,
+        24
+      ],
+      "setup": [
+        0,
+        6
+      ]
+    },
+    "inherited_cycle_kernel_unchanged": true,
+    "horizon": 8,
+    "primary_endpoint": "seven complete cycles then terminal eighth task; no final enable/write/wear/harvest",
+    "secondary_endpoint": "eight complete cycles",
+    "prices_are_measured_energy": false
+  },
+  "causal_controls": {
+    "initial_only": "product of hidden-health prior and complete initial report marginal, same paid costs/balance, future original channel",
+    "all_acquisitions": "every acquired word uses the frozen initial-prior whole-word marginal independent of its actual source-health branch",
+    "physical_candidates": false,
+    "whole_word_dependence_preserved": true,
+    "later_endogenous_marginals_required_equal": false,
+    "health_dependent_bank_faults_preserved": true,
+    "later_record_health_correlation_may_reappear": true,
+    "reoptimization": "same336 paid programs under intervention plus84 omitted blind physical alternatives"
+  },
+  "coverage": {
+    "price_points": 24,
+    "endpoints": 2,
+    "physical_evaluations": 20160,
+    "analytical_intervention_evaluations": 32256,
+    "complete_response_evaluations": 52416,
+    "independent_omitted_response_pairs": 4032,
+    "unchanged_paid_response_hashes": 48,
+    "independent_omitted_response_hashes": 48,
+    "blind_channel_invariance_comparisons": 8064,
+    "exact_arithmetic": true,
+    "monte_carlo": false
+  },
+  "claims": [
+    {
+      "id": "OS.1",
+      "classification": "implemented bounded physical extension",
+      "statement": "Optional blind acquisition preserves paid alternatives and gross endowment; no free correlated word or new runtime observation."
+    },
+    {
+      "id": "OS.2",
+      "classification": "proved projection with independent physical enumeration",
+      "statement": "Unread records project out of every blind continuation and tracked reward; later writes remain real paid operations."
+    },
+    {
+      "id": "OS.3",
+      "classification": "exact complete-family negative result",
+      "statement": "Omitted service/service+RETAIN attains the maximum-survival/minimum-spend pair at22/24 points in both endpoints; no enable NAND adds maximum survival at any24point."
+    },
+    {
+      "id": "OS.4",
+      "classification": "exact limited causal positive result",
+      "statement": "The two gate=write=0 points retain optimized diagnostic-channel value; all other22 have zero optimized survival effect."
+    },
+    {
+      "id": "OS.5",
+      "classification": "exact estimand distinction",
+      "statement": "The fixed-program all-report loss exceeds the reoptimized channel value; retained bank signals and endogenous later correlations remain outside the removed acquisition channel."
+    },
+    {
+      "id": "OS.6",
+      "classification": "exact same-grid physical counterexample",
+      "statement": "Omission can destroy a fixed blind program by advancing service into a later unaffordable write, even though the union optimum cannot worsen."
+    },
+    {
+      "id": "OS.7",
+      "classification": "complete response reproduction",
+      "statement": "48 original paid fingerprints preserved; all4032 omitted pairs match an independent raw-physics oracle; all8064 blind channel comparisons preserve tracked quantities."
+    },
+    {
+      "id": "OS.8",
+      "classification": "open observation-access boundary",
+      "statement": "First-read safety of deferred acquisition under existing grammar requires an offline positive-mass reachability certificate; runtime validity access cannot be supplied for free."
+    }
+  ],
+  "key_results": {
+    "blind_optimum_points_tasks": 22,
+    "blind_optimum_points_cycles": 22,
+    "maximum_survival_no_enable_nand_points": 24,
+    "improved_optimum_over_paid_only_points": 18,
+    "positive_optimized_channel_effect_points": 2,
+    "positive_case_prices": "gate=write=0, setup=0 or6",
+    "informative_positive_survival": {
+      "exact": "46320740531333450131376433520992329329527784221216069426024200747274988344410390913314159216663912200353357607124016258723316980641297476232670587019942143422884094661045995931030958355943431612682666369721284175013810935687184138100927946955299025362639425378108988043168260099622839140731189943729194626981438460560606505420401397241370006439279/50487097934144755546350628178098318699085211846977472305297851562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "value": 0.9174767896493894
+    },
+    "blind_positive_survival": {
+      "exact": "7540014039138895024395224595624551991847771064791238347830873326613636832374693303145170290325519944794038207346730813270289486801768403358543113831279198479542327606009405794671396472771/8271806125530276748714086920699628535658121109008789062500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "value": 0.9115317652171799
+    },
+    "optimized_channel_effect": {
+      "exact": "300147030729842804745424026213569613660040905839858806939280540892927599935944482984750706376314881053808001736254947259147749673472748702500214514575941765521255268898743766288548243815746065807666369721284175013810935687184138100927946955299025362639425378108988043168260099622839140731189943729194626981438460560606505420401397241370006439279/50487097934144755546350628178098318699085211846977472305297851562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "value": 0.00594502443220947
+    },
+    "fixed_program_initial_effect": {
+      "exact": "521134065024530510529500541711411130071503900755693294771030213501423294934232091229123939276827825637696986166471412786744650610107168149852556771071894281725168598445402109375497648889342345395114786790804065171682191513751636919904091030201955248376217558259211807115626859671989924077846703686907149226472771082627670235833241128137162484279/50487097934144755546350628178098318699085211846977472305297851562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "value": 0.010322123598870676
+    },
+    "fixed_program_all_report_effect": {
+      "exact": "1620515854086680001557977312241172761802033758754179622562580801016896040999938907951998264209657491744356944870188838386351336243738343617504453655755098279934737644870388572163027765285844629113893584175046810905671687188233019960492019285322817780407235013014446805717604447120351906474154477202337154252208525592247130420401397241370006439279/50487097934144755546350628178098318699085211846977472305297851562500000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "value": 0.03209762336113034
+    },
+    "fixed_blind_omission_survival_decreases": 474,
+    "positive_gate_near_optimal_cost_winners_no_enable_nand": 128,
+    "global_cost_frontier_domination_claimed": false,
+    "free_execution_cost_tradeoffs_retained": true
+  },
+  "evidence": {
+    "article": "docs/articles/optional_startup.md",
+    "proof": "docs/results/optional-startup-formal.md",
+    "review": "docs/results/optional-startup-review.md",
+    "model": "cdka/optional_startup.py",
+    "intervention": "cdka/diagnostic_ablation.py",
+    "synthesis": "experiments/optional_startup_sweep.py",
+    "independent_oracle": "experiments/optional_startup_independent.py",
+    "data": "docs/data/optional-startup-results.json",
+    "independent_data": "docs/data/optional-startup-independent.json",
+    "tests": [
+      "tests/test_optional_startup.py",
+      "tests/test_diagnostic_ablation.py",
+      "tests/shared-budget-lab.test.mjs"
+    ],
+    "laboratory": "docs/lab/shared_budget.html"
+  },
+  "validation": {
+    "new_python_tests": 20,
+    "new_presentation_tests": 4,
+    "local_assertion_disabled_checks": "passed",
+    "full_scan_source_and_input_bound_reproduction": "passed",
+    "browser": "separate exact-head CI gate at1360/390/328px; outcome recorded with publication",
+    "remote_ci": "exact published-head outcome recorded separately; not presumed by this scientific registry"
+  },
+  "reproduce": [
+    "python -S -O -m experiments.optional_startup_independent --check",
+    "python -S -O -m experiments.optional_startup_sweep --check",
+    "python -S -O -m unittest discover -s tests -p 'test_optional_startup.py' -v",
+    "python -S -O -m unittest discover -s tests -p 'test_diagnostic_ablation.py' -v",
+    "node --test tests/shared-budget-lab.test.mjs"
+  ],
+  "next_single_obligation": "Certify offline first-read safety after omitted startup over the existing16tables and21channels. Reject every positive-mass read before a real acquisition; distinguish verifier validity from any priced runtime interface. Keep fixed prices and circuit grammar."
+}

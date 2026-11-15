@@ -1,0 +1,372 @@
+{
+  "schema": "cdka.suffix-span-exploratory-observations/v1",
+  "status": "rejected control; not production; excluded from central PF8 benchmark",
+  "measurement_source": "Original suffix_span_probe.py exploratory log; all observations preserved without rerunning timings.",
+  "original_log_sha256": "180e95ef50cf99aa0caa8bc938eca16bb67c4d7717e6ea1023c7cf70e13f3151",
+  "reproducer": "experiments/suffix_span_control.py --sweep",
+  "exact_sanity_command": "python experiments/suffix_span_control.py",
+  "timing_scope": {
+    "repetitions_per_case": 1,
+    "concurrent_other_work": true,
+    "reference": "Full16 program_families.compile_family, compilation only",
+    "candidate": "Full16 span cover plus outer positive4 family; compile and supplied-certificate check timed separately",
+    "excluded": [
+      "module imports",
+      "physical kernel/probe construction",
+      "JSON serialization and I/O",
+      "reference certificate checking"
+    ],
+    "warning": "These historical exploratory timings are not a fair end-to-end comparison and do not compare against the subsequently strengthened PF8 baseline.",
+    "reproducer_change": "The cleaned reproducer adds explicit stochasticity, canonical-rational, binding, shape and index checks; historical times remain those of the original prototype."
+  },
+  "parameters": {
+    "ordinary_horizons": [
+      4,
+      6,
+      8,
+      10
+    ],
+    "epsilon": [
+      "1/100000",
+      "1/10000",
+      "1/1000"
+    ],
+    "local_budget": "epsilon/k",
+    "physical_suffix_coordinates": 16,
+    "extra_maintenance_steps": "at most one"
+  },
+  "observations": [
+    {
+      "k": 4,
+      "old_compile": 0.02448474300001635,
+      "old_retained": 10
+    },
+    {
+      "k": 4,
+      "epsilon": "1/100000",
+      "compile": 0.024260472000037225,
+      "check": 0.02265703399996255,
+      "last": {
+        "n": 4,
+        "suffix_candidates": 16,
+        "retained_suffixes": 16,
+        "program_candidates": 34,
+        "retained_programs": 10,
+        "complete_words_constructed": 44,
+        "complete_words_avoided": 52,
+        "uniform_error": "0"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    {
+      "k": 4,
+      "epsilon": "1/10000",
+      "compile": 0.023412720000010268,
+      "check": 0.023052179000046635,
+      "last": {
+        "n": 4,
+        "suffix_candidates": 16,
+        "retained_suffixes": 16,
+        "program_candidates": 34,
+        "retained_programs": 10,
+        "complete_words_constructed": 44,
+        "complete_words_avoided": 52,
+        "uniform_error": "0"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    {
+      "k": 4,
+      "epsilon": "1/1000",
+      "compile": 0.02295570499995847,
+      "check": 0.02292537099992842,
+      "last": {
+        "n": 4,
+        "suffix_candidates": 16,
+        "retained_suffixes": 16,
+        "program_candidates": 34,
+        "retained_programs": 10,
+        "complete_words_constructed": 44,
+        "complete_words_avoided": 52,
+        "uniform_error": "0"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16
+      ]
+    },
+    {
+      "k": 6,
+      "old_compile": 0.09070438000003378,
+      "old_retained": 11
+    },
+    {
+      "k": 6,
+      "epsilon": "1/100000",
+      "compile": 0.094486836000101,
+      "check": 0.09255364099999497,
+      "last": {
+        "n": 6,
+        "suffix_candidates": 64,
+        "retained_suffixes": 64,
+        "program_candidates": 82,
+        "retained_programs": 11,
+        "complete_words_constructed": 146,
+        "complete_words_avoided": 366,
+        "uniform_error": "0"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ]
+    },
+    {
+      "k": 6,
+      "epsilon": "1/10000",
+      "compile": 0.10008625300008589,
+      "check": 0.09982492799997544,
+      "last": {
+        "n": 6,
+        "suffix_candidates": 64,
+        "retained_suffixes": 64,
+        "program_candidates": 82,
+        "retained_programs": 11,
+        "complete_words_constructed": 146,
+        "complete_words_avoided": 366,
+        "uniform_error": "0"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64
+      ]
+    },
+    {
+      "k": 6,
+      "epsilon": "1/1000",
+      "compile": 0.09316423199993551,
+      "check": 0.09262850100003561,
+      "last": {
+        "n": 6,
+        "suffix_candidates": 64,
+        "retained_suffixes": 62,
+        "program_candidates": 80,
+        "retained_programs": 11,
+        "complete_words_constructed": 144,
+        "complete_words_avoided": 368,
+        "uniform_error": "16694955245761125895746447105314651393605557464379667607901166755194935293125535433023/173472347597680709441192448139190673828125000000000000000000000000000000000000000000000000"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        62
+      ]
+    },
+    {
+      "k": 8,
+      "old_compile": 0.3961641610000015,
+      "old_retained": 17
+    },
+    {
+      "k": 8,
+      "epsilon": "1/100000",
+      "compile": 0.4842364539999835,
+      "check": 0.46521510299999136,
+      "last": {
+        "n": 8,
+        "suffix_candidates": 256,
+        "retained_suffixes": 256,
+        "program_candidates": 286,
+        "retained_programs": 17,
+        "complete_words_constructed": 542,
+        "complete_words_avoided": 2018,
+        "uniform_error": "0"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "k": 8,
+      "epsilon": "1/10000",
+      "compile": 0.4844589620000761,
+      "check": 0.4297440220000226,
+      "last": {
+        "n": 8,
+        "suffix_candidates": 256,
+        "retained_suffixes": 256,
+        "program_candidates": 286,
+        "retained_programs": 17,
+        "complete_words_constructed": 542,
+        "complete_words_avoided": 2018,
+        "uniform_error": "0"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256
+      ]
+    },
+    {
+      "k": 8,
+      "epsilon": "1/1000",
+      "compile": 0.45284144999993714,
+      "check": 0.4536329879999812,
+      "last": {
+        "n": 8,
+        "suffix_candidates": 244,
+        "retained_suffixes": 239,
+        "program_candidates": 269,
+        "retained_programs": 17,
+        "complete_words_constructed": 513,
+        "complete_words_avoided": 2047,
+        "uniform_error": "19645755142920962163366804239038203824347415042807625807706027399083848777648088500748830992156738446276054411429/66174449004242213989712695365597028285264968872070312500000000000000000000000000000000000000000000000000000000000000"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        62,
+        122,
+        239
+      ]
+    },
+    {
+      "k": 10,
+      "old_compile": 1.9543117309999616,
+      "old_retained": 27
+    },
+    {
+      "k": 10,
+      "epsilon": "1/100000",
+      "compile": 2.72480533800001,
+      "check": 1.9062166359999537,
+      "last": {
+        "n": 10,
+        "suffix_candidates": 1024,
+        "retained_suffixes": 1024,
+        "program_candidates": 1066,
+        "retained_programs": 27,
+        "complete_words_constructed": 2090,
+        "complete_words_avoided": 10198,
+        "uniform_error": "0"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024
+      ]
+    },
+    {
+      "k": 10,
+      "epsilon": "1/10000",
+      "compile": 2.6852676860000884,
+      "check": 1.9666958980000118,
+      "last": {
+        "n": 10,
+        "suffix_candidates": 1024,
+        "retained_suffixes": 1023,
+        "program_candidates": 1065,
+        "retained_programs": 27,
+        "complete_words_constructed": 2089,
+        "complete_words_avoided": 10199,
+        "uniform_error": "74950668786240200762945459564138007827710007397486947282366982402536059307520527629055928522318939344102456384068914957/10097419586828951109270125635619663739817042369395494461059570312500000000000000000000000000000000000000000000000000000000000"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1023
+      ]
+    },
+    {
+      "k": 10,
+      "epsilon": "1/1000",
+      "compile": 2.418421358000046,
+      "check": 1.7994743479999897,
+      "last": {
+        "n": 10,
+        "suffix_candidates": 940,
+        "retained_suffixes": 914,
+        "program_candidates": 956,
+        "retained_programs": 27,
+        "complete_words_constructed": 1896,
+        "complete_words_avoided": 10392,
+        "uniform_error": "43256326784848271009657984566873350547530769458952416630857262191630115254452135408626121658108162617601868229545970220472349934947378749986837208260445381/98607613152626475676466070660348278709150804388627875596284866333007812500000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "suffix_counts": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        62,
+        122,
+        240,
+        470,
+        914
+      ]
+    }
+  ]
+}

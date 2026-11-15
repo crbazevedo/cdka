@@ -1,0 +1,773 @@
+{
+  "approximation": {
+    "attaining_predictor": "midpoint law (left+right)/2",
+    "common_prediction_minimax_error": "21619539012817056454767961911/3561098632812500000000000000000",
+    "error_tolerance": "1/200",
+    "gap_per_unit_success": "21619539012817056454767961911/1424439453125000000000000000000",
+    "scope": "only the two displayed laws and the 24 declared words",
+    "success_threshold": "14244394531250000000000000000/21619539012817056454767961911"
+  },
+  "base_commit": "2eb1da7b635da2165e3b767440371a69583df3d0",
+  "bounded_words": [
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 0,
+        "cell_writes": 0,
+        "clock_intervals": 1,
+        "installed_nands": 6,
+        "nand_evaluations": 6,
+        "prepaid_service_slots": 0,
+        "retained_cells": 3,
+        "voter_evaluations": 1
+      },
+      "difference": "0",
+      "left": "468805981/911641250",
+      "left_at_one": "468805981/911641250",
+      "left_at_zero": "468805981/911641250",
+      "right": "468805981/911641250",
+      "right_at_one": "468805981/911641250",
+      "right_at_zero": "468805981/911641250",
+      "word": []
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 0,
+        "cell_writes": 0,
+        "clock_intervals": 2,
+        "installed_nands": 6,
+        "nand_evaluations": 12,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 2
+      },
+      "difference": "21619539012817056454767961911/1780549316406250000000000000000",
+      "left": "148612402455056054326697829530167/278210830688476562500000000000000",
+      "left_at_one": "119998756153786523076697829530167/222568664550781250000000000000000",
+      "left_at_zero": "468805981/911641250",
+      "right": "580937397937213557022561341926293/1112843322753906250000000000000000",
+      "right_at_one": "466482812732135432022561341926293/890274658203125000000000000000000",
+      "right_at_zero": "468805981/911641250",
+      "word": [
+        "M"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 3,
+        "cell_writes": 0,
+        "clock_intervals": 2,
+        "installed_nands": 6,
+        "nand_evaluations": 6,
+        "prepaid_service_slots": 0,
+        "retained_cells": 3,
+        "voter_evaluations": 1
+      },
+      "difference": "0",
+      "left": "114640501546766461/222568664550781250",
+      "left_at_one": "114640501546766461/222568664550781250",
+      "left_at_zero": "114640501546766461/222568664550781250",
+      "right": "114640501546766461/222568664550781250",
+      "right_at_one": "114640501546766461/222568664550781250",
+      "right_at_zero": "114640501546766461/222568664550781250",
+      "word": [
+        "D"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 3,
+        "cell_writes": 0,
+        "clock_intervals": 3,
+        "installed_nands": 6,
+        "nand_evaluations": 12,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 2
+      },
+      "difference": "242209521129698552611661685807/22256866455078125000000000000000",
+      "left": "92456274364567482902785521581991784427/173881769180297851562500000000000000000",
+      "left_at_one": "74543695997885223371535521581991784427/139105415344238281250000000000000000000",
+      "left_at_zero": "114640501546766461/222568664550781250",
+      "right": "90564012480741712960506914661624596927/173881769180297851562500000000000000000",
+      "right_at_one": "5588571854927650263788993435509584379/10700416564941406250000000000000000000",
+      "right_at_zero": "114640501546766461/222568664550781250",
+      "word": [
+        "M",
+        "D"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 3,
+        "cell_writes": 0,
+        "clock_intervals": 3,
+        "installed_nands": 6,
+        "nand_evaluations": 12,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 2
+      },
+      "difference": "64857257705550073507328739273/5564216613769531250000000000000",
+      "left": "7437828378167452618258651391034193/13910541534423828125000000000000000",
+      "left_at_one": "6004822108832871855758651391034193/11128433227539062500000000000000000",
+      "left_at_zero": "114640501546766461/222568664550781250",
+      "right": "7275685233903577434490329542851693/13910541534423828125000000000000000",
+      "right_at_one": "5842678964568996671990329542851693/11128433227539062500000000000000000",
+      "right_at_zero": "114640501546766461/222568664550781250",
+      "word": [
+        "D",
+        "M"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 3,
+        "cell_writes": 3,
+        "clock_intervals": 2,
+        "installed_nands": 6,
+        "nand_evaluations": 12,
+        "prepaid_service_slots": 0,
+        "retained_cells": 3,
+        "voter_evaluations": 2
+      },
+      "difference": "0",
+      "left": "1933331959922458710757/3477635383605957031250",
+      "left_at_one": "1933331959922458710757/3477635383605957031250",
+      "left_at_zero": "1933331959922458710757/3477635383605957031250",
+      "right": "1933331959922458710757/3477635383605957031250",
+      "right_at_one": "1933331959922458710757/3477635383605957031250",
+      "right_at_zero": "1933331959922458710757/3477635383605957031250",
+      "word": [
+        "R"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 3,
+        "cell_writes": 3,
+        "clock_intervals": 3,
+        "installed_nands": 6,
+        "nand_evaluations": 18,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 3
+      },
+      "difference": "92353035859814870042127464392019087017020103622673/8694088459014892578125000000000000000000000000000000",
+      "left": "782547281467397355321416782898959095631464404104465681/1358451321721076965332031250000000000000000000000000000",
+      "left_at_one": "631505722098455268543526157898959095631464404104465681/1086761057376861572265625000000000000000000000000000000",
+      "left_at_zero": "1933331959922458710757/3477635383605957031250",
+      "right": "3072468478457205127509337466350824453140220051653692099/5433805286884307861328125000000000000000000000000000000",
+      "right_at_one": "2468302240981436780397774966350824453140220051653692099/4347044229507446289062500000000000000000000000000000000",
+      "right_at_zero": "1933331959922458710757/3477635383605957031250",
+      "word": [
+        "M",
+        "R"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 3,
+        "cell_writes": 3,
+        "clock_intervals": 3,
+        "installed_nands": 6,
+        "nand_evaluations": 18,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 3
+      },
+      "difference": "0",
+      "left": "4869090549191377343308173239691768841/8694088459014892578125000000000000000",
+      "left_at_one": "3902424569230147987929673239691768841/6955270767211914062500000000000000000",
+      "left_at_zero": "1933331959922458710757/3477635383605957031250",
+      "right": "4869090549191377343308173239691768841/8694088459014892578125000000000000000",
+      "right_at_one": "3902424569230147987929673239691768841/6955270767211914062500000000000000000",
+      "right_at_zero": "1933331959922458710757/3477635383605957031250",
+      "word": [
+        "R",
+        "M"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 0,
+        "clock_intervals": 3,
+        "installed_nands": 6,
+        "nand_evaluations": 6,
+        "prepaid_service_slots": 0,
+        "retained_cells": 3,
+        "voter_evaluations": 1
+      },
+      "difference": "0",
+      "left": "1793965178841600591589/3477635383605957031250",
+      "left_at_one": "1793965178841600591589/3477635383605957031250",
+      "left_at_zero": "1793965178841600591589/3477635383605957031250",
+      "right": "1793965178841600591589/3477635383605957031250",
+      "right_at_one": "1793965178841600591589/3477635383605957031250",
+      "right_at_zero": "1793965178841600591589/3477635383605957031250",
+      "word": [
+        "D",
+        "D"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 0,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 12,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 2
+      },
+      "difference": "1696650788512817493104868844322619/173881769180297851562500000000000000",
+      "left": "2214042441582935052471822904172006464838749/4179850220680236816406250000000000000000000",
+      "left_at_one": "23176410556698153833418072754236084042903737/43470442295074462890625000000000000000000000",
+      "left_at_zero": "1793965178841600591589/3477635383605957031250",
+      "right": "28252348369167900215538426240385265605403737/54338052868843078613281250000000000000000000",
+      "right_at_one": "22646207185287898366822801240385265605403737/43470442295074462890625000000000000000000000",
+      "right_at_zero": "1793965178841600591589/3477635383605957031250",
+      "word": [
+        "M",
+        "D",
+        "D"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 0,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 12,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 2
+      },
+      "difference": "56776097745601177827564929771272953/5433805286884307861328125000000000000",
+      "left": "57843221824630990185722124796366571569451/108676105737686157226562500000000000000000",
+      "left_at_one": "46630939456870986488290874796366571569451/86940884590148925781250000000000000000000",
+      "left_at_zero": "1793965178841600591589/3477635383605957031250",
+      "right": "56707699869718966629170826200941112509451/108676105737686157226562500000000000000000",
+      "right_at_one": "45495417501958962931739576200941112509451/86940884590148925781250000000000000000000",
+      "right_at_zero": "1793965178841600591589/3477635383605957031250",
+      "word": [
+        "D",
+        "M",
+        "D"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 0,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 12,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 2
+      },
+      "difference": "972839291189475322269488980071/86940884590148925781250000000000",
+      "left": "186111531044056028741730646768300009/347763538360595703125000000000000000",
+      "left_at_one": "150232227467224016909950646768300009/278210830688476562500000000000000000",
+      "left_at_zero": "1793965178841600591589/3477635383605957031250",
+      "right": "182220173879298127452652690848016009/347763538360595703125000000000000000",
+      "right_at_one": "146340870302466115620872690848016009/278210830688476562500000000000000000",
+      "right_at_zero": "1793965178841600591589/3477635383605957031250",
+      "word": [
+        "D",
+        "D",
+        "M"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 3,
+        "clock_intervals": 3,
+        "installed_nands": 6,
+        "nand_evaluations": 12,
+        "prepaid_service_slots": 0,
+        "retained_cells": 3,
+        "voter_evaluations": 2
+      },
+      "difference": "0",
+      "left": "472617953773173340527738035317/849032076075673103332519531250",
+      "left_at_one": "472617953773173340527738035317/849032076075673103332519531250",
+      "left_at_zero": "472617953773173340527738035317/849032076075673103332519531250",
+      "right": "472617953773173340527738035317/849032076075673103332519531250",
+      "right_at_one": "472617953773173340527738035317/849032076075673103332519531250",
+      "right_at_zero": "472617953773173340527738035317/849032076075673103332519531250",
+      "word": [
+        "D",
+        "R"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 3,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 18,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 3
+      },
+      "difference": "1035017014922968318318683660964342182912108812346201/108676105737686157226562500000000000000000000000000000",
+      "left": "486034353298080544982006872182707388412547944146889504828861/849032076075673103332519531250000000000000000000000000000000",
+      "left_at_one": "391510762543445876876459265119307388412547944146889504828861/679225660860538482666015625000000000000000000000000000000000",
+      "left_at_zero": "472617953773173340527738035317/849032076075673103332519531250",
+      "right": "477948282868994854995142156081423465108547094050434809516361/849032076075673103332519531250000000000000000000000000000000",
+      "right_at_one": "383424692114360186889594549018023465108547094050434809516361/679225660860538482666015625000000000000000000000000000000000",
+      "right_at_zero": "472617953773173340527738035317/849032076075673103332519531250",
+      "word": [
+        "M",
+        "D",
+        "R"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 3,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 18,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 3
+      },
+      "difference": "277053474438377878190861460180687785205438519040239/27169026434421539306640625000000000000000000000000000",
+      "left": "39159100632089174271641444954580845977193505874629781799/67922566086053848266601562500000000000000000000000000000",
+      "left_at_one": "31597213371718400823197636389508845977193505874629781799/54338052868843078613281250000000000000000000000000000000",
+      "left_at_zero": "472617953773173340527738035317/849032076075673103332519531250",
+      "right": "38466466945993229576164291304129126514179909577029184299/67922566086053848266601562500000000000000000000000000000",
+      "right_at_one": "30904579685622456127720482739057126514179909577029184299/54338052868843078613281250000000000000000000000000000000",
+      "right_at_zero": "472617953773173340527738035317/849032076075673103332519531250",
+      "word": [
+        "D",
+        "M",
+        "R"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 3,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 18,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 3
+      },
+      "difference": "0",
+      "left": "1190319705906901037559212471417531455367448121/2122580190189182758331298828125000000000000000",
+      "left_at_one": "954010729020314367295343453759031455367448121/1698064152151346206665039062500000000000000000",
+      "left_at_zero": "472617953773173340527738035317/849032076075673103332519531250",
+      "right": "1190319705906901037559212471417531455367448121/2122580190189182758331298828125000000000000000",
+      "right_at_one": "954010729020314367295343453759031455367448121/1698064152151346206665039062500000000000000000",
+      "right_at_zero": "472617953773173340527738035317/849032076075673103332519531250",
+      "word": [
+        "D",
+        "R",
+        "M"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 3,
+        "clock_intervals": 3,
+        "installed_nands": 6,
+        "nand_evaluations": 12,
+        "prepaid_service_slots": 0,
+        "retained_cells": 3,
+        "voter_evaluations": 2
+      },
+      "difference": "0",
+      "left": "30141881404910253650522893/54338052868843078613281250",
+      "left_at_one": "30141881404910253650522893/54338052868843078613281250",
+      "left_at_zero": "30141881404910253650522893/54338052868843078613281250",
+      "right": "30141881404910253650522893/54338052868843078613281250",
+      "right_at_one": "30141881404910253650522893/54338052868843078613281250",
+      "right_at_zero": "30141881404910253650522893/54338052868843078613281250",
+      "word": [
+        "R",
+        "D"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 3,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 18,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 3
+      },
+      "difference": "274920541346079042843713101342722032187219147388711197/26124063879251480102539062500000000000000000000000000000",
+      "left": "30514666705139682586468306261254522613381231308876287364217/53064504754729568958282470703125000000000000000000000000000",
+      "left_at_one": "24627580493243148670350553722192022613381231308876287364217/42451603803783655166625976562500000000000000000000000000000",
+      "left_at_zero": "30141881404910253650522893/54338052868843078613281250",
+      "right": "119824937422121838122768056096608473942003769662971870981243/212258019018918275833129882812500000000000000000000000000000",
+      "right_at_one": "96276592574535702458297045940358473942003769662971870981243/169806415215134620666503906250000000000000000000000000000000",
+      "right_at_zero": "30141881404910253650522893/54338052868843078613281250",
+      "word": [
+        "M",
+        "R",
+        "D"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 3,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 18,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 3
+      },
+      "difference": "0",
+      "left": "37982902572078152876227670986259618254599611/67922566086053848266601562500000000000000000",
+      "left_at_one": "30447432220850589463596947736259618254599611/54338052868843078613281250000000000000000000",
+      "left_at_zero": "30141881404910253650522893/54338052868843078613281250",
+      "right": "37982902572078152876227670986259618254599611/67922566086053848266601562500000000000000000",
+      "right_at_one": "30447432220850589463596947736259618254599611/54338052868843078613281250000000000000000000",
+      "right_at_zero": "30141881404910253650522893/54338052868843078613281250",
+      "word": [
+        "R",
+        "M",
+        "D"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 3,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 18,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 3
+      },
+      "difference": "0",
+      "left": "76014302382537847440179475949581146416009/135845132172107696533203125000000000000000",
+      "left_at_one": "60943361680082720614918029449581146416009/108676105737686157226562500000000000000000",
+      "left_at_zero": "30141881404910253650522893/54338052868843078613281250",
+      "right": "76014302382537847440179475949581146416009/135845132172107696533203125000000000000000",
+      "right_at_one": "60943361680082720614918029449581146416009/108676105737686157226562500000000000000000",
+      "right_at_zero": "30141881404910253650522893/54338052868843078613281250",
+      "word": [
+        "R",
+        "D",
+        "M"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 6,
+        "clock_intervals": 3,
+        "installed_nands": 6,
+        "nand_evaluations": 18,
+        "prepaid_service_slots": 0,
+        "retained_cells": 3,
+        "voter_evaluations": 3
+      },
+      "difference": "0",
+      "left": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "left_at_one": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "left_at_zero": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "right": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "right_at_one": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "right_at_zero": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "word": [
+        "R",
+        "R"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 6,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 24,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 4
+      },
+      "difference": "394862833785285939746684171034614464338655626322916843743367183531726439/42451603803783655166625976562500000000000000000000000000000000000000000000",
+      "left": "4059874355088259936338735465018317280113960931576626224773423583759724519783/6633063094341196119785308837890625000000000000000000000000000000000000000000",
+      "left_at_one": "251889092991435235328960783041088798470304687044355863444109506443055732291/408188498113304376602172851562500000000000000000000000000000000000000000000",
+      "left_at_zero": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "right": "15992708149237236033013264253176635080244183959854681871754089845331569054757/26532252377364784479141235351562500000000000000000000000000000000000000000000",
+      "right_at_one": "12851443564438828524764283111239983480244183959854681871754089845331569054757/21225801901891827583312988281250000000000000000000000000000000000000000000000",
+      "right_at_zero": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "word": [
+        "M",
+        "R",
+        "R"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 6,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 24,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 4
+      },
+      "difference": "0",
+      "left": "25445012289157312452122445139557684380621098536468759935663/42451603803783655166625976562500000000000000000000000000000",
+      "left_at_one": "20418988953479860438924075312459041820621098536468759935663/33961283043026924133300781250000000000000000000000000000000",
+      "left_at_zero": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "right": "25445012289157312452122445139557684380621098536468759935663/42451603803783655166625976562500000000000000000000000000000",
+      "right_at_one": "20418988953479860438924075312459041820621098536468759935663/33961283043026924133300781250000000000000000000000000000000",
+      "right_at_zero": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "word": [
+        "R",
+        "M",
+        "R"
+      ]
+    },
+    {
+      "cost": {
+        "admissible_from_one_slot": true,
+        "cell_channel_updates": 6,
+        "cell_writes": 6,
+        "clock_intervals": 4,
+        "installed_nands": 6,
+        "nand_evaluations": 24,
+        "prepaid_service_slots": 1,
+        "retained_cells": 3,
+        "voter_evaluations": 4
+      },
+      "difference": "0",
+      "left": "19803782687289852323034732308179633401726526834177/33165315471705980598926544189453125000000000000000",
+      "left_at_one": "15877201956291842937723505880758818901726526834177/26532252377364784479141235351562500000000000000000",
+      "left_at_zero": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "right": "19803782687289852323034732308179633401726526834177/33165315471705980598926544189453125000000000000000",
+      "right_at_one": "15877201956291842937723505880758818901726526834177/26532252377364784479141235351562500000000000000000",
+      "right_at_zero": "7853161461996018770622452854841629/13266126188682392239570617675781250",
+      "word": [
+        "R",
+        "R",
+        "M"
+      ]
+    }
+  ],
+  "construction": {
+    "maintenance_candidates": 10,
+    "maximum_maintenance_calls_per_witness": 1,
+    "new_independent_coordinates": 2,
+    "old_candidates": 22,
+    "old_prefix_candidates_after_maintenance": 4,
+    "old_rank_profile": [
+      2,
+      4,
+      7,
+      9,
+      10,
+      10
+    ]
+  },
+  "contract": {
+    "base_commit": "2eb1da7b635da2165e3b767440371a69583df3d0",
+    "budget_zero": "M is inadmissible and represented by zero live mass",
+    "common_infrastructure": "three retained cells, fixed routing and phase controller, resource reservation; these are declared ideal primitives, not an autonomous model of every component",
+    "cost_model": "component counts and library service slots, not joules",
+    "health": [
+      [
+        "19/20",
+        "1/20"
+      ],
+      [
+        "0",
+        "1"
+      ]
+    ],
+    "hidden": [
+      "substrate health",
+      "internal gate faults",
+      "repair success",
+      "intermediate voter output"
+    ],
+    "internal_only": [
+      "three physical cells feed the installed voter",
+      "M voter output drives repair but is not returned",
+      "D/R return no intermediate observation"
+    ],
+    "maintenance": "prepay one slot; actual voter output 1 requests repair; hidden success sets Z=0; retain cells; then HEALTH",
+    "maintenance_success": "4/5",
+    "name": "maintenance-enabled-continuation-signatures",
+    "rates": [
+      "1/1000",
+      "1/50"
+    ],
+    "readable": [
+      "one terminal voter output",
+      "prepaid slot balance",
+      "declared phase clock"
+    ],
+    "terminal_event": "actual six-NAND readout equals one",
+    "voter_nand_pairs": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        5,
+        7
+      ]
+    ],
+    "write_error": "1/50"
+  },
+  "finite_candidate_evaluations": 61,
+  "negative_controls": {
+    "intermediate_read_in_main_library": false,
+    "intermediate_read_joint_event_gap": "-1014707502017298432/69552707672119140625",
+    "intermediate_read_rank": 12,
+    "zero_repair_success_gap": "0"
+  },
+  "paid_closure": {
+    "candidate_evaluations": 70,
+    "profile": [
+      3,
+      6,
+      13,
+      21,
+      22,
+      22
+    ]
+  },
+  "result": {
+    "known_mass": "ranks include mass for unnormalized laws; not physical bits",
+    "linear_coordinates": 22,
+    "markov_classes": 24,
+    "nonzero_success_global_rank": 22,
+    "nonzero_success_scope": "all rational/real s in (0,1], by affine kernel and invariant-span argument",
+    "old_closed_rank": 10,
+    "one_maintenance_closed_rank": 12,
+    "physical_states": 32,
+    "two_ordinary_updates_ranks": {
+      "at_most_one_M": 12,
+      "without_M": 7
+    },
+    "zero_success_global_rank": 20
+  },
+  "schema": "cdka.maintenance-access-results/v1",
+  "verification": {
+    "affine_kernel_entries": 256,
+    "bounded_words": 24,
+    "exact_arithmetic": "fractions.Fraction",
+    "finite_certificate_valid": true,
+    "old_certificate_valid": true,
+    "paid_to_macro_rows": 96,
+    "raw_maintenance_rows": 48,
+    "zero_success_certificate_valid": true
+  },
+  "witness": {
+    "left": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "736513/1458626",
+      "722113/1458626",
+      "0",
+      "0"
+    ],
+    "maximizer_word": [
+      "M"
+    ],
+    "maximum_gap_bounded": "21619539012817056454767961911/1780549316406250000000000000000",
+    "old_terminal_value": "468805981/911641250",
+    "right": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "30625/1458626",
+      "736513/1458626",
+      "0",
+      "345744/729313",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "separator": {
+      "difference": "-21619539012817056454767961911/1780549316406250000000000000000",
+      "left": "148612402455056054326697829530167/278210830688476562500000000000000",
+      "probe": "readout",
+      "right": "580937397937213557022561341926293/1112843322753906250000000000000000",
+      "word": [
+        "M"
+      ]
+    }
+  }
+}

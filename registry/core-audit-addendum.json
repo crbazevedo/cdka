@@ -1,0 +1,212 @@
+{
+  "id": "audited-finite-core-selector-boundary",
+  "date": "2026-11-05",
+  "date_basis": "UTC",
+  "parent_commit": "9b7dbd15d63531dc0fa873c6f80a74e3a763120a",
+  "integrated_canonical_main": "c8eb621acf04c6581795662596c3c41cf2cac43c",
+  "status": "formal consolidation, bounded antecedent audit and exact constructive illustration",
+  "historical_priority": "not established; identified primary-source comparison is bounded and two close preprints remain abstract-only",
+  "claims": [
+    {
+      "id": "CA.1",
+      "classification": "established instrument and direct corollary",
+      "statement": "A shared stochastic intertwining reconstructs admitted fixed-word laws from nonnegative phase submeasures and therefore their task values."
+    },
+    {
+      "id": "CA.2",
+      "classification": "proved sufficient criterion with exact counterexample",
+      "statement": "Selector compatibility E D_a=Dhat_a E preserves primitive intertwining through a verified row selection; primitive closure alone does not suffice."
+    },
+    {
+      "id": "CA.3",
+      "classification": "proved reset corollary and exact input-sufficiency failure",
+      "statement": "Common reset factors survive any verified row selection, but output regeneration does not recover distinctions discarded from an old input task interface."
+    },
+    {
+      "id": "CA.4",
+      "classification": "exact finite deterministic decision reversal",
+      "statement": "For all four one-step binary R/S selectors, common minimax regret is1/10 and maximin value 3/5; stale fresh decoding falsely makes U pass the regret 1/10 and fidelity 2/3 gate."
+    },
+    {
+      "id": "CA.5",
+      "classification": "exact contract-boundary controls",
+      "statement": "An extra stage or a separately enabled randomizer changes decisions; terminal W dominance does not extend through U."
+    },
+    {
+      "id": "CA.6",
+      "classification": "audited constructive integration; priority unresolved",
+      "statement": "The manuscript connects task-value interfaces, law realization, selector access, renewal and two-sided common-decision certificates without transferring claims between their contracts."
+    }
+  ],
+  "analytic_contract": {
+    "states": [
+      "A0",
+      "A1",
+      "B"
+    ],
+    "terminal_probe": [
+      1,
+      1,
+      0
+    ],
+    "acquisition": [
+      "3/10",
+      "3/10",
+      "2/5"
+    ],
+    "preparation_histories": [
+      "I",
+      "C"
+    ],
+    "preparation_resource_rule": "one equally charged or padded preparation slot, identical remaining resources",
+    "continuation_horizon": 1,
+    "selector_observation": [
+      0,
+      1,
+      0
+    ],
+    "deterministic_one_step_programs": [
+      "R",
+      "S",
+      "U",
+      "W"
+    ],
+    "retained_programs": [
+      "R",
+      "S",
+      "U"
+    ],
+    "old_terminal_equivalents_covered_by_R": [
+      "I",
+      "T",
+      "C"
+    ],
+    "extra_randomizer_enabled": false,
+    "hardware_realization_claim": false,
+    "common_minimax_regret": "1/10",
+    "common_maximin_value": "3/5",
+    "regret_ceiling": "1/10",
+    "fidelity_floor": "2/3",
+    "actual_joint_gate_feasible": false,
+    "stale_decoder_joint_gate_feasible": true
+  },
+  "source_audit": {
+    "full_text_relevant_passages_count": 8,
+    "limited_record_or_abstract_count": 3,
+    "full_text": [
+      {
+        "id": "S1",
+        "authors": "Littman, Sutton, Singh",
+        "year": 2001,
+        "url": "https://proceedings.neurips.cc/paper/2001/file/1e4d36177d71bbb3558e43af9577d70e-Paper.pdf"
+      },
+      {
+        "id": "S2",
+        "authors": "Li, Walsh, Littman",
+        "year": 2006,
+        "url": "https://thomasjwalsh.net/pub/aima06Towards.pdf"
+      },
+      {
+        "id": "S3",
+        "authors": "Givan, Dean, Greig",
+        "year": 2003,
+        "doi": "10.1016/S0004-3702(02)00376-4"
+      },
+      {
+        "id": "S4",
+        "authors": "Fill, Lyzinski",
+        "year": 2014,
+        "manuscript_year": 2012,
+        "doi": "10.1007/s10959-012-0457-9"
+      },
+      {
+        "id": "S5",
+        "authors": "Chassein, Goerigk",
+        "year": 2017,
+        "doi": "10.1016/j.ejor.2016.10.055"
+      },
+      {
+        "id": "J",
+        "authors": "Junges et al.",
+        "year": 2018,
+        "url": "https://auai.org/uai2018/proceedings/papers/195.pdf"
+      },
+      {
+        "id": "O",
+        "authors": "van Oosterom, Maillart, Kharoufeh",
+        "year": 2017,
+        "doi": "10.1002/nav.21763"
+      },
+      {
+        "id": "K",
+        "authors": "Kolchinsky, Wolpert",
+        "year": 2018,
+        "doi": "10.1098/rsfs.2018.0041"
+      }
+    ],
+    "limited_access": [
+      {
+        "id": "S6",
+        "authors": "Rogers, Pitman",
+        "year": 1981,
+        "doi": "10.1214/aop/1176994363",
+        "access": "bibliographic entry and abstract only; no theorem-level comparison"
+      },
+      {
+        "id": "M1",
+        "authors": "Daniel John Murray",
+        "year": 2026,
+        "doi": "10.2139/ssrn.7427100",
+        "access": "indexed primary abstract; full page and PDF blocked; no full proof audit"
+      },
+      {
+        "id": "M2",
+        "authors": "Daniel John Murray",
+        "year": 2026,
+        "doi": "10.2139/ssrn.7426938",
+        "access": "indexed primary abstract; full text unavailable; recursive closure already in abstract"
+      }
+    ]
+  },
+  "evidence": {
+    "manuscript": "docs/articles/core_interfaces.md",
+    "formal_audit": "docs/results/core-formal-audit.md",
+    "mathematical_antecedents": "docs/results/core-mathematical-antecedents.md",
+    "physical_antecedents": "docs/results/core-realization-antecedents.md",
+    "scope_antecedents": "docs/results/core-scope-antecedents.md",
+    "exact_witness": "docs/data/core-interface-witness.json",
+    "experiment": "experiments/core_interface_witness.py",
+    "tests": "tests/test_core_interface_witness.py",
+    "laboratory": "docs/lab/core_interfaces.html",
+    "laboratory_kernel": "docs/lab/core-interfaces.mjs",
+    "laboratory_tests": "tests/core-interfaces-lab.test.mjs"
+  },
+  "reproduce": [
+    "python -S -O -m experiments.core_interface_witness --check",
+    "python -S -O -m unittest discover -s tests -p 'test_core_interface_witness.py' -v",
+    "node --test tests/core-interfaces-lab.test.mjs"
+  ],
+  "next_single_gate": "One pathwise acquisition/actuation budget with physically shared selector resources; rederive the joint kernel and resource successors, then certify continuation sufficiency and complete-policy cost/survival against strongest no-gate, no-renewal and stationary controls.",
+  "implementation_hardening": {
+    "module": "cdka/maintenance_signatures.py",
+    "preexisting_defect": "A necessary basis insertion occurred inside assert and vanished under Python -O; the independent checker rejected the incomplete certificate.",
+    "correction": "Perform insertion unconditionally, then explicitly reject dependence.",
+    "regression": "Generate and independently verify under -S and -S -O, compare complete certificate and the M separator.",
+    "ordinary_certificate_sha256_unchanged": "8e7d8f55d3037fe9174442a28e7bd5c5ff7b38742c9fc3249242b4f4a729d717",
+    "independent_verifier_changed": false,
+    "physical_model_changed": false
+  },
+  "prior_canonical_main": "a32b9a4bf7ecf558ce9bd7fadd90385698ba759f",
+  "audit_science_checkpoint": "63c218e34d3e2132eef58a28f9fbf4e51e15fbd3",
+  "recurring_physical_model_changed_by_audit": false,
+  "publication_integration": {
+    "upstream_result": "v18 priced selective acquisition, independently completed while audit was being published",
+    "upstream_preserved": true,
+    "merged_shared_files": [
+      ".github/workflows/tests.yml",
+      "docs/index.html"
+    ],
+    "scope": "Ideal continuation-equivalent omission is not full-law equality; noisy finite tolerance and expected acquisition costs remain separate contracts.",
+    "additional_cost_obligation": "Scalar survival domination does not preserve a cost frontier without same-domain cost responses and nonincreasing cost."
+  }
+}

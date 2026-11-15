@@ -1,0 +1,98 @@
+{
+  "id": "reachable-paid-diagnosis",
+  "date": "2026-11-04",
+  "parent_commit": "61e25cc53d3aaaf37eecc1bde0cb9cf9e9821836",
+  "active_branches": [
+    "R11",
+    "R14"
+  ],
+  "status": "exact reachable-class certificate, physical preparation, four-coordinate evaluator, measured implementation",
+  "claims": [
+    {
+      "id": "RD.1",
+      "statement": "Exact worst complete-plan regret on a reachable convex hull is attained by a generated preparation; same-row comparison and complete programs are required."
+    },
+    {
+      "id": "RD.2",
+      "statement": "One shared fair-source sensor and arbitrary D/R histories preserve an exchangeable complement-antisymmetric contrast domain of dimension four.",
+      "scope": "input-boundary evaluator; M generally leaves this domain; all full physical responses precede projection"
+    },
+    {
+      "id": "RD.3",
+      "statement": "The 4-preparation/96-program fixture has unique minimax DRDDM, regret 0.0025321961178476887; regret<=0.003 and fidelity>=0.85 jointly impossible in this library."
+    },
+    {
+      "id": "RD.4",
+      "statement": "For every sensor error eta in [0,1/2], V_eta=1/2+(1-2eta)(V_0-1/2), and V_eta<=1-eta."
+    },
+    {
+      "id": "RD.5",
+      "statement": "The 4-coordinate evaluator reproduces all6144 benchmark responses, with measured compilation, encoding, checking, query cost and rational sizes."
+    }
+  ],
+  "objective_change": {
+    "previous": "terminal vote=1; global dimensions10/12",
+    "current": "terminal vote=hidden fixed H; unrestricted dimensions11/13",
+    "input_domain": "4 signed contrast coordinates plus known offset1/2"
+  },
+  "physical_contract": "One sensor sample shared by three writes, inherited D/R/M kernels, no preparation-history input to continuation controller, common prepaid vector reservation.",
+  "controls": [
+    "optional workload: immediate readout I is common optimal",
+    "zero repair",
+    "uninformative sensor",
+    "shared cause versus three independent measurements",
+    "same first action but incompatible complete plans",
+    "pairwise but not joint optimal-plan compatibility",
+    "marginal envelopes creating artificial regret",
+    "free response midpoint not a probability law",
+    "naive symmetric Markovization through M",
+    "tampered certificates"
+  ],
+  "validation": {
+    "python_tests": 34,
+    "node_tests": 10,
+    "raw_joint_responses": 384,
+    "equal_32_16_8_4_fixture_responses": 384,
+    "equal_benchmark_responses": 6144,
+    "svg_visual_review_widths": [
+      760,
+      328
+    ],
+    "full_browser_visual_review": "pending; Chromium unavailable in local runtime"
+  },
+  "reproduction": [
+    "python -m experiments.reachable_diagnosis_sweep --write --check",
+    "python -m experiments.reachable_diagnosis_sweep --benchmark",
+    "python -m unittest discover -s tests -p 'test_reachable*.py' -v",
+    "node --test tests/reachable-diagnosis-lab.test.mjs"
+  ],
+  "artifacts": [
+    "cdka/reachable_diagnosis.py",
+    "cdka/reachable_interfaces.py",
+    "cdka/reachable_restriction.py",
+    "tests/test_reachable_diagnosis.py",
+    "tests/test_reachable_interfaces.py",
+    "tests/test_reachable_restriction.py",
+    "tests/reachable-diagnosis-lab.test.mjs",
+    "experiments/reachable_diagnosis_sweep.py",
+    "docs/data/reachable-diagnosis-results.json",
+    "docs/data/reachable-diagnosis-benchmark.json",
+    "docs/lab/reachable_diagnosis.html",
+    "docs/articles/reachable_diagnosis.md",
+    "docs/results/reachable-interfaces-proof.md",
+    "docs/results/reachable-domain-proof.md",
+    "docs/results/reachable-diagnosis-review.md",
+    "docs/strategy/reachable-diagnosis-integration.md",
+    "registry/hypotheses.md",
+    "docs/index.html",
+    ".github/workflows/tests.yml"
+  ],
+  "limits": [
+    "All2^h histories and(K+2)2^K programs remain explicitly enumerated.",
+    "The program library does not exhaust arbitrary adaptive or randomized physical controllers.",
+    "Sensor and phase-control primitives are declared; no sensor-circuit synthesis is claimed.",
+    "Four denotes a linear contrast domain, not physical memory bits or states.",
+    "Timing and serialization figures are local measured costs, not universal speed or resident-memory bounds."
+  ],
+  "next_gate": "Certified bounds over shared-prefix histories/residual complete-program families, pruning before enumerating every member while preserving correlated differences and total-cost accounting."
+}

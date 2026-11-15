@@ -1,0 +1,321 @@
+{
+  "id": "certified-convex-preparation-families",
+  "date": "2026-11-05",
+  "date_basis": "UTC",
+  "parent_commit": "2f9abfd01b5298de1a1889cc7c57776fa0f86572",
+  "active_branches": [
+    "R11",
+    "R14"
+  ],
+  "status": "exact two-sided cover; conditional full-cost adoption at demonstrated larger cases",
+  "physical_contract_changed": false,
+  "claims": [
+    {
+      "id": "PC.1",
+      "status": "proved exact induction",
+      "statement": "Local convex witnesses over actual children preserve all reachable history signatures without enumerating discarded descendants."
+    },
+    {
+      "id": "PC.2",
+      "status": "proved and independently reproduced",
+      "statement": "Raw-input composed checking preserves common minimax, maximin and joint feasibility with per-program bounds and actual attainers."
+    },
+    {
+      "id": "PC.3",
+      "status": "proved shared specialization",
+      "statement": "Two amplitudes and trailing-D index are checked against full physical identities; both methods use them, with generic4 fallback."
+    },
+    {
+      "id": "PC.4",
+      "status": "conditional local full-cost advantage",
+      "statement": "Larger tested histories win; the small case overlaps and h8 loses. Proof size increases."
+    },
+    {
+      "id": "PC.5",
+      "status": "falsified simplifications with exact controls",
+      "statement": "Conic mass, affine informed maxima, attained-plan optimality and independent response envelopes fail in declared physical fixtures."
+    },
+    {
+      "id": "PC.6",
+      "status": "resolved independently in integrated main v17",
+      "statement": "Retained-record selection leaves the inherited fresh twelve-phase emission family; a sufficient48-state symmetry quotient covers the enlarged recurrent grammar. This is not a dimension lower bound.",
+      "provenance": "a32b9a4bf7ecf558ce9bd7fadd90385698ba759f"
+    },
+    {
+      "id": "PC.7",
+      "status": "manuscript core prepared; audit open",
+      "statement": "Consolidate common-decision coverage, physical feasibility/access and renewable law-family realization, then audit the exact statement before a priced faulty observation selector."
+    }
+  ],
+  "output_contract": "one minimax and one maximin original complete program; exact per-program worst regret and minimum fidelity with actual-history attainers; joint feasibility from those checked bounds; informed values queryable, not an explicit value per original history",
+  "scaling": [
+    {
+      "history_length": 0,
+      "ordinary_updates": 4,
+      "original_histories": 1,
+      "retained_preparations": 1,
+      "retained_programs": 10,
+      "final_history_candidates": 1,
+      "histories_never_generated_at_final_level": 0,
+      "all_levels_history_candidates": 1,
+      "values_evaluated": 10,
+      "preparation_certificate_bytes": 268,
+      "composite_certificate_bytes": 9496,
+      "maximum_preparation_certificate_rational_bits": 1,
+      "maximum_signature_rational_bits": 19
+    },
+    {
+      "history_length": 1,
+      "ordinary_updates": 4,
+      "original_histories": 2,
+      "retained_preparations": 2,
+      "retained_programs": 10,
+      "final_history_candidates": 2,
+      "histories_never_generated_at_final_level": 0,
+      "all_levels_history_candidates": 3,
+      "values_evaluated": 20,
+      "preparation_certificate_bytes": 313,
+      "composite_certificate_bytes": 10523,
+      "maximum_preparation_certificate_rational_bits": 1,
+      "maximum_signature_rational_bits": 91
+    },
+    {
+      "history_length": 2,
+      "ordinary_updates": 4,
+      "original_histories": 4,
+      "retained_preparations": 4,
+      "retained_programs": 10,
+      "final_history_candidates": 4,
+      "histories_never_generated_at_final_level": 0,
+      "all_levels_history_candidates": 7,
+      "values_evaluated": 40,
+      "preparation_certificate_bytes": 382,
+      "composite_certificate_bytes": 11054,
+      "maximum_preparation_certificate_rational_bits": 2,
+      "maximum_signature_rational_bits": 163
+    },
+    {
+      "history_length": 4,
+      "ordinary_updates": 4,
+      "original_histories": 16,
+      "retained_preparations": 13,
+      "retained_programs": 10,
+      "final_history_candidates": 16,
+      "histories_never_generated_at_final_level": 0,
+      "all_levels_history_candidates": 31,
+      "values_evaluated": 130,
+      "preparation_certificate_bytes": 2338,
+      "composite_certificate_bytes": 14275,
+      "maximum_preparation_certificate_rational_bits": 327,
+      "maximum_signature_rational_bits": 307
+    },
+    {
+      "history_length": 8,
+      "ordinary_updates": 4,
+      "original_histories": 256,
+      "retained_preparations": 45,
+      "retained_programs": 10,
+      "final_history_candidates": 70,
+      "histories_never_generated_at_final_level": 186,
+      "all_levels_history_candidates": 217,
+      "values_evaluated": 450,
+      "preparation_certificate_bytes": 66555,
+      "composite_certificate_bytes": 80978,
+      "maximum_preparation_certificate_rational_bits": 910,
+      "maximum_signature_rational_bits": 595
+    },
+    {
+      "history_length": 12,
+      "ordinary_updates": 4,
+      "original_histories": 4096,
+      "retained_preparations": 107,
+      "retained_programs": 10,
+      "final_history_candidates": 182,
+      "histories_never_generated_at_final_level": 3914,
+      "all_levels_history_candidates": 749,
+      "values_evaluated": 1070,
+      "preparation_certificate_bytes": 349927,
+      "composite_certificate_bytes": 367051,
+      "maximum_preparation_certificate_rational_bits": 1903,
+      "maximum_signature_rational_bits": 884
+    },
+    {
+      "history_length": 16,
+      "ordinary_updates": 4,
+      "original_histories": 65536,
+      "retained_preparations": 199,
+      "retained_programs": 10,
+      "final_history_candidates": 348,
+      "histories_never_generated_at_final_level": 65188,
+      "all_levels_history_candidates": 1867,
+      "values_evaluated": 1990,
+      "preparation_certificate_bytes": 1242280,
+      "composite_certificate_bytes": 1261965,
+      "maximum_preparation_certificate_rational_bits": 2821,
+      "maximum_signature_rational_bits": 1172
+    },
+    {
+      "history_length": 12,
+      "ordinary_updates": 12,
+      "original_histories": 4096,
+      "retained_preparations": 107,
+      "retained_programs": 37,
+      "final_history_candidates": 182,
+      "histories_never_generated_at_final_level": 3914,
+      "all_levels_history_candidates": 749,
+      "values_evaluated": 3959,
+      "preparation_certificate_bytes": 349927,
+      "composite_certificate_bytes": 825701,
+      "maximum_preparation_certificate_rational_bits": 1903,
+      "maximum_signature_rational_bits": 884
+    }
+  ],
+  "cost_cases": [
+    {
+      "history_length": 2,
+      "ordinary_updates": 4,
+      "baseline_complete_use_median_seconds": 0.19095489600294968,
+      "candidate_complete_use_median_seconds": 0.19418953599961242,
+      "complete_use_median_speedup": 0.983342871797844,
+      "baseline_complete_certificate_bytes": 10670,
+      "candidate_complete_certificate_bytes": 11054,
+      "adoption": "overlapping small-case ranges; no meaningful advantage"
+    },
+    {
+      "history_length": 8,
+      "ordinary_updates": 4,
+      "baseline_complete_use_median_seconds": 0.3081649859996105,
+      "candidate_complete_use_median_seconds": 0.6735106570013158,
+      "complete_use_median_speedup": 0.4575502745148225,
+      "baseline_complete_certificate_bytes": 14421,
+      "candidate_complete_certificate_bytes": 80978,
+      "adoption": "adverse case; keep stream"
+    },
+    {
+      "history_length": 12,
+      "ordinary_updates": 4,
+      "baseline_complete_use_median_seconds": 2.3030782820023887,
+      "candidate_complete_use_median_seconds": 1.3742751950012462,
+      "complete_use_median_speedup": 1.6758494152987315,
+      "baseline_complete_certificate_bytes": 17122,
+      "candidate_complete_certificate_bytes": 367051,
+      "adoption": "larger demonstrated advantage"
+    },
+    {
+      "history_length": 16,
+      "ordinary_updates": 4,
+      "baseline_complete_use_median_seconds": 39.41722846700213,
+      "candidate_complete_use_median_seconds": 3.244689361003111,
+      "complete_use_median_speedup": 12.148228715126095,
+      "baseline_complete_certificate_bytes": 19683,
+      "candidate_complete_certificate_bytes": 1261965,
+      "adoption": "larger demonstrated advantage"
+    },
+    {
+      "history_length": 12,
+      "ordinary_updates": 12,
+      "baseline_complete_use_median_seconds": 11.629173192999588,
+      "candidate_complete_use_median_seconds": 3.087868685997819,
+      "complete_use_median_speedup": 3.7660841102903695,
+      "baseline_complete_certificate_bytes": 475772,
+      "candidate_complete_certificate_bytes": 825701,
+      "adoption": "larger demonstrated advantage"
+    }
+  ],
+  "benchmark_protocol": "Each observation is one complete first use in a fresh process. Both pay physical kernels/acquisition, the same program-cover compiler for that K, preparation encoding or hull discovery, the shared exact two-amplitude/trailing-D codec, compact decisions, full JSON serialization/parsing, independent program/preparation/decision checking, one informed query at D^h, three same-program threshold pairs (six gate scans: feasibility and feasible identities separately) and answer serialization. All needed NumPy/SciPy imports and first HiGHS initialization occur inside the timed compiler. No previously discovered cover enters either method. Stream uses a depth-first stack and one value row; it is checked by a second full stream, with no full output table or informed list. Worker interpreter startup, common stdlib/project imports, transport and post-task audit measurements are outside both totals. Complete-use wall time includes instrumentation gaps; sum of component medians is reported separately. Methods alternate order by repetition. No reuse trial, resident-memory benefit or universal crossover is inferred.",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "validation": {
+    "checked_history_lengths": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      12,
+      16
+    ],
+    "stream_reference_values_through_h12": 195302,
+    "inherited_joint32_oracle_values": 384,
+    "independent_full16_preparation_checks": 81,
+    "independent_informed_queries": 26,
+    "all_per_program_extrema_preserved_through_h12": true,
+    "h16_full_stream_comparison": "separate fresh-process benchmark",
+    "frozen_check_requires_scipy": false,
+    "checker_discovers_geometry": false,
+    "new_python_tests": 33,
+    "local_materialized_unittest_count": 156,
+    "independent_new_tests_pass_with_S_and_O": true,
+    "frozen_reproduction_passes_with_S_and_O": true,
+    "structural_controls_pass_with_S_and_O": true,
+    "historical_physical_source_modules_changed": false
+  },
+  "limits": [
+    "No polynomial bound on hull size, exact bit length or total time.",
+    "Contrast signatures, not full preparation laws, are convexly covered.",
+    "One common executable program; no access to the hidden history label.",
+    "Compact extrema and queries; all 2^h informed values are not an output.",
+    "No claim to preserve all tied programs or physical execution-cost Pareto sets.",
+    "Offline decision acceleration does not improve physical source fidelity.",
+    "No general historical novelty claim or exhaustive algorithm comparison.",
+    "No tested reuse timing or peak resident-memory improvement.",
+    "Six paid joint-gate scans answer three threshold pairs symmetrically in every sample.",
+    "The recurrent64-state physical result has separate integrated main-v17 provenance; it is not derived from the16-state preparation hull theorem."
+  ],
+  "next_gate": "Audit and consolidate the finite manuscript core against its proof dependencies and closest primary antecedents. After that, price and fault a selective acquisition mechanism using only actual evidence and finite physical memory; retain the best stationary whole-program and matched-price v17 controls.",
+  "reproduction": [
+    "python -S -O -m experiments.preparation_family_sweep --check",
+    "python -S -O -m experiments.preparation_family_controls",
+    "python -S -O -m unittest discover -s tests -p 'test_preparation*.py'",
+    "python -m pip install -r requirements-suffix-discovery.txt",
+    "python -m experiments.preparation_family_sweep --write --check",
+    "python -m experiments.preparation_family_benchmark"
+  ],
+  "artifacts": [
+    "AGENTS.md",
+    ".github/workflows/tests.yml",
+    "requirements-suffix-discovery.txt",
+    "cdka/preparation_families.py",
+    "cdka/preparation_decisions.py",
+    "cdka/preparation_pipeline.py",
+    "tests/test_preparation_families.py",
+    "tests/test_preparation_decisions.py",
+    "tests/test_preparation_pipeline.py",
+    "tests/fixtures/preparation-families-small.json",
+    "experiments/preparation_family_sweep.py",
+    "experiments/preparation_family_benchmark.py",
+    "experiments/preparation_family_controls.py",
+    "docs/data/preparation-family-certificates.json",
+    "docs/data/preparation-family-results.json",
+    "docs/data/preparation-family-benchmark.json",
+    "docs/data/preparation-family-controls.json",
+    "docs/articles/preparation_families.md",
+    "docs/results/preparation-family-proof.md",
+    "docs/results/preparation-family-review.md",
+    "docs/strategy/preparation-family-integration.md",
+    "docs/strategy/research-memory.md",
+    "registry/hypotheses.md",
+    "registry/preparation-family-addendum.json",
+    "docs/index.html",
+    "docs/strategy/realizable-renewable-core.md"
+  ],
+  "integration_main_commit": "a32b9a4bf7ecf558ce9bd7fadd90385698ba759f",
+  "preparation_science_commit": "2cecda52a05afc90f83c585e2ed6259e2276a4ea",
+  "publication_integration": {
+    "main_advanced_during_publication": true,
+    "from": "d1877a33d5c011d3c11f2e1080dd20358a1178a5",
+    "to": "a32b9a4bf7ecf558ce9bd7fadd90385698ba759f",
+    "conflicts": [
+      ".github/workflows/tests.yml",
+      "docs/index.html"
+    ],
+    "resolution": "Preserve both workflow suites and all atlas links; import every other main change by its exact blob. Update stale next-gate guidance without changing scientific data or physical source modules."
+  }
+}

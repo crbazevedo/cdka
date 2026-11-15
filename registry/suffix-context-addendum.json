@@ -1,0 +1,241 @@
+{
+  "id": "certified-finite-suffix-contexts",
+  "date": "2026-11-05",
+  "date_basis": "UTC",
+  "parent_commit": "ce252821be4fb5a5075ad12f71ee2da7f14acb7d",
+  "active_branches": [
+    "R11",
+    "R14"
+  ],
+  "status": "exact finite cover; conditional adoption on measured larger cases; strongest shared-feature baseline",
+  "physical_contract_changed": false,
+  "claims": [
+    {
+      "id": "SC.1",
+      "status": "proved exact identities",
+      "statement": "A fixed signed eight-row dual observer closes under D/R and extracts E and E M; it is shared by both algorithms."
+    },
+    {
+      "id": "SC.2",
+      "status": "proved finite induction",
+      "statement": "Nested context cones up to depth K-1 certify suffix replacement by one actual word under every remaining admissible context."
+    },
+    {
+      "id": "SC.3",
+      "status": "proved and exactly reproduced",
+      "statement": "Outer program coverage preserves informed values, one minimax/maximin and joint regret/fidelity feasibility; all384 inherited principal values agree."
+    },
+    {
+      "id": "SC.4",
+      "status": "local measured conditional advantage",
+      "statement": "Cold complete-use medians improve at16 preparations/K12 andK14, and lose at4/K4 and16/K8."
+    },
+    {
+      "id": "SC.5",
+      "status": "exact obstructions",
+      "statement": "E-only suffix order can reverse through M; an all-horizon closed invariant context cone forces equality of both degraded contrast responses."
+    },
+    {
+      "id": "SC.6",
+      "status": "falsified prototype and rejected approximate control",
+      "statement": "Empty-context vacuity lost legal MR coverage; production rejects it. Tight uniform span error removes too little suffix work."
+    }
+  ],
+  "mechanism": {
+    "feature_dimension": 8,
+    "physical_dimension": 16,
+    "feature_identities": [
+      "O K_a=T_a O for D/R",
+      "E=U O",
+      "E K_M=J O",
+      "z=O g"
+    ],
+    "feature_matrices_may_be_signed": true,
+    "context_depth": "max(0,K-1)",
+    "suffix_order_at_length_n": "C_(K-n) z(s)<=C_(K-n) z(v)",
+    "context_transport": "C_t T_a=L_(t,a) C_(t+1), L>=0",
+    "representative": "one actual original physical word",
+    "checker": "exact physical closure, context identities and grammar cover; no LP or Pareto rediscovery"
+  },
+  "principal_counts": {
+    "n": 14,
+    "no_m_suffix_candidates": 44,
+    "no_m_suffixes_retained": 24,
+    "no_m_suffixes_never_generated": 16340,
+    "context_rows_used": 6,
+    "candidates": 116,
+    "retained": 53,
+    "complete_words_generated": 160,
+    "complete_words_never_generated": 261984
+  },
+  "reference_counts_at_K14": {
+    "n": 14,
+    "no_m_suffixes": 16384,
+    "candidates": 16476,
+    "retained": 53,
+    "complete_words_generated": 32860,
+    "complete_words_never_generated": 229284
+  },
+  "context_rows_at_K14": 422,
+  "discovery": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "statistics": {
+      "feature_dimension": 8,
+      "context_rows": 422,
+      "context_rows_by_depth": [
+        6,
+        9,
+        15,
+        22,
+        32,
+        46,
+        65,
+        90,
+        122,
+        162,
+        211,
+        270,
+        340,
+        422
+      ],
+      "lp_calls": 687,
+      "exact_support_failures": 0,
+      "maximum_support_size": 6,
+      "optimized": true
+    },
+    "numerical_proposals_are_proofs": false
+  },
+  "cost_cases": [
+    {
+      "preparations": 4,
+      "ordinary_updates": 4,
+      "baseline_complete_use_median_seconds": 0.15604240399989067,
+      "candidate_complete_use_median_seconds": 0.6853529330005586,
+      "complete_use_median_speedup": 0.2276818212723159,
+      "baseline_sum_component_medians_seconds": 0.16600233200097136,
+      "candidate_sum_component_medians_seconds": 0.7290069190012218,
+      "component_median_sum_speedup": 0.22771022835887947,
+      "baseline_family_certificate_bytes": 3825,
+      "candidate_family_certificate_bytes": 14019,
+      "accepted_on_this_case": false
+    },
+    {
+      "preparations": 16,
+      "ordinary_updates": 8,
+      "baseline_complete_use_median_seconds": 0.438522202999593,
+      "candidate_complete_use_median_seconds": 1.1746625099990524,
+      "complete_use_median_speedup": 0.3733176118815154,
+      "baseline_sum_component_medians_seconds": 0.43925993400034713,
+      "candidate_sum_component_medians_seconds": 1.1638480459996572,
+      "component_median_sum_speedup": 0.37742034753605325,
+      "baseline_family_certificate_bytes": 5206,
+      "candidate_family_certificate_bytes": 89783,
+      "accepted_on_this_case": false
+    },
+    {
+      "preparations": 16,
+      "ordinary_updates": 12,
+      "baseline_complete_use_median_seconds": 3.652291473000332,
+      "candidate_complete_use_median_seconds": 2.6757628820005266,
+      "complete_use_median_speedup": 1.3649533363246698,
+      "baseline_sum_component_medians_seconds": 3.5439246470004946,
+      "candidate_sum_component_medians_seconds": 2.717928589001076,
+      "component_median_sum_speedup": 1.3039064607297126,
+      "baseline_family_certificate_bytes": 21525,
+      "candidate_family_certificate_bytes": 427590,
+      "accepted_on_this_case": true
+    },
+    {
+      "preparations": 16,
+      "ordinary_updates": 14,
+      "baseline_complete_use_median_seconds": 16.19211530499979,
+      "candidate_complete_use_median_seconds": 4.326973444000487,
+      "complete_use_median_speedup": 3.7421341994716357,
+      "baseline_sum_component_medians_seconds": 16.197813908999706,
+      "candidate_sum_component_medians_seconds": 4.221712052000385,
+      "component_median_sum_speedup": 3.836787945147669,
+      "baseline_family_certificate_bytes": 71505,
+      "candidate_family_certificate_bytes": 796063,
+      "accepted_on_this_case": true
+    }
+  ],
+  "benchmark_protocol": "Each observation is one complete use in a fresh Python process. Both methods pay cold physical kernels, preparation, encoding, shared exact8 feature construction, compilation, family JSON serialization/parsing/checking, queries and compact decision construction/serialization/parsing/checking. Only finite_context8 imports NumPy/SciPy, inside its timed compiler: cold imports, first solver initialization, all numerical cone proposals and exact rational support recovery are included. Methods alternate order within each of three repetitions. Report both the sum of component medians and the median of complete-use totals. Interpreter startup, common standard-library/project-module imports, process transport and optional frontier export are outside both totals. No precomputed cones enter either timed pipeline.",
+  "reuse_estimate_convention": "The reused_checked_frontier fields are component-based estimates formed from first-use observations, not separately executed reuse trials. They assume the verified frontier and physical model remain available and valid.",
+  "validation": {
+    "checked_horizons": [
+      0,
+      1,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14
+    ],
+    "small_exhaustive_physical_and_dominance_checks": 120,
+    "retained_full16_physical_checks": 170,
+    "two_way_feature_reference_dominance_checks": 340,
+    "parent_frontier_agreements": 53,
+    "principal_parent_value_agreements": 384,
+    "checker_discovers_cones_or_pareto_frontiers": false,
+    "checker_enumerates_pruned_suffixes": false,
+    "frozen_check_requires_scipy": false,
+    "new_python_tests": 19,
+    "local_materialized_unittest_count": 123,
+    "independent_new_tests_pass_with_S_and_O": true,
+    "frozen_reproduction_passes_with_S_and_O": true,
+    "structural_controls_pass_with_S_and_O": true,
+    "historical_source_policy": "No inherited physical, maintenance, reachable or prior program-family source modules edited."
+  },
+  "limits": [
+    "One representative and decision feasibility, not all tied identities or prediction envelopes.",
+    "No polynomial bound on context rows, frontier size, rational bit growth or total complexity.",
+    "Every 2^h preparation history remains explicit.",
+    "Physical execution cost is outside this response order; the prepaid common box is unchanged.",
+    "Feature coordinates and context mixtures are evaluator objects, not physical states or mixed programs.",
+    "Large horizons require mandatory work and can reduce absolute fidelity.",
+    "Certificate size may rise while program count and total runtime fall.",
+    "Small measured cases lose; no universal crossover or unconditional replacement.",
+    "Reuse fields are component-based estimates, not separate trials.",
+    "Serialized bytes do not measure peak resident memory.",
+    "No general novelty claim or comparison with every planning algorithm."
+  ],
+  "next_gate": "Certify reachable preparation families with exact convex witnesses, compact correlated common-decision outputs and attaining histories; compare against streamed four-coordinate enumeration with matched outputs. Informed values remain exact queries, not affine interpolation or a free exponential output list.",
+  "reproduction": [
+    "python -S -O -m experiments.suffix_context_sweep --check",
+    "python -S -O -m experiments.suffix_context_controls",
+    "python -S -O -m unittest tests.test_suffix_features tests.test_suffix_contexts",
+    "python -S -O -m experiments.suffix_span_control",
+    "python -m pip install -r requirements-suffix-discovery.txt",
+    "python -m experiments.suffix_context_sweep --write --check",
+    "python -m experiments.suffix_context_sweep --benchmark"
+  ],
+  "artifacts": [
+    "AGENTS.md",
+    ".github/workflows/tests.yml",
+    "cdka/suffix_features.py",
+    "cdka/suffix_contexts.py",
+    "tests/test_suffix_features.py",
+    "tests/test_suffix_contexts.py",
+    "tests/fixtures/suffix-contexts-k4.json",
+    "experiments/suffix_context_sweep.py",
+    "experiments/suffix_context_controls.py",
+    "experiments/suffix_span_control.py",
+    "docs/data/suffix-context-certificates.json",
+    "docs/data/suffix-context-results.json",
+    "docs/data/suffix-context-benchmark.json",
+    "docs/data/suffix-context-controls.json",
+    "docs/data/suffix-span-control.json",
+    "docs/articles/suffix_contexts.md",
+    "docs/results/suffix-context-proof.md",
+    "docs/results/suffix-context-review.md",
+    "docs/results/suffix-span-control.md",
+    "docs/strategy/suffix-context-integration.md",
+    "docs/strategy/research-memory.md",
+    "registry/suffix-context-addendum.json",
+    "registry/hypotheses.md",
+    "requirements-suffix-discovery.txt"
+  ]
+}
