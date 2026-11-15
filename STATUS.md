@@ -1,4 +1,56 @@
-# CDKA — v18 execution snapshot
+# CDKA — shared pathwise budget executed
+
+**2026-11-15 · SB · R11/R14.** The acquisition/actuation budget is now common
+on each path. Selection, task and enable reuse the same hidden-health NAND
+bank. This branch extends the unchanged v18 physical sources from main
+`c8eb621acf04c6581795662596c3c41cf2cac43c`; it does not merge the independent
+PR13–15 verification branches or change their claims.
+
+[Article](docs/articles/shared_budget.md) ·
+[Contract](docs/strategy/shared-budget-contract.md) ·
+[Exact results](docs/data/shared-budget-results.json) ·
+[Controls](docs/data/shared-budget-controls.json) ·
+[Formal criterion](docs/results/shared-budget-continuation.md) ·
+[Independent review](docs/results/shared-budget-review.md) ·
+[Laboratory](docs/lab/shared_budget.html).
+
+## Decisive results
+
+* All24 predeclared price points, all336 cost/profile representatives covering
+  1,024 raw complete programs, and both eight-step endpoints were evaluated
+  with exact rational arithmetic. Every debit precedes its operation;
+  failure prefixes, remaining balance and spilled harvest are retained.
+* No positive NAND execution-price point has an additional-enable survival
+  gain over its strongest zero-enable-NAND reference:16/16 points, both
+  endpoints. The cost winners at the four declared survival tolerances also
+  require zero enable NANDs there. This is not domination of every circuit
+  in the entire low-survival frontier.
+* A blind resource-only service rule with RETAIN matches the full optimum
+  at20/24 points, including all16 paid-gate points. The diagnostic-selection
+  count is exactly zero on its live prefixes. Mandatory startup acquisition
+  is still charged; no operational value of that stored diagnosis follows.
+* At free gate execution and write price6, the noisy NOT(service) enable
+  has strict task-survival gains0.228746147/0.118550883 percentage points
+  for setup prices0/6. These do not establish a paid-gate advantage.
+* A reachable ideal-enable control at balance84 has zero immediate and
+  short continuation residuals but positive DQ²g. Shared-health controls
+  retain adverse short horizons even when the eight-task fixed pair improves.
+  Finite telescoping identities include incurred cost and paid startup.
+
+## Decision and verification
+
+The next obligation is to allow the blind program to decline startup
+diagnosis under the same initial capital, then certify the causal value of
+information against that reference. Another circuit expansion or a price
+search is deferred. This decision is recorded in research memory RM.36–42.
+
+Independent primitive/event and short-trajectory checks, assertion-disabled
+formal controls, the complete exact scan, and the browser presentation's
+integer-resource tests accompany the result. The final-task endpoint omits
+unnecessary final acquisition uniformly. UI runtime and remote CI outcomes
+are recorded separately from mathematical verification.
+
+## Historical v18 execution snapshot — 5 November 2026
 
 **2026-11-05 · T4.S/T3.O: continuation-certified selective acquisition, now physically realized and priced. R11/R14 remain the only active branches.** Historical sources are not changed.
 

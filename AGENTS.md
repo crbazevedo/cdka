@@ -36,7 +36,7 @@ being published. Its old twelve-phase fresh-emission family fails under
 retained-record selection; its 48-state quotient is valid but not proved
 minimal. Preserve that result and all new main sources when integrating.
 
-The current completed increment is the
+The completed 5 November audit increment is the
 [audited finite manuscript](docs/articles/core_interfaces.md). Its three-state
 exact witness separates value sufficiency, stochastic law reconstruction,
 selector compatibility and output regeneration. Primitive-wise closure need
@@ -60,7 +60,7 @@ through continuation annihilation, not full-law equality; noisy guarantees
 and expected acquisition prices have narrower declared scopes. Read
 [v18 direction](docs/strategy/direction-v18.md) and the manuscript integration.
 
-The next single physical gate is a common pathwise acquisition/actuation
+The 5 November next physical gate was a common pathwise acquisition/actuation
 budget with physically shared selection resources. Derive the joint kernel
 and successor resource transitions before transferring the omission proof:
 v18's refund control changes which distinctions matter next. Cost-frontier
@@ -69,3 +69,36 @@ scalar survival domination. Preserve the strongest complete policies, no-gate
 and no-renewal competitors and prior matched-price controls. The 16-state
 source-fidelity and recurrent models retain their own contracts. Another
 compiler scaling probe is not the next default objective.
+
+## Current decision — 15 November 2026
+
+The shared pathwise-budget gate is now executed in
+[SB](docs/articles/shared_budget.md). Keep its explicit event order, common
+initial capital, shared hidden-health bank, failed-prefix charges and separate
+task/cycle endpoints. All 24 predeclared prices and 336 cost/profile programs
+per point were evaluated exactly. The earlier v18 physical sources remain
+unchanged; this is an additive contract extension, not a reinterpretation of
+the separate expected ledger.
+
+At all 16 positive gate-price points, an enable NAND adds no maximum-survival
+gain in either endpoint; all four declared cost-tolerance winners also use
+zero enable NANDs. A blind service/service + RETAIN program matches the full
+optimum at 20/24 points, including those 16. Its initial report is never read
+along live prefixes. The lexical service/inverse representative has an
+unreachable inverse branch; do not ascribe knowledge use to its name.
+Two gains at free gate execution remain explicitly scoped positive results.
+
+Finite residual identities include startup and terminal boundary terms and
+costs on failed branches. A reachable budget-feedback witness invalidates
+the old omission equality. A failed sufficient residual condition is not a
+program rejection: inspect the exact paired continuation. Low residual rank
+does not bound the final invariant-interface dimension.
+
+**Next single obligation:** admit a blind preparation that can decline the
+initial diagnostic acquisition at the same gross endowment, then certify
+the causal decision value of diagnosis against that stronger common-resource
+reference. Preserve the current negative result and fixed price grid. Do
+not expand the circuit family or tune prices to seek a gain before this
+obligation is resolved. Read the [independent review](docs/results/shared-budget-review.md)
+and updated research memory before continuing. Adjacent PR13–15 concern
+verification algorithms and retain their own lineages and assumptions.

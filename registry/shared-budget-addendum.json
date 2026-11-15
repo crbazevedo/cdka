@@ -1,0 +1,89 @@
+{
+  "id": "shared-pathwise-budget-and-causal-diagnostic-use",
+  "date": "2026-11-15",
+  "date_basis": "UTC",
+  "parent_commit": "e54de20fedd50358ad75328c336ce07e8492283b",
+  "inherited_physical_main": "c8eb621acf04c6581795662596c3c41cf2cac43c",
+  "active_research_lines": ["R11", "R14"],
+  "status": "executed finite physical contract, exact bounded synthesis and reachable continuation controls",
+  "hardware_measurement_claim": false,
+  "historical_priority_claim": false,
+  "claims": [
+    {"id":"SB.1","classification":"implemented finite model","statement":"Actual shared-bank invocations, service, work and acquisition debit the same per-path reserve before execution, including costs on failed prefixes."},
+    {"id":"SB.2","classification":"established algebra adapted and verified","statement":"Finite response/cost residual identities include different paid startup laws and final-stage boundaries; local sufficient tests are distinct from exact paired decisions."},
+    {"id":"SB.3","classification":"exact complete-library negative result","statement":"All 16 positive gate-price points have no maximum-survival benefit from enable NANDs in either H8 endpoint; all four declared near-optimal cost winners use no enable NAND."},
+    {"id":"SB.4","classification":"exact limited positive result","statement":"Free gate execution and write price6 permit two strict gains over the strongest no-enable-NAND reference, using noisy NOT(service); neither establishes an execution-paid advantage."},
+    {"id":"SB.5","classification":"exact causal-use control","statement":"Blind service/service with RETAIN matches the selected optimum response pair at20/24 points in both endpoints, including all positive gate prices; no diagnostic-selection invocation occurs on its positive live prefixes."},
+    {"id":"SB.6","classification":"exact physical witness and separate algebraic control","statement":"Reachable balance84 has D1=Dg=DQg=0 but DQ²g>0 within five tasks. Separately, rank-one updates can force2D interfaces to extend to dimensionN."}
+  ],
+  "contract": {
+    "resource_unit":"integer quanta; 24 quanta per inherited operational token",
+    "capacity":96,"gross_initial_endowment":96,"commissioning":24,
+    "task_base":24,"service":48,"completed_cycle_harvest":48,
+    "prices":{"gate":[0,1,2],"write":[0,6,12,24],"setup_per_enable_gate":[0,6]},
+    "grid_fixed_before_results":true,
+    "physical_quotient_labels":1164,
+    "quotient_minimality_proved":false,
+    "shared_health":"selection at entry health; task and enable at post-service health",
+    "fault_semantics":"fresh invocation flags conditional on persistent health; fanout reuses the computed noisy wire",
+    "enable_observations":["executed service","frozen entry middle-resource bin","0","1"],
+    "trusted_boundary":["routing","clocking","signal taps","resource guard","bin decoder","acquisition actuator"],
+    "startup":"mandatory paid fresh acquisition for every program, including blind candidates",
+    "primary_endpoint":"seven complete cycles followed by the eighth task; no final enable, write, wear or harvest for any candidate",
+    "secondary_endpoint":"eight complete maintenance/work/acquisition cycles"
+  },
+  "coverage": {
+    "maintenance_tables":16,"raw_enable_netlists":64,"cost_profile_channels":21,
+    "raw_complete_programs_per_price":1024,"evaluated_programs_per_price_and_endpoint":336,
+    "price_points":24,"endpoints":2,"complete_response_evaluations":16128,
+    "independent_blind_task_evaluations":2016,
+    "exact_arithmetic":true,"monte_carlo":false,
+    "cost_loss_tolerances_probability":["0","1/10000","1/1000","1/100"]
+  },
+  "key_results": {
+    "zero_price_fresh_survival":0.9174767896493894,
+    "positive_gate_price_points":16,
+    "positive_gate_price_maximum_survival_gains":0,
+    "blind_optimum_points_tasks":20,
+    "blind_optimum_points_cycles":20,
+    "blind_representative":"service/service:e00 (RETAIN)",
+    "blind_diagnostic_selection_calls":"0 exactly on every positive live prefix",
+    "free_execution_gain_points":2,
+    "free_execution_task_gains_percentage_points":[0.22874614735214375,0.11855088304654703],
+    "global_dominance_of_all_enable_circuits_claimed":false,
+    "fixed_pair_example":{"prices":[1,6,0],"policy":"vote/vote","fresh_survival":0.4457942473134273,"elision_survival":0.8233193314252591,"best_blind_survival":0.8813275088604648},
+    "reachable_ideal_witness":{"state":[1,1,2,84],"prefix_cycles":1,"total_tasks":5,"D1":"0","Dg":"0","DQg":"0","DQ2g_approx":0.2309032280011588},
+    "numerical_provenance":"Exact fractions and whole-response hashes are in the canonical data; numbers here are display projections."
+  },
+  "evidence": {
+    "article":"docs/articles/shared_budget.md",
+    "contract":"docs/strategy/shared-budget-contract.md",
+    "formal_proof":"docs/results/shared-budget-continuation.md",
+    "independent_review":"docs/results/shared-budget-review.md",
+    "physical_model":"cdka/shared_budget.py",
+    "residual_checker":"cdka/budget_continuation.py",
+    "exact_sweep":"experiments/shared_budget_sweep.py",
+    "exact_controls":"experiments/shared_budget_controls.py",
+    "sweep_data":"docs/data/shared-budget-results.json",
+    "control_data":"docs/data/shared-budget-controls.json",
+    "physical_tests":"tests/test_shared_budget.py",
+    "formal_tests":"tests/test_budget_continuation.py",
+    "laboratory":"docs/lab/shared_budget.html",
+    "lab_kernel":"docs/lab/shared-budget.mjs",
+    "lab_tests":"tests/shared-budget-lab.test.mjs",
+    "browser_smoke":"scripts/shared-budget-browser-smoke.mjs"
+  },
+  "reproduce":[
+    "python -S -O -m experiments.shared_budget_sweep --check",
+    "python -S -O -m experiments.shared_budget_controls --check",
+    "python -S -O -m unittest discover -s tests -p 'test_shared_budget.py' -v",
+    "python -S -O -m unittest discover -s tests -p 'test_budget_continuation.py' -v",
+    "node --test tests/shared-budget-lab.test.mjs"
+  ],
+  "verification_scope": {
+    "physical_tests":10,"formal_and_control_tests":18,"presentation_tests":6,
+    "browser_render":"Separate CI smoke gate; authoring-environment Chromium launch and browser connection could not complete visual review.",
+    "remote_ci":"Exact published-head run is reported separately; this artifact does not presume it passed."
+  },
+  "next_single_obligation":"Admit a blind preparation that can decline startup diagnosis at the same gross endowment, then certify causal diagnosis value against that stronger physical reference. Preserve the fixed price grid and current negative result; defer circuit expansion and favorable-price searches."
+}

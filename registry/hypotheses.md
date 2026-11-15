@@ -145,3 +145,27 @@ remain registered in the [original addendum](v18-selective-acquisition-addendum.
 These results preserve their own contracts. They do not automatically inherit
 the scalar-value cover's conclusions for a second cost objective.
 
+## Shared pathwise budget and causal diagnostic use — 2026-11-15 (R11/R14)
+
+| ID | Status | Statement | Scope and limitation |
+|---|---|---|---|
+| SB.1 | Implemented finite physical extension | Actual selection, work, enable, service and acquisition debit the same path resource; the same hidden-health bank is reused and failed prefixes remain charged | Illustrative fungible prices, trusted interfaces and mandatory fresh startup; no empirical hardware/energy claim |
+| SB.2 | Exact continuation and accounting criterion | Finite residual identities preserve startup and terminal boundary terms; response equality and sufficient cost order are checked separately | Failed local sufficient tests require exact paired evaluation; infinite equality only after verified stabilization, no infinite cost-order inference |
+| SB.3 | Exact complete-library negative result | At all16 positive gate-price points, enable NANDs add no maximum-survival gain in either eight-step endpoint; all four declared cost-tolerance winners require zero enable NANDs | Full336 representatives cover1024 raw programs at each of24 predeclared prices; not global domination across the entire low-survival frontier |
+| SB.4 | Exact limited positive result | At free gate execution/write6, noisy NOT(service) improves task survival over strongest no-enable-NAND by0.228746147/0.118550883 percentage points for setup0/6 | Does not establish an execution-paid advantage; endpoint can change winning circuit |
+| SB.5 | Exact causal-use control | The blind service/service+RETAIN program equals the global selected survival/spend pair at20/24 points in both endpoints; actual diagnostic-selection invocation count is zero | Mandatory startup report is still paid; no operational value of that unused diagnosis follows |
+| SB.6 | Exact reachable invalidation and algebraic scope control | A reachable balance84 state preserves immediate/short responses but has positive DQ²g; separately a rank-one update can expand a2D interface toN | Physical witness within five tasks; algebraic rank control is not a simulated hardware family or a minimality claim |
+
+Evidence: [article](../docs/articles/shared_budget.md),
+[physical contract](../docs/strategy/shared-budget-contract.md),
+[formal proof](../docs/results/shared-budget-continuation.md),
+[independent review](../docs/results/shared-budget-review.md),
+[exact synthesis](../docs/data/shared-budget-results.json),
+[controls](../docs/data/shared-budget-controls.json),
+[laboratory](../docs/lab/shared_budget.html),
+[machine-readable addendum](shared-budget-addendum.json).
+
+The next gate is optional initial diagnosis for a blind preparation at the
+same gross capital, followed by an exact causal information-value comparison.
+Circuit expansion and parameter selection to manufacture a win are deferred.
+

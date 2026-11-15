@@ -1,5 +1,9 @@
 # Núcleo do manuscrito: interfaces de continuação realizáveis e renováveis
 
+**Atualização de 15 de novembro:** o orçamento comum preparado abaixo foi
+executado. A [extensão SB](../articles/shared_budget.md) e a seção6 registram
+o resultado e substituem a próxima obrigação do fechamento de5 de novembro.
+
 **5 de novembro de 2026.** Núcleo consolidado pela auditoria formal, de
 mecanismos e de antecedentes identificados. O
 [manuscrito com exemplo exato](../articles/core_interfaces.md) é agora a
@@ -202,3 +206,34 @@ dominância adequada; dominância apenas de sobrevivência não preserva aquela
 fronteira automaticamente. Comparar políticas completas com as melhores
 referências, incluindo não instalar e não renovar. Conservar uma família
 de saída continua sem autorizar uma decisão a partir de entrada insuficiente.
+
+## 6. Orçamento comum e teste causal — 15 de novembro de 2026
+
+A nova extensão conserva a planta recorrente e reutiliza seu banco de NANDs
+sob a mesma saúde oculta, cobrando seleção, serviço, tarefa e aquisição no
+saldo por trajetória. A ordem dos débitos, o guarda de viabilidade, a etapa
+terminal e o capital inicial são partes do contrato. A igualdade de omissão
+do v18 não é transportada. Um estado efetivamente alcançado com saldo84
+mostra uma resposta de continuação diferente depois de respostas curtas
+iguais; custos acumulados exigem um vetor que inclua prefixos interrompidos.
+
+O resultado da síntese restringe a tese: em todos os16 pontos com preço
+positivo de execução, uma política cega baseada em recursos iguala o ótimo
+da biblioteca completa. A regra service/service com retenção não lê o
+diagnóstico; sua igualdade é verificada nos20 pontos em que atinge o máximo,
+e uma intervenção sobre os bits não altera sua continuação física projetada.
+O circuito adicional vence em dois pontos de execução gratuita, com escopo
+mantido. Melhorar um programa fixo continua sendo evidência inferior a vencer
+a melhor referência admissível.
+
+Isso fecha a obrigação de orçamento unificado, sem demonstrar vantagem
+informacional paga nesta grade. A próxima obrigação é tornar opcional a
+aquisição inicial da referência cega e comparar sob o mesmo capital bruto.
+O objetivo do núcleo permanece uma decisão realizável cuja vantagem dependa
+causalmente das distinções conservadas. Metadados de memória e manutenção
+não bastam para essa conclusão.
+
+[Contrato](shared-budget-contract.md) ·
+[Critério e prova](../results/shared-budget-continuation.md) ·
+[Revisão independente](../results/shared-budget-review.md) ·
+[Resultados exatos](../data/shared-budget-results.json).

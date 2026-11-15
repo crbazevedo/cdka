@@ -28,6 +28,11 @@ on:
       - 'cdka/selective_acquisition.py'
       - 'experiments/selective_acquisition_sweep.py'
       - 'registry/v18-selective-acquisition-addendum.json'
+      - 'cdka/shared_budget.py'
+      - 'cdka/budget_continuation.py'
+      - 'experiments/shared_budget_sweep.py'
+      - 'experiments/shared_budget_controls.py'
+      - 'registry/shared-budget-addendum.json'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 permissions:
@@ -94,6 +99,14 @@ jobs:
           python -m experiments.selective_acquisition_sweep --write --check
           node --test tests/selective-acquisition.test.mjs
           cp registry/v18-selective-acquisition-addendum.json docs/registry/v18-selective-acquisition-addendum.json
+      - name: Verify shared pathwise budget and causal diagnostic controls
+        run: |
+          python -S -O -m experiments.shared_budget_sweep --check
+          python -S -O -m experiments.shared_budget_controls --check
+          python -S -O -m unittest discover -s tests -p 'test_shared_budget.py' -v
+          python -S -O -m unittest discover -s tests -p 'test_budget_continuation.py' -v
+          node --test tests/shared-budget-lab.test.mjs
+          cp registry/shared-budget-addendum.json docs/registry/shared-budget-addendum.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload static atlas

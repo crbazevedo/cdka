@@ -468,3 +468,76 @@ renewal and synthesize the complete admissible policy class. Preserve the
 best stationary policy, no-added-circuit and no-renewal competitors, and
 the matched-price controls. The v18 installed/priced selector is completed
 evidence and must not be repeated as an unexecuted plan.
+
+## Decision record — 15 November 2026: shared pathwise budget completed
+
+The [SB article](../articles/shared_budget.md) closes the preceding gate on
+the same recurrent plant. A fixed96-quantum capital pays commissioning,
+initial report, routing, actual NAND invocations, service, work and renewal.
+All debit stages precede execution. The shared bank's persistent hidden health
+remains in the joint law; task and enable use post-service health with new
+fault flags on each invocation. Guard/taps/clocking/actuator idealizations and
+fungible illustrative prices remain explicit.
+
+The predeclared24-point grid uses gate prices0/1/2, writes0/6/12/24 and setup0/6.
+All336 representatives cover64 rooted circuits times16 maintenance tables.
+Both eight-task and eight-cycle endpoints were evaluated exactly, including
+startup, failed prefixes, spill and remaining resources. The task endpoint
+uniformly omits final acquisition. Zero-price FRESH agrees with the inherited
+v16/v18 value for every maintenance policy.
+
+**Decisive comparison.** At all16 positive gate-price points, the maximum
+survival equals the strongest zero-enable-NAND reference in both endpoints.
+All four declared cost-tolerance winners also use no enable NAND there.
+Two positive survival gains occur only at free gate execution, write6, with
+NOT(service), preserving their narrower scope. This does not establish
+universal domination of paid gates throughout the entire cost frontier.
+
+**Stronger causal control.** An independent enumeration of all84 blind
+programs per price finds service/service + RETAIN best in every case. That
+single rule reaches the global optimum at20/24 points, including all paid-gate
+points. Every live-prefix diagnostic-selection count is zero. The lexical
+service/inverse representative's inverse bin is unreachable. An intervention
+on stored bits at the same health/resource state leaves its projected
+continuation, costs and service behavior unchanged. The common preparation
+still charges its unused initial diagnostic acquisition.
+
+**Formal integration.** Finite telescoping includes changed startup laws,
+terminal value/cost and charges incurred on failed branches. A reachable
+balance84 witness has D1=Dg=DQg=0 but DQ²g>0, inside five total tasks. Shared
+health has an adverse short-horizon result even when the complete eight-task
+pair improves. A failed sufficient local residual test is not a policy
+rejection; the exact propagated differences remain decisive. An algebraic
+rank-one update control expands a two-column interface to dimensionN,
+preventing a free low-rank assumption for incremental reuse.
+
+| ID | Evidence | Decision consequence |
+|---|---|---|
+| RM.36 | The actual saved acquisition changes successor balance and a reachable later response. | Recompile the joint kernel before reusing an omission certificate; resources belong inside the continuation state. |
+| RM.37 | The same surviving kernel can hide different failed-prefix costs; improved survival increases total purchases in the fixed-pair example. | Carry an incurred-cost response and an explicit survival gate. Do not infer efficiency from fewer writes or lower unconditional spend alone. |
+| RM.38 | An unnecessary final write can erase a task that was already completed; mandatory earlier acquisition still changes feasibility. | State the endpoint and protocol separately. Apply terminal exemptions uniformly to every candidate and comparator. |
+| RM.39 | Post-service hidden health couples work and enable, even with fresh independent invocation faults conditional on health. | Keep the shared cause inside the executed-service branch; replacing it by a marginal error rate changes the physical law. |
+| RM.40 | Added paid enable circuits lose the full-class comparison, although a selected pair improves greatly. | Compare against the strongest complete no-gate, no-renewal and blind programs. Keep adverse prices and do not tune the grid after the outcome. |
+| RM.41 | A named retained-memory program reaches the optimum without ever reading its record; an unreachable branch obscures this fact. | Audit realized observation use and interventions, not program names or stored-state metadata, before claiming operational knowledge. |
+| RM.42 | A residual seed of rank one can force an invariant extension of arbitrary finite size. | Treat compact incremental closure as a hypothesis to establish for the actual response family, not a consequence of low update rank. |
+
+**Current next single obligation:** make startup diagnosis optional for a
+blind program under the same gross endowment, then evaluate the causal value
+of diagnosis against that physically executable reference. Keep the present
+negative result, fixed prices, physical observation boundary and complete
+program coverage. Suspend further circuit expansion and favorable-price
+search until this comparison is resolved. This advances the original
+operational-knowledge question; it does not replace it with a bookkeeping
+or verification-speed objective.
+
+Sources: [contract](shared-budget-contract.md),
+[formal criterion](../results/shared-budget-continuation.md),
+[exact scan](../data/shared-budget-results.json),
+[reachable and causal controls](../data/shared-budget-controls.json),
+[independent review](../results/shared-budget-review.md).
+
+**Lineage check.** Main remainsc8eb621 and the audited-core parent ise54de20.
+PR13–15 independently develop continuation verification, regeneration
+evaluation and arithmetic enclosures. Their inherited physical source blobs
+match v18; they had not executed this budget gate. Their synthetic rank2,
+exogenous-context and rank-one-restart premises were not imported into SB.
